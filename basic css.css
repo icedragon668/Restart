@@ -51,6 +51,7 @@ h1 {
 
 main {
 /*targets the "main" tag*/
+
     text-align: center;
     /*aligns text to the vertical center of the "main" element*/
 
@@ -60,9 +61,24 @@ main {
 }
 
 button {
+/*targets the "button" tag*/
+
     text-align: left;
+    /*aligns the text of the "button" to the left in the "button"*/
+
     border-radius: 10px;
+    /*set border radius to 10 pixels
+    this creates a rounded edge to the button
+    this happens...?*/
+   
     color: white;
+    /*sets the text of the button to white
+    this is because the default button text is black?*/
+   
     background-color: transparent;
+    /*set the background of the button to transparent
+    this overwrites the default button?*/
+   
     text-transform: uppercase;
+    /*transforms the text to uppercase*/
 }
