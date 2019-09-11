@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    line-height: 1.5;
+    text-transform: uppercase;
+    background-color: rgb(19, 180, 180);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.dark {
+    font-size: 10px;
+    color: black;
+}
+
+.big {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+main {
+    text-align: center;
+    margin-top: 200px;
+}
+
+button {
+    text-align: left;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+}
