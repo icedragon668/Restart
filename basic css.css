@@ -8,7 +8,7 @@ body {
     /*set the height of the line (the box around the line)
      to 50% more than original font size*/
 
-     text-transform: uppercase;
+    text-transform: uppercase;
     /*transforms the text to uppercase*/
 
     background-color: rgb(19, 180, 180);
@@ -20,7 +20,6 @@ body {
 
     color: white;
     /*sets text color*/
-
 }
 
 h1 {
@@ -28,7 +27,6 @@ h1 {
 
     font-weight: bold;
     /*sets weight (text line thickness)*/
-
 }
 
 .dark {
@@ -42,13 +40,23 @@ h1 {
 }
 
 .big {
+/*targets class of big*/
+
     font-size: 45px;
+    /*sets font size to 45 pixels*/
+
     font-weight: bolder;
+    /*sets font weight to "bolder", overwrites the above "bold"*/
 }
 
 main {
+/*targets the "main" tag*/
     text-align: center;
+    /*aligns text to the vertical center of the "main" element*/
+
     margin-top: 200px;
+    /*sets the top margin without changing the other sides
+    overwrites the margin: 0 above*/
 }
 
 button {
