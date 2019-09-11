@@ -72,9 +72,9 @@ button {
     this happens by making a rounded edge to the element based on
     a circle with a radius of 10 pixels (in this case)*/
    
-    /* color: white; */
+    color: white;
     /*sets the text of the button to white
-    this is because the default button text is black?*/
+    this is because the default button text is black*/
    
     background-color: transparent;
     /*set the background of the button to transparent
