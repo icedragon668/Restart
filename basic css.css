@@ -24,12 +24,21 @@ body {
 }
 
 h1 {
+/*selects h1 tags in the html*/
+
     font-weight: bold;
+    /*sets weight (text line thickness)*/
+
 }
 
 .dark {
+/*selects class (the .) of dark in html*/
+
     font-size: 10px;
+    /*sets font size to 10 pixels*/
+
     color: black;
+    /*sets font color to black, overwritting the above "white" color*/
 }
 
 .big {
