@@ -24,3 +24,13 @@ After such a gap, I have lost my confidence. I am afraid people will look at thi
 Restart is for me to redo everything I have done while also working on new ideas and materials. Rebuilding what time and illness have brought low.
 
 Ultimately, this probably makes no difference. But it feels important to me.
+
+<!-- From Disposable Profile 12th 9 2019
+    I am finding this restart to be a good refresher.
+     I think I either forgot, or never learned the href=#.
+      And is helping me with notation. Both in the code
+       and in the commits (notation is lacking here,
+        at least for a "first" project. That will have to be ammended)
+-->
+
+I should also like to get some markdown under my belt. I never did get around to practicing that
