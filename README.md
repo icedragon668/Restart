@@ -38,3 +38,8 @@ I should also like to get some markdown under my belt. I never did get around to
 <!-- From Basic CSS Page 2 13th 9 2019
     Not much relearning was gained in this project
 -->
+
+<!-- From Disposable Profile 13th 9 2019
+    altered a strong tag to a span with inline style
+    good reminder about inline style and elements
+-->
