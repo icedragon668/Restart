@@ -34,3 +34,7 @@ Ultimately, this probably makes no difference. But it feels important to me.
 -->
 
 I should also like to get some markdown under my belt. I never did get around to practicing that
+
+<!-- From Basic CSS Page 2 13th 9 2019
+    Not much relearning was gained in this project
+-->
