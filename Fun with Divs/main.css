@@ -28,6 +28,7 @@ p {
     background-color: yellow; 
 }
 
+/* , is for ands */
 #div1, #div2 {
     border: 1px solid black;
 }
