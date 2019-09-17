@@ -38,3 +38,29 @@
     </div>
 </body>
 </html>
+<!--
+JS for switching:
+    function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+    }
+
+HTML for switching:
+    <html>
+    <head>
+        <title>Changing CSS</title>
+        <link rel="stylesheet" type="text/css" href="positive.css"/>
+    </head>
+    <body>
+        <a href="#" onclick="changeCSS('positive.css', 0);">STYLE 1</a> 
+        <a href="#" onclick="changeCSS('negative.css', 0);">STYLE 2</a>
+    </body>
+    </html>
+-->
