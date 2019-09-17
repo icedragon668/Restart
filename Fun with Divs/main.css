@@ -15,3 +15,8 @@ p {
     background-color: cyan;
     color: red;
 }
+
+/* the ~ is for ??? */
+#div1 ~ p {
+    color: blue;
+}
