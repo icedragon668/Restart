@@ -22,3 +22,7 @@ p {
 #div1 ~ p {
     color: blue;
 }
+
+#div2 + p {
+    background-color: yellow; 
+}
