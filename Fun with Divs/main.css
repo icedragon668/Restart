@@ -6,11 +6,13 @@ p {
     font-size: 1.4em;
 }
 
+/* a space is for all descendents*/
 #div1 p {
     background-color: black;
     color: white;
 }
 
+/* > is for child elements */
 #div2 > p {
     background-color: cyan;
     color: red;
