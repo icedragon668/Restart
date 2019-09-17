@@ -43,3 +43,8 @@ I should also like to get some markdown under my belt. I never did get around to
     altered a strong tag to a span with inline style
     good reminder about inline style and elements
 -->
+
+<!-- From Fun with Divs 16th 9 2019
+    working with siblings in css should be a common exercise
+    space > ~ + ,
+-->
