@@ -2,3 +2,8 @@
     background-color: black;
     color: white;
 }
+
+#div2 > p {
+    background-color: cyan;
+    color: red;
+}
