@@ -16,7 +16,7 @@ p {
     color: red;
 }
 
-/* the ~ is for ??? */
+/* the ~ is for general siblings */
 #div1 ~ p {
     color: blue;
 }
