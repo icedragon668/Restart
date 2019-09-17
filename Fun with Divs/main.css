@@ -23,6 +23,7 @@ p {
     color: blue;
 }
 
+/* the + is for adjacent siblings */
 #div2 + p {
     background-color: yellow; 
 }
