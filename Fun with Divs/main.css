@@ -27,3 +27,7 @@ p {
 #div2 + p {
     background-color: yellow; 
 }
+
+#div1, #div2 {
+    border: 1px solid black;
+}
