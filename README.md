@@ -48,3 +48,8 @@ I should also like to get some markdown under my belt. I never did get around to
     working with siblings in css should be a common exercise
     space > ~ + ,
 -->
+
+Come Back to This
+<!-- Relative Paths 18th 9 2019
+    added some notes for CSS swithching that I want to get back to
+-->
