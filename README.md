@@ -59,4 +59,8 @@ While having one per project makes sense elsewhere, here I only need the one
 
 <!-- From Boxes 18th 9 2019
     Review Box-Sizing more closely
+    Got distracted and did the "only commit once" error
+    Must try to make multiple commits as practice for larger projects
+    The idea is to track changes
+     not to just save the current project
 -->
