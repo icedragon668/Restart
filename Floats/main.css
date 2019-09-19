@@ -39,6 +39,7 @@ section {
 
 #full {
     background-color: #394549;
+    overflow: auto;
 }
 
 #full aside {
