@@ -63,6 +63,7 @@ footer {
     padding: 20px;
 }
 
+/*i need to study clearfix again*/
 .clearfix {
     content: "";
     display: block;

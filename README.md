@@ -64,3 +64,5 @@ While having one per project makes sense elsewhere, here I only need the one
     The idea is to track changes
      not to just save the current project
 -->
+
+ToDo: Read up on clearfix
