@@ -53,3 +53,6 @@ Come Back to This
 <!-- Relative Paths 18th 9 2019
     added some notes for CSS swithching that I want to get back to
 -->
+
+Just now thought about adding a universal reset.css to this project
+While having one per project makes sense elsewhere, here I only need the one
