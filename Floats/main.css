@@ -48,14 +48,20 @@ aside {
     height: 210px;
     float: left;
     margin-top: 40px;
+    color: wheat;
 }
 
 #division {
     background-color: #6ea3da;
     margin-top: 30px;
     color: wheat;
+    padding: 20px;
+}
+
+footer {
+    background-color: #FFA500;
+    padding: 20px;
 }
 
 .clearfix {
-    background-color: #FFA500;
 }
