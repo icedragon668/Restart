@@ -15,6 +15,11 @@ header {
     margin-bottom: 20px;
 }
 
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 #left, #middle, #right {
     width: 33.333333%;
     float: left;
