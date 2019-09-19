@@ -11,6 +11,8 @@ body {
 
 header {
     background-color: #FFA500;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 #left, #middle, #right {
