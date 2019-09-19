@@ -42,12 +42,18 @@ section {
     overflow: auto;
 }
 
-#full aside {
+aside {
     background-color: #a6b747;
+    width: 33.3333%;
+    height: 210px;
+    float: left;
+    margin-top: 40px;
 }
 
 #division {
     background-color: #6ea3da;
+    margin-top: 30px;
+    color: wheat;
 }
 
 .clearfix {
