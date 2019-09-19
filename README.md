@@ -66,3 +66,7 @@ While having one per project makes sense elsewhere, here I only need the one
 -->
 
 ToDo: Read up on clearfix
+<!-- Week One of Restart
+    After one week, I feel much better. My goal is to in crease commits to 20 daily. This will likely mean two small projects a day.
+    I am excited to be coding again. It feels good.
+-->
