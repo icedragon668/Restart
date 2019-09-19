@@ -1,0 +1,36 @@
+header {
+    background-color: #FFA500;
+}
+
+#left, #middle, #right {
+    width: 1/3;
+    float: left;
+}
+
+#left {
+    background-color: #30948d;
+}
+
+#middle {
+    background-color: #9e1212;
+}
+
+#right {
+    background-color: #30948d;
+}
+
+#full {
+    background-color: #394549;
+}
+
+#full aside {
+    background-color: #a6b747;
+}
+
+#division {
+    background-color: #6ea3da;
+}
+
+.clearfix {
+    background-color: #FFA500;
+}
