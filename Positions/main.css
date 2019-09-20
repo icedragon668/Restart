@@ -40,7 +40,16 @@ p {
     font-size: 18px;
     line-height: 28px;
  }
- 
+
+ .relative {
+     /* position: relative; */
+     /*is this needed? i think so...*/
+     height: 200px;
+     padding: 20px;
+     margin-bottom: 20px;
+     background-color: #eee;
+ }
+
   .absolute {
       position: absolute;
       left: 50%;
