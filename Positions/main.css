@@ -1,15 +1,17 @@
 
-  /* Hides element as if it's not there (compare with "visibility: hidden;"). */
-  /* display: none; */
-  /* visibility: hidden; */
+  /*
+    Hides element as if it's not there (compare with "visibility: hidden;").
+    display: none;
+    visibility: hidden;
+  */
 
   /*
-  none = standard, down the line
-  relative = relative to standard position
-  absolute = requires a parent, relative to parent
-  fixed = relative to viewport
+    none = standard, down the line
+    relative = relative to standard position
+    absolute = requires a parent, relative to parent
+    fixed = relative to viewport
   */
-  
+
 * {
     box-sizing: border-box;
 }
