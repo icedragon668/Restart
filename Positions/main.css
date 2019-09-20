@@ -3,4 +3,11 @@
   /* display: none; */
   /* visibility: hidden; */
 
-  
+  .fixed {
+      position: fixed;
+  }
+
+  .absolute {
+      position: absolute;
+      left: 50%;
+  }
