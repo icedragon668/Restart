@@ -70,3 +70,8 @@ ToDo: Read up on clearfix
     After one week, I feel much better. My goal is to in crease commits to 20 daily. This will likely mean two small projects a day.
     I am excited to be coding again. It feels good.
 -->
+
+<!-- From Positions 19th 9 2019
+    Got a late start, may not make 20 commits "today"
+    Will not overage here once finished for the "day"
+-->
