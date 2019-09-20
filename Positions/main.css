@@ -2,7 +2,19 @@
   /* Hides element as if it's not there (compare with "visibility: hidden;"). */
   /* display: none; */
   /* visibility: hidden; */
+* {
+    box-sizing: border-box;
+}
 
+body {
+    font-size: 24px;
+    line-height: 32px;
+    color: #333;
+}
+
+div {
+    text-align: center;
+}
   .fixed {
       position: fixed;
   }
