@@ -15,9 +15,19 @@ body {
 div {
     text-align: center;
 }
-  .fixed {
-      position: fixed;
-  }
+
+.fixed {
+    position: fixed;
+    padding: 40px;
+    margin: 0;
+    background-color: #eee;
+}
+
+.wrapper {
+    width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+}
 
   .absolute {
       position: absolute;
