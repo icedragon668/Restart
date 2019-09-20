@@ -29,6 +29,18 @@ div {
     margin: 0 auto;
 }
 
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 28px;
+ }
+ 
   .absolute {
       position: absolute;
       left: 50%;
