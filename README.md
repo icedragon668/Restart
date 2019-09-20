@@ -74,4 +74,6 @@ ToDo: Read up on clearfix
 <!-- From Positions 19th 9 2019
     Got a late start, may not make 20 commits "today"
     Will not overage here once finished for the "day"
+    No overage! but only managed one project today.
+    Need to remember to start a little bit earlier.
 -->
