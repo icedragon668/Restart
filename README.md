@@ -77,3 +77,9 @@ ToDo: Read up on clearfix
     No overage! but only managed one project today.
     Need to remember to start a little bit earlier.
 -->
+
+!
+<!-- From Pseudo and Columns Bootstrap 20th 9 2019
+    This has the makings of some useful CSS tricks.
+    I would like to combine the display:none with an animation later
+-->
