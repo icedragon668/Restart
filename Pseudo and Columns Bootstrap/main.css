@@ -13,3 +13,7 @@ a:active {
 span {
     display: none;
 }
+
+h1:hover span{
+    display: inline;
+}
