@@ -5,4 +5,8 @@ a:hover {
 a:active {
     background: green;
 }
-    
+
+a:focus {
+    background: orange
+}
+
