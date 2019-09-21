@@ -10,3 +10,6 @@ a:active {
     background: green;
 }
 
+a:visited {
+    color: brown;
+}
