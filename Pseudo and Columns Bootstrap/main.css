@@ -1,12 +1,12 @@
+a:focus {
+    background: orange
+}
+
 a:hover {
     background: yellow;
 }
 
 a:active {
     background: green;
-}
-
-a:focus {
-    background: orange
 }
 
