@@ -44,14 +44,15 @@ I should also like to get some markdown under my belt. I never did get around to
     good reminder about inline style and elements
 -->
 
+Come back
 <!-- From Fun with Divs 16th 9 2019
     working with siblings in css should be a common exercise
-    space > ~ + ,
+    space > ~ + , (add names)
 -->
 
 Come Back to This
 <!-- Relative Paths 18th 9 2019
-    added some notes for CSS swithching that I want to get back to
+    added some notes for CSS switching that I want to get back to
 -->
 
 Just now thought about adding a universal reset.css to this project
@@ -82,4 +83,11 @@ ToDo: Read up on clearfix
 <!-- From Pseudo and Columns Bootstrap 20th 9 2019
     This has the makings of some useful CSS tricks.
     I would like to combine the display:none with an animation later
+-->
+
+! ToDo: decipher and DIY a bootstrap navbar
+<!-- from Navbar and Media Queries 23rd 9 2019
+    I should very much like to design my own navbar from the ground up
+    Ditto to "pop-ups", whose name I have forgotten.
+    It's good to read through the bootstrap css as linked in the source. I find that more valuable than the actual documentation.
 -->
