@@ -14,3 +14,9 @@
         font-size: 200%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+}
