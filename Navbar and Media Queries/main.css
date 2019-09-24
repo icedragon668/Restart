@@ -3,4 +3,8 @@
         background: #333;
         color: antiquewhite;
     }
+
+    img {
+        display: none;
+    }
 }
