@@ -7,4 +7,10 @@
     img {
         display: none;
     }
+
+    .col-lg-12 {
+        background: darkred;
+        color: dimgrey;
+        font-size: 200%;
+    }
 }
