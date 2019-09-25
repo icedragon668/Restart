@@ -26,6 +26,7 @@ function MyFunction() {
         let name = prompt('Enter a your name');
         let email = prompt('Enter your E-Mail');
         let pass = prompt('Choose a Password');
+        pass = pass.replace(/./g, "********")
         //pass change
         confirm(`You said your name is ${name} at ${email} and have chosen ${pass} as your password. \nWould you like to save your credentials?`)
     }
