@@ -66,7 +66,6 @@ While having one per project makes sense elsewhere, here I only need the one
      not to just save the current project
 -->
 
-ToDo: Read up on clearfix
 <!-- Week One of Restart
     After one week, I feel much better. My goal is to in crease commits to 20 daily. This will likely mean two small projects a day.
     I am excited to be coding again. It feels good.
@@ -99,4 +98,19 @@ ToDo: Read up on clearfix
 <!-- from JS Intro 24th 9 2019
     I'm okay with JS, but rusty with some of the basics. I'm looking forward to doing the JS30 challenge soon.
 -->
+
+ToDo: Read up on clearfix
+<!-- Reading up on clearfix
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display:table
+    }
+    ::after sticks this stuff at the end of the element, okay.
+    content: ""; add a nothing, kinda like a cleaning :p
+    clear: both; stops the floating, but of the next element, so watch that placing.
+    display: table; not really up on this, it is it's own rabbit hole.
+     but there is a lot of good stuff here
+-->
+
 Next: unit02/day02
