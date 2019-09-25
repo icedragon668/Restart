@@ -99,3 +99,4 @@ ToDo: Read up on clearfix
 <!-- from JS Intro 24th 9 2019
     I'm okay with JS, but rusty with some of the basics. I'm looking forward to doing the JS30 challenge soon.
 -->
+Next: unit02/day02
