@@ -9,12 +9,13 @@ function MyFunction() {
     // alert('blah', num); //nope
     //alert(num + 'blah') //nope
     //damn, had to look it up :p
+    //leaving the "incorrect" in as a reminder
     alert('7482 divided by 281 is ' + num);
+    alert('3.14 times 5 divided by 3 is ' + 3.14 * 5 /3)
 }
 
 
 /*
-1. 7482 divided by 281
 2. 3.14 times 5 divided by 3
 3. The remainder of 281 divided by 9 (You may need to look up the modulo operator)
 4. 18 divided by 0
