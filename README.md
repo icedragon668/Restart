@@ -88,7 +88,7 @@ ToDo: Read up on clearfix
 ! ToDo: decipher and DIY a bootstrap navbar
 <!-- from Navbar and Media Queries 23rd 9 2019
     I should very much like to design my own navbar from the ground up
-    Ditto to "pop-ups", whose name I have forgotten.
+    Ditto to "pop-ups", whose name I have forgotten. (24/9/19: modal)
     It's good to read through the bootstrap css as linked in the source. I find that more valuable than the actual documentation.
 
     Media Queries are straight forward, if not easy to fully implement across multiple devices.
