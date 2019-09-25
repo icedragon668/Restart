@@ -2,6 +2,8 @@ console.log('sup')
 
 function MyFunction() {
     let num
+    let r = confirm('Math or Email?');
+    if (r) {
     num = 7482/281
     //I am pretty clearly rusty on the basics
     //I cannot remember how to do this without template literals
@@ -20,4 +22,11 @@ function MyFunction() {
     alert('18 divided by 0 is ' + 18/0)
     alert('the remainder of  10 divided by 0 is ' + 10%0 + ' or "Not A Number"')
     //I should like this to be more presentable. something like a hover over a card
+    } else {
+        let name = prompt('Enter a your name');
+        let email = prompt('Enter your E-Mail');
+        let pass = prompt('Choose a Password');
+        //pass change
+        confirm(`You said your name is ${name} at ${email} and have chosen ${pass} as your password. \nWould you like to save your credentials?`)
+    }
 }
