@@ -90,4 +90,7 @@ ToDo: Read up on clearfix
     I should very much like to design my own navbar from the ground up
     Ditto to "pop-ups", whose name I have forgotten.
     It's good to read through the bootstrap css as linked in the source. I find that more valuable than the actual documentation.
+
+    Media Queries are straight forward, if not easy to fully implement across multiple devices.
+    It would be a good idea to develop a standard media query testing strategy
 -->
