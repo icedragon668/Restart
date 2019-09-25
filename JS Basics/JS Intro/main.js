@@ -18,10 +18,6 @@ function MyFunction() {
     //... I don't remember, but I think this isn't going to work as is
     //welp, how about that. it works fine! I'm a little disappointed
     alert('18 divided by 0 is ' + 18/0)
+    alert('the remainder of  10 divided by 0 is ' + 10%0 + ' or "Not A Number"')
+    //I should like this to be more presentable. something like a hover over a card
 }
-
-
-/*
-4. 18 divided by 0
-5. The remainder of 10 divided by 0 (You may need to look up the modulo operator)
-*/
