@@ -15,11 +15,13 @@ function MyFunction() {
     alert('the remainder of 281 divided by 9 is ' + 281 % 9)
     //fun! i haven't used parseInt before ;p
     alert('281 divided by 9 is ' + parseInt(281/9) + ' remainder ' + 281%9)
+    //... I don't remember, but I think this isn't going to work as is
+    //welp, how about that. it works fine! I'm a little disappointed
+    alert('18 divided by 0 is ' + 18/0)
 }
 
 
 /*
-3. The remainder of 281 divided by 9 (You may need to look up the modulo operator)
 4. 18 divided by 0
 5. The remainder of 10 divided by 0 (You may need to look up the modulo operator)
 */
