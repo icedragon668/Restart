@@ -94,3 +94,5 @@ ToDo: Read up on clearfix
     Media Queries are straight forward, if not easy to fully implement across multiple devices.
     It would be a good idea to develop a standard media query testing strategy
 -->
+
+! Todo: Better learn RegEx
