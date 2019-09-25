@@ -58,8 +58,8 @@ Come Back to This
 Just now thought about adding a universal reset.css to this project
 While having one per project makes sense elsewhere, here I only need the one
 
+ToDo: Review Box-Sizing more closely
 <!-- From Boxes 18th 9 2019
-    Review Box-Sizing more closely
     Got distracted and did the "only commit once" error
     Must try to make multiple commits as practice for larger projects
     The idea is to track changes
@@ -99,18 +99,27 @@ While having one per project makes sense elsewhere, here I only need the one
     I'm okay with JS, but rusty with some of the basics. I'm looking forward to doing the JS30 challenge soon.
 -->
 
-ToDo: Read up on clearfix
+ToDo: read up on flexbox
+ToDo: read up on general display (and specifically table)
 <!-- Reading up on clearfix
-    .clearfix::after {
+    .group:after {
         content: "";
+        display: table;
         clear: both;
-        display:table
     }
     ::after sticks this stuff at the end of the element, okay.
     content: ""; add a nothing, kinda like a cleaning :p
     clear: both; stops the floating, but of the next element, so watch that placing.
     display: table; not really up on this, it is it's own rabbit hole.
      but there is a lot of good stuff here
+     ah! the display: table is a height hack! prevents the element from collapsing.
+    
+    A good way to go seems to be to put floats in a parent and give the parent the clearfix. (specifically .clearfix:after)
+    .group is considered the more popular name now (.group:after)
+
+    flexbox is next on the study list
+    display is worth a reading as well (w3s should be fine)
+     the Kicking Ass with Display bookmark is awesome
 -->
 
 Next: unit02/day02
