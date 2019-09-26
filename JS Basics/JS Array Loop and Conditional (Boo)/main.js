@@ -1,28 +1,26 @@
-// 15
-
 function testOne() {
 
     //empty array
-    const newStudents = [];
+    const studentListOne = [];
     //prompt 5 names
     for (i=0;i<5;i++) {
         const name = prompt(`Student Name? \n${i+1} of 5`);
-        newStudents.push(name);
+        studentListOne.push(name);
     }
     
     //alert name 2
-    alert(newStudents[1]);
+    alert(studentListOne[1]);
     // NOTE: read up on new[tab] [const name = new type(arguments);]
 
     //prompt for index
     const index = prompt('Chose a number 1-5');
     //alert name at index
-    alert(`${newStudents[index-1]}`)
+    alert(`${studentListOne[index-1]}`)
 }
 
 function testTwo() {
     //array with 5 names
-    const studentArray = [
+    const studentListTwo = [
         'James 1',
         'Fili 2',
         'Drake 3',
@@ -31,7 +29,7 @@ function testTwo() {
     ];
     //promt for a name
     const name = prompt('Which Student?');
-    const nameBoo = studentArray.includes(name);
+    const nameBoo = studentListTwo.includes(name);
     //alert true/false for student present
     alert(`${name} is in this class: ${nameBoo}`)
 }
@@ -58,23 +56,23 @@ function testThree() {
 }
 
 function testFour() {
-    const studentList = []
+    const studentListFour = []
     //loop prompt 5 names
     for (let i = 0; i < 5; i++) {
-        const name = prompt('New Student Name?');
+        const name = prompt(`New Student Name? ${i+1} of 5`);
         //this feels like its backwards
         //apparently not
-        //push names into "studentList" array
-        studentList[i] = name
+        //push names into "studentListFour" array
+        studentListFour[i] = name
     }
     //render the five names
-    alert(studentList)
+    alert(studentListFour)
 }
 
 function testFive() {
     //this is a better naming convention
     //consider cleaning this up
-    const studentsFive;
+    const studentsFive = [];
     //prompt for a number
     const number = prompt('How Many Students?');
     //prompt for that many names
