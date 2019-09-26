@@ -48,9 +48,12 @@ function testThree() {
         alert(`PIGGYWOO ${i+1} of 5`);
     }
     //decrement operator to render 10-0
-    for (let i = 10; i > 0; i--) {
-        alert(`COUNTDOWN: ${i}`);
-        
+    for (let i = 10; i >= 0; i--) {
+        if (i === 0) {
+            alert("Lift Off!")
+        } else {
+            alert(`COUNTDOWN: ${i}`);
+        }
     }
 }
 
