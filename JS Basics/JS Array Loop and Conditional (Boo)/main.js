@@ -1,4 +1,4 @@
-// 6
+// 7
 
 function testOne() {
 
@@ -20,6 +20,7 @@ function testOne() {
     alert(`${newStudents[index-1]}`)
 }
 
+function testTwo() {
 //array with 5 names
 const studentArray = [
     'James 1',
@@ -31,6 +32,7 @@ const studentArray = [
 //promt for a name
 alert(studentArray)
 //alert true/false for student present
+}
 
 //loop to render 5-9
 //seperate loop to render "piggywoo" five times
