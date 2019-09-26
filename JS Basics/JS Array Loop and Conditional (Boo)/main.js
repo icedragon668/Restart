@@ -78,9 +78,11 @@ function testFive() {
     const number = prompt('How Many Students?');
     //prompt for that many names
     for (i=0; i<number; i++) {
-        studentListFive[i] = prompt(`Student's name? ${i+1} of ${studentListFive.length}`)
+        studentListFive[i] = prompt(`Student's name? ${i+1} of ${number}`)
     }
     //render all names
+    const studentListFiveString = studentListFive.join(", ")
+    alert(studentListFiveString)
     //render only names with an 'a'
 }
 
