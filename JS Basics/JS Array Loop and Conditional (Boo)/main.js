@@ -1,4 +1,4 @@
-// 7
+// 8
 
 function testOne() {
 
@@ -21,17 +21,18 @@ function testOne() {
 }
 
 function testTwo() {
-//array with 5 names
-const studentArray = [
-    'James 1',
-    'Fili 2',
-    'Drake 3',
-    'Hosa 4',
-    'Jilbean 5'
-];
-//promt for a name
-alert(studentArray)
-//alert true/false for student present
+    //array with 5 names
+    const studentArray = [
+        'James 1',
+        'Fili 2',
+        'Drake 3',
+        'Hosa 4',
+        'Jilbean 5'
+    ];
+    //promt for a name
+    const name = prompt('Which Student?');
+    //alert true/false for student present
+    alert(`${name} is in this class: ${nameBoo}`)
 }
 
 //loop to render 5-9
