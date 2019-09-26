@@ -31,6 +31,7 @@ function testTwo() {
     ];
     //promt for a name
     const name = prompt('Which Student?');
+    const nameBoo = studentArray.includes(name);
     //alert true/false for student present
     alert(`${name} is in this class: ${nameBoo}`)
 }
