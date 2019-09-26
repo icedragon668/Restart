@@ -1,4 +1,4 @@
-// 9
+// 10
 
 function testOne() {
 
@@ -37,12 +37,14 @@ function testTwo() {
 }
 
 function testThree() {
-//loop to render 5-9
-for (i=5; i<10; i++) {
-    alert(`from 5 to ${i} of 9`)
-}
-//seperate loop to render "piggywoo" five times
-//decrement operator to render 10-0
+    //loop to render 5-9
+    for (i=5; i<10; i++) {
+        alert(`from 5 to ${i} of 9`)
+    }
+    //seperate loop to render "piggywoo" five times
+    //there's a better way.. JSX maybe? look into it
+    //ie adding text to an alert (eg)
+    //decrement operator to render 10-0
 }
 
 //loop prompt 5 names
