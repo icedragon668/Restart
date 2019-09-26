@@ -72,12 +72,13 @@ function testFour() {
 function testFive() {
     //this is a better naming convention
     //consider cleaning this up
-    const studentsFive = [];
+    //done, but pretty unneeded
+    const studentListFive = [];
     //prompt for a number
     const number = prompt('How Many Students?');
     //prompt for that many names
     for (i=0; i<number; i++) {
-        
+        studentListFive[i] = prompt(`Student's name? ${i+1} of ${studentListFive.length}`)
     }
     //render all names
     //render only names with an 'a'
