@@ -1,4 +1,4 @@
-// 3
+// 4
 
 //empty array
 const newStudents = [];
@@ -10,8 +10,12 @@ for (i=0;i<5;i++) {
  //alert name 2
  alert(newStudents[1]);
  // NOTE: read up on new[tab] [const name = new type(arguments);]
+
 //prompt for index
+const index = prompt('Chose a number 1-5');
 //alert name at index
+alert(`${newStudents[index-1]}`)
+
 //array with 5 names
 //promt for a name
 //alert true/false for student present
