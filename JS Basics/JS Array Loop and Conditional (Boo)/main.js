@@ -97,5 +97,5 @@ function testFive() {
 }
 
     //add a boolean coercion to check for empty strings
-//>>add checks for numbers and strings after
+    //>>add checks for numbers and strings after
 

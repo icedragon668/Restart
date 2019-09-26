@@ -94,7 +94,7 @@ ToDo: Review Box-Sizing more closely
     It would be a good idea to develop a standard media query testing strategy
 -->
 
-! Todo: Better learn RegEx
+Todo: Better learn RegEx
 <!-- from JS Intro 24th 9 2019
     I'm okay with JS, but rusty with some of the basics. I'm looking forward to doing the JS30 challenge soon.
 -->
@@ -122,4 +122,9 @@ ToDo: read up on general display (and specifically table)
      the Kicking Ass with Display bookmark is awesome
 -->
 
-Next: unit02/day02
+Notice: Rabbit Holes
+<!-- from JS ACL 25th 9 2019
+    I could do with going back here, if only to touch up a couple spots
+    I'd like to add some verification, but i know i'll be doing that soon enough.
+    Some JSX and some RegEx are in order, as well as new (const name = new type(arguments)).
+-->
