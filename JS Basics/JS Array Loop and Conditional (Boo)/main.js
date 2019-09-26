@@ -1,4 +1,4 @@
-// 14
+// 15
 
 function testOne() {
 
@@ -64,17 +64,18 @@ function testFour() {
         const name = prompt('New Student Name?');
         //this feels like its backwards
         //apparently not
+        //push names into "studentList" array
         studentList[i] = name
     }
-    alert(studentList)
-    //push names into "studentList" array
     //render the five names
+    alert(studentList)
+}
 
     //prompt for a number
     //prompt for that many names
     //render all names
     //render only names with an 'a'
-}
+
 
 //add a boolean coercion to check for empty strings
 //add checks for numbers and strings after
