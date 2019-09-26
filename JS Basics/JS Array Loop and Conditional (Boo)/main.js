@@ -1,4 +1,4 @@
-// 8
+// 9
 
 function testOne() {
 
@@ -36,9 +36,11 @@ function testTwo() {
     alert(`${name} is in this class: ${nameBoo}`)
 }
 
+function testThree() {
 //loop to render 5-9
 //seperate loop to render "piggywoo" five times
 //decrement operator to render 10-0
+}
 
 //loop prompt 5 names
 //push names into "studentList" array
