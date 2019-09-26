@@ -1,8 +1,15 @@
-// 1
+// 3
 
 //empty array
+const newStudents = [];
 //prompt 5 names
-//alert name 2
+for (i=0;i<5;i++) {
+    const name = prompt(`Student Name? \n${i+1} of 5`);
+    newStudents.push(name);
+}
+ //alert name 2
+ alert(newStudents[1]);
+ // NOTE: read up on new[tab] [const name = new type(arguments);]
 //prompt for index
 //alert name at index
 //array with 5 names
@@ -21,3 +28,10 @@
 //prompt for that many names
 //render all names
 //render only names with an 'a'
+
+//add a boolean coercion to check for empty strings
+//add checks for numbers and strings after
+
+//initialize the array
+//arry.push(value)
+
