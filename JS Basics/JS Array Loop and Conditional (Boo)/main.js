@@ -72,15 +72,19 @@ function testFour() {
 }
 
 function testFive() {
+    //this is a better naming convention
+    //consider cleaning this up
+    const studentsFive;
     //prompt for a number
+    const number = prompt('How Many Students?');
     //prompt for that many names
+    for (i=0; i<number; i++) {
+        
+    }
     //render all names
     //render only names with an 'a'
 }
 
-//add a boolean coercion to check for empty strings
-//add checks for numbers and strings after
-
-//initialize the array
-//arry.push(value)
+    //add a boolean coercion to check for empty strings
+//>>add checks for numbers and strings after
 
