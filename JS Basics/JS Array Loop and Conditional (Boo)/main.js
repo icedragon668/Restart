@@ -1,4 +1,4 @@
-// 11
+// 12
 
 function testOne() {
 
@@ -46,9 +46,12 @@ function testThree() {
     //ie adding text to an alert (eg)
     for (let i = 0; i < 5; i++) {
         alert(`PIGGYWOO ${i+1} of 5`);
-        
     }
     //decrement operator to render 10-0
+    for (let i = 10; i > 0; i--) {
+        alert(`COUNTDOWN: ${i}`);
+        
+    }
 }
 
 //loop prompt 5 names
