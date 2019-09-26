@@ -1,4 +1,4 @@
-// 13
+// 14
 
 function testOne() {
 
@@ -58,14 +58,22 @@ function testThree() {
 }
 
 function testFour() {
-//loop prompt 5 names
-//push names into "studentList" array
-//render the five names
+    const studentList = []
+    //loop prompt 5 names
+    for (let i = 0; i < 5; i++) {
+        const name = prompt('New Student Name?');
+        //this feels like its backwards
+        //apparently not
+        studentList[i] = name
+    }
+    alert(studentList)
+    //push names into "studentList" array
+    //render the five names
 
-//prompt for a number
-//prompt for that many names
-//render all names
-//render only names with an 'a'
+    //prompt for a number
+    //prompt for that many names
+    //render all names
+    //render only names with an 'a'
 }
 
 //add a boolean coercion to check for empty strings
