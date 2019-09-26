@@ -38,6 +38,9 @@ function testTwo() {
 
 function testThree() {
 //loop to render 5-9
+for (i=5; i<10; i++) {
+    alert(`from 5 to ${i} of 9`)
+}
 //seperate loop to render "piggywoo" five times
 //decrement operator to render 10-0
 }
