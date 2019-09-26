@@ -85,8 +85,15 @@ function testFive() {
     alert(studentListFiveString)
     //render only names with an 'a'
     //this is returning a bool, run it through a loop :/
-    const studentListFiveStringA = studentListFiveString.includes("a")
-    alert(`These Students have an "A" in their name \n${studentListFiveStringA}`)
+    //of note: .join creates a array of each letter, so [James] becomes [J,a,m,e,s]
+    const studentListFiveA = []
+    for (i=0; i < studentListFive.length; i++) {
+        if (studentListFive[i].includes("a") || studentListFive[i].includes("A")) {
+            studentListFiveA.push(studentListFive[i])
+        }
+    }
+    // console.log(studentListFiveStringA)
+    alert(`These Students have an "A" in their name \n${studentListFiveA.join(", ")}`)
 }
 
     //add a boolean coercion to check for empty strings
