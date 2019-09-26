@@ -1,4 +1,4 @@
-// 12
+// 13
 
 function testOne() {
 
@@ -57,6 +57,7 @@ function testThree() {
     }
 }
 
+function testFour() {
 //loop prompt 5 names
 //push names into "studentList" array
 //render the five names
@@ -65,6 +66,7 @@ function testThree() {
 //prompt for that many names
 //render all names
 //render only names with an 'a'
+}
 
 //add a boolean coercion to check for empty strings
 //add checks for numbers and strings after
