@@ -84,6 +84,9 @@ function testFive() {
     const studentListFiveString = studentListFive.join(", ")
     alert(studentListFiveString)
     //render only names with an 'a'
+    //this is returning a bool, run it through a loop :/
+    const studentListFiveStringA = studentListFiveString.includes("a")
+    alert(`These Students have an "A" in their name \n${studentListFiveStringA}`)
 }
 
     //add a boolean coercion to check for empty strings
