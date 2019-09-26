@@ -1,4 +1,4 @@
-// 10
+// 11
 
 function testOne() {
 
@@ -44,6 +44,10 @@ function testThree() {
     //seperate loop to render "piggywoo" five times
     //there's a better way.. JSX maybe? look into it
     //ie adding text to an alert (eg)
+    for (let i = 0; i < 5; i++) {
+        alert(`PIGGYWOO ${i+1} of 5`);
+        
+    }
     //decrement operator to render 10-0
 }
 
