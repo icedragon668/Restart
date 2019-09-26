@@ -1,4 +1,6 @@
-// 4
+// 5
+
+function testOne() {
 
 //empty array
 const newStudents = [];
@@ -15,6 +17,7 @@ for (i=0;i<5;i++) {
 const index = prompt('Chose a number 1-5');
 //alert name at index
 alert(`${newStudents[index-1]}`)
+}
 
 //array with 5 names
 //promt for a name
