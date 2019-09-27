@@ -65,7 +65,19 @@ alert(formalName("Marty", "McFly"))
 alert(evenness(7) + ": 7 is even")
 /////////////////////////////////////////////////////////////////////////////
 
-/* Block 5
+// Block 5
+
+const arraySum = (array) => {
+    let sum;
+    for (i=0; i < array.length; i++){
+        sum += array[i]
+    }
+    return sum
+}
+
+
+
+/*
 You'll now do what's called `refactoring` which means to restructure existing code. 
 
 Open up `index.html` and create a new function that will accept an array as a paremeter.
