@@ -129,4 +129,10 @@ Notice: Rabbit Holes
     Some JSX and some RegEx are in order, as well as new (const name = new type(arguments)).
 -->
 
-next: unit02/day03
+<!-- 26 9 2019: Conditions and Functions
+    was a bit sloppy tonight
+    in part because i didnt take the time to do these the way i'd like to do them
+    but that is no excuse
+    not a great effort today
+-->
+next: unit02/day04
