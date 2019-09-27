@@ -41,19 +41,26 @@ multiplyFunc(number);
 //didn't, meh
 alert(answer);
 
-/* Block 4
-Open your editor and create a file named `function.js`.
+// Block 4
+// Open your editor and create a file named `function.js`.
 
-In this activity we will create 3 functions.
+// In this activity we will create 3 functions.
 
-1. Our first function will accept 1 parameter (a number) and multiply it by itself and return the new value.
-2. Our next function will accept 2 parameters (both strings: a first name and a last name) and return the name in the following format: lastName, firstName. 
-  * e.g. given the arguments ("Arya", "Stark"), the function should return "Stark, Arya".
-3. Our last function will accept 1 parameter (number) and return a boolean: true if the number is even, and false if the number is false.
+// 1. Our first function will accept 1 parameter (a number) and multiply it by itself and return the new value.
+let doubleNumber;
+const double = (doubleNumber) => doubleNumber*doubleNumber;
+// 2. Our next function will accept 2 parameters (both strings: a first name and a last name) and return the name in the following format: lastName, firstName. 
+let firstName="";
+let lastName="";
+const formalName = (firstName, lastName) => {lastName, firstName};
+//   * e.g. given the arguments ("Arya", "Stark"), the function should return "Stark, Arya".
+// 3. Our last function will accept 1 parameter (number) and return a boolean: true if the number is even, and false if the number is false.
+let evenOrOdd;
+const evenness = (evenOrOdd) => Boolean(evenOrOdd%2);
+// Be sure to call all of your functions after defining them and log all of your results in the console.
+console.log(double(3));
 
-Be sure to call all of your functions after defining them and log all of your results in the console.
-
-*/
+/////////////////////////////////////////////////////////////////////////////
 
 /* Block 5
 You'll now do what's called `refactoring` which means to restructure existing code. 
