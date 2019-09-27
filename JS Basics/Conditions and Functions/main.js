@@ -11,18 +11,23 @@ if (classList.includes(oldClass)) {
     classList[classList.indexOf(oldClass)] = newClass;
 }
 alert(classList)
-////////////////////////////////////////////////////////////////////////////////
-/* Block 2
-Prompt the user for a username and store the response in a variable.
 
-Prompt the user for a password and store this data.
-
-If the `username` equals "admin" and the `password` equals "1234", then alert "Welcome to the admin page".
-
-If the `username` equals "average joe" and the `password` equals "jsRocks", then alert "Welcome to the user landing page".
-
-Otherwise alert "Invalid username and password, refresh the page to try again"
-*/
+// Block 2
+// Prompt the user for a username and store the response in a variable.
+const user = prompt(`Enter your username`)
+// Prompt the user for a password and store this data.
+const pass = prompt(`Enter your password`)
+// If the `username` equals "admin" and the `password` equals "1234", then alert "Welcome to the admin page".
+if (user === "admin" && pass === "1234") {
+    alert('Welcome to the admin page')
+// If the `username` equals "average joe" and the `password` equals "jsRocks", then alert "Welcome to the user landing page".
+} else if (user === "joe" && pass === "jsRocks") {
+    alert('Welcome to the user landing page');
+} else {
+// Otherwise alert "Invalid username and password, refresh the page to try again"
+    alert('Invalid username and password, refresh the page to try again.')
+}
+/////////////////////////////////////////////////////////////////////
 
 /* Block 3
 Start by creating a new function called `multiplyFunc`.
