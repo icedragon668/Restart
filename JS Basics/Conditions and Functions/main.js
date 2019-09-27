@@ -1,17 +1,17 @@
 //Block 1
 const classList = ['Math', 'Science', 'English', 'Music', 'Intro to Programming', 'Basketweaving'];
-/*
-Using the given `classList` array: 
 
-1. Prompt the user for the name of a class they would like to update.
-2. Prompt the user for a new class name.
-3. Replace the old class name with the new one.
-
-## Challenge:
-
-Do the above without writing a for loop.
-*/
-
+// 1. Prompt the user for the name of a class they would like to update.
+const oldClass = prompt(`Which class would you like to replace? \n${classList}`)
+// 2. Prompt the user for a new class name.
+const newClass = prompt('What class would you like to take instead?')
+// 3. Replace the old class name with the new one.
+// Do the above without writing a for loop.
+if (classList.includes(oldClass)) {
+    classList[classList.indexOf(oldClass)] = newClass;
+}
+alert(classList)
+////////////////////////////////////////////////////////////////////////////////
 /* Block 2
 Prompt the user for a username and store the response in a variable.
 
