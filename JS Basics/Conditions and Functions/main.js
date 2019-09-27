@@ -27,21 +27,24 @@ if (user === "admin" && pass === "1234") {
 // Otherwise alert "Invalid username and password, refresh the page to try again"
     alert('Invalid username and password, refresh the page to try again.')
 }
-/////////////////////////////////////////////////////////////////////
 
-/* Block 3
-Start by creating a new function called `multiplyFunc`.
+// Block 3
+// Start by creating a new function called `multiplyFunc`.
+let answer;
+const multiplyFunc = function (input) {answer = input * 3}
+let number = prompt('What would you like to multiply by 3?')
+multiplyFunc(number);
+alert(answer);
+// `multiplyFunc` should take in one parameter. 
 
-`multiplyFunc` should take in one parameter. 
+// Within the code block, you should simply console log out the parameter.
 
-Within the code block, you should simply console log out the parameter.
+// Finally, call your function passing in any argument you wish.
 
-Finally, call your function passing in any argument you wish.
+// ## Challenge
 
-## Challenge
-
-Re-write the `multiplyFunc` so that it will console log the taken parameter multiplied by `3`.
-*/
+// Re-write the `multiplyFunc` so that it will console log the taken parameter multiplied by `3`.
+////////////////////////////////////////////////////////////////////////
 
 /* Block 4
 Open your editor and create a file named `function.js`.
