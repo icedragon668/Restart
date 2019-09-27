@@ -56,11 +56,12 @@ const formalName = (firstName, lastName) => String(lastName + ", " + firstName);
 //   * e.g. given the arguments ("Arya", "Stark"), the function should return "Stark, Arya".
 // 3. Our last function will accept 1 parameter (number) and return a boolean: true if the number is even, and false if the number is false.
 let evenOrOdd;
-const evenness = (evenOrOdd) => Boolean(evenOrOdd%2);
+const evenness = (evenOrOdd) => Boolean(!evenOrOdd%2);
 // Be sure to call all of your functions after defining them and log all of your results in the console.
 alert(double(3) + " is 3 doubled.");
 //>>>> I am unhappy with my commit messages tonight >.<
 alert(formalName("Marty", "McFly"))
+//well, that didn't go as planned. forgot that modulo of even is 0/false >.<
 alert(evenness(7) + ": 7 is even")
 /////////////////////////////////////////////////////////////////////////////
 
