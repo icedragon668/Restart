@@ -25,3 +25,17 @@ If the `username` equals "average joe" and the `password` equals "jsRocks", then
 
 Otherwise alert "Invalid username and password, refresh the page to try again"
 */
+
+/* Block 3
+Start by creating a new function called `multiplyFunc`.
+
+`multiplyFunc` should take in one parameter. 
+
+Within the code block, you should simply console log out the parameter.
+
+Finally, call your function passing in any argument you wish.
+
+## Challenge
+
+Re-write the `multiplyFunc` so that it will console log the taken parameter multiplied by `3`.
+*/
