@@ -83,6 +83,10 @@ const arraySum = (array) => {
 }
 
 alert(arraySum(numList1))
+alert(arraySum(numList2))
+alert(arraySum(numList3))
+alert(arraySum(numList4))
+alert(arraySum(numList5))
 
 /*
 You'll now do what's called `refactoring` which means to restructure existing code. 
