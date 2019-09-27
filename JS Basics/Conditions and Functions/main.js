@@ -81,7 +81,7 @@ const arraySum = (array) => {
     return sum
 }
 
-
+alert(arraySum(numList1))
 
 /*
 You'll now do what's called `refactoring` which means to restructure existing code. 
