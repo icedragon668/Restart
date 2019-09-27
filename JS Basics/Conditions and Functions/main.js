@@ -61,6 +61,7 @@ const evenness = (evenOrOdd) => Boolean(evenOrOdd%2);
 alert(double(3) + " is 3 doubled.");
 //>>>> I am unhappy with my commit messages tonight >.<
 alert(formalName("Marty", "McFly"))
+alert(evenness(7) + ": 7 is even")
 /////////////////////////////////////////////////////////////////////////////
 
 /* Block 5
