@@ -74,7 +74,8 @@ const numList4 = [9, 6, 3, 2, 1, 6, 7, 8, 8, 7];
 const numList5 = [4.2, 5.1, 3, 0, 0, 453, 2.43];
 
 const arraySum = (array) => {
-    let sum;
+    //oops, needed to initialize sum with 0
+    let sum = 0;
     for (i=0; i < array.length; i++){
         sum += array[i]
     }
