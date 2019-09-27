@@ -58,8 +58,7 @@ const formalName = (firstName, lastName) => {lastName, firstName};
 let evenOrOdd;
 const evenness = (evenOrOdd) => Boolean(evenOrOdd%2);
 // Be sure to call all of your functions after defining them and log all of your results in the console.
-console.log(double(3));
-
+alert(double(3) + "is 3 doubled.");
 /////////////////////////////////////////////////////////////////////////////
 
 /* Block 5
