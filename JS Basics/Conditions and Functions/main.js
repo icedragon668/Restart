@@ -52,13 +52,15 @@ const double = (doubleNumber) => doubleNumber*doubleNumber;
 // 2. Our next function will accept 2 parameters (both strings: a first name and a last name) and return the name in the following format: lastName, firstName. 
 let firstName="";
 let lastName="";
-const formalName = (firstName, lastName) => {lastName, firstName};
+const formalName = (firstName, lastName) => String(lastName + ", " + firstName);
 //   * e.g. given the arguments ("Arya", "Stark"), the function should return "Stark, Arya".
 // 3. Our last function will accept 1 parameter (number) and return a boolean: true if the number is even, and false if the number is false.
 let evenOrOdd;
 const evenness = (evenOrOdd) => Boolean(evenOrOdd%2);
 // Be sure to call all of your functions after defining them and log all of your results in the console.
-alert(double(3) + "is 3 doubled.");
+alert(double(3) + " is 3 doubled.");
+//>>>> I am unhappy with my commit messages tonight >.<
+alert(formalName("Marty", "McFly"))
 /////////////////////////////////////////////////////////////////////////////
 
 /* Block 5
