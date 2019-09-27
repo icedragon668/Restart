@@ -31,20 +31,15 @@ if (user === "admin" && pass === "1234") {
 // Block 3
 // Start by creating a new function called `multiplyFunc`.
 let answer;
+// `multiplyFunc` should take in one parameter. 
+// Re-write the `multiplyFunc` so that it will console log the taken parameter multiplied by `3`.
 const multiplyFunc = function (input) {answer = input * 3}
 let number = prompt('What would you like to multiply by 3?')
-multiplyFunc(number);
-alert(answer);
-// `multiplyFunc` should take in one parameter. 
-
-// Within the code block, you should simply console log out the parameter.
-
 // Finally, call your function passing in any argument you wish.
-
-// ## Challenge
-
-// Re-write the `multiplyFunc` so that it will console log the taken parameter multiplied by `3`.
-////////////////////////////////////////////////////////////////////////
+multiplyFunc(number);
+// Within the code block, you should simply console log out the parameter.
+//didn't, meh
+alert(answer);
 
 /* Block 4
 Open your editor and create a file named `function.js`.
