@@ -29,11 +29,14 @@ firstLetter(2)
 fToC(32)
 
 const contacts = {
-    dan = "123-4567",
-    bob = "847-5826",
-    sam = "894-2203"
+    //forgot, it's : not = >.<
+    dan: "123-4567",
+    bob: "847-5826",
+    sam: "894-2203"
 }
 console.log(contacts.bob)
 const prop = prompt("Who's number do you want?");
 //this isn't right, is it?
-console.log(contacts.prop)
+//it needs bracket notation. not dot syntax >.<
+//feeling a little sluggish remembering tonight
+console.log(contacts[prop])
