@@ -19,12 +19,18 @@ const greaterThan = function (a,b) {
 const firstLetter = function(a) {console.log(String(a).slice(0,1))}
 const fToC = function(a) {console.log((a-32)/1.8)}
 
-const testArray = [2,3]
 multiply(2,3)
 add(2,3)
 concat(2,3)
 fiveLong(2)
-sumArray(testArray)
+sumArray([2,3])
 greaterThan(2,3)
 firstLetter(2)
-fToC(2)
+fToC(32)
+
+const contacts = {
+    dan = "123-4567",
+    bob = "847-5826",
+    sam = "894-2203"
+}
+console.log(contacts.bob)
