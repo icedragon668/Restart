@@ -16,7 +16,7 @@ const greaterThan = function (a,b) {
          console.log(b)
         }
 }
-const firstLetter = function(a) {console.log(a.slice(0,1))}
+const firstLetter = function(a) {console.log(String(a).slice(0,1))}
 const fToC = function(a) {console.log((a-32)/1.8)}
 
 const testArray = [2,3]
