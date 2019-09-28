@@ -17,3 +17,4 @@ const greaterThan = function (a,b) {
         }
 }
 const firstLetter = function(a) {console.log(a.slice(0,1))}
+const fToC = function(a) {console.log((a-32)/1.8)}
