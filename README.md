@@ -138,5 +138,8 @@ Notice: Rabbit Holes
 
 <!-- 27 9 2019: Objects and DOM
     i did not finish the project like i wanted to, will come back to this
+    a bit disappointed with myself tonight, again?
+    i need to start earlier, i think that is the main difference from the past two days
+    but I hit may goals... so it's still good. i just have higher expectations of myself
 -->
 Next: unit02/day04 cont.
