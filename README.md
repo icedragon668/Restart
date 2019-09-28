@@ -139,4 +139,4 @@ Notice: Rabbit Holes
 <!-- 27 9 2019: Objects and DOM
     i did not finish the project like i wanted to, will come back to this
 -->
-//make a function to tell which of two values is greater
+Next: unit02/day04 cont.
