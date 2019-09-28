@@ -59,3 +59,5 @@ const book = {
         }
 }
 console.log(book.dan.address)
+//it occurs to me that i have been extremely poor in my documentation tonight
+//like i mentioned before; sluggish
