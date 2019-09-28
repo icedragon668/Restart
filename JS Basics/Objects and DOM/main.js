@@ -40,3 +40,22 @@ const prop = prompt("Who's number do you want?");
 //it needs bracket notation. not dot syntax >.<
 //feeling a little sluggish remembering tonight
 console.log(contacts[prop])
+
+const book = {
+    dan: {
+        number: "134-8847",
+        address: "1234 gggd St.",
+        state: "AH"
+        },
+    bob: {
+        number: "836-9934",
+        address: "1231 mfjfj Ave.",
+        state: "AH"
+        },
+    sam: {
+        number: "834-9984",
+        address: "77 avav Ln.",
+        state: "AH"
+        }
+}
+console.log(book.dan.address)
