@@ -1,7 +1,16 @@
+//make a function to multiply to numbers
 const multiply = function (a,b) {console.log(a*b)}
+
+//make a function to add to numbers
 const add = function (a,b) {console.log(a+b)}
+
+//make a function to concat two values
 const concat = function(a,b) {console.log(String(a)+String(b))}
+
+//make a function it test in the value is longer than 5
 const fiveLong = function(a) {console.log(Boolean(a.length>5))}
+
+//make a function to sum an array
 const sumArray = function(a) {
     let sum = 0;
     for (i=0; i < a.length; i++) {
@@ -9,6 +18,8 @@ const sumArray = function(a) {
     }
     console.log(sum)
 }
+
+//make a function to tell which of two values is greater
 const greaterThan = function (a,b) {
     if (a>b) {
         console.log(a)
@@ -16,9 +27,14 @@ const greaterThan = function (a,b) {
          console.log(b)
         }
 }
+
+//make a function to display the first character in the given value
 const firstLetter = function(a) {console.log(String(a).slice(0,1))}
+
+//make a function to convet a number from F to C
 const fToC = function(a) {console.log((a-32)/1.8)}
 
+//runs the above functions
 multiply(2,3)
 add(2,3)
 concat(2,3)
