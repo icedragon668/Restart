@@ -44,19 +44,26 @@ greaterThan(2,3)
 firstLetter(2)
 fToC(32)
 
+//create an object with names and phone numbers
 const contacts = {
     //forgot, it's : not = >.<
     dan: "123-4567",
     bob: "847-5826",
     sam: "894-2203"
 }
+//log a number
 console.log(contacts.bob)
+
+//prompt for a name to log the number associated
 const prop = prompt("Who's number do you want?");
+
+//log the number
 //this isn't right, is it?
 //it needs bracket notation. not dot syntax >.<
 //feeling a little sluggish remembering tonight
 console.log(contacts[prop])
 
+//make a nested object
 const book = {
     dan: {
         number: "134-8847",
@@ -74,6 +81,9 @@ const book = {
         state: "AH"
         }
 }
+//log an address from the object
 console.log(book.dan.address)
+
 //it occurs to me that i have been extremely poor in my documentation tonight
 //like i mentioned before; sluggish
+//edit: went back and added notation
