@@ -16,3 +16,4 @@ const greaterThan = function (a,b) {
          console.log(b)
         }
 }
+const firstLetter = function(a) {console.log(a.slice(0,1))}
