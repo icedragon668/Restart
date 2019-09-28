@@ -9,3 +9,10 @@ const sumArray = function(a) {
     }
     console.log(sum)
 }
+const greaterThan = function (a,b) {
+    if (a>b) {
+        console.log(a)
+    } else {
+         console.log(b)
+        }
+}
