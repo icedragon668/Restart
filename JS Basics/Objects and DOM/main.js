@@ -34,3 +34,6 @@ const contacts = {
     sam = "894-2203"
 }
 console.log(contacts.bob)
+const prop = prompt("Who's number do you want?");
+//this isn't right, is it?
+console.log(contacts.prop)
