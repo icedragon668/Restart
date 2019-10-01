@@ -87,3 +87,21 @@ console.log(book.dan.address)
 //it occurs to me that i have been extremely poor in my documentation tonight
 //like i mentioned before; sluggish
 //edit: went back and added notation
+
+/////////NEXT DAY CODE////////
+//Block 1 Instructions//
+/*
+1: Make feed, sleep, bark methods on dog object
+2: When bark is called, dog sound property is called
+3: When sleep is called, dog isSleepy is set to false and isHungry is set true
+   use 'this'. alert user to what has happened
+4: When feed is called, dog isSleepy is set to true and isHungry is set false
+   use 'this'. alert user to what has happened
+
+//Block 2 Instructions//
+General - Prompt for info and render it to DOM
+1: name [h1, one word only]
+2: color [h2, change background-color]
+3: season [h2, must be a season]
+4: interests [h2, must be a list of 2 or more]
+*/
