@@ -95,12 +95,17 @@ const dog = {
     isHungry: true,
     sound: "Woof!",
     name: "Spot",
-    feed: function(){},
+    feed: function(){
+        alert(`Feeding ${this.name}...`);
+        this.isHungry = false;
+        this.isSleepy = true;
+        alert(`${this.name} is full and sleepy`)
+    },
     sleep: function(){
-        alert(`${this.name} is falling asleep...`)
+        alert(`${this.name} is falling asleep...`);
         this.isSleepy = false;
         this.isHungry = true;
-        alert(`${this.name} woke up hungry!`)
+        alert(`${this.name} woke up hungry!`);
 
     },
     bark: function(){
