@@ -125,10 +125,19 @@ let interests = prompt(`
     What are your interests?
     \nSeperate items with a comma (,)
     \neg: "Hiking, Swimming, Fishing, etc.`);
+//I'd love to get away from alerts AND prompts lol
+//i feel... noobish
 
 document.querySelector('#name').innerText = name;
 document.querySelector('#color').innerText = color;
 document.querySelector('#season').innerText = season;
+
+interests = interests.split(",");
+let interestList = '';
+for (i = 0; i < interests.length; i++) {
+    interestList += `<li>${interests[i]}</li>`
+}
+document.querySelector('#interests').innerHTML = interestList
 /*
 General - Prompt for info and render it to DOM
 [bonus action]
