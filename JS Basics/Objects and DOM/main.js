@@ -88,8 +88,8 @@ console.log(book.dan.address)
 //like i mentioned before; sluggish
 //edit: went back and added notation
 
-/////////NEXT DAY CODE//////// 3
-//Block 1 Instructions//
+/////////NEXT DAY CODE////////
+//Block 1//
 const dog = {
     isSleepy: false,
     isHungry: true,
@@ -112,14 +112,15 @@ const dog = {
         alert(this.sound);
     }
 }
-/*
-3: When sleep is called, dog isSleepy is set to false and isHungry is set true
-   use 'this'. alert user to what has happened
-4: When feed is called, dog isSleepy is set to true and isHungry is set false
-   use 'this'. alert user to what has happened
+dog.bark();
+dog.feed();
+dog.sleep();
+//I probably SHOULD be doing these as DOM renders not alerts :p
 
 //Block 2 Instructions//
+/*
 General - Prompt for info and render it to DOM
+[bonus action]
 1: name [h1, one word only]
 2: color [h2, change background-color]
 3: season [h2, must be a season]
