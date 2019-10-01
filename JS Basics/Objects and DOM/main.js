@@ -96,14 +96,18 @@ const dog = {
     sound: "Woof!",
     name: "Spot",
     feed: function(){},
-    sleep: function(){},
+    sleep: function(){
+        alert(`${this.name} is falling asleep...`)
+        this.isSleepy = false;
+        this.isHungry = true;
+        alert(`${this.name} woke up hungry!`)
+
+    },
     bark: function(){
         alert(this.sound);
     }
 }
 /*
-1: Make feed, sleep, bark methods on dog object
-2: When bark is called, dog sound property is called
 3: When sleep is called, dog isSleepy is set to false and isHungry is set true
    use 'this'. alert user to what has happened
 4: When feed is called, dog isSleepy is set to true and isHungry is set false
