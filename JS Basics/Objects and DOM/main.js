@@ -97,7 +97,9 @@ const dog = {
     name: "Spot",
     feed: function(){},
     sleep: function(){},
-    bark: function(){}
+    bark: function(){
+        alert(this.sound);
+    }
 }
 /*
 1: Make feed, sleep, bark methods on dog object
