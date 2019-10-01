@@ -88,13 +88,16 @@ console.log(book.dan.address)
 //like i mentioned before; sluggish
 //edit: went back and added notation
 
-/////////NEXT DAY CODE////////
+/////////NEXT DAY CODE//////// 3
 //Block 1 Instructions//
 const dog = {
     isSleepy: false,
     isHungry: true,
     sound: "Woof!",
     name: "Spot",
+    feed: function(){},
+    sleep: function(){},
+    bark: function(){}
 }
 /*
 1: Make feed, sleep, bark methods on dog object
