@@ -147,3 +147,19 @@ General - Prompt for info and render it to DOM
 3: season
 4: interests
 */
+///Extra Effort!///
+function update() {
+    const name = document.getElementById('#nameIn')
+
+    document.querySelector('#name').innerText = name;
+    document.querySelector('#color').innerText = color;
+    document.querySelector('#season').innerText = season;
+    
+    interests = interests.split(",");
+    let interestList = '';
+    for (i = 0; i < interests.length; i++) {
+        interestList += `<li>${interests[i]}</li>`
+    }
+    document.querySelector('#interests').innerHTML = interestList
+        
+}
