@@ -150,14 +150,15 @@ General - Prompt for info and render it to DOM
 4: interests
 */
 ///Extra Effort!///
-console.log(document.getElementById("#update"))
-// .addEventListener("click", function(event){
-    // event.preventDefault()
-//   });
-const update = function() {
 
-    // const name = document.getElementById('#nameIn').innerText
-    alert("here")
+//it appears that I really need to study this again >.<
+// document.getElementById("#updateForm").addEventListener("click", function(event){
+//     event.preventDefault()
+// });
+// const update = function() {
+
+//     // const name = document.getElementById('#nameIn').innerText
+//     alert("here")
 
     // document.querySelector('#name').innerText = name;
     // document.querySelector('#color').innerText = color;
