@@ -125,8 +125,9 @@ let interests = prompt(`
     What are your interests?
     \nSeperate items with a comma (,)
     \neg: "Hiking, Swimming, Fishing, etc.`);
-    
+
 document.querySelector('#name').innerText = name;
+document.querySelector('#color').innerText = color;
 /*
 General - Prompt for info and render it to DOM
 [bonus action]
