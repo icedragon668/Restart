@@ -118,6 +118,13 @@ dog.sleep();
 //I probably SHOULD be doing these as DOM renders not alerts :p
 
 //Block 2 Instructions//
+const name = prompt(`What's your name?`);
+const color = prompt(`What's your favorite color?`);
+const season = prompt(`What's you favorite season?`);
+let interests = prompt(`
+    What are your interests?
+    \nSeperate items with a comma (,)
+    \neg: "Hiking, Swimming, Fishing, etc.`);
 /*
 General - Prompt for info and render it to DOM
 [bonus action]
