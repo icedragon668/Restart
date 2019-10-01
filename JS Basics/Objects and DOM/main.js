@@ -171,4 +171,4 @@ General - Prompt for info and render it to DOM
     // }
     // document.querySelector('#interests').innerHTML = interestList
         
-}
+// }
