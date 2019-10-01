@@ -1,4 +1,4 @@
-/*
+
 //make a function to multiply to numbers
 const multiply = function (a,b) {console.log(a*b)}
 
@@ -140,7 +140,7 @@ for (i = 0; i < interests.length; i++) {
     interestList += `<li>${interests[i]}</li>`
 }
 document.querySelector('#interests').innerHTML = interestList
-*/
+
 /*
 //Block 2 Instructions//
 General - Prompt for info and render it to DOM
