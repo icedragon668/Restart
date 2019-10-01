@@ -142,4 +142,10 @@ Notice: Rabbit Holes
     i need to start earlier, i think that is the main difference from the past two days
     but I hit may goals... so it's still good. i just have higher expectations of myself
 -->
-Next: unit02/day04 cont.
+
+<!-- 30 9 2019: Objects and DOM, day 2
+    Not on my list for today, but I still feel a little bad that I couldn't pull from forms from memory :p
+    looking forward to stopping alert/prompt and doing DOM manipulation
+    All in all, a fine day. just not above and beyond
+-->
+Next: unit02/day05
