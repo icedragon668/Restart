@@ -116,8 +116,9 @@ dog.bark();
 dog.feed();
 dog.sleep();
 //I probably SHOULD be doing these as DOM renders not alerts :p
+//just noticed I cut out the goals >.<
 
-//Block 2 Instructions//
+//Block 2//
 const name = prompt(`What's your name?`);
 const color = prompt(`What's your favorite color?`);
 const season = prompt(`What's you favorite season?`);
@@ -139,10 +140,10 @@ for (i = 0; i < interests.length; i++) {
 }
 document.querySelector('#interests').innerHTML = interestList
 /*
+//Block 2 Instructions//
 General - Prompt for info and render it to DOM
-[bonus action]
-1: name [h1, one word only]
-2: color [h2, change background-color]
-3: season [h2, must be a season]
-4: interests [h2, must be a list of 2 or more]
+1: name 
+2: color
+3: season
+4: interests
 */
