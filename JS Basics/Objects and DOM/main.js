@@ -1,3 +1,4 @@
+/*
 //make a function to multiply to numbers
 const multiply = function (a,b) {console.log(a*b)}
 
@@ -139,6 +140,7 @@ for (i = 0; i < interests.length; i++) {
     interestList += `<li>${interests[i]}</li>`
 }
 document.querySelector('#interests').innerHTML = interestList
+*/
 /*
 //Block 2 Instructions//
 General - Prompt for info and render it to DOM
@@ -148,18 +150,24 @@ General - Prompt for info and render it to DOM
 4: interests
 */
 ///Extra Effort!///
-function update() {
-    const name = document.getElementById('#nameIn')
+console.log(document.getElementById("#update"))
+// .addEventListener("click", function(event){
+    // event.preventDefault()
+//   });
+const update = function() {
 
-    document.querySelector('#name').innerText = name;
-    document.querySelector('#color').innerText = color;
-    document.querySelector('#season').innerText = season;
+    // const name = document.getElementById('#nameIn').innerText
+    alert("here")
+
+    // document.querySelector('#name').innerText = name;
+    // document.querySelector('#color').innerText = color;
+    // document.querySelector('#season').innerText = season;
     
-    interests = interests.split(",");
-    let interestList = '';
-    for (i = 0; i < interests.length; i++) {
-        interestList += `<li>${interests[i]}</li>`
-    }
-    document.querySelector('#interests').innerHTML = interestList
+    // interests = interests.split(",");
+    // let interestList = '';
+    // for (i = 0; i < interests.length; i++) {
+    //     interestList += `<li>${interests[i]}</li>`
+    // }
+    // document.querySelector('#interests').innerHTML = interestList
         
 }
