@@ -128,6 +128,7 @@ let interests = prompt(`
 
 document.querySelector('#name').innerText = name;
 document.querySelector('#color').innerText = color;
+document.querySelector('#season').innerText = season;
 /*
 General - Prompt for info and render it to DOM
 [bonus action]
