@@ -90,6 +90,12 @@ console.log(book.dan.address)
 
 /////////NEXT DAY CODE////////
 //Block 1 Instructions//
+const dog = {
+    isSleepy: false,
+    isHungry: true,
+    sound: "Woof!",
+    name: "Spot",
+}
 /*
 1: Make feed, sleep, bark methods on dog object
 2: When bark is called, dog sound property is called
