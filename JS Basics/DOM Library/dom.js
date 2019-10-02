@@ -45,8 +45,13 @@ const $ = function () {
             nodeList[i].innerHTML = '';
         }
     }
+    //append: adds to .content (add, NOT replace)
+    const append = function (c) {
+        for (i = 0; i < nodeList.length; i++) {
+            nodeList[i].innerHTML += c;
+        }
+    }
     /*
-        append: adds to .content (add, NOT replace)
         prepend: adds to the begining of .content
         val: takes optional string, or gets the value of an input
           ??? phrasing
@@ -61,5 +66,6 @@ const $ = function () {
         removeClass: removeClass,
         toggleClass: toggleClass,
         empty: empty,
+        append: append,
     };
 }

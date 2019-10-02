@@ -15,3 +15,6 @@ $().removeClass('blue');
 $().toggleClass('green')
 $().empty()
 
+$().text('Starter')
+$().append(', Appended')
+
