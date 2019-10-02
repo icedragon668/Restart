@@ -33,8 +33,13 @@ const $ = function () {
             nodeList[i].classList.remove(c)
         }
     }
+    //toggleClass: add/remove a class from .content
+    const toggleClass = function (c) {
+        for (i = 0; i < nodeList.length; i++) {
+            nodeList[i].classList.toggle(c)
+        }
+    }
     /*
-        toggleClass: add/remove a class from .content
         empty: empties .content's innerHTML
         append: adds to .content (add, NOT replace)
         prepend: adds to the begining of .content
@@ -49,5 +54,6 @@ const $ = function () {
         html: html,
         addClass: addClass,
         removeClass: removeClass,
+        toggleClass: toggleClass,
     };
 }
