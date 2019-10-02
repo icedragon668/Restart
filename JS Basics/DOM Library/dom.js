@@ -20,8 +20,14 @@ const $ = function () {
   }
   //Block 3//
   //add many functions
+  
+  //addClass: adds a class to .content
+  const addClass = function (c){
+      for (i=0; i<nodeList.length; i++) {
+          nodeList[i].classList.add(c)
+      }
+  }
   /*
-    addClass: adds a class to .content
     removeClass: removes a class from .content
     toggleClass: add/remove a class from .content
     empty: empties .content's innerHTML
@@ -36,5 +42,6 @@ const $ = function () {
     return {
     text: text,
     html: html,
+    addClass: addClass,
   };
 }
