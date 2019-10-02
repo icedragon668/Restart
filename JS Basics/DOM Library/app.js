@@ -1,1 +1,1 @@
-$().text('This is added text');
+$().text('This is added text, boing');
