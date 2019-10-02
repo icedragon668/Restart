@@ -1,6 +1,7 @@
 $().text('This is added text');
-$().html('<p>New Paragraph</p><p>Second Paragraph</p>')
-$().addClass('blue')
+$().html('<p>New Paragraph</p><p>Second Paragraph</p>');
+$().addClass('blue');
+$().removeClass('blue');
 
 /*
 what the $%^& was that??
