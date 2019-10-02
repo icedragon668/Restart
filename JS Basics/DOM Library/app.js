@@ -24,3 +24,11 @@ $('.content').val(5)
 
 //reads that value
 console.log($('.content').val())
+
+//creates a function for "on" to use
+const sayHi = function () {
+    console.log('Hi')
+}
+
+//runs "on" on click
+$('.content').on('click', sayHi)

@@ -13,6 +13,7 @@ const $ = function (s) {
 
     //Block 2//
     //add 2 <p> to each .content
+    //begin using "c" for content
     const html = function (c) {
         for (i = 0; i < nodeList.length; i++) {
             nodeList[i].innerHTML = c;
@@ -66,13 +67,15 @@ const $ = function (s) {
             nodeList[0].value = c
         }
     }
-    /*
-        val: takes optional string, or gets the value of an input
-          ??? phrasing
-        on: takes a string and function: the string represents an event, the function an callback
-      */
+    //on: takes a string and function: the string represents an event, the function an callback
+    //using "e" for event, and "cb" for callback
+    const on = function (e, cb) {
+        for (i = 0; i < nodeList.length; i++) {
+            nodeList[i].addEventListener(e, cb);
+        }
+    }
 
-    //allows use of text()
+    //allows use of functions
     return {
         text: text,
         html: html,
@@ -83,5 +86,6 @@ const $ = function (s) {
         append: append,
         prepend: prepend,
         val: val,
+        on: on
     };
 }
