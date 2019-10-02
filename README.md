@@ -148,4 +148,11 @@ Notice: Rabbit Holes
     looking forward to stopping alert/prompt and doing DOM manipulation
     All in all, a fine day. just not above and beyond
 -->
-Next: unit02/day05
+
+<!-- 1 10 2019: DOM Library
+    this was a pretty good run, save that nonsense on the first part...
+    I feel much more confident here. hopefull, when i get to jQuery, i'll be able to skip it and use vanilla
+    (or rather vanilla THEN jQuery)
+
+-->
+Next: unit02/day06
