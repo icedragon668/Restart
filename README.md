@@ -153,6 +153,6 @@ Notice: Rabbit Holes
     this was a pretty good run, save that nonsense on the first part...
     I feel much more confident here. hopefull, when i get to jQuery, i'll be able to skip it and use vanilla
     (or rather vanilla THEN jQuery)
-
+      still getting used to 'git commit -am' lol
 -->
 Next: unit02/day06
