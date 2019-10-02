@@ -1,4 +1,5 @@
 $().text('This is added text');
+$().html('<p>New Paragraph</p><p>Second Paragraph</p>')
 
 /*
 what the $%^& was that??
