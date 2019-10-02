@@ -51,8 +51,13 @@ const $ = function () {
             nodeList[i].innerHTML += c;
         }
     }
+    //prepend: adds to the begining of .content
+    const prepend = function (c) {
+        for (i = 0; i < nodeList.length; i++) {
+            nodeList[i].innerHTML = c+nodeList[i].innerHTML;
+        }
+    }
     /*
-        prepend: adds to the begining of .content
         val: takes optional string, or gets the value of an input
           ??? phrasing
         on: takes a string and function: the string represents an event, the function an callback
@@ -67,5 +72,6 @@ const $ = function () {
         toggleClass: toggleClass,
         empty: empty,
         append: append,
+        prepend: prepend,
     };
 }
