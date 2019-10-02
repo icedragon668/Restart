@@ -1,8 +1,8 @@
-const $ = function () {
+const $ = function (s) {
     // Block 1 //
     //select every "content" id and replace the text
     //select every "content" class
-    const nodeList = document.querySelectorAll('.content');
+    const nodeList = document.querySelectorAll(s);
 
     //sets innerText to text(content) for .content class elements
     const text = function (content) {
