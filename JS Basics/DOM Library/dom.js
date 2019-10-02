@@ -18,6 +18,19 @@ const $ = function () {
           nodeList[i].innerHTML = c;
       }
   }
+  //Block 3//
+  //add many functions
+  /*
+    addClass: adds a class to .content
+    removeClass: removes a class from .content
+    toggleClass: add/remove a class from .content
+    empty: empties .content's innerHTML
+    append: adds to .content (add, NOT replace)
+    prepend: adds to the begining of .content
+    val: takes optional string, or gets the value of an input
+      ??? phrasing
+    on: takes a string and function: the string represents an event, the function an callback
+  */
 
     //allows use of text()
     return {
