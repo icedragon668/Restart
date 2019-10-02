@@ -19,3 +19,8 @@ $('.content').text('Starter')
 $('.content').append(', Appended')
 $('.content').prepend('Prepended, ')
 
+//sets a value
+$('.content').val(5)
+
+//reads that value
+console.log($('.content').val())

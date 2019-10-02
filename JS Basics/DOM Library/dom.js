@@ -57,6 +57,15 @@ const $ = function (s) {
             nodeList[i].innerHTML = c+nodeList[i].innerHTML;
         }
     }
+
+    //if val(), then returns a value, if val(c), sets value to c
+    const val = function (c) {
+        if(c===undefined){
+            return nodeList[0].value
+        } else {
+            nodeList[0].value = c
+        }
+    }
     /*
         val: takes optional string, or gets the value of an input
           ??? phrasing
@@ -73,5 +82,6 @@ const $ = function (s) {
         empty: empty,
         append: append,
         prepend: prepend,
+        val: val,
     };
 }
