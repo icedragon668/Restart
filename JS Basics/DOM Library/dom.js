@@ -39,8 +39,13 @@ const $ = function () {
             nodeList[i].classList.toggle(c)
         }
     }
+    //empty: empties .content's innerHTML
+    const empty = function () {
+        for (i = 0; i < nodeList.length; i++) {
+            nodeList[i].innerHTML = '';
+        }
+    }
     /*
-        empty: empties .content's innerHTML
         append: adds to .content (add, NOT replace)
         prepend: adds to the begining of .content
         val: takes optional string, or gets the value of an input
@@ -55,5 +60,6 @@ const $ = function () {
         addClass: addClass,
         removeClass: removeClass,
         toggleClass: toggleClass,
+        empty: empty,
     };
 }
