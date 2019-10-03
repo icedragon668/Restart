@@ -29,3 +29,19 @@ const diaSizer = function () {
 canvasSizer()
 connSizer()
 diaSizer()
+
+let talkI = 0
+const onTalk = function () {
+    talkArray = [
+        `Hey, how's it going?`,
+        `You been in town long?`,
+        `I found a hamburger in the trash\nNo, you can't have it!`
+    ]
+    if (talkI < talkArray.length) {
+        document.getElementById('talk').innerText = talkArray[talkI]
+        talkI++
+    } else {
+        talkI = 0
+        document.getElementById('talk').innerText = talkArray[talkI]
+    }
+}
