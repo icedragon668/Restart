@@ -50,5 +50,8 @@ const onTalk = function () {
 
 let HP = 10
 const fight = function () {
-    talkDiv
+    talkDiv.innerHTML = `
+    <button onclick="yes()">Fight!</button>
+    <button onclick="no()">Oops!</button>
+    `
 }
