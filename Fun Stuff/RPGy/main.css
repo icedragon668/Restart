@@ -9,7 +9,20 @@
     position: absolute;
     bottom: 10px;
     left: 10px;
-    /* height: 200px; */
-    background: green;
-    color: blueviolet
+    background: grey;
+    color: #333
+}
+
+.buttonBar {
+    position: relative;
+    left: 4px;
+    top: 2px;
+}
+
+.dialogue {
+    position: relative;
+    top: 10px;
+    left: 4px;
+    height: 500px;
+    background: lightgray;
 }
