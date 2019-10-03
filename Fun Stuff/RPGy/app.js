@@ -50,6 +50,8 @@ const onTalk = function () {
 
 let HP = 10
 const fight = function () {
+    //the centering trick is a good addition here
+    //how did it go again?
     talkDiv.innerHTML = `
     <button onclick="yes()">Fight!</button>
     <button onclick="no()">Oops!</button>
