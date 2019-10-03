@@ -45,3 +45,8 @@ const onTalk = function () {
         document.getElementById('talk').innerText = talkArray[talkI]
     }
 }
+
+let HP = 10
+const fight = function () {
+    
+}
