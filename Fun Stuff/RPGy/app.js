@@ -9,8 +9,8 @@ const wWidth = window.innerWidth
 
 //not reactive, needs an "on-resize" or similar
 const canvasSizer = function () {
-    canvas.style.height = wHeight-1+'px'
-    canvas.style.width = wWidth-1+'px'
+    canvas.height = wHeight-1
+    canvas.width = wWidth-1
 }
 
 //it occurs to me now, that i don't need this
