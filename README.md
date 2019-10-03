@@ -155,4 +155,11 @@ Notice: Rabbit Holes
     (or rather vanilla THEN jQuery)
       still getting used to 'git commit -am' lol
 -->
+
+<!-- 2 10 2019: Fun Stuff - RPGy
+    built a small game frame. it does next to nothing right now.
+    most of whats in here will likely be taken out too
+    ...
+    but it works and was fun to do! i think i needed to do something fun
+-->
 Next: unit02/day06
