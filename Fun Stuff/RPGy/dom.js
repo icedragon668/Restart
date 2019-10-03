@@ -1,10 +1,10 @@
 const $ = function (v) {
     
-    const placeholder = () => {
-        console.log(v)
+    const placeholder = (c) => {
+        console.log(v+c)
     }
 
     return {
-        placeholder: test
+        test: placeholder
     }
 }
