@@ -4,3 +4,12 @@ canvas {
     top: -1;
     left: -1;
 }
+
+#conn {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    height: 200px;
+    background: green;
+    color: blueviolet
+}

@@ -1,6 +1,7 @@
 $(5).test(6)
 
 const canvas = document.querySelector("canvas")
+const conn = document.getElementById('conn')
 
 //not reactive, needs an "on-resize" or similar
 const canvasSizer = function () {
@@ -8,4 +9,11 @@ const canvasSizer = function () {
     canvas.width = window.innerWidth-1
 }
 
+const connSizer = function () {
+    conn.style.height = (window.innerHeight-1)*0.3333
+    // conn.style.width = window.innerWidth-1
+}
+
+
 canvasSizer()
+connSizer()
