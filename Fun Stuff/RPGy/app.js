@@ -13,8 +13,8 @@ const canvasSizer = function () {
 //it could all be done with canvas >.>
 //oh well, gonna do it this way anyway :
 const connSizer = function () {
-    conn.style.height = (window.innerHeight-1)*0.3333
-    // conn.style.width = window.innerWidth-1
+    conn.style.height = (window.innerHeight-1)/3+"px"
+    conn.style.width = (window.innerWidth-21)+"px"
 }
 
 

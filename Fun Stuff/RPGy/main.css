@@ -7,9 +7,9 @@ canvas {
 
 #conn {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 10px;
-    height: 200px;
+    /* height: 200px; */
     background: green;
     color: blueviolet
 }
