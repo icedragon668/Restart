@@ -30,6 +30,8 @@ canvasSizer()
 connSizer()
 diaSizer()
 
+let talkDiv = document.getElementById('talk')
+
 let talkI = 0
 const onTalk = function () {
     talkArray = [
@@ -38,15 +40,15 @@ const onTalk = function () {
         `I found a hamburger in the trash\nNo, you can't have it!`
     ]
     if (talkI < talkArray.length) {
-        document.getElementById('talk').innerText = talkArray[talkI]
+        talkDiv.innerText = talkArray[talkI]
         talkI++
     } else {
         talkI = 0
-        document.getElementById('talk').innerText = talkArray[talkI]
+        talkDiv.innerText = talkArray[talkI]
     }
 }
 
 let HP = 10
 const fight = function () {
-    
+    talkDiv
 }
