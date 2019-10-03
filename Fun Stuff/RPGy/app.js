@@ -49,11 +49,23 @@ const onTalk = function () {
 }
 
 let HP = 10
+const yesFtg = function () {
+    talkDiv.innerHTML =''
+    talkDiv.innerText = 'Fight!'
+}
+
+const noFtg = function () {
+    talkDiv.innerHTML =''
+    talkDiv.innerText = 'Chicken!'
+}
+
+
 const fight = function () {
     //the centering trick is a good addition here
     //how did it go again?
     talkDiv.innerHTML = `
-    <button onclick="yes()">Fight!</button>
-    <button onclick="no()">Oops!</button>
+    <button onclick="yesFtg()">Fight!</button>
+    <button onclick="noFtg()">Oops!</button>
     `
 }
+
