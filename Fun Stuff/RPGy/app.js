@@ -72,6 +72,17 @@ const fight = function () {
 function draw () {
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
+ 
+    //red square
     ctx.fillStyle = 'rgb(200, 0, 0)';
     ctx.fillRect(10,10,50,50);
+
+    //green translucent square
+    ctx.fillStyle = 'rgba(0, 200, 0, 0.5)';
+    ctx.fillRect(30,30,50,50);
+
+    //shapes!
+    ctx.fillRect(25, 25, 100, 100); //basic
+    ctx.clearRect(45, 45, 60, 60); //clear to background
+    ctx.strokeRect(50, 50, 50, 50); //outline
 }
