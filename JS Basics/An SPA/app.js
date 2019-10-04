@@ -17,3 +17,5 @@ showContact = () => {
 }
 
 $('#home').on('click', showHome)
+$('#about-us').on('click', showAbout)
+$('#contact-us').on('click', showContact)
