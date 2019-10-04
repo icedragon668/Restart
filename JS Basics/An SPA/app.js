@@ -1,1 +1,2 @@
-$('#homepage').text('Rewrite')
+$('#about').hide()
+$('#contact').hide()
