@@ -1,6 +1,17 @@
 $('#about').hide()
 $('#contact').hide()
 
-//fun, but is there a functional difference?
-// $("section").hide()
-// $('#homepage').show()
+showHome = () => {
+    $("section").hide()
+    $('#homepage').show()    
+}
+
+showAbout = () => {
+    $("section").hide()
+    $('#about').show()    
+}
+
+showContact = () => {
+    $("section").hide()
+    $('#contact').show()    
+}
