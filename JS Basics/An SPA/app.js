@@ -1,0 +1,1 @@
+$('#homepage').text('Rewrite')
