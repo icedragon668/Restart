@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="main.css">
     <title>An SPA</title>
 </head>
+
 <body>
     <nav>
         <div id="home">Home</div>
@@ -24,14 +26,43 @@
 
         <div id="about">
             <h1>Our Story</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi veritatis accusamus eos optio facilis in eaque tenetur iste voluptate quos culpa voluptatibus, porro quasi, voluptatem provident tempora error consectetur nemo.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti in enim laborum. Autem deserunt culpa quo voluptates quos sunt hic! Assumenda, magnam? Enim numquam possimus molestias dicta. Totam, eius vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam deleniti labore perspiciatis enim pariatur rerum! Esse rerum modi ut incidunt voluptas at placeat eligendi, labore ipsam? Sequi, quae maxime.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia distinctio maiores, quibusdam voluptatem suscipit vel asperiores obcaecati maxime labore aliquid voluptatibus repudiandae id ipsum, ea eum, consequatur dolorem! Vel, at.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi veritatis accusamus eos optio facilis
+                in eaque tenetur iste voluptate quos culpa voluptatibus, porro quasi, voluptatem provident tempora error
+                consectetur nemo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti in enim laborum. Autem deserunt culpa
+                quo voluptates quos sunt hic! Assumenda, magnam? Enim numquam possimus molestias dicta. Totam, eius
+                vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam deleniti labore
+                perspiciatis enim pariatur rerum! Esse rerum modi ut incidunt voluptas at placeat eligendi, labore
+                ipsam? Sequi, quae maxime.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia distinctio maiores, quibusdam voluptatem
+                suscipit vel asperiores obcaecati maxime labore aliquid voluptatibus repudiandae id ipsum, ea eum,
+                consequatur dolorem! Vel, at.</p>
+        </div>
+        <div id="contact">
+            <h1>Contact</h1>
+            <form>
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Elroy McIvoy" required="required">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="ElMacky@gondola.io" required="required">
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us how much you love mice..." required="required"></textarea>
+                    </li>
+                </ul>
+                <button type="submit">Submit</button>
+            </form>
         </div>
 
     </main>
-    
-  <script src="dom.js"></script>
-  <script src="app.js"></script>
+
+    <script src="dom.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
