@@ -15,3 +15,5 @@ showContact = () => {
     $("section").hide()
     $('#contact').show()    
 }
+
+$('#home').on('click', showHome)
