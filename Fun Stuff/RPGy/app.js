@@ -81,7 +81,7 @@ function draw () {
     ctx.fillStyle = 'rgba(0, 200, 0, 0.5)';
     ctx.fillRect(30,30,50,50);
 
-    //shapes!
+    //shapes!!
     ctx.fillRect(25, 25, 100, 100); //basic
     ctx.clearRect(45, 45, 60, 60); //clear to background
     ctx.strokeRect(50, 50, 50, 50); //outline
