@@ -162,4 +162,8 @@ Notice: Rabbit Holes
     ...
     but it works and was fun to do! i think i needed to do something fun
 -->
-Next: unit02/day06
+
+<!-- 3 10 2019: An SPA
+    I well overestimated this lesson; the hardest part was the css
+-->
+Next: unit03
