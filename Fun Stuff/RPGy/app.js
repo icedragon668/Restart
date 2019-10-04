@@ -85,4 +85,11 @@ function draw () {
     ctx.fillRect(25, 25, 100, 100); //basic
     ctx.clearRect(45, 45, 60, 60); //clear to background
     ctx.strokeRect(50, 50, 50, 50); //outline
+
+    //filled in triangle
+    ctx.beginPath();
+    ctx.moveTo(75, 50);
+    ctx.lineTo(100, 75);
+    ctx.lineTo(100, 25);
+    ctx.fill();
 }
