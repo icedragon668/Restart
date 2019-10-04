@@ -1,0 +1,89 @@
+body {
+    background: #fcfeff;
+    font-family: 'Montserrat', sans-serif;
+    color: #262a2c;
+    padding: 20px 30px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #6e6d6d;
+    margin-bottom: 15px;
+  }
+  
+  nav {
+    cursor: pointer;
+    height: 100px;
+  }
+  
+  nav:hover {
+    color: #6e6d6d;
+  }
+  
+  nav div {
+    float: left;
+    padding: 0 10px;
+  }
+  
+  main {
+    width: 100%;
+  }
+  
+  button {
+    background: #1688e3;
+    padding: 15px 25px;
+    color: white;
+    font-size: .8em;
+    text-transform: uppercase;
+    border-radius: 2em;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  #link {
+    cursor: pointer;
+  }
+  
+  #homepage {
+    padding: 50px 0; 
+    text-align: center;
+  }
+  
+  /* contact page */
+  
+  ul {
+    margin-bottom: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  label,
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  
+  input,
+  textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+  }
+  
+  textarea {
+    height: 200px;
+  }
