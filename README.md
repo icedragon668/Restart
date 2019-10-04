@@ -165,5 +165,10 @@ Notice: Rabbit Holes
 
 <!-- 3 10 2019: An SPA
     I well overestimated this lesson; the hardest part was the css
+    
+    ::RPGy
+    practice with shape drawing in canvas...
+    not exactly what I had intended to do, but good all the same
+    the pathing feels similar to SVG, with some difference of course
 -->
 Next: unit03
