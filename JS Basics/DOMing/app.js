@@ -47,13 +47,19 @@ compPick = () => {
    return Math.floor(Math.random()*4+1)
 }
 
-compare = () => {
-    if (compPick() == this.val()) {
-        console.log("you win!")
-    } else { console.log("loser")}
+set = () => {
+    console.log(this.val())
 }
 
-$("#btn-1").on('click', compare)
+compare = () => {
+    let comp = compPick()
+    console.log(this.val())
+    if (comp == player) {
+        console.log(`Comp:${comp} vs Player:${player} \nYou Win`)
+    } else { console.log(`Comp:${comp} vs Player:${player} \nYou Lose`)}
+}
+
+$("#btn-1").on('click', set)
 $("#btn-2").on('click', compare)
 $("#btn-3").on('click', compare)
 $("#btn-4").on('click', compare)
