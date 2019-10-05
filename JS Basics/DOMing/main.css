@@ -1,0 +1,26 @@
+button {
+    background: blue;
+    border-radius: 8px;
+    border-color: blue;
+    padding: 4px;
+}
+
+#drinkSelection {
+    width: 45%;
+    float: left;
+}
+
+#lottoRoller {
+    position: relative;
+    height: 100px;
+    top: 30px;
+    right: 50px;
+    overflow: hidden
+}
+
+#numberGame, #bbbRoller {
+    width: 45%;
+    height: 100px;
+    float: right;
+    margin: 4px;
+}
