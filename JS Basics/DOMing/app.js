@@ -12,3 +12,11 @@ const drinkList = [
 
   //using the dom lib, append this to the DOM
 
+  drinkFun = () => {
+    $('#drinks').append('<ul id="DL">');
+    drinkList.forEach(e=>{
+        $('#DL').append(`<li>${e}</li>`);
+        });
+    $('#drinks').append("</ul>")
+}
+  
