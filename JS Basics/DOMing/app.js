@@ -35,4 +35,5 @@ lottoNumber = () => {
     }
     return n
 }
+console.log(lottoNumber())
 //build a number guessing game (1-4 p vs c)
