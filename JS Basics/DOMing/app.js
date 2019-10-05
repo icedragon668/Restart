@@ -48,15 +48,11 @@ compPick = () => {
 }
 
 guess = (e) => {
-    console.log(e)
-}
-
-compare = () => {
     let comp = compPick()
-    let player = document.getElementById
+    let player = e
     if (comp == player) {
-        console.log(`Comp:${comp} vs Player:${player} \nYou Win`)
-    } else { console.log(`Comp:${comp} vs Player:${player} \nYou Lose`)}
+        $('#numberResult').text(`Comp:${comp} vs Player:${player} \nYou Win`)
+    } else { $('#numberResult').text(`Comp:${comp} vs Player:${player} \nYou Lose`)}
 }
 
 $(".guess").on('click', guess)
