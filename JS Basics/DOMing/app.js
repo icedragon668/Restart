@@ -28,6 +28,10 @@ drinkFun()
 $('#bbb').on('click', rand1000)
 
 //build a 9 number lotto-style generator
+lottoFill = () => {
+    $('#lottoResult').prepend(`<p>${lottoNumber()}</p>`)
+}
+
 lottoNumber = () => {
     let n = '';
     for (i=0; i<9; i++){
@@ -35,8 +39,6 @@ lottoNumber = () => {
     }
     return n
 }
-render = () => {
-    $('lottoResult').prepend(lottoNumber)
-}
-$('#lotto').on('click', render)
+
+$('#lotto').on('click', lottoFill)
 //build a number guessing game (1-4 p vs c)
