@@ -41,4 +41,13 @@ lottoNumber = () => {
 }
 
 $('#lotto').on('click', lottoFill)
+
 //build a number guessing game (1-4 p vs c)
+compPick = () => {
+    Math.floor(Math.random()*4+1)
+}
+
+$("btn-1").val(1)
+$("btn-2").val(2)
+$("btn-3").val(3)
+$("btn-4").val(4)
