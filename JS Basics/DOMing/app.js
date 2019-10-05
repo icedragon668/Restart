@@ -8,16 +8,21 @@ const drinkList = [
     'Ice Espresso: $8',
     'Ice Latte: $6',
     'Ice Tea: $4'
-  ];
+];
 
-  //using the dom lib, append this to the DOM
+//using the dom lib, append this to the DOM
 
-  drinkFun = () => {
+drinkFun = () => {
     $('#drinks').append('<ul id="DL">');
-    drinkList.forEach(e=>{
+    drinkList.forEach(e => {
         $('#DL').append(`<li>${e}</li>`);
-        });
+    });
     $('#drinks').append("</ul>")
 }
-  
+
+rand1000 = () => {
+    $('#bbbResult').text(Math.floor(Math.random(0)*1000+1))
+}
+
 drinkFun()
+$('#bbb').on('click', rand1000)
