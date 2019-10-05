@@ -44,10 +44,16 @@ $('#lotto').on('click', lottoFill)
 
 //build a number guessing game (1-4 p vs c)
 compPick = () => {
-    Math.floor(Math.random()*4+1)
+   return Math.floor(Math.random()*4+1)
 }
 
-console.log($("btn-1").val())
-$("btn-2").val(2)
-$("btn-3").val(3)
-$("btn-4").val(4)
+compare = () => {
+    if (compPick() == this.val()) {
+        console.log("you win!")
+    } else { console.log("loser")}
+}
+
+$("#btn-1").on('click', compare)
+$("#btn-2").on('click', compare)
+$("#btn-3").on('click', compare)
+$("#btn-4").on('click', compare)
