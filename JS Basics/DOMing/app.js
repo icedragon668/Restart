@@ -28,5 +28,11 @@ drinkFun()
 $('#bbb').on('click', rand1000)
 
 //build a 9 number lotto-style generator
-
+lottoNumber = () => {
+    let n = '';
+    for (i=0; i<9; i++){
+        n += Math.floor(Math.random()*10)
+    }
+    return n
+}
 //build a number guessing game (1-4 p vs c)
