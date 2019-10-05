@@ -26,3 +26,7 @@ rand1000 = () => {
 
 drinkFun()
 $('#bbb').on('click', rand1000)
+
+//build a 9 number lotto-style generator
+
+//build a number guessing game (1-4 p vs c)
