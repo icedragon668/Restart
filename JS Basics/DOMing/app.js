@@ -35,5 +35,8 @@ lottoNumber = () => {
     }
     return n
 }
-console.log(lottoNumber())
+render = () => {
+    $('lottoResult').prepend(lottoNumber)
+}
+$('#lotto').on('click', render)
 //build a number guessing game (1-4 p vs c)
