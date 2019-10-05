@@ -171,4 +171,10 @@ Notice: Rabbit Holes
     not exactly what I had intended to do, but good all the same
     the pathing feels similar to SVG, with some difference of course
 -->
+
+<!-- 4 10 2019: DOMing
+    the hard parts were getting the value off the button w/o jQuery
+    and I could use more css practice
+    nothing too notable
+-->
 Next: unit03
