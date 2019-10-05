@@ -20,3 +20,4 @@ const drinkList = [
     $('#drinks').append("</ul>")
 }
   
+drinkFun()
