@@ -12,23 +12,24 @@ let workingExpression='';
 
 const numOrOp = function(){
     $('.entries').append(this.value+"numOrOp")
-    if (Number(this.value) < 10) {getVal}
-    else {getOp}
+    let i = this.value
+    if (i < 10) {getVal(i)}
+    else {getOp(i)}
 }
 
-const getVal = function() {
-    $('.entries').append(this.value+"getVal")
+const getVal = function(n) {
+    $('.entries').append(n+"getVal")
 }
 
-const evaluate = function() {
-    $('.entries').append(this.value+"evaluate")
+const evaluate = function(n) {
+    $('.entries').append(n+"evaluate")
     $('.results').append(workingExpression+"\navaluate")
     $('.entries').empty()
 }
 
-const getOp = function(){
-    $('.entries').append(this.value+"getOp")
-    $('.results').append(this.value+"\ngetOp")
+const getOp = function(n){
+    $('.entries').append(n+"getOp")
+    $('.results').append(n+"\ngetOp")
     // switch (this.value){
     //     case 10:
     //         console.log("plus!")
