@@ -12,13 +12,13 @@ let workingExpression='';
 
 const numOrOp = function(){
     let i = this.value
-    $('.entries').append(i+"numOrOp")
     if (i < 10) {getVal(i)}
     else {getOp(i)}
 }
 
 const getVal = function(n) {
-    $('.entries').append(n+"getVal")
+    $('.entries').append(n)
+    workingNumber += String(n)
 }
 
 const getOp = function(n){
@@ -36,9 +36,9 @@ const getOp = function(n){
 
 //new line isn't working as expected, expect expections are wrong ;)
 const evaluate = function(n) {
-    $('.results').append(workingExpression+"\nevaluate")
+    $('.results').append(`${workingNumber} \nevaluate`)
     $('.entries').empty()
-    $('.entries').append(n+"evaluate")
+    workingNumber=''
 }
 
 $('button').on('click', numOrOp)
