@@ -11,8 +11,8 @@ let workingExpression='';
 */
 
 const numOrOp = function(){
-    $('.entries').append(this.value+"numOrOp")
     let i = this.value
+    $('.entries').append(i+"numOrOp")
     if (i < 10) {getVal(i)}
     else {getOp(i)}
 }
@@ -21,23 +21,24 @@ const getVal = function(n) {
     $('.entries').append(n+"getVal")
 }
 
-const evaluate = function(n) {
-    $('.entries').append(n+"evaluate")
-    $('.results').append(workingExpression+"\navaluate")
-    $('.entries').empty()
-}
-
 const getOp = function(n){
     $('.entries').append(n+"getOp")
     $('.results').append(n+"\ngetOp")
-    // switch (this.value){
-    //     case 10:
-    //         console.log("plus!")
-    //         break;
-    //     default:
-    //         $('entries').append("=")
-    //         evaluate()
-    // }
+    switch (n){
+        case 10:
+                $('entries').append("+")
+            break;
+        default:
+            $('.entries').append("=")
+            evaluate(n)
+    }
+}
+
+//new line isn't working as expected, expect expections are wrong ;)
+const evaluate = function(n) {
+    $('.results').append(workingExpression+"\nevaluate")
+    $('.entries').empty()
+    $('.entries').append(n+"evaluate")
 }
 
 $('button').on('click', numOrOp)
