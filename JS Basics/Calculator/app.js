@@ -5,9 +5,9 @@ let workingExpression='';
 10 +
 11 - 
 12 *
-13 /
-14 +/-
-15 =
+13 +/-
+14 =
+15 /
 */
 
 const numOrOp = function(){
@@ -22,11 +22,11 @@ const getVal = function(n) {
 }
 
 const getOp = function(n){
-    $('.entries').append(n+"getOp")
-    $('.results').append(n+"\ngetOp")
+    n = Number(n)
     switch (n){
         case 10:
-                $('entries').append("+")
+            $('.entries').empty()
+            $('.entries').append(`${workingNumber}+`)
             break;
         default:
             $('.entries').append("=")
@@ -36,7 +36,7 @@ const getOp = function(n){
 
 //new line isn't working as expected, expect expections are wrong ;)
 const evaluate = function(n) {
-    $('.results').append(`${workingNumber} \nevaluate`)
+    $('.results').append(`${workingNumber} \nn ${n}`)
     $('.entries').empty()
     workingNumber=''
 }
