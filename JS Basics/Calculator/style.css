@@ -1,11 +1,11 @@
 .box {
-    width: 600px;
-    height: 652px;
+    width: 800px;
+    height: 664px;
     background: grey
 }
 
 .row {
-    display: flex;
+    display: none;
     align-items: center;
     width: 600px;
     height: 166px;
@@ -21,4 +21,10 @@ button {
 
 .negate {
     font-size: 100px;
+}
+
+.operands {
+    /* display: inline; */
+    /* position: fixed; */
+    left: 600px;
 }
