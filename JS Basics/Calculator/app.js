@@ -1,18 +1,18 @@
 let workingNumber = "";
 let workingOperand = "";
 let workingExpression = '';
-/*
-10 +
-11 - 
-12 *
-13 +/-
-14 =
-15 /
-*/
+const numbers = [];
+const operands = [];
 
 const numOrOp = function () {
+    //negation needs a special case
     let i = this.value
-    if (i < 10) { getVal(i) }
+    if (i == 13) {
+        workingNumber = workingNumber * -1
+        $('.entries').empty()
+        $('.entries').append(`${workingNumber}`)
+    }
+    else if (i < 10) { getVal(i) }
     else { getOp(i) }
 }
 
@@ -22,26 +22,26 @@ const getVal = function (n) {
 }
 
 const getOp = function (n) {
+    numbers.push(workingNumber)
     n = Number(n)
     switch (n) {
         case 10:
+            operands.push("+")
             $('.entries').empty()
             $('.entries').append(`${workingNumber}+`)
             break;
         case 11:
+            operands.push("-")
             $('.entries').empty()
             $('.entries').append(`${workingNumber}-`)
             break;
         case 12:
+            operands.push("*")
             $('.entries').empty()
             $('.entries').append(`${workingNumber}*`)
             break;
-        case 13:
-            workingNumber = workingNumber*(-1)
-            $('.entries').empty()
-            $('.entries').append(`${workingNumber}`)
-            break;
         case 15:
+            operands.push("/")
             $('.entries').empty()
             $('.entries').append(`${workingNumber}/`)
             break;
