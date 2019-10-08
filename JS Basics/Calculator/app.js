@@ -37,9 +37,9 @@ const getOp = function (n) {
             $('.entries').append(`${workingNumber}*`)
             break;
         case 13:
-            //needs to toggle
+            workingNumber = workingNumber*(-1)
             $('.entries').empty()
-            $('.entries').append(`${workingNumber} n is ${n}`)
+            $('.entries').append(`${workingNumber}`)
             break;
         case 15:
             $('.entries').empty()
