@@ -1,3 +1,11 @@
+/*////NOTES////
+needs a bool to determine operand v number
+bool allows operands to change.
+ ie if bool is op-set, the operands[i] = op
+can i just use one array and the parse it?
+*/
+
+
 let workingNumber = "";
 let workingOperand = "";
 let workingExpression = '';
@@ -22,6 +30,8 @@ const getVal = function (n) {
 }
 
 const getOp = function (n) {
+    //workingOperand is supposed to be used here
+    //wait until next number to push it
     numbers.push(workingNumber)
     n = Number(n)
     switch (n) {
