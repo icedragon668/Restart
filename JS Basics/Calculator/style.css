@@ -5,9 +5,9 @@
 }
 
 .row {
-    display: none;
+    display: flex;
     align-items: center;
-    width: 600px;
+    width: 800px;
     height: 166px;
     background: lightgrey;
 }
@@ -21,10 +21,4 @@ button {
 
 .negate {
     font-size: 100px;
-}
-
-.operands {
-    /* display: inline; */
-    /* position: fixed; */
-    left: 600px;
 }
