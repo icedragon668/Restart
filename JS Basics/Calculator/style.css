@@ -1,14 +1,16 @@
 .box {
     width: 800px;
-    height: 664px;
-    background: grey
+    height: 660px;
+    background: grey;
+    margin: 0;
+    overflow: hidden;
 }
 
 .row {
     display: flex;
     align-items: center;
     width: 800px;
-    height: 166px;
+    height: 165px;
     background: lightgrey;
 }
 
@@ -21,4 +23,15 @@ button {
 
 .negate {
     font-size: 100px;
+}
+
+.viewscreen {
+    /* display: none; */
+    margin: 0;
+    background-color: grey;
+    position: fixed;
+    top: 7px;
+    right: 4px;
+    height: 660px;
+    width: 300px
 }
