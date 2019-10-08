@@ -56,3 +56,13 @@ guess = (e) => {
 }
 
 $(".guess").on('click', guess)
+
+///TESTING////
+const valueGuess = function () {
+    console.log(this.value)
+}
+
+$('button').on('click', valueGuess)
+/*
+    I think i let mysleft overthink this bit...
+*/
