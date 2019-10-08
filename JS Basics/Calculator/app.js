@@ -11,21 +11,24 @@ let workingExpression='';
 */
 
 const numOrOp = function(){
-    if (this.value < 10) {getVal}
+    $('.entries').append(this.value+"numOrOp")
+    if (Number(this.value) < 10) {getVal}
     else {getOp}
 }
 
 const getVal = function() {
-    $('.entries').append(this.value)
+    $('.entries').append(this.value+"getVal")
 }
 
 const evaluate = function() {
-    $('results').append(workingExpression+"\n")
-    $('entries').empty()
+    $('.entries').append(this.value+"evaluate")
+    $('.results').append(workingExpression+"\navaluate")
+    $('.entries').empty()
 }
 
 const getOp = function(){
-    $('results').append(this.value+"\n")
+    $('.entries').append(this.value+"getOp")
+    $('.results').append(this.value+"\ngetOp")
     // switch (this.value){
     //     case 10:
     //         console.log("plus!")
