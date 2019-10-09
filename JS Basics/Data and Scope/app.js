@@ -43,9 +43,9 @@ const todoList =[
   // 2. Append `pick up art supplies` to the screen to the `#groceries` div. 
  document.querySelectorAll('#groceries').forEach(e=>e.innerHTML+=todoList[0].tasks.errands.personal[0])
   // 3. Append `diet coke` to the screen to the `#errands` div. 
- document.querySelectorAll('#groceries').forEach(e=>e.innerHTML+=todoList[0].tasks.grocery.drinks.sodas[1])
+ document.querySelectorAll('#errands').forEach(e=>e.innerHTML+=todoList[0].tasks.grocery.drinks.sodas[1])
   // 4. Append `hair appt  at 2:15pm` to the screen to the `#calendar` div. 
- 
+ document.querySelectorAll('#calendar').forEach(e=>e.innerHTML+=`<p>${todoList[0].tasks.dueToday.personal[0].task} at ${todoList[0].tasks.dueToday.personal[0].time}</p>`)
   // 5. Update the time to `submit expense report` to `8:30am` and append the results to the `#calendar` div.
  
   // 6. Add a task of `mow lawn` with a time of `5:30pm` to the `personal` array in `dueToday`. 
