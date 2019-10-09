@@ -39,7 +39,7 @@ const todoList =[
   ];
   
   // 1. Append `apple` to the screen to the `#groceries` div.
- document.querySelectorAll("#groceries").forEach(e=>{e.innerHTML+=todoList[0].tasks.grocery.produce[0]})
+//  document.querySelectorAll("#groceries").forEach(e=>{e.innerHTML+=todoList[0].tasks.grocery.produce[0]})
   // 2. Append `pick up art supplies` to the screen to the `#groceries` div. 
  document.querySelectorAll('#groceries').forEach(e=>e.innerHTML+=todoList[0].tasks.errands.personal[0])
   // 3. Append `diet coke` to the screen to the `#errands` div. 
@@ -60,3 +60,12 @@ const todoList =[
  
  for (i=0; i < todoList[0].tasks.dueToday.personal.length; i++) {
     document.querySelectorAll('#calendar').forEach(e=>e.innerHTML+=`<p>${todoList[0].tasks.dueToday.personal[i].task} at ${todoList[0].tasks.dueToday.personal[i].time}</p>`)}
+
+//Refactor//
+const toDo = todoList[0].tasks
+
+const append = function(s,c){
+    document.querySelectorAll(s).forEach(e=>e.innerHTML+=c)
+}
+
+append('#groceries', toDo.grocery.produce[0])
