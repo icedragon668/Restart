@@ -84,4 +84,6 @@ document.querySelectorAll('#calendar').forEach(e=>e.innerHTML='')
 for (i=0; i<toDo.dueToday.work.length;i++){
     append('#calendar', `<p>${toDo.dueToday.work[i].task} at ${toDo.dueToday.work[i].time}</p>`)
 }
-// append('#errands', `<p>${toDo}</p>`)
+for (i=0; i<toDo.dueToday.personal.length;i++){
+    append('#calendar', `<p>${toDo.dueToday.personal[i].task} at ${toDo.dueToday.personal[i].time}</p>`)
+}
