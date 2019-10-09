@@ -80,4 +80,8 @@ toDo.dueToday.personal.push({task: 'mow lawn', time: '5:30pm'})
 append('#calendar', `<p>${toDo.dueToday.personal[2].task} at ${toDo.dueToday.personal[2].time}</p>`)
 
 document.querySelectorAll('#calendar').forEach(e=>e.innerHTML='')
+
+for (i=0; i<toDo.dueToday.work.length;i++){
+    append('#calendar', `<p>${toDo.dueToday.work[i].task} at ${toDo.dueToday.work[i].time}</p>`)
+}
 // append('#errands', `<p>${toDo}</p>`)
