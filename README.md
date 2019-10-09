@@ -182,5 +182,8 @@ ToDo: Come Back Here
     This is a good exercise to come back to. There is a lot that CAN be done to make a better calculator.
     I would like to make this into an app, it's an easy concept. Plus a good way to navigate app creation (Swift, ReactNative, etc.)
 -->
-
+<!-- 8 10 2019: Data and Scope
+    digging through the data was a fine exercise, a bit more interesting for being vanilla sans dom.js
+    maybe i should refactor something like this to make it nice? reduce those long noodles and re-usable functions...
+-->
 Next: unit03/02
