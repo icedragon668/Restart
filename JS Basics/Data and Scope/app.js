@@ -53,4 +53,10 @@ const todoList =[
   todoList[0].tasks.dueToday.personal.push({task: 'mow lawn', time: '5:30pm'})
   document.querySelectorAll('#calendar').forEach(e=>e.innerHTML+=`<p>${todoList[0].tasks.dueToday.personal[2].task} at ${todoList[0].tasks.dueToday.personal[2].time}</p>`)
   // 7. Render all time tasks due today to the `#calendar` div. 
+ document.querySelectorAll('#calendar').forEach(e=>e.innerHTML='')
  
+ for (i=0; i < todoList[0].tasks.dueToday.work.length; i++) {
+    document.querySelectorAll('#calendar').forEach(e=>e.innerHTML+=`<p>${todoList[0].tasks.dueToday.work[i].task} at ${todoList[0].tasks.dueToday.work[i].time}</p>`)}
+ 
+ for (i=0; i < todoList[0].tasks.dueToday.personal.length; i++) {
+    document.querySelectorAll('#calendar').forEach(e=>e.innerHTML+=`<p>${todoList[0].tasks.dueToday.personal[i].task} at ${todoList[0].tasks.dueToday.personal[i].time}</p>`)}
