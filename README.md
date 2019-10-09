@@ -185,5 +185,7 @@ ToDo: Come Back Here
 <!-- 8 10 2019: Data and Scope
     digging through the data was a fine exercise, a bit more interesting for being vanilla sans dom.js
     maybe i should refactor something like this to make it nice? reduce those long noodles and re-usable functions...
+    well, I refactored it...
+    it was good exercise i guess?
 -->
 Next: unit03/02
