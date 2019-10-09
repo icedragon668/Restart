@@ -68,5 +68,8 @@ const append = function(s,c){
     document.querySelectorAll(s).forEach(e=>e.innerHTML+=c)
 }
 
-append('#groceries', toDo.grocery.produce[0])
-append('#groceries', toDo.errands.personal[0])
+append('#groceries', `<p>${toDo.grocery.produce[0]}</p>`)
+append('#groceries', `<p>${toDo.errands.personal[0]}</p>`)
+append('#errands', `<p>${toDo.grocery.drinks.sodas[1]}</p>`)
+
+// append('#errands', `<p>${toDo}</p>`)
