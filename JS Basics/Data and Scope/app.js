@@ -47,8 +47,8 @@ const todoList =[
   // 4. Append `hair appt  at 2:15pm` to the screen to the `#calendar` div. 
 //  document.querySelectorAll('#calendar').forEach(e=>e.innerHTML+=`<p>${todoList[0].tasks.dueToday.personal[0].task} at ${todoList[0].tasks.dueToday.personal[0].time}</p>`)
   // 5. Update the time to `submit expense report` to `8:30am` and append the results to the `#calendar` div.
- todoList[0].tasks.dueToday.work[1].time = `8:30am`
- document.querySelectorAll('#calendar').forEach(e=>e.innerHTML+=`<p>${todoList[0].tasks.dueToday.work[1].task} at ${todoList[0].tasks.dueToday.work[1].time}</p>`)
+//  todoList[0].tasks.dueToday.work[1].time = `8:30am`
+//  document.querySelectorAll('#calendar').forEach(e=>e.innerHTML+=`<p>${todoList[0].tasks.dueToday.work[1].task} at ${todoList[0].tasks.dueToday.work[1].time}</p>`)
   // 6. Add a task of `mow lawn` with a time of `5:30pm` to the `personal` array in `dueToday`. 
   todoList[0].tasks.dueToday.personal.push({task: 'mow lawn', time: '5:30pm'})
   document.querySelectorAll('#calendar').forEach(e=>e.innerHTML+=`<p>${todoList[0].tasks.dueToday.personal[2].task} at ${todoList[0].tasks.dueToday.personal[2].time}</p>`)
@@ -72,5 +72,11 @@ append('#groceries', `<p>${toDo.grocery.produce[0]}</p>`)
 append('#groceries', `<p>${toDo.errands.personal[0]}</p>`)
 append('#errands', `<p>${toDo.grocery.drinks.sodas[1]}</p>`)
 append('#calendar', `<p>${toDo.dueToday.personal[0].task} at ${toDo.dueToday.personal[0].time}</p>`)
+
+toDo.dueToday.work[1].time = '8:30am'
+append('#calendar', `<p>${toDo.dueToday.work[1].task} at ${toDo.dueToday.work[1].time}</p>`)
+
+toDo.dueToday.personal.push({task: 'mow lawn', time: '5:30pm'})
+append('#calendar', `<p>${toDo.dueToday.personal[2].task} at ${toDo.dueToday.personal[2].time}</p>`)
 
 // append('#errands', `<p>${toDo}</p>`)
