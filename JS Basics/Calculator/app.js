@@ -9,6 +9,7 @@ can i just use one array and the parse it?
 let workingNumber = "";
 let workingOperand = "";
 let workingExpression = '';
+let numbBool = true;
 const numbers = [];
 const operands = [];
 
@@ -36,22 +37,22 @@ const getOp = function (n) {
     n = Number(n)
     switch (n) {
         case 10:
-            operands.push("+")
+            workingOperand = ("+")
             $('.entries').empty()
             $('.entries').append(`${workingNumber}+`)
             break;
         case 11:
-            operands.push("-")
+            workingOperand = ("-")
             $('.entries').empty()
             $('.entries').append(`${workingNumber}-`)
             break;
         case 12:
-            operands.push("*")
+            workingOperand = ("*")
             $('.entries').empty()
             $('.entries').append(`${workingNumber}*`)
             break;
         case 15:
-            operands.push("/")
+            workingOperand = ("/")
             $('.entries').empty()
             $('.entries').append(`${workingNumber}/`)
             break;
