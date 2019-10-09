@@ -177,4 +177,10 @@ Notice: Rabbit Holes
     and I could use more css practice
     nothing too notable
 -->
-Next: unit03
+ToDo: Come Back Here
+<!-- 8 10 2019: Calculator
+    This is a good exercise to come back to. There is a lot that CAN be done to make a better calculator.
+    I would like to make this into an app, it's an easy concept. Plus a good way to navigate app creation (Swift, ReactNative, etc.)
+-->
+
+Next: unit03/02
