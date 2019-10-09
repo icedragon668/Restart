@@ -38,13 +38,13 @@ const todoList =[
     }
   ];
   
-  // 1. Use jQuery to append `apple` to the screen to the `#groceries` div.
+  // 1. Append `apple` to the screen to the `#groceries` div.
+ document.querySelectorAll("#groceries").forEach(e=>{e.innerHTML+=todoList[0].tasks.grocery.produce[0]})
+  // 2. Append `pick up art supplies` to the screen to the `#groceries` div. 
  
-  // 2. Use jQuery to append `pick up art supplies` to the screen to the `#groceries` div. 
+  // 3. Append `diet coke` to the screen to the `#errands` div. 
  
-  // 3. Use jQuery to append `diet coke` to the screen to the `#errands` div. 
- 
-  // 4. Use jQuery to append `hair appt  at 2:15pm` to the screen to the `#calendar` div. 
+  // 4. Append `hair appt  at 2:15pm` to the screen to the `#calendar` div. 
  
   // 5. Update the time to `submit expense report` to `8:30am` and append the results to the `#calendar` div.
  
