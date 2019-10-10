@@ -41,3 +41,22 @@ function init() {
    drawFrame(0,0, sWidth*2,0); //sprite 1, pos 3
    drawFrame(2,0, sWidth*3,0); //sprite 3, pos 4
 }
+
+//animation requests
+window.requestAnimationFrame(step);
+
+//variables for animation
+const cycleLoop = [0, 1, 0, 2];
+let currentLoopIndex = 0;
+
+function step() {
+    ctx.clearRect(0,0,canvas.width, canvas.height) //clears canvas
+    drawFrame(cycleLoop[currentLoopIndex], 0,0,0) //loops sprite 1,2,1,3 at pos 1
+    currentLoopIndex++; //cycle increment
+    //checks to see if loop is ended
+    if (currentLoopIndex >= cycleLoop.length){
+        currentLoopIndex = 0
+    }
+    //go again!
+    window.requestAnimationFrame(step)
+}
