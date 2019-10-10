@@ -13,6 +13,17 @@ const sWidth = width * scale
 const sHeight = height * scale
 
 //animation starts here!
+//simplifies drawImage to frames over pixels
+function drawFrame (frameX, frameY, canvasX, canvasY){
+    ctx.drawImage(img,
+        //1 will use the first sprite image, eg
+        //source
+        frameX * width, frameY * height, width, height,
+        //destination
+        canvasX, canvasY, sWidth, sHeight
+        );
+}
+
 function init() {
     /*drawImage Reminder:
     image source,
@@ -25,7 +36,8 @@ function init() {
     dest width,
     dest height,
     */
-   ctx.drawImage(img, 0, 0, width, height, 0, 0, sWidth, sHeight)
-   ctx.drawImage(img, width, 0, width, height, sWidth, 0, sWidth, sHeight)
-   ctx.drawImage(img, width*2, 0, width, height, sWidth*2, 0, sWidth, sHeight)
+   drawFrame(0,0,0,0) //sprite 1, pos 1
+   drawFrame(1,0, sWidth, 0); //sprite 2, pos 2
+   drawFrame(0,0, sWidth*2,0); //sprite 1, pos 3
+   drawFrame(2,0, sWidth*3,0); //sprite 3, pos 4
 }
