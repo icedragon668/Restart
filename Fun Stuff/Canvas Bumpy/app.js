@@ -228,3 +228,9 @@ function gameLoop() {
     drawFrame(cycleLoop[currentLoopIndex],currentDirection, posX, posY)
     window.requestAnimationFrame(gameLoop)
 }
+
+function moveChar (deltaX, deltaY, direction) {
+    posX += deltaX
+    posY += deltaY
+    currentDirection = direction
+}
