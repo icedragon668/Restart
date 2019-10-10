@@ -68,6 +68,11 @@ function keyUpListener(e){
     keyPresses[e.key] = false
 }
 
+//movement variables
+const moveSpeed = 1;
+let posX = 0;
+let posY = 0;
+
 function gameLoop() {
     frameCount++;
     if (frameCount < 15) { //counts 15 frames before next image
