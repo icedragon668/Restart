@@ -107,16 +107,20 @@ function gameLoop() {
     //movement controls
     if (keyPresses.w) {
         posY -= moveSpeed
+        currentDirection = faceUp
     } else if (keyPresses.s) {
         posY += moveSpeed
+        currentDirection = faceDown
     }
     if (keyPresses.a) {
         posX -= moveSpeed
+        currentDirection = faceLeft
     } else if (keyPresses.d) {
         posX += moveSpeed
+        currentDirection = faceRight
     }
 
     //temp
-    drawFrame(0,0, posX, posY)
+    drawFrame(0,currentDirection, posX, posY)
     window.requestAnimationFrame(gameLoop)
 }
