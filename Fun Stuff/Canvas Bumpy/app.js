@@ -223,13 +223,20 @@ function gameLoop() {
             }
         }
     }
-
+    if (!hasMoved){currentLoopIndex=0}
     drawFrame(cycleLoop[currentLoopIndex],currentDirection, posX, posY)
     window.requestAnimationFrame(gameLoop)
 }
 
+//moveChar is plled put for collision detection
 function moveChar (deltaX, deltaY, direction) {
+    if (posX + deltaX > 0 && posX + sWidth + deltaX < canvas.width){
     posX += deltaX
+    }
+
+    if (posY + deltaY > 0 && posY + sHeight + deltaY < canvas.height){
     posY += deltaY
+    }
+
     currentDirection = direction
 }
