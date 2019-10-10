@@ -1,7 +1,7 @@
 //preps an image to be loaded to canvas
 let img = new Image();
 img.src = 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png'
-img.onload = function () { init() }
+img.onload = function () { window.requestAnimationFrame(gameLoop) }
 
 //sets up canvas and context
 let canvas = document.querySelector('canvas')
@@ -53,8 +53,22 @@ function init() {
 const cycleLoop = [0, 1, 0, 2];
 let currentLoopIndex = 0;
 let frameCount = 0;
+let currentDirection = 0; //this works in large part becaus e of the spritemap being well set up
 
-function step() {
+//key listeners for controls
+let keyPresses = {};
+
+window.addEventListener('keydown', keyDownListener, false);
+function keyDownListener(e){
+    keyPresses[e.key] = true
+}
+
+window.addEventListener('keyup', keyUpListener, false);
+function keyUpListener(e){
+    keyPresses[e.key] = false
+}
+
+function gameLoop() {
     frameCount++;
     if (frameCount < 15) { //counts 15 frames before next image
         //go again!
@@ -63,11 +77,18 @@ function step() {
     }
     frameCount = 0
     ctx.clearRect(0, 0, canvas.width, canvas.height) //clears canvas
-    drawFrame(cycleLoop[currentLoopIndex], 0, 0, 0) //loops sprite 1,2,1,3 at pos 1
+    drawFrame(cycleLoop[currentLoopIndex], currentDirection, 0, 0) //loops sprite 1,2,1,3 at pos 1
     currentLoopIndex++; //cycle increment
-    //checks to see if loop is ended
+    
+    //checks to see if walk loop is ended
     if (currentLoopIndex >= cycleLoop.length) {
-        currentLoopIndex = 0
+        currentLoopIndex = 0;
+        currentDirection++;
+    }
+
+    //direction loop
+    if (currentDirection >= 4) {
+        currentDirection = 0;
     }
     window.requestAnimationFrame(step)
 }
