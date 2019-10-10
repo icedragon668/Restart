@@ -1,3 +1,4 @@
+/*first  run with notes
 //preps an image to be loaded to canvas
 let img = new Image();
 img.src = 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png'
@@ -48,7 +49,7 @@ function drawFrame(frameX, frameY, canvasX, canvasY) {
     */
 // }
 
-
+/*
 //variables for animation
 const cycleLoop = [0, 1, 0, 2];
 let currentLoopIndex = 0;
@@ -106,7 +107,7 @@ function gameLoop() {
         currentDirection = 0;
     }
     refactored due to movement*/
-
+/*
     //movement controls
     if (keyPresses.w) {
         posY -= moveSpeed
@@ -141,10 +142,8 @@ function gameLoop() {
     drawFrame(cycleLoop[currentLoopIndex],currentDirection, posX, posY)
     window.requestAnimationFrame(gameLoop)
 }
-
-const greenGuy = {
-
-}
+first  run with notes*/
+const greenGuy = {}
 
 ////REFACTOR TIME///
 //let's clean up a bit...
@@ -200,17 +199,17 @@ function gameLoop() {
     ctx.clearRect(0,0,canvas.width, canvas.height)
     let hasMoved = false
     if (keyPresses.w) {
-        moveChar(-moveSpeed,faceUp)
+        moveChar(0,-moveSpeed,faceUp)
         hasMoved = true
     } else if (keyPresses.s) {
-        moveChar(moveSpeed,faceDown)
+        moveChar(0,moveSpeed,faceDown)
         hasMoved = true
     }
     if (keyPresses.a) {
-        moveChar(-moveSpeed,faceLeft)
+        moveChar(-moveSpeed,0,faceLeft)
         hasMoved = true
     } else if (keyPresses.d) {
-        moveChar(moveSpeed,faceRight)
+        moveChar(moveSpeed,0,faceRight)
         hasMoved = true
     }
 
