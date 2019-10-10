@@ -138,7 +138,36 @@ function gameLoop() {
         }
     }
 
-    //temp
     drawFrame(cycleLoop[currentLoopIndex],currentDirection, posX, posY)
     window.requestAnimationFrame(gameLoop)
 }
+
+const greenGuy = {
+
+}
+
+////REFACTOR TIME///
+//let's clean up a bit...
+
+const scale = 2;
+const width = 16;
+const height = 18;
+const sWidth = width * scale
+const sHeight = height * scale
+const cycleLoop = [0, 1, 0, 2];
+const faceDown = 0;
+const faceUp = 1;
+const faceLeft = 2;
+const faceRight = 3;
+const frameLimit = 12;
+const moveSpeed = 1;
+
+let canvas = document.querySelector('canvas')
+let ctx = canvas.getContext('2d')
+let keyPresses = {};
+let currentDirection = faceDown;
+let currentLoopIndex = 0;
+let frameCount = 0;
+let posX = 0;
+let posY = 0;
+let img = new Image();
