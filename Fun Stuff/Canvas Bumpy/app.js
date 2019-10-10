@@ -53,7 +53,12 @@ function drawFrame(frameX, frameY, canvasX, canvasY) {
 const cycleLoop = [0, 1, 0, 2];
 let currentLoopIndex = 0;
 let frameCount = 0;
-let currentDirection = 0; //this works in large part becaus e of the spritemap being well set up
+//facing variables
+const faceDown = 0;
+const faceUp = 1;
+const faceLeft = 2;
+const faceRight = 3;
+let currentDirection = faceDown; //this works in large part becaus e of the spritemap being well set up
 
 //key listeners for controls
 let keyPresses = {};
