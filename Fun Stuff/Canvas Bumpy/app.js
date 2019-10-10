@@ -9,5 +9,16 @@ let ctx = canvas.getContext('2d')
 
 //animation starts here!
 function init() {
-    console.log("y'all")
+    /*drawImage Reminder:
+    image source,
+    start x coord,
+    start y coord,
+    start Width,
+    start Height,
+    destination (on canvas) x coord,
+    dest y coord,
+    dest width,
+    dest height,
+    */
+   ctx.drawImage(img, 0, 0, 16, 18, 0, 0, 16, 18)
 }
