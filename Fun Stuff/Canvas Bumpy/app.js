@@ -181,3 +181,8 @@ window.addEventListener('keyup', keyUpListener, false);
 function keyUpListener(e){
     keyPresses[e.key] = false
 }
+
+function loadImage() {
+    img.src = 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png'
+    img.onload = function () { window.requestAnimationFrame(gameLoop) }
+}
