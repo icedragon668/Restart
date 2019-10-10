@@ -228,7 +228,7 @@ function gameLoop() {
     window.requestAnimationFrame(gameLoop)
 }
 
-//moveChar is plled put for collision detection
+//moveChar is pulled put for collision detection
 function moveChar (deltaX, deltaY, direction) {
     if (posX + deltaX > 0 && posX + sWidth + deltaX < canvas.width){
     posX += deltaX
