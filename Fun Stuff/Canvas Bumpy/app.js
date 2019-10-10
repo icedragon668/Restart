@@ -195,3 +195,36 @@ function drawFrame(frameX, frameY, canvasX, canvasY) {
 }
 
 loadImage()
+
+function gameLoop() {
+    ctx.clearRect(0,0,canvas.width, canvas.height)
+    let hasMoved = false
+    if (keyPresses.w) {
+        moveChar(-moveSpeed,faceUp)
+        hasMoved = true
+    } else if (keyPresses.s) {
+        moveChar(moveSpeed,faceDown)
+        hasMoved = true
+    }
+    if (keyPresses.a) {
+        moveChar(-moveSpeed,faceLeft)
+        hasMoved = true
+    } else if (keyPresses.d) {
+        moveChar(moveSpeed,faceRight)
+        hasMoved = true
+    }
+
+    if (hasMoved) {
+        frameCount++
+        if (frameCount >= frameLimit) {
+            frameCount = 0
+            currentLoopIndex++
+            if(currentLoopIndex >= cycleLoop.length){
+                currentLoopIndex = 0
+            }
+        }
+    }
+
+    drawFrame(cycleLoop[currentLoopIndex],currentDirection, posX, posY)
+    window.requestAnimationFrame(gameLoop)
+}
