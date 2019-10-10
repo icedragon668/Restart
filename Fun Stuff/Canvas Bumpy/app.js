@@ -186,3 +186,12 @@ function loadImage() {
     img.src = 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png'
     img.onload = function () { window.requestAnimationFrame(gameLoop) }
 }
+
+function drawFrame(frameX, frameY, canvasX, canvasY) {
+    ctx.drawImage(img,
+        frameX * width, frameY * height, width, height,
+        canvasX, canvasY, sWidth, sHeight
+    );
+}
+
+loadImage()
