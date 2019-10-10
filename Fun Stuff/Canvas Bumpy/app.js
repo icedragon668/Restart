@@ -24,7 +24,7 @@ function drawFrame(frameX, frameY, canvasX, canvasY) {
     );
 }
 
-function init() {
+// function init() {
     /*drawImage Reminder:
     image source,
     start x coord,
@@ -38,15 +38,15 @@ function init() {
     */
 
     //animation requests
-    drawFrame(0, 0, 0, 0) //sprite 1, pos 1
-    window.requestAnimationFrame(step);
+    // drawFrame(0, 0, 0, 0) //sprite 1, pos 1
+    // window.requestAnimationFrame(step);
     /*
     drawFrame(0, 0, 0, 0) //sprite 1, pos 1
     drawFrame(1, 0, sWidth, 0); //sprite 2, pos 2
     drawFrame(0, 0, sWidth * 2, 0); //sprite 1, pos 3
     drawFrame(2, 0, sWidth * 3, 0); //sprite 3, pos 4
     */
-}
+// }
 
 
 //variables for animation
@@ -74,10 +74,12 @@ let posX = 0;
 let posY = 0;
 
 function gameLoop() {
+    ctx.clearRect(0,0,canvas.width, canvas.height)
+    /*testing only
     frameCount++;
     if (frameCount < 15) { //counts 15 frames before next image
         //go again!
-        window.requestAnimationFrame(step)
+        window.requestAnimationFrame(gameLoop)
         return;
     }
     frameCount = 0
@@ -95,5 +97,21 @@ function gameLoop() {
     if (currentDirection >= 4) {
         currentDirection = 0;
     }
-    window.requestAnimationFrame(step)
+    testing only*/
+
+    //movement controls
+    if (keyPresses.w) {
+        posY -= moveSpeed
+    } else if (keyPresses.s) {
+        posY += moveSpeed
+    }
+    if (keyPresses.a) {
+        posX -= moveSpeed
+    } else if (keyPresses.d) {
+        posX += moveSpeed
+    }
+
+    //temp
+    drawFrame(0,0, posX, posY)
+    window.requestAnimationFrame(gameLoop)
 }
