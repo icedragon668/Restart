@@ -171,3 +171,13 @@ let frameCount = 0;
 let posX = 0;
 let posY = 0;
 let img = new Image();
+
+window.addEventListener('keydown', keyDownListener, false);
+function keyDownListener(e){
+    keyPresses[e.key] = true
+}
+
+window.addEventListener('keyup', keyUpListener, false);
+function keyUpListener(e){
+    keyPresses[e.key] = false
+}
