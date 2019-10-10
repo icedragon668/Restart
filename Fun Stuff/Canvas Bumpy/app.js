@@ -53,6 +53,7 @@ function drawFrame(frameX, frameY, canvasX, canvasY) {
 const cycleLoop = [0, 1, 0, 2];
 let currentLoopIndex = 0;
 let frameCount = 0;
+const frameLimit = 12;
 //facing variables
 const faceDown = 0;
 const faceUp = 1;
@@ -80,7 +81,9 @@ let posY = 0;
 
 function gameLoop() {
     ctx.clearRect(0,0,canvas.width, canvas.height)
-    /*testing only
+    let hasMoved = false
+
+    /*refactored due to movement
     frameCount++;
     if (frameCount < 15) { //counts 15 frames before next image
         //go again!
@@ -102,25 +105,40 @@ function gameLoop() {
     if (currentDirection >= 4) {
         currentDirection = 0;
     }
-    testing only*/
+    refactored due to movement*/
 
     //movement controls
     if (keyPresses.w) {
         posY -= moveSpeed
         currentDirection = faceUp
+        hasMoved = true
     } else if (keyPresses.s) {
         posY += moveSpeed
         currentDirection = faceDown
+        hasMoved = true
     }
     if (keyPresses.a) {
         posX -= moveSpeed
         currentDirection = faceLeft
+        hasMoved = true
     } else if (keyPresses.d) {
         posX += moveSpeed
         currentDirection = faceRight
+        hasMoved = true
+    }
+
+    if (hasMoved) {
+        frameCount++
+        if (frameCount >= frameLimit) {
+            frameCount = 0
+            currentLoopIndex++
+            if(currentLoopIndex >= cycleLoop.length){
+                currentLoopIndex = 0
+            }
+        }
     }
 
     //temp
-    drawFrame(0,currentDirection, posX, posY)
+    drawFrame(cycleLoop[currentLoopIndex],currentDirection, posX, posY)
     window.requestAnimationFrame(gameLoop)
 }
