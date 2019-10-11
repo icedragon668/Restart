@@ -59,6 +59,8 @@ getMovies = () => {
     render(mList)
 }
 
+setTimeout(getMovies, 1000)
+
 /*
 ## Instructions
 
