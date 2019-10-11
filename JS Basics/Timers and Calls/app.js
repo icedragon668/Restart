@@ -81,11 +81,10 @@ Once you have all the names, add a render function that renders
 END BLOCK 2*/
 
 //Block 3
-let apple = '';
-let micro = '';
-const stocks = [];
 const URL = "https://api.iextrading.com/1.0/"
-const END = "stock/market/batch?symbols=tsla,amzn,taco&types=price"
+const APPLE = "stock/aapl/quote";
+const MICRO = 'stock/msft/quote';
+const BATCH = "stock/market/batch?symbols=tsla,amzn,taco&types=price"
 /*
 ## Instructions
 
