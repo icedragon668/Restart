@@ -85,6 +85,20 @@ const URL = "https://api.iextrading.com/1.0/"
 const APPLE = "stock/aapl/quote";
 const MICRO = 'stock/msft/quote';
 const BATCH = "stock/market/batch?symbols=tsla,amzn,taco&types=price"
+
+
+//this was written for jQuery...
+//going to have to learn fetch()
+
+fetch(`${URL}${APPLE}`)
+ .then(data => {return data.json()})
+ .then(res=>{console.log(res)})
+/*
+
+     $('body').append(`APPLES are ${res.aapl.price}`)
+ })
+ */
+
 /*
 ## Instructions
 
