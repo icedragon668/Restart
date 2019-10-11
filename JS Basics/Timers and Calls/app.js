@@ -52,6 +52,8 @@ END BLOCK 1*/
 //BLOCK 2
 let mList = '';
 const movies = response.data.movies  
+getMovies = () => {
+    movies.forEach(e=>{
 
 /*
 ## Instructions
