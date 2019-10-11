@@ -20,7 +20,14 @@ const friendList = [
       status: 'offline'
     }
   ]
+
+  //block 1 code
   let list = '';
+  
+  render = (c) => {
+    $('body').append(c)
+  }
+
   getFriends = () => {
       friendList.forEach(e=>{
         list += `<p>${e.name}</p>`
@@ -30,8 +37,9 @@ const friendList = [
 
   
   setTimeout(getFriends, 3000)
+  
   /*
-  ## Instructions
+  ## Instructions Block1
 
 Use a loop to get all the names from the friendList after 3 seconds.
  Append each name to a string surrounded by paragraph tags.
@@ -39,4 +47,4 @@ Use a loop to get all the names from the friendList after 3 seconds.
 
 Once you have all the names, use the render function to render
  the whole string to the page.
-*/
+END BLOCK 1*/
