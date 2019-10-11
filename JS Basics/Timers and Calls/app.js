@@ -89,11 +89,14 @@ const BATCH = "stock/market/batch?symbols=tsla,amzn,taco&types=price"
 
 //this was written for jQuery...
 //going to have to learn fetch()
-
+//seems to be a server side error
+// have to find out why, or move on and try a different api :p
+//on the plus side, fetch() seems to be okay
+/*
 fetch(`${URL}${APPLE}`)
  .then(data => {return data.json()})
- .then(res=>{console.log(res)})
-/*
+ .then(res=>{
+     //console.log(res)})
 
      $('body').append(`APPLES are ${res.aapl.price}`)
  })

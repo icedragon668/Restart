@@ -193,5 +193,11 @@ ToDo: Continue
     a sprite walks around a small canvas!
     next to add a scrolling map beneath, and if time permits, obstacles!
 -->
-Next: unit03/03
+
+<!-- 10 10 2019: Timers and Calls
+    seems the server for this exercise is down
+    otherwise uneventful
+    got to try fetch() ! seems okay, but 403, so dunno
+-->
+Next: unit03/04
 
