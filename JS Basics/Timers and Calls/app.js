@@ -56,6 +56,7 @@ getMovies = () => {
     movies.forEach(e=>{
         mList += `<p>${e}</p>`
     })
+    render(mList)
 }
 
 /*
