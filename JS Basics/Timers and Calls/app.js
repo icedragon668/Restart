@@ -84,6 +84,8 @@ END BLOCK 2*/
 let apple = '';
 let micro = '';
 const stocks = [];
+const URL = "https://api.iextrading.com/1.0/"
+const END = "stock/market/batch?symbols=tsla,amzn,taco&types=price"
 /*
 ## Instructions
 
