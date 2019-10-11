@@ -21,6 +21,12 @@ const friendList = [
     }
   ]
 
+  getFriends = () => {
+      friendList.forEach(e=>{
+          
+      })
+  }
+
   setTimeout(getFriends, 3000)
   /*
   ## Instructions
