@@ -54,6 +54,9 @@ let mList = '';
 const movies = response.data.movies  
 getMovies = () => {
     movies.forEach(e=>{
+        mList += `<p>${e}</p>`
+    })
+}
 
 /*
 ## Instructions
