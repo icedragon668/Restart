@@ -25,6 +25,7 @@ const friendList = [
       friendList.forEach(e=>{
         list += `<p>${e.name}</p>`
       })
+      render(list)
   }
 
   
