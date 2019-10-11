@@ -23,10 +23,11 @@ const friendList = [
 
   getFriends = () => {
       friendList.forEach(e=>{
-          
+        list += `<p>${e.name}</p>`
       })
   }
 
+  
   setTimeout(getFriends, 3000)
   /*
   ## Instructions
