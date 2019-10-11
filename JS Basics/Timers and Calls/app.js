@@ -20,7 +20,7 @@ const friendList = [
       status: 'offline'
     }
   ]
-
+  let list = '';
   getFriends = () => {
       friendList.forEach(e=>{
         list += `<p>${e.name}</p>`
