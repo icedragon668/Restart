@@ -81,7 +81,9 @@ Once you have all the names, add a render function that renders
 END BLOCK 2*/
 
 //Block 3
-
+let apple = '';
+let micro = '';
+const stocks = [];
 /*
 ## Instructions
 
