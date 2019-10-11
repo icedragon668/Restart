@@ -188,7 +188,7 @@ ToDo: Come Back Here
     well, I refactored it...
     it was good exercise i guess?
 -->
-
+ToDo: Continue
 <!-- 9 10 2019: Canvas Bumpy
     a sprite walks around a small canvas!
     next to add a scrolling map beneath, and if time permits, obstacles!
