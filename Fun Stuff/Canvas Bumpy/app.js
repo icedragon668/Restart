@@ -168,7 +168,7 @@ const greenGuy = {
 
 const scale = 2;
 const width = 16;
-const height = 18;
+const height = 16; //18 for Green Cap
 const sWidth = width * scale
 const sHeight = height * scale
 const cycleLoop = [0, 1, 0, 2];
@@ -201,8 +201,8 @@ function keyUpListener(e){
 }
 
 function loadImage() {
-    img.src = 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png'
-    // img.src = '../../Assests/Images/mother3.png'
+    // img.src = 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png'
+    img.src = '../../Assests/Images/chipset01.jpg'
     img.onload = function () { window.requestAnimationFrame(gameLoop) }
 }
 
