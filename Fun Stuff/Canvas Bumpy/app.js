@@ -143,7 +143,25 @@ function gameLoop() {
     window.requestAnimationFrame(gameLoop)
 }
 first  run with notes*/
-const greenGuy = {}
+const greenGuy = {
+    scale: 2,
+    width: 16,
+    height: 16,
+    sWidth: this.scale * this.width,
+    sHeight: this.scale * this.height,
+    cycleLoop: [0,1,0,2],
+    fDown: 0,
+    fUp: 1,
+    fLeft: 2,
+    fRight: 3,
+    frameLimit: 12,
+    moveSpeed: 1,
+    currentDirection: fDown,
+    currentLoopIndex: 0,
+    frameCount: 0,
+    posX: 0,
+    posY: 0
+}
 
 ////REFACTOR TIME///
 //let's clean up a bit...
@@ -154,17 +172,18 @@ const height = 18;
 const sWidth = width * scale
 const sHeight = height * scale
 const cycleLoop = [0, 1, 0, 2];
-const faceDown = 0;
-const faceUp = 1;
-const faceLeft = 2;
-const faceRight = 3;
+const fDown = 0;
+const fUp = 1;
+const fLeft = 2;
+const fRight = 3;
 const frameLimit = 12;
 const moveSpeed = 1;
 
 let canvas = document.querySelector('canvas')
 let ctx = canvas.getContext('2d')
 let keyPresses = {};
-let currentDirection = faceDown;
+
+let currentDirection = fDown;
 let currentLoopIndex = 0;
 let frameCount = 0;
 let posX = 0;
@@ -199,17 +218,17 @@ function gameLoop() {
     ctx.clearRect(0,0,canvas.width, canvas.height)
     let hasMoved = false
     if (keyPresses.w) {
-        moveChar(0,-moveSpeed,faceUp)
+        moveChar(0,-moveSpeed,fUp)
         hasMoved = true
     } else if (keyPresses.s) {
-        moveChar(0,moveSpeed,faceDown)
+        moveChar(0,moveSpeed,fDown)
         hasMoved = true
     }
     if (keyPresses.a) {
-        moveChar(-moveSpeed,0,faceLeft)
+        moveChar(-moveSpeed,0,fLeft)
         hasMoved = true
     } else if (keyPresses.d) {
-        moveChar(moveSpeed,0,faceRight)
+        moveChar(moveSpeed,0,fRight)
         hasMoved = true
     }
 
