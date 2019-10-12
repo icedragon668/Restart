@@ -38,15 +38,15 @@ function drawFrame(frameX, frameY, canvasX, canvasY) {
     dest height,
     */
 
-    //animation requests
-    // drawFrame(0, 0, 0, 0) //sprite 1, pos 1
-    // window.requestAnimationFrame(step);
-    /*
-    drawFrame(0, 0, 0, 0) //sprite 1, pos 1
-    drawFrame(1, 0, sWidth, 0); //sprite 2, pos 2
-    drawFrame(0, 0, sWidth * 2, 0); //sprite 1, pos 3
-    drawFrame(2, 0, sWidth * 3, 0); //sprite 3, pos 4
-    */
+//animation requests
+// drawFrame(0, 0, 0, 0) //sprite 1, pos 1
+// window.requestAnimationFrame(step);
+/*
+drawFrame(0, 0, 0, 0) //sprite 1, pos 1
+drawFrame(1, 0, sWidth, 0); //sprite 2, pos 2
+drawFrame(0, 0, sWidth * 2, 0); //sprite 1, pos 3
+drawFrame(2, 0, sWidth * 3, 0); //sprite 3, pos 4
+*/
 // }
 
 /*
@@ -149,7 +149,7 @@ const greenGuy = {
     height: 18, //16 for map, 18 for green cap
     sWidth: this.scale * this.width,
     sHeight: this.scale * this.height,
-    cycleLoop: [0,1,0,2],
+    cycleLoop: [0, 1, 0, 2],
     fDown: 0,
     fUp: 1,
     fLeft: 2,
@@ -191,12 +191,12 @@ let posY = 0;
 let img = new Image();
 
 window.addEventListener('keydown', keyDownListener, false);
-function keyDownListener(e){
+function keyDownListener(e) {
     keyPresses[e.key] = true
 }
 
 window.addEventListener('keyup', keyUpListener, false);
-function keyUpListener(e){
+function keyUpListener(e) {
     keyPresses[e.key] = false
 }
 
@@ -216,20 +216,20 @@ function drawFrame(frameX, frameY, canvasX, canvasY) {
 loadImage()
 
 function gameLoop() {
-    ctx.clearRect(0,0,canvas.width, canvas.height)
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
     let hasMoved = false
     if (keyPresses.w) {
-        moveChar(0,-moveSpeed,fUp)
+        moveChar(0, -moveSpeed, fUp)
         hasMoved = true
     } else if (keyPresses.s) {
-        moveChar(0,moveSpeed,fDown)
+        moveChar(0, moveSpeed, fDown)
         hasMoved = true
     }
     if (keyPresses.a) {
-        moveChar(-moveSpeed,0,fLeft)
+        moveChar(-moveSpeed, 0, fLeft)
         hasMoved = true
     } else if (keyPresses.d) {
-        moveChar(moveSpeed,0,fRight)
+        moveChar(moveSpeed, 0, fRight)
         hasMoved = true
     }
 
@@ -238,24 +238,24 @@ function gameLoop() {
         if (frameCount >= frameLimit) {
             frameCount = 0
             currentLoopIndex++
-            if(currentLoopIndex >= cycleLoop.length){
+            if (currentLoopIndex >= cycleLoop.length) {
                 currentLoopIndex = 0
             }
         }
     }
-    if (!hasMoved){currentLoopIndex=0}
-    drawFrame(cycleLoop[currentLoopIndex],currentDirection, posX, posY)
+    if (!hasMoved) { currentLoopIndex = 0 }
+    drawFrame(cycleLoop[currentLoopIndex], currentDirection, posX, posY)
     window.requestAnimationFrame(gameLoop)
 }
 
 //moveChar is pulled put for collision detection
-function moveChar (deltaX, deltaY, direction) {
-    if (posX + deltaX > 0 && posX + sWidth + deltaX < canvas.width){
-    posX += deltaX
+function moveChar(deltaX, deltaY, direction) {
+    if (posX + deltaX > 0 && posX + sWidth + deltaX < canvas.width) {
+        posX += deltaX
     }
 
-    if (posY + deltaY > 0 && posY + sHeight + deltaY < canvas.height){
-    posY += deltaY
+    if (posY + deltaY > 0 && posY + sHeight + deltaY < canvas.height) {
+        posY += deltaY
     }
 
     currentDirection = direction
@@ -269,26 +269,53 @@ const map = {
     rows: 8,
     tsize: 64,
     layers: [[
-        3,3,3,3,3,3,3,3,
-        3,1,2,1,1,1,1,3,
-        3,1,1,1,1,1,1,3,
-        3,1,1,1,1,1,1,3,
-        3,1,1,1,1,1,1,3,
-        3,1,1,1,1,2,1,3,
-        3,1,1,1,1,1,1,3,
-        3,3,3,3,3,3,3,3
-    ],[
-        4,3,3,3,3,3,3,3,4,
-        4,0,0,0,0,0,0,0,4,
-        4,0,0,0,0,0,0,0,4,
-        4,0,0,0,5,0,0,0,4,
-        4,0,0,0,0,0,0,0,4,
-        4,0,0,0,0,0,0,0,4,
-        4,4,4,0,0,4,4,0,4,
-        0,3,3,4,4,3,3,4,3
-        
+        3, 3, 3, 3, 3, 3, 3, 3,
+        3, 1, 2, 1, 1, 1, 1, 3,
+        3, 1, 1, 1, 1, 1, 1, 3,
+        3, 1, 1, 1, 1, 1, 1, 3,
+        3, 1, 1, 1, 1, 1, 1, 3,
+        3, 1, 1, 1, 1, 2, 1, 3,
+        3, 1, 1, 1, 1, 1, 1, 3,
+        3, 3, 3, 3, 3, 3, 3, 3
+    ], [
+        4, 3, 3, 3, 3, 3, 3, 3, 4,
+        4, 0, 0, 0, 0, 0, 0, 0, 4,
+        4, 0, 0, 0, 0, 0, 0, 0, 4,
+        4, 0, 0, 0, 5, 0, 0, 0, 4,
+        4, 0, 0, 0, 0, 0, 0, 0, 4,
+        4, 0, 0, 0, 0, 0, 0, 0, 4,
+        4, 4, 4, 0, 0, 4, 4, 0, 4,
+        0, 3, 3, 4, 4, 3, 3, 4, 3
+
     ]],
     getTile: function (layer, col, row) {
-        return this.layers[layer][row*map.cols + col]
+        return this.layers[layer][row * map.cols + col]
     }
 };
+
+//these two could be refactored to take variables
+function loadMap() {
+    img.src = '../../Assests/Images/chipset01.jpg'
+    img.onload = function () { window.requestAnimationFrame(gameLoop) } //this may not work doubled up like this
+}
+
+function drawMap(layer) {
+    for (c = 0; c < map.cols; c++) {
+        for (r = 0; r < map.rows; r++) {
+            let tile = map.getTile(layer, c, r);
+            if (tile !== 0) {
+                this.ctx.drawImage(
+                    img,
+                    (tile - 1) * map.tsize,
+                    0,
+                    map.tsize,
+                    mp.tsize,
+                    c * map.tsize,
+                    r * map.tsize,
+                    map.tsize,
+                    map.tsize
+                )
+            }
+        }
+    }
+}
