@@ -3,6 +3,8 @@
 //now to try to understand the differences and integrate them
 //like, where is the tile size?
 
+
+//this seems pretty straight forward
 var map = {
     cols: 12,
     rows: 12,
@@ -43,10 +45,10 @@ var map = {
 
         // tiles 3 and 5 are solid -- the rest are walkable
         // loop through all layers and return TRUE if any tile is solid
-        return this.layers.reduce(function (res, layer, index) {
+        return this.layers.reduce(function (res, layer, index) { //what's this reduce doing?
             var tile = this.getTile(index, col, row);
             var isSolid = tile === 3 || tile === 5;
-            return res || isSolid;
+            return res || isSolid; //it looks like it's just setting 3 and 5 to isSolid: true
         }.bind(this), false);
     },
     getCol: function (x) {
@@ -63,6 +65,7 @@ var map = {
     }
 };
 
+//camera stuff
 function Camera(map, width, height) {
     this.x = 0;
     this.y = 0;
