@@ -1,3 +1,8 @@
+//this is very different than what i previously had
+//this is, at this point, copy and pasted
+//now to try to understand the differences and integrate them
+//like, where is the tile size?
+
 var map = {
     cols: 12,
     rows: 12,
