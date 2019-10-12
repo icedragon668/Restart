@@ -146,7 +146,7 @@ first  run with notes*/
 const greenGuy = {
     scale: 2,
     width: 16,
-    height: 16,
+    height: 18,
     sWidth: this.scale * this.width,
     sHeight: this.scale * this.height,
     cycleLoop: [0,1,0,2],
@@ -156,7 +156,7 @@ const greenGuy = {
     fRight: 3,
     frameLimit: 12,
     moveSpeed: 1,
-    currentDirection: fDown,
+    currentDirection: 0,
     currentLoopIndex: 0,
     frameCount: 0,
     posX: 0,
@@ -167,8 +167,8 @@ const greenGuy = {
 //let's clean up a bit...
 
 const scale = 2;
-const width = 16;
-const height = 18;
+const width = 56;
+const height = 58;
 const sWidth = width * scale
 const sHeight = height * scale
 const cycleLoop = [0, 1, 0, 2];
@@ -201,7 +201,8 @@ function keyUpListener(e){
 }
 
 function loadImage() {
-    img.src = 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png'
+    // img.src = 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png'
+    img.src = '../../Assests/Images/mother3.png'
     img.onload = function () { window.requestAnimationFrame(gameLoop) }
 }
 
