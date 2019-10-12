@@ -8,7 +8,7 @@
 var map = {
     cols: 12,
     rows: 12,
-    tsize: 64,
+    tsize: 64, //tile size? used for both images?
     layers: [[
         3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
         3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3,
@@ -107,7 +107,7 @@ Camera.prototype.update = function () {
         this.following.y > this.maxY + this.height / 2) {
         this.following.screenY = this.following.y - this.y;
     }
-};
+}; 
 
 function Hero(map, x, y) {
     this.map = map;
