@@ -146,7 +146,7 @@ first  run with notes*/
 const greenGuy = {
     scale: 2,
     width: 16,
-    height: 18,
+    height: 18, //16 for map, 18 for green cap
     sWidth: this.scale * this.width,
     sHeight: this.scale * this.height,
     cycleLoop: [0,1,0,2],
@@ -201,15 +201,15 @@ function keyUpListener(e){
 }
 
 function loadImage() {
-    // img.src = 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png'
-    img.src = '../../Assests/Images/chipset01.jpg'
+    img.src = 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png'
+    // img.src = '../../Assests/Images/chipset01.jpg'
     img.onload = function () { window.requestAnimationFrame(gameLoop) }
 }
 
 function drawFrame(frameX, frameY, canvasX, canvasY) {
     ctx.drawImage(img,
-        frameX * width, frameY * height, width, height,
-        canvasX, canvasY, sWidth, sHeight
+        frameX * greenGuy.width, frameY * greenGuy.height, greenGuy.width, greenGuy.height,
+        canvasX, canvasY, greenGuy.scale * greenGuy.width, greenGuy.scale * greenGuy.height
     );
 }
 
@@ -260,3 +260,35 @@ function moveChar (deltaX, deltaY, direction) {
 
     currentDirection = direction
 }
+
+
+///the map
+
+const map = {
+    cols: 8,
+    rows: 8,
+    tsize: 64,
+    layers: [[
+        3,3,3,3,3,3,3,3,
+        3,1,2,1,1,1,1,3,
+        3,1,1,1,1,1,1,3,
+        3,1,1,1,1,1,1,3,
+        3,1,1,1,1,1,1,3,
+        3,1,1,1,1,2,1,3,
+        3,1,1,1,1,1,1,3,
+        3,3,3,3,3,3,3,3
+    ],[
+        4,3,3,3,3,3,3,3,4,
+        4,0,0,0,0,0,0,0,4,
+        4,0,0,0,0,0,0,0,4,
+        4,0,0,0,5,0,0,0,4,
+        4,0,0,0,0,0,0,0,4,
+        4,0,0,0,0,0,0,0,4,
+        4,4,4,0,0,4,4,0,4,
+        0,3,3,4,4,3,3,4,3
+        
+    ]],
+    getTile: function (layer, col, row) {
+        return this.layers[layer][row*map.cols + col]
+    }
+};
