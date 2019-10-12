@@ -28,8 +28,9 @@ var map = {
 
 Game.load = function () {
     return [
-        Loader.loadImage('tiles', '../../assests/images/chipset01.jpg'),
-        Loader.loadImage('character', 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png')
+        Loader.loadImage('tiles', '../../assests/images/tiles.png'),
+        // Loader.loadImage('character', 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png')
+        Loader.loadImage('character', '../../assests/images/toon.png')
     ];
 };
 
