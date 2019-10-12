@@ -107,7 +107,7 @@ Camera.prototype.update = function () {
         this.following.y > this.maxY + this.height / 2) {
         this.following.screenY = this.following.y - this.y;
     }
-}; 
+};
 
 function Hero(map, x, y) {
     this.map = map;
@@ -216,53 +216,64 @@ Game._drawLayer = function (layer) {
             var y = (r - startRow) * map.tsize + offsetY;
             if (tile !== 0) { // 0 => empty tile
                 switch (tile) {
-                    case 5:
-                            this.ctx.drawImage(
-                        this.tileAtlas, //image
-                        0*16, 12*16, //source x,y
-                        16, 16, //source width, height
-                        Math.round(x),
-                        Math.round(y),
-                        map.tsize,
-                        map.tsize)      
+                    case 1:
+                        this.ctx.drawImage(
+                            this.tileAtlas, //image
+                            10 * 16, 10 * 16, //source x,y
+                            16, 16, //source width, height
+                            Math.round(x),
+                            Math.round(y),
+                            map.tsize,
+                            map.tsize)
                         break
-                default:
-                this.ctx.drawImage(
-                    //////
-                    /*
-                    */
-                    /////
-                    // /*
-                    this.tileAtlas, // image
-                    (tile - 1) * map.tsize, // source x
-                    0, // source y
-                    16, // source width  //changed from map.tsize / 16
-                    16, // source height  //changed from map.tsize / 16
-                    Math.round(x),  // target x
-                    Math.round(y), // target y
-                    map.tsize, // target width
-                    map.tsize // target height
-                    // */
-                )};
+                    case 5:
+                        this.ctx.drawImage(
+                            this.tileAtlas, //image
+                            9 * 16, 8 * 16, //source x,y
+                            16, 16, //source width, height
+                            Math.round(x),
+                            Math.round(y),
+                            map.tsize,
+                            map.tsize)
+                        break
+                    default:
+                        this.ctx.drawImage(
+                            //////
+                            /*
+                            */
+                            /////
+                            // /*
+                            this.tileAtlas, // image
+                            (tile - 1) * map.tsize, // source x
+                            0, // source y
+                            16, // source width  //changed from map.tsize / 16
+                            16, // source height  //changed from map.tsize / 16
+                            Math.round(x),  // target x
+                            Math.round(y), // target y
+                            map.tsize, // target width
+                            map.tsize // target height
+                            // */
+                        )
+                };
             }
         }
     }
 };
 
 // ctx.drawImage(
-    /*
-    this.tileAtlas, //image
-    20*16, 15*16, //source x,y
-    16, 16, //source width, height
-    Math.round(x),
-    Math.round(y),
-    map.tsize,
-    map.tsize
-    */
+/*
+this.tileAtlas, //image
+20*16, 15*16, //source x,y
+16, 16, //source width, height
+Math.round(x),
+Math.round(y),
+map.tsize,
+map.tsize
+*/
 // )
 
 Game._drawGrid = function () {
-        var width = map.cols * map.tsize;
+    var width = map.cols * map.tsize;
     var height = map.rows * map.tsize;
     var x, y;
     for (var r = 0; r < map.rows; r++) {
