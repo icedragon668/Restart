@@ -215,28 +215,35 @@ Game._drawLayer = function (layer) {
             var x = (c - startCol) * map.tsize + offsetX;
             var y = (r - startRow) * map.tsize + offsetY;
             if (tile !== 0) { // 0 => empty tile
+                switch (tile) {
+                    case 5:
+                            this.ctx.drawImage(
+                        this.tileAtlas, //image
+                        0*16, 12*16, //source x,y
+                        16, 16, //source width, height
+                        Math.round(x),
+                        Math.round(y),
+                        map.tsize,
+                        map.tsize)      
+                        break
+                default:
                 this.ctx.drawImage(
                     //////
-                    this.tileAtlas, //image
-                    19*16, 14*16, //source x,y
-                    16, 16, //source width, height
-                    Math.round(x),
-                    Math.round(y),
-                    map.tsize,
-                    map.tsize                
-                    /////
                     /*
+                    */
+                    /////
+                    // /*
                     this.tileAtlas, // image
                     (tile - 1) * map.tsize, // source x
                     0, // source y
-                    map.tsize, // source width  //changed from map.tsize / 16
-                    map.tsize, // source height  //changed from map.tsize / 16
+                    16, // source width  //changed from map.tsize / 16
+                    16, // source height  //changed from map.tsize / 16
                     Math.round(x),  // target x
                     Math.round(y), // target y
                     map.tsize, // target width
                     map.tsize // target height
-                    */
-                );
+                    // */
+                )};
             }
         }
     }
