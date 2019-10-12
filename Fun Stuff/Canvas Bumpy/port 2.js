@@ -8,7 +8,7 @@
 var map = {
     cols: 12,
     rows: 12,
-    tsize: 16, //tile size? used for both images?
+    tsize: 64, //tile size? used for both images?
     layers: [[
         3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
         3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3,
