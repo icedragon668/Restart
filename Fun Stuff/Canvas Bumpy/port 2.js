@@ -8,7 +8,7 @@
 var map = {
     cols: 12,
     rows: 12,
-    tsize: 64, //tile size? used for both images?
+    tsize: 16, //tile size? used for both images?
     layers: [[
         3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
         3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3,
@@ -173,7 +173,7 @@ Hero.prototype._collide = function (dirx, diry) {
 
 Game.load = function () {
     return [
-        Loader.loadImage('tiles', '../../assests/images/tiles.png'),
+        Loader.loadImage('tiles', '../../assests/images/chipset01.jpg'),
         Loader.loadImage('hero', '../../assests/images/toon.png')
     ];
 };
