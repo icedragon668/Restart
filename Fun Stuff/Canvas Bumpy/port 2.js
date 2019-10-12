@@ -219,8 +219,8 @@ Game._drawLayer = function (layer) {
                     this.tileAtlas, // image
                     (tile - 1) * map.tsize, // source x
                     0, // source y
-                    map.tsize, // source width
-                    map.tsize, // source height
+                    16, // source width  //changed from map.tsize
+                    16, // source height  //changed from map.tsize
                     Math.round(x),  // target x
                     Math.round(y), // target y
                     map.tsize, // target width
