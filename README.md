@@ -188,7 +188,6 @@ ToDo: Come Back Here
     well, I refactored it...
     it was good exercise i guess?
 -->
-ToDo: Continue
 <!-- 9 10 2019: Canvas Bumpy
     a sprite walks around a small canvas!
     next to add a scrolling map beneath, and if time permits, obstacles!
@@ -198,6 +197,14 @@ ToDo: Continue
     seems the server for this exercise is down
     otherwise uneventful
     got to try fetch() ! seems okay, but 403, so dunno
+-->
+
+ToDo: Continue
+<!-- 11 10 2019: Canvas Bumpy
+    found a different project. the difference between the 2 are significant. 3 if you count Small Game. Now the test will be to integrate all of them
+
+    next: combine with RPGY text spaces
+    then: events!
 -->
 Next: unit03/04
 
