@@ -31,6 +31,30 @@ var map = {
     ]],
     getTile: function (layer, col, row) {
         return this.layers[layer][row * map.cols + col];
+    },
+    isSolidTileAtXY: function (x, y) {
+        var col = Math.floor(x / this.tsize);
+        var row = Math.floor(y / this.tsize);
+
+        // tiles 3 and 5 are solid -- the rest are walkable
+        // loop through all layers and return TRUE if any tile is solid
+        return this.layers.reduce(function (res, layer, index) {
+            var tile = this.getTile(index, col, row);
+            var isSolid = tile === 3 || tile === 5;
+            return res || isSolid;
+        }.bind(this), false);
+    },
+    getCol: function (x) {
+        return Math.floor(x / this.tsize);
+    },
+    getRow: function (y) {
+        return Math.floor(y / this.tsize);
+    },
+    getX: function (col) {
+        return col * this.tsize;
+    },
+    getY: function (row) {
+        return row * this.tsize;
     }
 };
 
@@ -43,20 +67,106 @@ function Camera(map, width, height) {
     this.maxY = map.rows * map.tsize - height;
 }
 
-Camera.SPEED = 256; // pixels per second
+Camera.prototype.follow = function (sprite) {
+    this.following = sprite;
+    sprite.screenX = 0;
+    sprite.screenY = 0;
+};
 
-Camera.prototype.move = function (delta, dirx, diry) {
-    // move camera
-    this.x += dirx * Camera.SPEED * delta;
-    this.y += diry * Camera.SPEED * delta;
+Camera.prototype.update = function () {
+    // assume followed sprite should be placed at the center of the screen
+    // whenever possible
+    this.following.screenX = this.width / 2;
+    this.following.screenY = this.height / 2;
+
+    // make the camera follow the sprite
+    this.x = this.following.x - this.width / 2;
+    this.y = this.following.y - this.height / 2;
     // clamp values
     this.x = Math.max(0, Math.min(this.x, this.maxX));
     this.y = Math.max(0, Math.min(this.y, this.maxY));
+
+    // in map corners, the sprite cannot be placed in the center of the screen
+    // and we have to change its screen coordinates
+
+    // left and right sides
+    if (this.following.x < this.width / 2 ||
+        this.following.x > this.maxX + this.width / 2) {
+        this.following.screenX = this.following.x - this.x;
+    }
+    // top and bottom sides
+    if (this.following.y < this.height / 2 ||
+        this.following.y > this.maxY + this.height / 2) {
+        this.following.screenY = this.following.y - this.y;
+    }
+};
+
+function Hero(map, x, y) {
+    this.map = map;
+    this.x = x;
+    this.y = y;
+    this.width = map.tsize;
+    this.height = map.tsize;
+
+    this.image = Loader.getImage('hero');
+}
+
+Hero.SPEED = 256; // pixels per second
+
+Hero.prototype.move = function (delta, dirx, diry) {
+    // move hero
+    this.x += dirx * Hero.SPEED * delta;
+    this.y += diry * Hero.SPEED * delta;
+
+    // check if we walked into a non-walkable tile
+    this._collide(dirx, diry);
+
+    // clamp values
+    var maxX = this.map.cols * this.map.tsize;
+    var maxY = this.map.rows * this.map.tsize;
+    this.x = Math.max(0, Math.min(this.x, maxX));
+    this.y = Math.max(0, Math.min(this.y, maxY));
+};
+
+Hero.prototype._collide = function (dirx, diry) {
+    var row, col;
+    // -1 in right and bottom is because image ranges from 0..63
+    // and not up to 64
+    var left = this.x - this.width / 2;
+    var right = this.x + this.width / 2 - 1;
+    var top = this.y - this.height / 2;
+    var bottom = this.y + this.height / 2 - 1;
+
+    // check for collisions on sprite sides
+    var collision =
+        this.map.isSolidTileAtXY(left, top) ||
+        this.map.isSolidTileAtXY(right, top) ||
+        this.map.isSolidTileAtXY(right, bottom) ||
+        this.map.isSolidTileAtXY(left, bottom);
+    if (!collision) { return; }
+
+    if (diry > 0) {
+        row = this.map.getRow(bottom);
+        this.y = -this.height / 2 + this.map.getY(row);
+    }
+    else if (diry < 0) {
+        row = this.map.getRow(top);
+        this.y = this.height / 2 + this.map.getY(row + 1);
+    }
+    else if (dirx > 0) {
+        col = this.map.getCol(right);
+        this.x = -this.width / 2 + this.map.getX(col);
+    }
+    else if (dirx < 0) {
+        col = this.map.getCol(left);
+        this.x = this.width / 2 + this.map.getX(col + 1);
+    }
 };
 
 Game.load = function () {
     return [
-        Loader.loadImage('tiles', '../../Assests/Images/tiles.png'),
+        Loader.loadImage('tiles', '../../assests/images/tiles.png'),
+        Loader.loadImage('hero', '../../assests/images/toon.png')
     ];
 };
 
@@ -64,46 +174,26 @@ Game.init = function () {
     Keyboard.listenForEvents(
         [Keyboard.LEFT, Keyboard.RIGHT, Keyboard.UP, Keyboard.DOWN]);
     this.tileAtlas = Loader.getImage('tiles');
+
+    this.hero = new Hero(map, 160, 160);
     this.camera = new Camera(map, 512, 512);
-
-    // create a canvas for each layer
-    this.layerCanvas = map.layers.map(function () {
-        var c = document.createElement('canvas');
-        c.width = 512;
-        c.height = 512;
-        return c;
-    });
-
-    // initial draw of the map
-    this._drawMap();
+    this.camera.follow(this.hero);
 };
 
 Game.update = function (delta) {
-    this.hasScrolled = false;
-    // handle camera movement with arrow keys
+    // handle hero movement with arrow keys
     var dirx = 0;
     var diry = 0;
     if (Keyboard.isDown(Keyboard.LEFT)) { dirx = -1; }
-    if (Keyboard.isDown(Keyboard.RIGHT)) { dirx = 1; }
-    if (Keyboard.isDown(Keyboard.UP)) { diry = -1; }
-    if (Keyboard.isDown(Keyboard.DOWN)) { diry = 1; }
+    else if (Keyboard.isDown(Keyboard.RIGHT)) { dirx = 1; }
+    else if (Keyboard.isDown(Keyboard.UP)) { diry = -1; }
+    else if (Keyboard.isDown(Keyboard.DOWN)) { diry = 1; }
 
-    if (dirx !== 0 || diry !== 0) {
-        this.camera.move(delta, dirx, diry);
-        this.hasScrolled = true;
-    }
-};
-
-Game._drawMap = function () {
-    map.layers.forEach(function (layer, index) {
-        this._drawLayer(index);
-    }.bind(this));
+    this.hero.move(delta, dirx, diry);
+    this.camera.update();
 };
 
 Game._drawLayer = function (layer) {
-    var context = this.layerCanvas[layer].getContext('2d');
-    context.clearRect(0, 0, 512, 512);
-
     var startCol = Math.floor(this.camera.x / map.tsize);
     var endCol = startCol + (this.camera.width / map.tsize);
     var startRow = Math.floor(this.camera.y / map.tsize);
@@ -117,7 +207,7 @@ Game._drawLayer = function (layer) {
             var x = (c - startCol) * map.tsize + offsetX;
             var y = (r - startRow) * map.tsize + offsetY;
             if (tile !== 0) { // 0 => empty tile
-                context.drawImage(
+                this.ctx.drawImage(
                     this.tileAtlas, // image
                     (tile - 1) * map.tsize, // source x
                     0, // source y
@@ -133,13 +223,40 @@ Game._drawLayer = function (layer) {
     }
 };
 
-Game.render = function () {
-    // re-draw map if there has been scroll
-    if (this.hasScrolled) {
-        this._drawMap();
+Game._drawGrid = function () {
+        var width = map.cols * map.tsize;
+    var height = map.rows * map.tsize;
+    var x, y;
+    for (var r = 0; r < map.rows; r++) {
+        x = - this.camera.x;
+        y = r * map.tsize - this.camera.y;
+        this.ctx.beginPath();
+        this.ctx.moveTo(x, y);
+        this.ctx.lineTo(width, y);
+        this.ctx.stroke();
     }
+    for (var c = 0; c < map.cols; c++) {
+        x = c * map.tsize - this.camera.x;
+        y = - this.camera.y;
+        this.ctx.beginPath();
+        this.ctx.moveTo(x, y);
+        this.ctx.lineTo(x, height);
+        this.ctx.stroke();
+    }
+};
 
-    // draw the map layers into game context
-    this.ctx.drawImage(this.layerCanvas[0], 0, 0);
-    this.ctx.drawImage(this.layerCanvas[1], 0, 0);
+Game.render = function () {
+    // draw map background layer
+    this._drawLayer(0);
+
+    // draw main character
+    this.ctx.drawImage(
+        this.hero.image,
+        this.hero.screenX - this.hero.width / 2,
+        this.hero.screenY - this.hero.height / 2);
+
+    // draw map top layer
+    this._drawLayer(1);
+
+    this._drawGrid();
 };
