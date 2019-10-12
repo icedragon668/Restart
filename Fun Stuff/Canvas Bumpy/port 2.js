@@ -23,18 +23,18 @@ var map = {
         3, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 3,
         3, 3, 3, 1, 1, 2, 3, 3, 3, 3, 3, 3
     ], [
-        4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 0, 0, 5, 0, 0, 0, 0, 0, 5, 0, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 4, 4, 0, 5, 4, 4, 4, 4, 4, 4, 4,
-        4, 4, 4, 0, 0, 3, 3, 3, 3, 3, 3, 3
+        6, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6,
+        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7,
+        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7,
+        4, 0, 0, 5, 0, 0, 0, 0, 0, 5, 0, 7,
+        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7,
+        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7,
+        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7,
+        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7,
+        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7,
+        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7,
+        4, 4, 4, 0, 5, 4, 4, 4, 4, 4, 4, 7,
+        6, 8, 8, 0, 0, 8, 8, 8, 8, 8, 8, 6
     ]],
     getTile: function (layer, col, row) {
         return this.layers[layer][row * map.cols + col];
@@ -220,6 +220,56 @@ Game._drawLayer = function (layer) {
                         this.ctx.drawImage(
                             this.tileAtlas, //image
                             10 * 16, 10 * 16, //source x,y
+                            16, 16, //source width, height
+                            Math.round(x),
+                            Math.round(y),
+                            map.tsize,
+                            map.tsize)
+                        break
+                    case 3:
+                        this.ctx.drawImage(
+                            this.tileAtlas, //image
+                            10 * 16, 11 * 16, //source x,y
+                            16, 16, //source width, height
+                            Math.round(x),
+                            Math.round(y),
+                            map.tsize,
+                            map.tsize)
+                        break
+                    case 4:
+                        this.ctx.drawImage(
+                            this.tileAtlas, //image
+                            11 * 16, 10 * 16, //source x,y
+                            16, 16, //source width, height
+                            Math.round(x),
+                            Math.round(y),
+                            map.tsize,
+                            map.tsize)
+                        break
+                    case 6:
+                        this.ctx.drawImage(
+                            this.tileAtlas, //image
+                            11 * 16, 8 * 16, //source x,y
+                            16, 16, //source width, height
+                            Math.round(x),
+                            Math.round(y),
+                            map.tsize,
+                            map.tsize)
+                        break
+                    case 7:
+                        this.ctx.drawImage(
+                            this.tileAtlas, //image
+                            9 * 16, 10 * 16, //source x,y
+                            16, 16, //source width, height
+                            Math.round(x),
+                            Math.round(y),
+                            map.tsize,
+                            map.tsize)
+                        break
+                    case 8:
+                        this.ctx.drawImage(
+                            this.tileAtlas, //image
+                            10 * 16, 9 * 16, //source x,y
                             16, 16, //source width, height
                             Math.round(x),
                             Math.round(y),
