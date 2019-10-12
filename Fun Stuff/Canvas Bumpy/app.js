@@ -202,7 +202,7 @@ function keyUpListener(e) {
 
 function loadImage() {
     img.src = 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png'
-    // img.src = '../../Assests/Images/chipset01.jpg'
+    img.src = '../../Assests/Images/chipset01.jpg'
     img.onload = function () { window.requestAnimationFrame(gameLoop) }
 }
 
@@ -244,7 +244,9 @@ function gameLoop() {
         }
     }
     if (!hasMoved) { currentLoopIndex = 0 }
+    drawMap(0)
     drawFrame(cycleLoop[currentLoopIndex], currentDirection, posX, posY)
+    drawMap(1)
     window.requestAnimationFrame(gameLoop)
 }
 
