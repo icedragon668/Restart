@@ -210,6 +210,8 @@ ToDo: Continue
 ToDo: Learn async and await
 <!-- 14 10 2019: APIing
     I want to get better with async and await functions
+
+    this lesson requires more refactoring
 -->
-Next: unit03/04
+Next: unit03/04 cont.
 
