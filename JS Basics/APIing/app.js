@@ -94,7 +94,7 @@ const places = [
          let e2 = e + ",usa"
          let queryURL = `${baseURL}${e2}&appid=${APIKey}`
          fetch(queryURL).then(res=>res.json()).then(res => console.log(res))
-         }) //stray code, for the api call(s)
+         }) //useable for rendering, can push to array once input is clean
 
 //I wanted to wrap the fetch in a const, work with a promise,
 //  then use async/await
