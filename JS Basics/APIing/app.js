@@ -37,19 +37,18 @@ const main = function (s) {
     }
 }
 
+const APIKey = '166a433c57516f51dfab1f7edaed8413';
+let place = "san+fransisco,usa"
+let queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=${APIKey}`;
+
 //this is not really a reusable function
 const findWeather = function (e) {
     e.preventDefault();
-
-    const APIKey = '166a433c57516f51dfab1f7edaed8413';
-    let place = "san+fransisco,usa"
     
     place = main('#place').val().trim()
     console.log(place)
 
-    let queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=${APIKey}`;
- 
-       fetch(queryURL)
+        fetch(queryURL)
         .then(res => res.json()) //should i return? why or !why ?
         .then(res => {
             main("#places").write(`
@@ -90,7 +89,10 @@ const places = [
     'boise'
 ]
 
-    //places.forEach(e=>{ e = e + ",usa" }) //stray code, for the api call(s)
+    places.forEach(e=>{
+         e = e + ",usa"
+         
+         }) //stray code, for the api call(s)
 
 //I wanted to wrap the fetch in a const, work with a promise,
 //  then use async/await
