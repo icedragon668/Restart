@@ -25,8 +25,9 @@ const APIKey = '166a433c57516f51dfab1f7edaed8413';
 let queryURL = `https://api.openweathermap.org/data/2.5/weather?q=san+francisco,usa&appid=${APIKey}`;
 
 fetch(queryURL)
-    .then(function(res){
-        main('main').write(res)
+    .then(res => res.json())
+    .then(res => {
+        main('main').write(res.name)
         console.log(res)
     })
     .catch(function(err){
