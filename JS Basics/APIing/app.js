@@ -27,12 +27,14 @@ let queryURL = `https://api.openweathermap.org/data/2.5/weather?q=san+francisco,
 fetch(queryURL)
     .then(res => res.json())
     .then(res => {
-        main('main').write(res.name)
         console.log(res)
+        return res
     })
     .catch(function(err){
-        main('main').write(err)
+        console.log(err)
     })
 
-
-main('main').write('hey')
+//I wanted to wrap the fetch in a const, work with a promise,
+//  then use async/await
+//  need to get better with await functions
+main('main').write("hey")

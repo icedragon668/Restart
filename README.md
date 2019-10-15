@@ -206,5 +206,10 @@ ToDo: Continue
     next: combine with RPGY text spaces
     then: events!
 -->
+
+ToDo: Learn async and await
+<!-- 14 10 2019: APIing
+    I want to get better with async and await functions
+-->
 Next: unit03/04
 
