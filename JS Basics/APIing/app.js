@@ -91,8 +91,9 @@ const places = [
 ]
 
     places.forEach(e=>{
-         e = e + ",usa"
-         
+         let e2 = e + ",usa"
+         let queryURL = `${baseURL}${e2}&appid=${APIKey}`
+         fetch(queryURL).then(res=>res.json()).then(res => console.log(res))
          }) //stray code, for the api call(s)
 
 //I wanted to wrap the fetch in a const, work with a promise,
