@@ -20,4 +20,10 @@ const main = function (s) {
     }
 }
 
+//API Block
+const APIKey = '166a433c57516f51dfab1f7edaed8413';
+let queryURL = `https://api.openweathermap.org/data/2.5/weather?q=san+francisco,usa&appid=${APIKey}`;
+
+
+
 main('main').write('hey')
