@@ -90,7 +90,7 @@ const places = [
     'boise'
 ]
 
-
+    //places.forEach(e=>{ e = e + ",usa" }) //stray code, for the api call(s)
 
 //I wanted to wrap the fetch in a const, work with a promise,
 //  then use async/await
