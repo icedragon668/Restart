@@ -39,7 +39,7 @@ const main = function (s) {
 
 const APIKey = '166a433c57516f51dfab1f7edaed8413';
 let place = "san+fransisco,usa"
-let queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=${APIKey}`;
+let baseURL = `https://api.openweathermap.org/data/2.5/weather?q=`;
 
 //this is not really a reusable function
 const findWeather = function (e) {
@@ -48,6 +48,7 @@ const findWeather = function (e) {
     place = main('#place').val().trim()
     console.log(place)
 
+    let queryURL = `${baseURL}${place}&appid=${APIKey}`
         fetch(queryURL)
         .then(res => res.json()) //should i return? why or !why ?
         .then(res => {
