@@ -4,12 +4,12 @@ const main = function (s) {
 
     write = (c, type) => {
         switch (type) {
-            case "+": {
+            case "add": {
                 nl.forEach(e => { e.innerHTML += c })
                 break
             }
             default: {
-                nl.forEach(e => { e.innerHTML += c })
+                nl.forEach(e => { e.innerHTML = c })
 
             }
         }
@@ -51,24 +51,28 @@ const findWeather = function (e) {
        fetch(queryURL)
         .then(res => res.json()) //should i return? why or !why ?
         .then(res => {
+            main("#places").write(`
+            <div id="head"></div>
+            <div id="main"></div>
+            `)
 
-            main("header").write(`
-            <h1>${res.name}<h1>`)
+            main("#head").write(`
+            <h1>${res.name}<h1>`, 'add')
 
-            main('main').write(`
+            main('#main').write(`
             <ul>
             <li>temp: ${res.main.temp}K</li>
             <li>pressure: ${res.main.pressure}</li>
             <li>humidity: ${res.main.humidity}</li>
-            </ul>`)
+            </ul>`, 'add')
 
             const tempC = (res.main.temp - 273.15)
             const tempF = tempC * 1.80 + 32
 
-            main('main').write(`
+            main('#main').write(`
             <br>
             <p>temp is ${Math.round(tempF)}F</p>
-            <p>and ${Math.round(tempC)}C</p>`)
+            <p>and ${Math.round(tempC)}C</p>`,'add')
             console.log(res)
         })
         .catch(function (err) {
@@ -89,5 +93,4 @@ const places = [
 //I wanted to wrap the fetch in a const, work with a promise,
 //  then use async/await
 //  need to get better with await functions
-main('main').write("hey")
 main('#find').on('click', findWeather) //botton works once?t 
