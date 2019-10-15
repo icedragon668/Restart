@@ -219,5 +219,7 @@ ToDo: Review data-attr
     the DOM portion of this lesson is not yet finished
     while not huge, I would like to review the data-attr portion
 -->
+important: mark down language, this format is bad...
 Next: unit03/04 cont.
+
 
