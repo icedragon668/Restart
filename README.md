@@ -208,10 +208,16 @@ ToDo: Continue
 -->
 
 ToDo: Learn async and await
+ToDo: Review data-attr
 <!-- 14 10 2019: APIing
     I want to get better with async and await functions
 
     this lesson requires more refactoring
+
+    got the api calls working as hoped, using only fetch()
+
+    the DOM portion of this lesson is not yet finished
+    while not huge, I would like to review the data-attr portion
 -->
 Next: unit03/04 cont.
 
