@@ -37,6 +37,7 @@ const main = function (s) {
     }
 }
 
+//this is not really a reusable function
 const findWeather = function (e) {
     e.preventDefault();
 
@@ -88,6 +89,7 @@ const places = [
     'tampa',
     'boise'
 ]
+
 
 
 //I wanted to wrap the fetch in a const, work with a promise,
