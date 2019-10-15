@@ -76,8 +76,18 @@ const findWeather = function (e) {
         })
 }
 
+const places = [
+    'atlanta',
+    "phoenix",
+    'new+york',
+    'los+angeles',
+    'tampa',
+    'boise'
+]
+
+
 //I wanted to wrap the fetch in a const, work with a promise,
 //  then use async/await
 //  need to get better with await functions
 main('main').write("hey")
-main('#find').on('click', findWeather) //botton works once?
+main('#find').on('click', findWeather) //botton works once?t 
