@@ -27,8 +27,15 @@ let queryURL = `https://api.openweathermap.org/data/2.5/weather?q=san+francisco,
 fetch(queryURL)
     .then(res => res.json())
     .then(res => {
+        main("header").write(`
+        <h1>${res.name}<h1>`)
+        main('main').write(`
+        <ul>
+        <li>temp: ${res.main.temp}</li>
+        <li>pressure: ${res.main.pressure}</li>
+        <li>humidity: ${res.main.humidity}</li>
+        </ul>`)
         console.log(res)
-        return res
     })
     .catch(function(err){
         console.log(err)
