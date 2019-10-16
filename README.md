@@ -32,10 +32,10 @@ Ultimately, this probably makes no difference. But it feels important to me.
     And is helping me with notation. Both in the code
     and in the commits (notation is lacking here,
     at least for a "first" project. That will have to be
-     ammended)
+    amended)
 
     I should also like to get some markdown under my belt.
-     I never did get around to practicing that
+    I never did get around to practicing that
 
 
 ## From Basic CSS Page 2 13th 9 2019
