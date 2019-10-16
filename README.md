@@ -63,14 +63,19 @@ While having one per project makes sense elsewhere, here I only need the one
 
 ## From Boxes 18th 9 2019
     Got distracted and did the "only commit once" error
-    Must try to make multiple commits as practice for larger projects
+    Must try to make multiple commits as practice for 
+    larger projects
+
     The idea is to track changes
-     not to just save the current project
+    not to just save the current project
 #### ToDo: Review Box-Sizing more closely
 
 
 ## Week One of Restart
-    After one week, I feel much better. My goal is to in crease commits to 20 daily. This will likely mean two small projects a day.
+    After one week, I feel much better. My goal is to 
+    increase commits to 20 daily. This will likely mean 
+    two small projects a day.
+    
     I am excited to be coding again. It feels good.
 
 
@@ -83,22 +88,33 @@ While having one per project makes sense elsewhere, here I only need the one
 
 ## From Pseudo and Columns Bootstrap 20th 9 2019
     This has the makings of some useful CSS tricks.
-    I would like to combine the display:none with an animation later
+    I would like to combine the display:none with an 
+    animation later
 #### ToDo: Read up on Mixins
 
 
 ## from Navbar and Media Queries 23rd 9 2019
-    I should very much like to design my own navbar from the ground up
-    Ditto to "pop-ups", whose name I have forgotten. (24/9/19: modal)
-    It's good to read through the bootstrap css as linked in the source. I find that more valuable than the actual documentation.
+    I should very much like to design my own navbar from 
+    the ground up
+    
+    Ditto to "pop-ups", whose name I have forgotten. 
+    (24/9/19: modal)
+    
+    It's good to read through the bootstrap css as linked 
+    in the source. I find that more valuable than the 
+    actual documentation.
 
-    Media Queries are straight forward, if not easy to fully implement across multiple devices.
-    It would be a good idea to develop a standard media query testing strategy
+    Media Queries are straight forward, if not easy to 
+    fully implement across multiple devices.
+
+    It would be a good idea to develop a standard media 
+    query testing strategy
 #### ToDo: decipher and DIY a bootstrap navbar
 
 
 ## from JS Intro 24th 9 2019
-    I'm okay with JS, but rusty with some of the basics. I'm looking forward to doing the JS30 challenge soon.
+    I'm okay with JS, but rusty with some of the basics. 
+    I'm looking forward to doing the JS30 challenge soon.
 #### Todo: Better learn RegEx
 
 
@@ -109,14 +125,24 @@ While having one per project makes sense elsewhere, here I only need the one
         clear: both;
     }
     ::after sticks this stuff at the end of the element, okay.
-    content: ""; add a nothing, kinda like a cleaning :p
-    clear: both; stops the floating, but of the next element, so watch that placing.
-    display: table; not really up on this, it is it's own rabbit hole.
-     but there is a lot of good stuff here
-     ah! the display: table is a height hack! prevents the element from collapsing.
     
-    A good way to go seems to be to put floats in a parent and give the parent the clearfix. (specifically .clearfix:after)
-    .group is considered the more popular name now (.group:after)
+    content: ""; add a nothing, kinda like a cleaning :p
+    clear: both; stops the floating, but of the next element, 
+    so watch that placing.
+    
+    display: table; not really up on this, it is it's own 
+    rabbit hole.
+    
+     but there is a lot of good stuff here
+     ah! the display: table is a height hack! 
+     prevents the element from collapsing.
+    
+    A good way to go seems to be to put floats in a 
+    parent and give the parent the clearfix. 
+    (specifically .clearfix:after)
+    
+    .group is considered the more popular name now 
+    (.group:after)
 
     flexbox is next on the study list
     display is worth a reading as well (w3s should be fine)
