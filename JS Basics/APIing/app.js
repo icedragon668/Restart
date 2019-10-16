@@ -113,8 +113,11 @@ button displays a city an info
 
 // Event Listener Delegation
 
-const eventDelegation = function() { //ha! this triggers the hack-around as is
-    let e = 0
+const eventDelegation = function(e) { //ha! this triggers the hack-around as is
+    e.preventDefault() //just good practice
+    if (e.target.matches('.selector')){ //switch case?
+        //do stuff for that selector
+    }
 }
 
 //maybe add this to an event class instead of the entire document?

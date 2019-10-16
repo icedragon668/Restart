@@ -339,8 +339,11 @@ console.log(`This took ${end-start} ms`)
 ```
     Then there's the whole page listener: EVENT DELEGATION
 ```javascript
-const eventDelegation = function() {
-    //the "individuals" get directed in here    
+const eventDelegation = function(e) {
+    e.preventDefault()                   //just good practice
+    if (e.target.matches('.selector')){  //switch case?
+        //do stuff for that selector
+    }
 }
 
 document.addEventListener('click', eventDelegation)
