@@ -25,6 +25,7 @@ Restart is for me to redo everything I have done while also working on new ideas
 
 Ultimately, this probably makes no difference. But it feels important to me.
 
+
 ## From Disposable Profile 12th 9 2019
     I am finding this restart to be a good refresher.
      I think I either forgot, or never learned the href=#.
@@ -34,18 +35,20 @@ Ultimately, this probably makes no difference. But it feels important to me.
 
 I should also like to get some markdown under my belt. I never did get around to practicing that
 
+
 ## From Basic CSS Page 2 13th 9 2019
     Not much relearning was gained in this project
+
 
 ## From Disposable Profile 13th 9 2019
     altered a strong tag to a span with inline style
     good reminder about inline style and elements
 
-#### Come back
+
 ## From Fun with Divs 16th 9 2019
     working with siblings in css should be a common exercise
     space > ~ + , (add names)
-
+#### Come back
 
 #### Come Back to This
 ## Relative Paths 18th 9 2019
