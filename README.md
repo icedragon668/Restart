@@ -229,6 +229,10 @@ ToDo: Learn async and await
 
 -->
 important: mark down language, this format is bad...
+/*[About READMEs](https://help.github.com/articles/about-readmes/)*/
+
+/* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)*/
+
 Next: unit03/04 cont.
 
 

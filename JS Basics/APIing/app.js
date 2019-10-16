@@ -111,3 +111,12 @@ button displays a city an info
 "search" is verified pre api call
 
 */
+
+const renderButton = function () {
+    //empty card
+    //render selected card
+
+    //part2
+    //empty button list
+    //loop button list and create data-* buttons
+}
