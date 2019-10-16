@@ -291,12 +291,15 @@ While having one per project makes sense elsewhere, here I only need the one
     got the api calls working as hoped, using only fetch()
 
     the DOM portion of this lesson is not yet finished
-    while not huge, I would like to review the data-attr portion
+    while not huge, I would like to review the data-attr
+    portion
 #### ToDo: Learn async and await
 
 
 ## 15 10 2019: Review data-attr
-    Review of data-* attributes. nice! get them with a selector.dataset.* 
+    Review of data-* attributes. nice! get them with a 
+    selector.dataset.* 
+    
     eg:
      <div id="tester" data-tester="1234">
     document.querySelector("#tester").dataset.tester // "1234"
@@ -308,11 +311,16 @@ While having one per project makes sense elsewhere, here I only need the one
 /*[About READMEs](https://help.github.com/articles/about-readmes/)*/
 
 /* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)*/
+*15.10.2019 Update* format is getting better!
 
 
 ## 15 10 2019: APIing
-    i'm missing something about event listeners that are created later.
-    jQuery .on has a selector to listen to a parent, then select from there, but i'm having a hard time recreating it in vanilla 
+    i'm missing something about event listeners that are
+    created later.
+    
+    jQuery .on has a selector to listen to a parent, 
+    then select from there, but i'm having a hard time 
+    recreating it in vanilla 
 
 
 ### Next: unit03/04 cont.
