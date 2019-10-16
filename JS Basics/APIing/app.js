@@ -99,7 +99,7 @@ const places = [
 //I wanted to wrap the fetch in a const, work with a promise,
 //  then use async/await
 //  need to get better with await functions
-main('#find').on('click', findWeather) //botton works once?t 
+// main('#find').on('click', findWeather) //botton works once?t 
 
 /*
 //Goals
@@ -113,7 +113,20 @@ button displays a city an info
 
 const renderButton = function () {
     //empty button list
+    main('#cityButtons').write('')
     //loop button list and create data-* buttons
+    places.forEach(e=>{
+        main('#cityButtons').write(`
+        <button class="city" data-name="${e}">
+            ${e}
+        </button>
+        `, "add")
+    })
+    /*
+        <div id="cityButtons">
+            <button class="city" data-name=""></button>
+        </div>
+    */
 }
 
 const renderCard = function () {
@@ -123,7 +136,7 @@ const renderCard = function () {
     //get the button dataset.name
     place = this.dataset.name
     //fetch city info
-    fetch(`${baseURL}${place}&appid=${APIKey}`)
+    fetch(`${baseURL}${place},usa&appid=${APIKey}`)
     //translate response
     .then(res=>res.json())
     //render selected card
