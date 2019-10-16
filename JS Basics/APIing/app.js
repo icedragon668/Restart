@@ -140,8 +140,8 @@ const cityVerify = function () {
     console.log("City Verify")
 }
 
-main('#addCityButton').on('click', renderButton);
-main('#displayCityCard').on('click', renderCard)
+main('#find').on('click', renderButton);
+main('.city').on('click', renderCard)
 
 cityVerify()
 renderCard()
