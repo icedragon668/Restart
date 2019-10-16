@@ -50,20 +50,20 @@ I should also like to get some markdown under my belt. I never did get around to
     space > ~ + , (add names)
 #### Come back
 
-#### Come Back to This
 ## Relative Paths 18th 9 2019
     added some notes for CSS switching that I want to get back to
+#### Come Back to This
 
 
 Just now thought about adding a universal reset.css to this project
 While having one per project makes sense elsewhere, here I only need the one
 
-#### ToDo: Review Box-Sizing more closely
 ## From Boxes 18th 9 2019
     Got distracted and did the "only commit once" error
     Must try to make multiple commits as practice for larger projects
     The idea is to track changes
      not to just save the current project
+#### ToDo: Review Box-Sizing more closely
 
 
 ## Week One of Restart
@@ -78,13 +78,12 @@ While having one per project makes sense elsewhere, here I only need the one
     Need to remember to start a little bit earlier.
 
 
-#### ToDo: Read up on Mixins
 ## From Pseudo and Columns Bootstrap 20th 9 2019
     This has the makings of some useful CSS tricks.
     I would like to combine the display:none with an animation later
+#### ToDo: Read up on Mixins
 
 
-#### ToDo: decipher and DIY a bootstrap navbar
 ## from Navbar and Media Queries 23rd 9 2019
     I should very much like to design my own navbar from the ground up
     Ditto to "pop-ups", whose name I have forgotten. (24/9/19: modal)
@@ -92,15 +91,14 @@ While having one per project makes sense elsewhere, here I only need the one
 
     Media Queries are straight forward, if not easy to fully implement across multiple devices.
     It would be a good idea to develop a standard media query testing strategy
+#### ToDo: decipher and DIY a bootstrap navbar
 
 
-#### Todo: Better learn RegEx
 ## from JS Intro 24th 9 2019
     I'm okay with JS, but rusty with some of the basics. I'm looking forward to doing the JS30 challenge soon.
+#### Todo: Better learn RegEx
 
 
-#### ToDo: read up on flexbox
-#### ToDo: read up on general display (and specifically table)
 ## Reading up on clearfix
     .group:after {
         content: "";
@@ -120,13 +118,15 @@ While having one per project makes sense elsewhere, here I only need the one
     flexbox is next on the study list
     display is worth a reading as well (w3s should be fine)
      the Kicking Ass with Display bookmark is awesome
+#### ToDo: read up on flexbox
+#### ToDo: read up on general display (and specifically table)
 
 
-#### Notice: Rabbit Holes
 ## from JS ACL 25th 9 2019
     I could do with going back here, if only to touch up a couple spots
     I'd like to add some verification, but i know i'll be doing that soon enough.
     Some JSX and some RegEx are in order, as well as new (const name = new type(arguments)).
+#### Notice: Rabbit Holes
 
 
 ## 26 9 2019: Conditions and Functions
@@ -177,10 +177,11 @@ While having one per project makes sense elsewhere, here I only need the one
     and I could use more css practice
     nothing too notable
 
-#### ToDo: Come Back Here
 ## 8 10 2019: Calculator
     This is a good exercise to come back to. There is a lot that CAN be done to make a better calculator.
     I would like to make this into an app, it's an easy concept. Plus a good way to navigate app creation (Swift, ReactNative, etc.)
+#### ToDo: Come Back Here
+
 
 ## 8 10 2019: Data and Scope
     digging through the data was a fine exercise, a bit more interesting for being vanilla sans dom.js
@@ -199,15 +200,14 @@ While having one per project makes sense elsewhere, here I only need the one
     got to try fetch() ! seems okay, but 403, so dunno
 
 
-#### ToDo: Continue
 ## 11 10 2019: Canvas Bumpy
     found a different project. the difference between the 2 are significant. 3 if you count Small Game. Now the test will be to integrate all of them
 
     next: combine with RPGY text spaces
     then: events!
+#### ToDo: Continue
 
 
-#### ToDo: Learn async and await
 ## 14 10 2019: APIing
     I want to get better with async and await functions
 
@@ -217,6 +217,7 @@ While having one per project makes sense elsewhere, here I only need the one
 
     the DOM portion of this lesson is not yet finished
     while not huge, I would like to review the data-attr portion
+#### ToDo: Learn async and await
 
 
 ## 15 10 2019: Review data-attr
@@ -237,6 +238,7 @@ While having one per project makes sense elsewhere, here I only need the one
 ## 15 10 2019: APIing
     i'm missing something about event listeners that are created later.
     jQuery .on has a selector to listen to a parent, then select from there, but i'm having a hard time recreating it in vanilla 
+
 
 ### Next: unit03/04 cont.
 
