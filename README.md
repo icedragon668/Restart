@@ -152,37 +152,58 @@ While having one per project makes sense elsewhere, here I only need the one
 
 
 ## from JS ACL 25th 9 2019
-    I could do with going back here, if only to touch up a couple spots
-    I'd like to add some verification, but i know i'll be doing that soon enough.
-    Some JSX and some RegEx are in order, as well as new (const name = new type(arguments)).
+    I could do with going back here, if only to touch up 
+    a couple spots
+    
+    I'd like to add some verification, but i know i'll 
+    be doing that soon enough.
+
+    Some JSX and some RegEx are in order, as well as 
+    new (const name = new type(arguments)).
 #### Notice: Rabbit Holes
 
 
 ## 26 9 2019: Conditions and Functions
     was a bit sloppy tonight
-    in part because i didnt take the time to do these the way i'd like to do them
+    in part because i didnt take the time to do these 
+    the way i'd like to do them
+    
     but that is no excuse
     not a great effort today
 
 
 ## 27 9 2019: Objects and DOM
-    i did not finish the project like i wanted to, will come back to this
+    i did not finish the project like i wanted to, 
+    will come back to this
+    
     a bit disappointed with myself tonight, again?
-    i need to start earlier, i think that is the main difference from the past two days
-    but I hit may goals... so it's still good. i just have higher expectations of myself
+    
+    i need to start earlier, i think that is the main 
+    difference from the past two days
+    
+    but I hit may goals... so it's still good. i just 
+    have higher expectations of myself
 
 
 ## 30 9 2019: Objects and DOM, day 2
-    Not on my list for today, but I still feel a little bad that I couldn't pull from forms from memory :p
-    looking forward to stopping alert/prompt and doing DOM manipulation
+    Not on my list for today, but I still feel a little 
+    bad that I couldn't pull from forms from memory :p
+    
+    looking forward to stopping alert/prompt and doing 
+    DOM manipulation
+    
     All in all, a fine day. just not above and beyond
 
 
 ## 1 10 2019: DOM Library
-    this was a pretty good run, save that nonsense on the first part...
-    I feel much more confident here. hopefull, when i get to jQuery, i'll be able to skip it and use vanilla
+    this was a pretty good run, save that nonsense on 
+    the first part...
+    
+    I feel much more confident here. hopefull, when i 
+    get to jQuery, i'll be able to skip it and use vanilla
     (or rather vanilla THEN jQuery)
-      still getting used to 'git commit -am' lol
+    
+    still getting used to 'git commit -am' lol
 
 
 ## 2 10 2019: Fun Stuff - RPGy
