@@ -113,10 +113,22 @@ button displays a city an info
 */
 
 const renderButton = function () {
-    //empty card
-    //render selected card
-
-    //part2
     //empty button list
     //loop button list and create data-* buttons
 }
+
+const renderCard = function () {
+    //empty card
+    //render selected card
+
+}
+
+const cityVerify = function () {
+    //does the api have a city to check against?
+}
+
+main('#addCityButton').on('click', renderButton);
+main('#displayCityCard').on('click', renderCard)
+
+cityVerify()
+renderCard()
