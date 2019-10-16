@@ -101,3 +101,13 @@ const places = [
 //  then use async/await
 //  need to get better with await functions
 main('#find').on('click', findWeather) //botton works once?t 
+
+/*
+//Goals
+button displays a city an info
+"search" creates a button for ^
+"search" is replaced with dropdown
+"search" is RegEx friendly
+"search" is verified pre api call
+
+*/
