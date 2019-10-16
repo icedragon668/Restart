@@ -322,6 +322,21 @@ While having one per project makes sense elsewhere, here I only need the one
     then select from there, but i'm having a hard time 
     recreating it in vanilla 
 
+## 16 10 2019: New Tricks
+    Performance testing! Just a simple way to clock time of code
+    
+```javascript
+console.time("start")
+//do stuff
+console.timeEnd("end") // eg: "end: 1234.54ms"
+```
+    Or
+```javascript
+let start = performance.now()
+//do stuff
+let end = performance.now()
+console.log(`This took ${end-start} ms`)
+```
 
 ### Next: unit03/04 cont.
 

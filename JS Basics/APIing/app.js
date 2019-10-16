@@ -117,6 +117,8 @@ const eventDelegation = function() { //ha! this triggers the hack-around as is
     let e = 0
 }
 
+//maybe add this to an event class instead of the entire document?
+//clutter the class a bit...
 document.addEventListener('click', eventDelegation)
 //Event Listener Delegation//
 
