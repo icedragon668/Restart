@@ -165,7 +165,7 @@ While having one per project makes sense elsewhere, here I only need the one
 
 ## 26 9 2019: Conditions and Functions
     was a bit sloppy tonight
-    in part because i didnt take the time to do these 
+    in part because i didn't take the time to do these 
     the way i'd like to do them
     
     but that is no excuse
@@ -199,7 +199,7 @@ While having one per project makes sense elsewhere, here I only need the one
     this was a pretty good run, save that nonsense on 
     the first part...
     
-    I feel much more confident here. hopefull, when i 
+    I feel much more confident here. hopefully, when i 
     get to jQuery, i'll be able to skip it and use vanilla
     (or rather vanilla THEN jQuery)
     
@@ -210,7 +210,7 @@ While having one per project makes sense elsewhere, here I only need the one
     built a small game frame. it does next to nothing 
     right now.
     
-    most of whats in here will likely be taken out too
+    most of what's in here will likely be taken out too
     ...
     but it works and was fun to do! i think i needed 
     to do something fun
@@ -269,7 +269,7 @@ While having one per project makes sense elsewhere, here I only need the one
     got to try fetch() ! seems okay, but 403, so dunno
     
     *15.10.2019 Update* The API is not working as is
-    Wether this is an update, or it's just broken...
+    Whether this is an update, or it's just broken...
     I just haven't bothered to find out
 
 
@@ -278,7 +278,7 @@ While having one per project makes sense elsewhere, here I only need the one
     2 are significant. 3 if you count Small Game. Now the 
     test will be to integrate all of them
 
-    next: combine with RPGY text spaces
+    next: combine with RPGy text spaces
     then: events!
 #### ToDo: Continue
 
@@ -324,5 +324,4 @@ While having one per project makes sense elsewhere, here I only need the one
 
 
 ### Next: unit03/04 cont.
-
 
