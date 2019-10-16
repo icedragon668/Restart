@@ -45,12 +45,12 @@ let baseURL = `https://api.openweathermap.org/data/2.5/weather?q=`;
 //this is not really a reusable function
 const findWeather = function (e) {
     e.preventDefault();
-    
+
     place = main('#place').val().trim()
     console.log(place)
 
     let queryURL = `${baseURL}${place}&appid=${APIKey}`
-        fetch(queryURL)
+    fetch(queryURL)
         .then(res => res.json()) //should i return? why or !why ?
         .then(res => {
             main("#places").write(`
@@ -74,7 +74,7 @@ const findWeather = function (e) {
             main('#main').write(`
             <br>
             <p>temp is ${Math.round(tempF)}F</p>
-            <p>and ${Math.round(tempC)}C</p>`,'add')
+            <p>and ${Math.round(tempC)}C</p>`, 'add')
             console.log(res)
         })
         .catch(function (err) {
@@ -91,10 +91,10 @@ const places = [
     'boise'
 ]
 
-    places.forEach(e=>{
-         let queryURL = `${baseURL}${e},usa&appid=${APIKey}`
-         fetch(queryURL).then(res=>res.json()).then(res => console.log(res))
-         }) //useable for rendering, can push to array once input is clean
+places.forEach(e => {
+    let queryURL = `${baseURL}${e},usa&appid=${APIKey}`
+    fetch(queryURL).then(res => res.json()).then(res => console.log(res))
+}) //useable for rendering, can push to array once input is clean
 
 //I wanted to wrap the fetch in a const, work with a promise,
 //  then use async/await
@@ -115,12 +115,15 @@ const renderButton = function () {
     //empty button list
     main('.cityButtons').write('')
     //loop button list and create data-* buttons
-    places.forEach(e=>{
+    places.forEach(e => {
         main('.cityButtons').write(`
         <button class="city" data-name="${e}">
             ${e}
         </button>
         `, "add")
+    })
+    document.querySelectorAll(".city").forEach(e=>{
+        e.addEventListener('click', renderCard)
     })
     /*
         <div id="cityButtons">
@@ -138,14 +141,14 @@ const renderCard = function () {
     place = this.dataset.name
     //fetch city info
     fetch(`${baseURL}${place},usa&appid=${APIKey}`)
-    //translate response
-    .then(res=>res.json())
-    //render selected card
-    .then(res=>{
-        main('#cityCard').write(`
+        //translate response
+        .then(res => res.json())
+        //render selected card
+        .then(res => {
+            main('#cityCard').write(`
         <h1>${res.name}</h1>
         `)
-    })
+        })
     console.log("Render Card")
 }
 
@@ -155,6 +158,9 @@ const cityVerify = function () {
 }
 
 const reListen = function () {
+    if (document.querySelector(".city").dataset.name === undefined) {
+        main('.city').on('click', renderCard)
+    }
     main('.city').on('click', renderCard)
 }
 
