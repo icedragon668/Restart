@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,31 @@
     <link rel="stylesheet" href="./style.css">
     <title>APIing</title>
 </head>
+
 <body>
     <header></header>
     <main>
-        <div id="places"></div>
-        <input type="text" id="place"><br>
-        <input type="submit" id="find" value="search">
-        
+        <div id="cityCard">
+            <h1 class="cityName"></h1>
+            <ul class="cityData">
+                <li class="pressure"></li>
+                <li class="humidity"></li>
+                <li class="tempK"></li>
+                <li class="tempC"></li>
+                <li class="tempF"></li>
+            </ul>
+        </div>
+        <div id="cityButtons">
+            <button class="city" data-name=""></button>
+        </div>
+        <div id="cityFind">
+            <input type="text" id="place"><br>
+            <input type="submit" id="find" value="search">
+        </div>
     </main>
     <footer></footer>
-    
+
     <script src="app.js"></script>
 </body>
+
 </html>

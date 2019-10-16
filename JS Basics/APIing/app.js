@@ -92,8 +92,7 @@ const places = [
 ]
 
     places.forEach(e=>{
-         let e2 = e + ",usa"
-         let queryURL = `${baseURL}${e2}&appid=${APIKey}`
+         let queryURL = `${baseURL}${e},usa&appid=${APIKey}`
          fetch(queryURL).then(res=>res.json()).then(res => console.log(res))
          }) //useable for rendering, can push to array once input is clean
 
