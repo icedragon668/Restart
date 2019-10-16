@@ -111,6 +111,15 @@ button displays a city an info
 
 */
 
+// Event Listener Delegation
+
+const eventDelegation = function() { //ha! this triggers the hack-around as is
+    let e = 0
+}
+
+document.addEventListener('click', eventDelegation)
+//Event Listener Delegation//
+
 const renderButton = function () {
     //empty button list
     main('.cityButtons').write('')
