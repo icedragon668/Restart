@@ -233,6 +233,10 @@ important: mark down language, this format is bad...
 
 /* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)*/
 
+<!-- 15 10 2019: APIing
+    i'm missing something about event listeners that are created later.
+    jQuery .on has a selector to listen to a parent, then select from there, but i'm having a hard time recreating it in vanilla 
+-->
 Next: unit03/04 cont.
 
 
