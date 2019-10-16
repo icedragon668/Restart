@@ -115,8 +115,8 @@ button displays a city an info
 
 const eventDelegation = function(e) { //ha! this triggers the hack-around as is
     e.preventDefault() //just good practice
-    if (e.target.matches('.selector')){ //switch case?
-        //do stuff for that selector
+    if (e.target.matches(s)) {
+        //some stuff
     }
 }
 
