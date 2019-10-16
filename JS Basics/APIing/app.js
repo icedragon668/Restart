@@ -119,7 +119,7 @@ const eventDelegation = function() { //ha! this triggers the hack-around as is
 
 //maybe add this to an event class instead of the entire document?
 //clutter the class a bit...
-document.addEventListener('click', eventDelegation)
+document.addEventListener('click', eventDelegation) //interestingly, this is beter for performance than individual listeners
 //Event Listener Delegation//
 
 const renderButton = function () {

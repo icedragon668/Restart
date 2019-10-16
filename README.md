@@ -337,6 +337,14 @@ let start = performance.now()
 let end = performance.now()
 console.log(`This took ${end-start} ms`)
 ```
+    Then there's the whole page listener: EVENT DELEGATION
+```javascript
+const eventDelegation = function() {
+    //the "individuals" get directed in here    
+}
+
+document.addEventListener('click', eventDelegation)
+```
 
 ### Next: unit03/04 cont.
 
