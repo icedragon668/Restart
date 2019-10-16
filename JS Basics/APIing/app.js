@@ -113,10 +113,10 @@ button displays a city an info
 
 const renderButton = function () {
     //empty button list
-    main('#cityButtons').write('')
+    main('.cityButtons').write('')
     //loop button list and create data-* buttons
     places.forEach(e=>{
-        main('#cityButtons').write(`
+        main('.cityButtons').write(`
         <button class="city" data-name="${e}">
             ${e}
         </button>
@@ -130,6 +130,7 @@ const renderButton = function () {
 }
 
 const renderCard = function () {
+    console.log('here')
     //clear card
     main("#cityCard").write("")
     //set place
@@ -153,8 +154,12 @@ const cityVerify = function () {
     console.log("City Verify")
 }
 
+const reListen = function () {
+    main('.city').on('click', renderCard)
+}
+
 main('#find').on('click', renderButton);
-main('.city').on('click', renderCard)
+main('.cityButtons').on('click', reListen)
 
 cityVerify()
 
