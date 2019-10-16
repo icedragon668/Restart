@@ -117,13 +117,27 @@ const renderButton = function () {
 }
 
 const renderCard = function () {
-    //empty card
+    //clear card
+    main("#cityCard").write("")
+    //set place
+    //get the button dataset.name
+    place = this.dataset.name
+    //fetch city info
+    fetch(`${baseURL}${place}&appid=${APIKey}`)
+    //translate response
+    .then(res=>res.json())
     //render selected card
-
+    .then(res=>{
+        main('#cityCard').write(`
+        <h1>${res.name}</h1>
+        `)
+    })
+    console.log("Render Card")
 }
 
 const cityVerify = function () {
     //does the api have a city to check against?
+    console.log("City Verify")
 }
 
 main('#addCityButton').on('click', renderButton);
@@ -131,3 +145,24 @@ main('#displayCityCard').on('click', renderCard)
 
 cityVerify()
 renderCard()
+
+
+/* HTML Design
+        <div id="cityCard">
+            <h1 class="cityName"></h1>
+            <ul class="cityData">
+                <li class="pressure"></li>
+                <li class="humidity"></li>
+                <li class="tempK"></li>
+                <li class="tempC"></li>
+                <li class="tempF"></li>
+            </ul>
+        </div>
+        <div id="cityButtons">
+            <button class="city" data-name=""></button>
+        </div>
+        <div id="cityFind">
+            <input type="text" id="place"><br>
+            <input type="submit" id="find" value="search">
+        </div>
+        */
