@@ -208,7 +208,6 @@ ToDo: Continue
 -->
 
 ToDo: Learn async and await
-ToDo: Review data-attr
 <!-- 14 10 2019: APIing
     I want to get better with async and await functions
 
@@ -218,6 +217,16 @@ ToDo: Review data-attr
 
     the DOM portion of this lesson is not yet finished
     while not huge, I would like to review the data-attr portion
+-->
+
+<!-- 15 10 2019: Review data-attr
+    Review of data-* attributes. nice! get them with a selector.dataset.* 
+    eg:
+     <div id="tester" data-tester="1234">
+    document.querySelector("#tester").dataset.tester // "1234"
+    or CSS
+    [data-tester="1234"] { //some style }
+
 -->
 important: mark down language, this format is bad...
 Next: unit03/04 cont.

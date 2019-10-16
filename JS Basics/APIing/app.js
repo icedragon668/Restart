@@ -1,3 +1,4 @@
+//jQuery elimination function
 const main = function (s) {
 
     const nl = document.querySelectorAll(s)
