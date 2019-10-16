@@ -207,51 +207,76 @@ While having one per project makes sense elsewhere, here I only need the one
 
 
 ## 2 10 2019: Fun Stuff - RPGy
-    built a small game frame. it does next to nothing right now.
+    built a small game frame. it does next to nothing 
+    right now.
+    
     most of whats in here will likely be taken out too
     ...
-    but it works and was fun to do! i think i needed to do something fun
+    but it works and was fun to do! i think i needed 
+    to do something fun
 
 
 ## 3 10 2019: An SPA
-    I well overestimated this lesson; the hardest part was the css
+    I well overestimated this lesson; the hardest part 
+    was the css
     
     ::RPGy
     practice with shape drawing in canvas...
-    not exactly what I had intended to do, but good all the same
-    the pathing feels similar to SVG, with some difference of course
+    not exactly what I had intended to do, but good all 
+    the same
+    
+    the pathing feels similar to SVG, with some difference 
+    of course
 
 
 ## 4 10 2019: DOMing
-    the hard parts were getting the value off the button w/o jQuery
+    the hard parts were getting the value off the button
+    w/o jQuery
+    
     and I could use more css practice
     nothing too notable
 
 ## 8 10 2019: Calculator
-    This is a good exercise to come back to. There is a lot that CAN be done to make a better calculator.
-    I would like to make this into an app, it's an easy concept. Plus a good way to navigate app creation (Swift, ReactNative, etc.)
+    This is a good exercise to come back to. There is a 
+    lot that CAN be done to make a better calculator.
+    
+    I would like to make this into an app, it's an easy 
+    concept. Plus a good way to navigate app creation 
+    (Swift, ReactNative, etc.)
 #### ToDo: Come Back Here
 
 
 ## 8 10 2019: Data and Scope
-    digging through the data was a fine exercise, a bit more interesting for being vanilla sans dom.js
-    maybe i should refactor something like this to make it nice? reduce those long noodles and re-usable functions...
+    digging through the data was a fine exercise, a bit 
+    more interesting for being vanilla sans dom.js
+
+    maybe i should refactor something like this to make 
+    it nice? reduce those long noodles and re-usable 
+    functions...
+    
     well, I refactored it...
     it was good exercise i guess?
 
 ## 9 10 2019: Canvas Bumpy
     a sprite walks around a small canvas!
-    next to add a scrolling map beneath, and if time permits, obstacles!
+    next to add a scrolling map beneath, and if time 
+    permits, obstacles!
 
 
 ## 10 10 2019: Timers and Calls
     seems the server for this exercise is down
     otherwise uneventful
     got to try fetch() ! seems okay, but 403, so dunno
+    
+    *15.10.2019 Update* The API is not working as is
+    Wether this is an update, or it's just broken...
+    I just haven't bothered to find out
 
 
 ## 11 10 2019: Canvas Bumpy
-    found a different project. the difference between the 2 are significant. 3 if you count Small Game. Now the test will be to integrate all of them
+    found a different project. the difference between the 
+    2 are significant. 3 if you count Small Game. Now the 
+    test will be to integrate all of them
 
     next: combine with RPGY text spaces
     then: events!
