@@ -144,7 +144,6 @@ main('#find').on('click', renderButton);
 main('.city').on('click', renderCard)
 
 cityVerify()
-renderCard()
 
 
 /* HTML Design
