@@ -48,19 +48,19 @@ document.addEventListener('click', function (e) {
 //if (avg > 20) {addclass purple}
 //else {addclass blue}
 const render = function (code, avg) {
-    if (avg > 40) {
+    switch (avg) {
+    case (avg > 40) :
         document.querySelector('#display').innerHTML += `<div class="box red">${code} : ${avg}</div>`
-    }
-    else if (avg > 20) {
+        break;
+    case (avg > 20) :
         document.querySelector('#display').innerHTML += `<div class="box purple">${code} : ${avg}</div>`
-    }
-    else if (avg >= 0) {
+        break;
+    case (avg >= 0) :
         document.querySelector('#display').innerHTML += `<div class="box blue">${code} : ${avg}</div>`
-    }
-    else {
+        break;
+    default :
         document.querySelector('#display').innerHTML += `<div class="box orange">${code} : Data Not Available</div>`
-     }
-
+    }
 }
 
 /* Block 1
