@@ -1,4 +1,4 @@
-//fetch https://restcountries.eu/rest/v2/name/${countryName}`
+//fetch https://restcountries.eu/rest/v2/name/${country}`
 //  response[0].alpha2code
 const getCountryCode = function(country) {
     const qURL = `https://restcountries.eu/rest/v2/name/${country}`
@@ -10,7 +10,7 @@ const getCountryCode = function(country) {
 }
 
 //then get AQ API
-//fetch `https://api.openaq.org/v1/latest?country=${countryCode}`
+//fetch `https://api.openaq.org/v1/latest?country=${code}`
 //  response.results[i].measurements.parameter === 'pm10'
 const getAQ = function (code) {
     const qURL = `https://api.openaq.org/v1/latest?country=${code}`
@@ -30,8 +30,7 @@ const getAQ = function (code) {
         });
 
         let avg = sum /count;
-        if (avg >= 0) {console.log(code, avg)}
-        else {console.log(code, "not data available", sum, count)}
+        render(code, avg)
     })
 }
 
@@ -48,6 +47,11 @@ document.addEventListener('click', function(e){
 // if (avg > 40) {addclass red}
 //if (avg > 20) {addclass purple}
 //else {addclass blue}
+const render = function (code, avg) {
+    if (avg >= 0) {console.log(code, avg)}
+    else {console.log(code, "not data available", sum, count)}
+
+}
 
 /* Block 1
 # Mini Project I
