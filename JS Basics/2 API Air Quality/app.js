@@ -13,16 +13,14 @@ const getCountryCode = function(country) {
 //fetch `https://api.openaq.org/v1/latest?country=${countryCode}`
 //  response.results[i].measurements.parameter === 'pm10'
 const getAQ = function (code) {
-    const qURL = `https://api.openaq.org/v1/latest?country=${country}`
+    const qURL = `https://api.openaq.org/v1/latest?country=${code}`
     fetch(qURL)
     .then(res=>res.json())
     .then(res=>{
-        console.log(res)
         let sum = 0;
         let count = 0;
-        console.log(res)
         res.results.forEach(e=> {
-            let list = e.measurments
+            let list = e.measurements
             list.forEach(e=>{
                 if (e.parameter === "pm10"){
                     sum += e.value
@@ -30,6 +28,7 @@ const getAQ = function (code) {
                 }
             })
         });
+
         let avg = sum /count;
         if (avg >= 0) {console.log(code, avg)}
         else {console.log(code, "not data available", sum, count)}
