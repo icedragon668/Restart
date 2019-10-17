@@ -1,12 +1,12 @@
 //fetch https://restcountries.eu/rest/v2/name/${country}`
 //  response[0].alpha2code
-const getCountryCode = function(country) {
+const getCountryCode = function (country) {
     const qURL = `https://restcountries.eu/rest/v2/name/${country}`
     fetch(qURL)
-    .then(res=>res.json())
-    .then(function(res) {
-        getAQ(res[0].alpha2Code)
-    })
+        .then(res => res.json())
+        .then(function (res) {
+            getAQ(res[0].alpha2Code)
+        })
 }
 
 //then get AQ API
@@ -15,27 +15,27 @@ const getCountryCode = function(country) {
 const getAQ = function (code) {
     const qURL = `https://api.openaq.org/v1/latest?country=${code}`
     fetch(qURL)
-    .then(res=>res.json())
-    .then(res=>{
-        let sum = 0;
-        let count = 0;
-        res.results.forEach(e=> {
-            let list = e.measurements
-            list.forEach(e=>{
-                if (e.parameter === "pm10"){
-                    sum += e.value
-                    count ++;
-                }
-            })
-        });
+        .then(res => res.json())
+        .then(res => {
+            let sum = 0;
+            let count = 0;
+            res.results.forEach(e => {
+                let list = e.measurements
+                list.forEach(e => {
+                    if (e.parameter === "pm10") {
+                        sum += e.value
+                        count++;
+                    }
+                })
+            });
 
-        let avg = sum /count;
-        render(code, avg)
-    })
+            let avg = sum / count;
+            render(code, avg)
+        })
 }
 
 //on click, get input, run API for country code
-document.addEventListener('click', function(e){
+document.addEventListener('click', function (e) {
     e.preventDefault()
     if (e.target.matches('#search')) {
         const input = document.querySelector('#country').value
@@ -48,10 +48,18 @@ document.addEventListener('click', function(e){
 //if (avg > 20) {addclass purple}
 //else {addclass blue}
 const render = function (code, avg) {
-    if (avg >= 0) {
-    document.querySelector('#display').innerHTML += `<div class="box">${code} : ${avg}</div>`
+    if (avg > 40) {
+        document.querySelector('#display').innerHTML += `<div class="box red">${code} : ${avg}</div>`
     }
-    else {console.log(code, "not data available", sum, count)}
+    else if (avg > 20) {
+        document.querySelector('#display').innerHTML += `<div class="box purple">${code} : ${avg}</div>`
+    }
+    else if (avg >= 0) {
+        document.querySelector('#display').innerHTML += `<div class="box blue">${code} : ${avg}</div>`
+    }
+    else {
+        document.querySelector('#display').innerHTML += `<div class="box orange">${code} : Data Not Available</div>`
+     }
 
 }
 
@@ -98,7 +106,7 @@ The API calls used will look similar to the API calls below:
 
 `https://restcountries.eu/rest/v2/name/mexico` - from this API, you can get the alpha-2 code for a country by supplying the country name.
 
-`https://api.openaq.org/v1/latest?country=MX` - from this API, you can get information about air quality for a country by supplying the alpha-2 code. We are interested in the average `pm10` reading of all the locations in a country.  
+`https://api.openaq.org/v1/latest?country=MX` - from this API, you can get information about air quality for a country by supplying the alpha-2 code. We are interested in the average `pm10` reading of all the locations in a country.
 
 **Hint:**
 
@@ -118,7 +126,7 @@ Your job is to drill into the data that is being displayed and log only the valu
 
 **Hint:**
 
-You will need nested loops. 
+You will need nested loops.
 */
 
 /* Block 4
