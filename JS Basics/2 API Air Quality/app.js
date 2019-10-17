@@ -48,7 +48,7 @@ document.addEventListener('click', function (e) {
 //if (avg > 20) {addclass purple}
 //else {addclass blue}
 const render = function (code, avg) {
-    switch (avg) {
+    switch (true) { 
     case (avg > 40) :
         document.querySelector('#display').innerHTML += `<div class="box red">${code} : ${avg}</div>`
         break;
