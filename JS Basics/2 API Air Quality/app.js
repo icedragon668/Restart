@@ -48,7 +48,9 @@ document.addEventListener('click', function(e){
 //if (avg > 20) {addclass purple}
 //else {addclass blue}
 const render = function (code, avg) {
-    if (avg >= 0) {console.log(code, avg)}
+    if (avg >= 0) {
+    document.querySelector('display').innerHTML += `<div class="box">${code} : ${avg}</div>`
+    }
     else {console.log(code, "not data available", sum, count)}
 
 }
