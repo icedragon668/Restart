@@ -1,3 +1,14 @@
+//fetch https://restcountries.eu/rest/v2/name/${countryName}`
+//  response[0].alpha2code
+const getCountryCode = function(country) {
+    const qURL = `https://restcountries.eu/rest/v2/name/${country}`
+    fetch(qURL)
+    .then(res=>res.json())
+    .then(function(res) {
+        console.log(res[0].alpha2Code)
+    })
+}
+
 //on click, get input, run API for country code
 document.addEventListener('click', function(e){
     e.preventDefault()
@@ -7,8 +18,6 @@ document.addEventListener('click', function(e){
         getCountryCode(input)
     }
 })
-//fetch https://restcountries.eu/rest/v2/name/${countryName}`
-//  response[0].alpha2code
 //then get AQ API
 //fetch `https://api.openaq.org/v1/latest?country=${countryCode}`
 //  response.results[i].measurements.parameter === 'pm10'
