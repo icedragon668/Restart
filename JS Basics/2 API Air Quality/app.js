@@ -1,4 +1,12 @@
 //on click, get input, run API for country code
+document.addEventListener('click', function(e){
+    e.preventDefault()
+    if (e.target.matches('#search')) {
+        const input = document.querySelector('#country').value
+        document.querySelector('#country').value = ''
+        getCountryCode(input)
+    }
+})
 //fetch https://restcountries.eu/rest/v2/name/${countryName}`
 //  response[0].alpha2code
 //then get AQ API
