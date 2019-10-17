@@ -1,3 +1,14 @@
+//on click, get input, run API for country code
+//fetch https://restcountries.eu/rest/v2/name/${countryName}`
+//  response[0].alpha2code
+//then get AQ API
+//fetch `https://api.openaq.org/v1/latest?country=${countryCode}`
+//  response.results[i].measurements.parameter === 'pm10'
+//render: div class box \n Code \n avg
+// if (avg > 40) {addclass red}
+//if (avg > 20) {addclass purple}
+//else {addclass blue}
+
 /* Block 1
 # Mini Project I
 
