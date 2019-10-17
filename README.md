@@ -322,6 +322,13 @@ While having one per project makes sense elsewhere, here I only need the one
     then select from there, but i'm having a hard time 
     recreating it in vanilla 
 
+*16.10.2019 Update*
+    Found it! see below (event delegation)
+
+#### ToDo: Continue
+*I need to step away from this*
+
+
 ## 16 10 2019: New Tricks
     Performance testing! Just a simple way to clock time of code
     
@@ -348,6 +355,7 @@ const eventDelegation = function(e) {
 
 document.addEventListener('click', eventDelegation)
 ```
+
 
 ### Next: unit03/04 cont.
 
