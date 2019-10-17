@@ -5,7 +5,34 @@ const getCountryCode = function(country) {
     fetch(qURL)
     .then(res=>res.json())
     .then(function(res) {
-        console.log(res[0].alpha2Code)
+        getAQ(res[0].alpha2Code)
+    })
+}
+
+//then get AQ API
+//fetch `https://api.openaq.org/v1/latest?country=${countryCode}`
+//  response.results[i].measurements.parameter === 'pm10'
+const getAQ = function (code) {
+    const qURL = `https://api.openaq.org/v1/latest?country=${country}`
+    fetch(qURL)
+    .then(res=>res.json())
+    .then(res=>{
+        console.log(res)
+        let sum = 0;
+        let count = 0;
+        console.log(res)
+        res.results.forEach(e=> {
+            let list = e.measurments
+            list.forEach(e=>{
+                if (e.parameter === "pm10"){
+                    sum += e.value
+                    count ++;
+                }
+            })
+        });
+        let avg = sum /count;
+        if (avg >= 0) {console.log(code, avg)}
+        else {console.log(code, "not data available", sum, count)}
     })
 }
 
@@ -18,9 +45,6 @@ document.addEventListener('click', function(e){
         getCountryCode(input)
     }
 })
-//then get AQ API
-//fetch `https://api.openaq.org/v1/latest?country=${countryCode}`
-//  response.results[i].measurements.parameter === 'pm10'
 //render: div class box \n Code \n avg
 // if (avg > 40) {addclass red}
 //if (avg > 20) {addclass purple}
