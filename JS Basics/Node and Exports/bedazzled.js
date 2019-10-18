@@ -13,7 +13,7 @@ const developerTools = {
   // We can access them from other files using the 'require' keyword.
   
   module.exports = {
-    developerTools: developerTools,
+    developerTools,
     note: reminder //alias in other files : variable name above
   };
   
