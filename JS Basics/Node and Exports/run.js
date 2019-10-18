@@ -1,6 +1,6 @@
 // Using the require keyword lets us access all of the exports
 // in our developer.js file
-const developer = require('./bedazzled.js');
+const developer = require('./bedazzled.js'); //require the file, give it a variable name
 
 // This will print everything in exports.
 console.log('--------------------------');
@@ -15,7 +15,7 @@ console.log('--------------------------');
 
 // We can also call methods that we defined in another file
 console.log('DEVELOPER REMINDER');
-developer.note();
+developer.note(); //defined in the other file, named under exports
 
 // This won't print anything because it wasn't exported in developer.js
 console.log('--------------------------');
