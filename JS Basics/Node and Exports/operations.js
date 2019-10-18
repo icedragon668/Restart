@@ -11,7 +11,7 @@ The value of 3 raised to the 4 power is 81
 module.exports = {
 add: (x,y) => { Number(x + y) },
 subtract: (x,y) => { Number(x - y) },
-multiply,
+multiply: (x,y) => { Number(x * y) },
 divide,
 remainder,
 exp,
