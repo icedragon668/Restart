@@ -9,7 +9,7 @@ The value of 3 raised to the 4 power is 81
 */
 
 module.exports = {
-add: (x,y) => { Number(x + y) },
+add: (x,y) => { return parseFloat(x + y) },
 subtract: (x,y) => { Number(x - y) },
 multiply: (x,y) => { Number(x * y) },
 divide: (x,y) => { Number(x / y) },
