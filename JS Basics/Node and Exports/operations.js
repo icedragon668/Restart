@@ -12,7 +12,7 @@ module.exports = {
 add: (x,y) => { Number(x + y) },
 subtract: (x,y) => { Number(x - y) },
 multiply: (x,y) => { Number(x * y) },
-divide,
+divide: (x,y) => { Number(x / y) },
 remainder,
 exp,
 }
