@@ -13,6 +13,6 @@ add: (x,y) => { return parseFloat(x + y) },
 subtract: (x,y) => { return parseFloat(x - y) },
 multiply: (x,y) => { return parseFloat(x * y) },
 divide: (x,y) => { return parseFloat(x / y) },
-remainder: (x,y) => { Number(x % y) },
+remainder: (x,y) => { return parseFloat(x % y) },
 exp: (x,y) => { Number(x ** y) },
 }
