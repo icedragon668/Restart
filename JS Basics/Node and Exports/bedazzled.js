@@ -14,6 +14,6 @@ const developerTools = {
   
   module.exports = {
     developerTools: developerTools,
-    note: reminder
+    note: reminder //alias in other files : variable name above
   };
   
