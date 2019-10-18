@@ -13,6 +13,6 @@ add: (x,y) => { Number(x + y) },
 subtract: (x,y) => { Number(x - y) },
 multiply: (x,y) => { Number(x * y) },
 divide: (x,y) => { Number(x / y) },
-remainder,
+remainder: (x,y) => { Number(x % y) },
 exp,
 }
