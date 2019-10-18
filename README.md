@@ -356,6 +356,11 @@ const eventDelegation = function(e) {
 document.addEventListener('click', eventDelegation)
 ```
 
+## 17 10 2019: Node and Exports
+    less of a lesson, more a review
+    straightforward
+#### ToDo: git commit -m typo fixes
+
 
 ### Next: unit05 - Project
 
