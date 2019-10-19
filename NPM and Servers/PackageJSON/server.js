@@ -14,6 +14,21 @@ const kori = {
     role: 'Lead Coder',
 }
 
+const family = [{
+    routeName: 'Kori',
+    name: 'Kori',
+    role: "Daddy",
+    trait: "Fun"
+},{
+    name: 'Becky',
+    role: 'Mommy',
+    trait: 'Sleepy'
+},{
+    name: 'Zelda',
+    role: 'Kiddy',
+    trait: 'Silly'
+}]
+
 //Routes
 app.get('/home', function(req, res){
     res.sendFile(path.join(__dirname, "public/index.html"))
@@ -29,6 +44,13 @@ app.get('/directory', (req,res)=>{
 
 app.get('/kori', (req,res)=>{
     res.json(kori)
+})
+
+app.get('/api/family', (req,res)=>{ return res.json(family)})
+
+app.get('/api/family/:member', (req,res)=>{
+    const chosen = req.params.member
+    res.send(chosen)
 })
 
 app.get('/author', function (req, res) {
