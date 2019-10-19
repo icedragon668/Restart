@@ -362,5 +362,15 @@ document.addEventListener('click', eventDelegation)
 #### ToDo: git commit -m typo fixes
 #### ToDo: 04/05 Project
 
+
+## 18 10 2019: PackageJSON (and server GET)
+    well, there's more to the package.json then this got into
+    I'm just not sure where the issues I am thinking of are
+
+    then went on to server GET method. pretty easy stuff
+    a little unclear with the params call though
+#### ToDo: express req.params and url to send
+
+
 ### Next: unit06
 
