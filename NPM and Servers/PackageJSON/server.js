@@ -53,8 +53,8 @@ app.get('/api/family', (req,res)=>{ return res.json(family)})
 
 //I am pretty unhappy with this call
 //not sure what to do about it, will need to read up
-app.get('/api/family/:member', (req,res)=>{
-    const chosen = req.params.member
+app.get('/api/family/:member', (req,res)=>{ //the /: SHOULD be the params
+    const chosen = req.params.member //i feel like im just using it wrong
     if (chosen <= family.length){
         res.json(family[chosen])
     }
