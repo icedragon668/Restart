@@ -8,8 +8,13 @@ const app = express()
 const PORT = 8080
 
 app.get('/home', function(req, res){
-    res.sendFile(path.join__dirname, "index.html")
+    res.sendFile(path.join__dirname, "public/index.html")
 })
+
+app.get('/other', function(req, res){
+    res.sendFile(path.join__dirname, "public/other.html")
+})
+
 
 app.get('/author', function (req, res) {
     res.send('Written by Kori')
