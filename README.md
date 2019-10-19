@@ -372,5 +372,6 @@ document.addEventListener('click', eventDelegation)
 #### ToDo: express req.params and url to send
 
 
+### Resolve: /:param url issue from 18.10.2019
 ### Next: unit06
 

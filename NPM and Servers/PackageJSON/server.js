@@ -55,6 +55,10 @@ app.get('/api/family', (req,res)=>{ return res.json(family)})
 //not sure what to do about it, will need to read up
 app.get('/api/family/:member', (req,res)=>{ //the /: SHOULD be the params
     const chosen = req.params.member //i feel like im just using it wrong
+    //what I'd like to do is url/name and pull the json...
+    // for family[i].name === req.params.member {res.json(family[i])}
+    // maybe with a forEach?
+    // also, whats that Header error in the log
     if (chosen <= family.length){
         res.json(family[chosen])
     }
