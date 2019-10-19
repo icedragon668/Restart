@@ -3,3 +3,7 @@ const axios = require('axios')
 
 const fs = require('fs')
 
+fs.readFile('items.txt', "utf8", function(e,d) {
+    if (e){ return console.log(e) }
+    console.log(data)
+})
