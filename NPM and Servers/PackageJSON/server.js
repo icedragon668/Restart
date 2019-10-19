@@ -52,12 +52,9 @@ app.get('/api/family', (req,res)=>{ return res.json(family)})
 
 app.get('/api/family/:member', (req,res)=>{
     const chosen = req.params.member
-    family.forEach(e=>{
-        if (chosen === e.id) {
-            return res.json(e)
-        }
-    })
-
+    if (chosen <= family.length){
+        res.json(family[chosen])
+    }
     return res.send("Not Found")
 })
 
