@@ -15,15 +15,17 @@ const kori = {
 }
 
 const family = [{
-    routeName: 'Kori',
+    id: 1,
     name: 'Kori',
     role: "Daddy",
     trait: "Fun"
 },{
+    id: 2,
     name: 'Becky',
     role: 'Mommy',
     trait: 'Sleepy'
 },{
+    id: 3,
     name: 'Zelda',
     role: 'Kiddy',
     trait: 'Silly'
@@ -50,7 +52,13 @@ app.get('/api/family', (req,res)=>{ return res.json(family)})
 
 app.get('/api/family/:member', (req,res)=>{
     const chosen = req.params.member
-    res.send(chosen)
+    family.forEach(e=>{
+        if (chosen === e.id) {
+            return res.json(e)
+        }
+    })
+
+    return res.send("Not Found")
 })
 
 app.get('/author', function (req, res) {
