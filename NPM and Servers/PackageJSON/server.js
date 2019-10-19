@@ -50,19 +50,21 @@ app.get('/kori', (req,res)=>{
 
 app.get('/api/family', (req,res)=>{ return res.json(family)})
 
+app.get('/api/family/:member', (req,res)=>{
+    const name = req.params.member
+    family.forEach(e=> {
+        if (e.name === name) {
+            return res.json(e)
+        } else {
+            return res.send('Not Found') }
+    })
+    /*
+    Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
 
-//I am pretty unhappy with this call
-//not sure what to do about it, will need to read up
-app.get('/api/family/:member', (req,res)=>{ //the /: SHOULD be the params
-    const chosen = req.params.member //i feel like im just using it wrong
-    //what I'd like to do is url/name and pull the json...
-    // for family[i].name === req.params.member {res.json(family[i])}
-    // maybe with a forEach?
-    // also, whats that Header error in the log
-    if (chosen <= family.length){
-        res.json(family[chosen])
-    }
-    return res.send("Not Found")
+    This is a Node.js error. it has to do with how res is handled. short of excpetions or not using express, it is as it is
+
+    that said, writing an excpetion sounds like a good advancment!
+    */
 })
 
 app.get('/author', function (req, res) {
