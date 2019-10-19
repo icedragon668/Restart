@@ -4,8 +4,8 @@ const axios = require('axios')
 const fs = require('fs')
 
 //fs read from file
-fs.readFile('items.txt', "utf8", function(e,d) {
-    if (e){ return console.log(e) }
+fs.readFile('items.txt', "utf8", function (e, d) {
+    if (e) { return console.log(e) }
     console.log(d)
 
     const dList = d.split(',');
@@ -13,8 +13,10 @@ fs.readFile('items.txt', "utf8", function(e,d) {
 })
 
 //fs write to file
-fs.writeFile('desktop.txt', 'get coffe, code js', function(err){
-    if (err) { return console.log(err)}
+fs.writeFile('desktop.txt', 'get coffe, code js', function (err) {
+    if (err) { return console.log(err) }
 
     console.log('file created')
+    
 })
+
