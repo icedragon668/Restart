@@ -10,7 +10,7 @@ const PORT = 8080
 
 //Data parsing
 app.use(express.urlencoded({ extended: true }))
-app.use(express.json)
+app.use(express.json())
 
 //Data
 const kori = {
