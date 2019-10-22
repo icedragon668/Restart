@@ -19,17 +19,14 @@ const kori = {
 }
 
 const family = [{
-    id: 1,
     name: 'Kori',
     role: "Daddy",
     trait: "Fun"
 }, {
-    id: 2,
     name: 'Becky',
     role: 'Mommy',
     trait: 'Sleepy'
 }, {
-    id: 3,
     name: 'Zelda',
     role: 'Kiddy',
     trait: 'Silly'
@@ -87,9 +84,9 @@ app.get('/', (req, res) => {
 })
 
 //POST reqs
-app.post("/", (req,res)=>{
-    console.log(req.body);
-    res.end()
+app.post("/other", (req,res)=>{
+    family.push(req.body);
+    res.json(req.body)
 })
 
 //Listener
