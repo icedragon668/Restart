@@ -37,11 +37,11 @@ const family = [{
 
 //Routes
 //GET reqs
-app.get('/home', function (req, res) {
+app.get('/home', (req, res) => { 
     res.sendFile(path.join(__dirname, "public/index.html"))
 })
 
-app.get('/other', function (req, res) {
+app.get('/other', (req, res) => {
     res.sendFile(path.join(__dirname, "public/other.html"))
 })
 
@@ -49,11 +49,9 @@ app.get('/directory', (req, res) => {
     res.send('Welcome to the Directory!')
 })
 
-app.get('/kori', (req, res) => {
-    res.json(kori)
-})
+app.get('/kori', (req, res) => { res.json(kori) })
 
-app.get('/api/family', (req, res) => { return res.json(family) })
+app.get('/api/family', (req, res) => { res.json(family) })
 
 app.get('/api/family/:member', (req, res) => {
     const name = req.params.member
@@ -73,18 +71,18 @@ app.get('/api/family/:member', (req, res) => {
     */
 })
 
-app.get('/author', function (req, res) {
+app.get('/author', (req, res) => {
     res.send('Written by Kori')
 })
 
-app.get('/date', function (req, res) {
+app.get('/date', (req, res) => {
     let date = new Date()
     let m = date.getMonth() + 1
     let d = date.getDate() + 1
     res.send(`Today is day ${d} of month ${m}`)
 })
 
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
@@ -95,6 +93,6 @@ app.post("/", (req,res)=>{
 })
 
 //Listener
-app.listen(PORT, function () {
+app.listen(PORT, () => {
     console.log(`Server listenting on PORT: ${PORT}`)
 })
