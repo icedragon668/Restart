@@ -89,6 +89,24 @@ app.post("/other", (req,res)=>{
     res.json(req.body)
 })
 
+//PUT reqs
+app.put('other/:member', (req,res) => {
+    const updateMember = req.params.member
+    let found = false
+
+    for (i = 0; i < family.length; i++) {
+        if (updateMember === family[i].name) {
+            family.splice(i, 1, req.body)
+            found = true
+        }
+    }
+    if (found) {
+        return res.json(req.body)
+    }
+
+    return res.json(false)
+})
+
 //Listener
 app.listen(PORT, () => {
     console.log(`Server listenting on PORT: ${PORT}`)
