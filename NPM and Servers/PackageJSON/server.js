@@ -90,8 +90,8 @@ app.post("/other", (req,res)=>{
 })
 
 //PUT reqs
-app.put('other/:member', (req,res) => {
-    const updateMember = req.params.member
+app.put('/other', (req,res) => {
+    const updateMember = req.body.update
     let found = false
 
     for (i = 0; i < family.length; i++) {
