@@ -90,6 +90,8 @@ app.post("/other", (req,res)=>{
 })
 
 //PUT reqs
+
+//not working yet
 app.put('/other/:member', (req,res) => { //how do i add params again?
     const updateMember = req.params.member
     let found = false
