@@ -369,9 +369,18 @@ document.addEventListener('click', eventDelegation)
 
     then went on to server GET method. pretty easy stuff
     a little unclear with the params call though
-#### ToDo: express req.params and url to send
+
+    UPDATE: solved!
+    the params bit, well i was just reading it wrong
+    there is that error still, but it gives me something very different
+#### ToDo: Learn excpetions
 
 
-### Resolve: /:param url issue from 18.10.2019
+## 21 10 2019: Hiatus
+    Over the next week or two, I will have limited access and 
+    time due to family commitments
+
+    Hopefully this will not impact my activity. But I
+    doubt I'll get away with as much
+
 ### Next: unit06
-
