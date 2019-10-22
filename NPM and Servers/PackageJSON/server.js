@@ -89,6 +89,10 @@ app.get('/', function (req, res) {
 })
 
 //POST reqs
+app.post("/", (req,res)=>{
+    console.log(req.body);
+    res.end()
+})
 
 //Listener
 app.listen(PORT, function () {
