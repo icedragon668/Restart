@@ -8,6 +8,10 @@ const app = express()
 
 const PORT = 8080
 
+//Data parsing
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json)
+
 //Data
 const kori = {
     name: 'Kori',
@@ -19,12 +23,12 @@ const family = [{
     name: 'Kori',
     role: "Daddy",
     trait: "Fun"
-},{
+}, {
     id: 2,
     name: 'Becky',
     role: 'Mommy',
     trait: 'Sleepy'
-},{
+}, {
     id: 3,
     name: 'Zelda',
     role: 'Kiddy',
@@ -32,31 +36,33 @@ const family = [{
 }]
 
 //Routes
-app.get('/home', function(req, res){
+//GET reqs
+app.get('/home', function (req, res) {
     res.sendFile(path.join(__dirname, "public/index.html"))
 })
 
-app.get('/other', function(req, res){
+app.get('/other', function (req, res) {
     res.sendFile(path.join(__dirname, "public/other.html"))
 })
 
-app.get('/directory', (req,res)=>{
+app.get('/directory', (req, res) => {
     res.send('Welcome to the Directory!')
 })
 
-app.get('/kori', (req,res)=>{
+app.get('/kori', (req, res) => {
     res.json(kori)
 })
 
-app.get('/api/family', (req,res)=>{ return res.json(family)})
+app.get('/api/family', (req, res) => { return res.json(family) })
 
-app.get('/api/family/:member', (req,res)=>{
+app.get('/api/family/:member', (req, res) => {
     const name = req.params.member
-    family.forEach(e=> {
+    family.forEach(e => {
         if (e.name === name) {
             return res.json(e)
         } else {
-            return res.send('Not Found') }
+            return res.send('Not Found')
+        }
     })
     /*
     Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
@@ -81,6 +87,8 @@ app.get('/date', function (req, res) {
 app.get('/', function (req, res) {
     res.send('Hello World!')
 })
+
+//POST reqs
 
 //Listener
 app.listen(PORT, function () {
