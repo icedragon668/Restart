@@ -383,4 +383,14 @@ document.addEventListener('click', eventDelegation)
     Hopefully this will not impact my activity. But I
     doubt I'll get away with as much
 
+## 21 10 2019: PackageJSON (and server REST)
+    I have not finished the REST routes, and am currently 
+    out of time
+
+    This is the sort of thing I was hoping to avoid:
+    INCOMPLETES
+
+    Ah well, only thing I can do is keep at it
+
+
 ### Next: unit06
