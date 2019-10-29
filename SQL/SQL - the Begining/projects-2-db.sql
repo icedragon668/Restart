@@ -43,3 +43,6 @@ VALUES ('Umbrella Coporation', 'ospencer@unbrella.corp', 'O.Spencer', '770-555-6
 INSERT INTO projects (name, company_name, start_date, due_date)
 VALUES ('Ongoing Maintenance', 'Umbrella Coporation', '2019-11-01', '2020-01-01')
 
+INSERT INTO projects (name, company_name, due_date) --attempts autofill of start --
+VALUES ('Extended Maintenance', 'Umbrella Coporation', '2021-01-01')
+
