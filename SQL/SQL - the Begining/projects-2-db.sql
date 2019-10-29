@@ -40,4 +40,6 @@ INSERT INTO customers (company_name, email, primary_contact, phone_number)
 -- table (fields)
 VALUES ('Umbrella Coporation', 'ospencer@unbrella.corp', 'O.Spencer', '770-555-6080')
 
+INSERT INTO projects (name, company_name, start_date, due_date)
+VALUES ('Ongoing Maintenance', 'Umbrella Coporation', '2019-11-01', '2020-01-01')
 
