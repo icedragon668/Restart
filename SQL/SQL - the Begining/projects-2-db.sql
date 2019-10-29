@@ -20,20 +20,20 @@ CREATE TABLE customers (
     phone_number VARCHAR(20),
     currently_active BOOLEAN DEFAULT FALSE, --i think that's right? // yup --
     is_ass Boolean  DEFAULT FALSE
-)
+);
 
 CREATE TABLE projects (
     name VARCHAR(100) NOT NULL,
     company_name VARCHAR(50) NOT NULL, --switch to keyed to table maybe? --
-    start_date DATE NOT NULL, --i think this will autofill current date --
+    start_date DATETIME DEFAULT CURRENT_TIMESTAMP, --i think this will autofill current date //no, current_date, while a feature, is invalid here >.> --
     due_date DATE
-)
+);
 
 CREATE TABLE invoices (
     invoice_number INTEGER NOT NULL,
     amount DECIMAL (10,2), --range, decimal points (subtracted from range. ie 12,345,678.00 here) --
     paid BOOLEAN DEFAULT FALSE
-)
+);
 
 -- Part 2, adding data --
 INSERT INTO customers (company_name, email, primary_contact, phone_number)
