@@ -20,3 +20,6 @@ CREATE TABLE customers (
     is_ass Boolean  DEFAULT FALSE
 )
 
+CREATE TABLE projects (
+    
+)
