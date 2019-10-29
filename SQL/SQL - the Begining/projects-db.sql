@@ -10,4 +10,8 @@ CREATE DATABASE projects_db;
 
 USE projects_db; --don't forget to use the db!
 
-CREATE TABLE customers ()
+CREATE TABLE customers (
+    company_name VARCHAR(50) NOT NULL
+    --name, restriction / requirements
+    
+)
