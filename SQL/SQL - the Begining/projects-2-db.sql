@@ -46,3 +46,8 @@ VALUES ('Ongoing Maintenance', 'Umbrella Coporation', '2019-11-01', '2020-01-01'
 INSERT INTO projects (name, company_name, due_date) --attempts autofill of start --
 VALUES ('Extended Maintenance', 'Umbrella Coporation', '2021-01-01')
 
+INSERT INTO invoices (invoice_number, amount, paid)
+VALUES (437693, 1576.87, TRUE)
+
+INSERT INTO invoices (invoice_number, amount) --default unpaid--
+VALUES (982241, 3752.91)
