@@ -29,6 +29,6 @@ CREATE TABLE projects (
 
 CREATE TABLE invoices (
     invoice_number INTEGER NOT NULL,
-    amount DECIMAL (10,2),
+    amount DECIMAL (10,2), --range, decimal points (subtracted from range. ie 12,345,678.00 here)
     paid BOOLEAN DEFAULT FALSE
 )
