@@ -401,4 +401,9 @@ document.addEventListener('click', eventDelegation)
     then I get sidetracked. This time by a palindrome checker lol
 
 
+## 28 10 2019: SQL - the Begining
+    some basic SQL, nothing too interesting. current_timestamp
+    instead of current_date, but thats about it
+
+
 ### Next: unit06
