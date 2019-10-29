@@ -393,4 +393,12 @@ document.addEventListener('click', eventDelegation)
     Ah well, only thing I can do is keep at it
 
 
+## 28 10 2019: Return from Hiatus
+    I am back! I started doing some freeCodeCamp.org. Not sure how,
+    or if, i want to incorporate that here.
+    
+    I keep NOT finding the open source contributions... I get close
+    then I get sidetracked. This time by a palindrome checker lol
+
+
 ### Next: unit06
