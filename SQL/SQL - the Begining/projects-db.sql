@@ -11,7 +11,7 @@ CREATE DATABASE projects_db;
 USE projects_db; --don't forget to use the db!
 
 CREATE TABLE customers (
-    company_name VARCHAR(50) NOT NULL
+    company_name VARCHAR(50) NOT NULL,
     --name, restriction / requirements
-    
+    email VARCHAR(100) NOT NULL
 )
