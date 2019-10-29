@@ -26,3 +26,9 @@ CREATE TABLE projects (
     start_date DATE NOT NULL, --i think this will autofill current date
     due_date DATE
 )
+
+CREATE TABLE invoices (
+    invoice_number INTEGER NOT NULL,
+    amount DECIMAL (10,2),
+    paid BOOLEAN DEFAULT FALSE
+)
