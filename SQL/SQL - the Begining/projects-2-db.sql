@@ -21,5 +21,8 @@ CREATE TABLE customers (
 )
 
 CREATE TABLE projects (
-    
+    name VARCHAR(100) NOT NULL,
+    company_name VARCHAR(50) NOT NULL, --switch to keyed to table maybe?
+    start_date DATE NOT NULL, --i think this will autofill current date
+    due_date DATE
 )
