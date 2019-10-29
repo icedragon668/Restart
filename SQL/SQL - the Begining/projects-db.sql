@@ -13,5 +13,8 @@ USE projects_db; --don't forget to use the db!
 CREATE TABLE customers (
     company_name VARCHAR(50) NOT NULL,
     --name, restriction / requirements
-    email VARCHAR(100) NOT NULL
+    email VARCHAR(100) NOT NULL,
+    primary_contact VARCHAR(30),
+    phone_number VARCHAR(20),
+    currently_active BOOLEAN DEFAULT FALSE --i think that's right?
 )
