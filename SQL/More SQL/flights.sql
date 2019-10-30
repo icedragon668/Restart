@@ -13,18 +13,22 @@ SELECT *
     WHERE flight_no = 28;
 
 -- 3. A query which returns all data contained within a specific id range.
-SELECT flight_no, source_airport, dest_airport
+SELECT *
     FROM flights
     WHERE id BETWEEN 10 and 20;
 
 -- 4. A query which returns the first 20 flights ordered alphabetically by source_airport.
-SELECT flight_no, source_airport, dest_airport
+SELECT *
     FROM flights
     WHERE id <= 20 ORDER BY source_airport;
 
 -- ## Challenge:
 
 -- 5. A query which returns all source_airports which appear in our dataset more than once.
+SELECT source_airport
+    FROM flights
+    GROUP BY source_airport
+    HAVING COUNT(*) > 1;
 
 -- 6. A query which returns all flights with a source_airport that begins with "C".
 
