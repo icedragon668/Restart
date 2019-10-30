@@ -63,3 +63,12 @@ VALUES (437693, 1576.87, TRUE)
 
 INSERT INTO invoices (invoice_number, amount) --default unpaid--
 VALUES (982241, 3752.91)
+
+INSERT INTO invoices (invoice_number, amount, paid)
+VALUES (503141, 1234.56, true);
+
+INSERT INTO invoices (invoice_number, amount)
+VALUES (503142, 1117);
+
+INSERT INTO invoices  (invoice_number, amount)
+VALUES (503143, 512.12);
