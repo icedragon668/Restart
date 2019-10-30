@@ -5,8 +5,8 @@ CREATE DATABASE programming_db;
 USE programming_db;
 
 CREATE TABLE programming_languages (
-    id Integer AUTO_INCREMENT PRIMARY KEY,
-    language_ VARCHAR(20),
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    language VARCHAR(20),
     rating INTEGER,
     mastered BOOLEAN DEFAULT true,
 );
@@ -23,4 +23,13 @@ VALUES ("JQuery", 98);
 
 INSERT INTO programming_languages (language, rating)
 VALUES ("MySQL", 70);
+
+--Foriegn Key--
+CREATE TABLE code_projects (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50),
+    languageId INTEGER,
+    FOREIGN KEY (languageId)
+     REFERENCES programming_languages(id)
+);
 
