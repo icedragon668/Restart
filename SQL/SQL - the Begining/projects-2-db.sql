@@ -72,3 +72,9 @@ VALUES (503142, 1117);
 
 INSERT INTO invoices  (invoice_number, amount)
 VALUES (503143, 512.12);
+
+
+--Queries--
+UPDATE customers
+    SET email = 'veronica@veridiandynamics.com'
+    WHERE company_name = 'Veridian Dynamics';
