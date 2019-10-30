@@ -10,3 +10,17 @@ CREATE TABLE programming_languages (
     rating INTEGER,
     mastered BOOLEAN DEFAULT true,
 );
+
+--insert data--
+INSERT INTO programming_languages (language, rating)
+VALUES ("HTML", 95);
+
+INSERT INTO programming_languages (language, rating)
+VALUES ("JavaScript", 99);
+
+INSERT INTO programming_languages (language, rating)
+VALUES ("JQuery", 98);
+
+INSERT INTO programming_languages (language, rating)
+VALUES ("MySQL", 70);
+
