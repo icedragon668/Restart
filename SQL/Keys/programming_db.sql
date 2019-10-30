@@ -45,3 +45,13 @@ SELECT
      on code_projects.languageId = programming_languages.id
     WHERE
      programming_languages.language = "JavaScript";
+
+--same as above, different selector--
+SELECT
+     code_projects.name,
+     programming_languages.language
+    FROM
+     code_projects LEFT JOIN programming_languages
+     on code_projects.languageId = programming_languages.id
+    WHERE
+     code_projects.languageId = 2;
