@@ -5,7 +5,7 @@ CREATE DATABASE programming_db;
 USE programming_db;
 
 CREATE TABLE programming_languages (
-    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    -- id INTEGER AUTO_INCREMENT PRIMARY KEY, --this is correct
     language VARCHAR(20),
     rating INTEGER,
     mastered BOOLEAN DEFAULT true,
@@ -26,7 +26,7 @@ VALUES ("MySQL", 70);
 
 --Foriegn Key--
 CREATE TABLE code_projects (
-    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    -- id INTEGER AUTO_INCREMENT PRIMARY KEY, --this is correct
     name VARCHAR(50),
     languageId INTEGER,
     FOREIGN KEY (languageId)
