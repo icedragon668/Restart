@@ -1,6 +1,11 @@
 use flightsdb;
 
 -- 1. A query which returns flight_no, source_airport, and dest_airport for all flights by a specific airline.
+SELECT flight_no, source_airport, dest_airport
+    FROM flights
+    -- LEFT JOIN
+    -- ON
+    WHERE
 
 -- 2. A query which searches for a specific flight and returns all data for it.
 
