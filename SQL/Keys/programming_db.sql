@@ -33,3 +33,5 @@ CREATE TABLE code_projects (
      REFERENCES programming_languages(id)
 );
 
+INSERT INTO code_projects (name, languageId)
+ VALUES ("Bunny Burrows", 2);
