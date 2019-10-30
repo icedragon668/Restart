@@ -94,3 +94,7 @@ UPDATE projects
      due_date = '2018-11-25'
     WHERE name = 'Reconfigure Security Protocols';
 
+--find all companies whose name starts with "V"--
+SELECT *
+    FROM customers
+    WHERE company_name LIKE 'V%';
