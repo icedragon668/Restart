@@ -8,6 +8,9 @@ SELECT flight_no, source_airport, dest_airport
     WHERE airline = 2;
 
 -- 2. A query which searches for a specific flight and returns all data for it.
+SELECT *
+    FROM flights
+    WHERE flight_no = 28;
 
 -- 3. A query which returns all data contained within a specific id range.
 
