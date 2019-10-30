@@ -36,6 +36,19 @@ CREATE TABLE code_projects (
 INSERT INTO code_projects (name, languageId)
  VALUES ("Bunny Burrows", 2);
 
+INSERT INTO code_projects (name, languageId)
+ VALUES ("Website Building", 1);
+
+INSERT INTO code_projects (name, languageId)
+ VALUES ("NodeJS Back-End", 2);
+
+INSERT INTO code_projects (name, languageId)
+ VALUES ("Browser Game", 2);
+
+INSERT INTO code_projects (name, languageId)
+ VALUES ("Data Persistence", 4);
+
+
  --join--
 SELECT
      code_projects.name,
