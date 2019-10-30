@@ -35,3 +35,13 @@ CREATE TABLE code_projects (
 
 INSERT INTO code_projects (name, languageId)
  VALUES ("Bunny Burrows", 2);
+
+ --join--
+SELECT
+     code_projects.name,
+     programming_languages.language
+    FROM
+     code_projects LEFT JOIN programming_languages
+     on code_projects.languageId = programming_languages.id
+    WHERE
+     programming_languages.language = "JavaScript"
