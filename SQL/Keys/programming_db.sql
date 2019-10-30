@@ -44,4 +44,4 @@ SELECT
      code_projects LEFT JOIN programming_languages
      on code_projects.languageId = programming_languages.id
     WHERE
-     programming_languages.language = "JavaScript"
+     programming_languages.language = "JavaScript";
