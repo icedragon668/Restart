@@ -78,3 +78,7 @@ VALUES (503143, 512.12);
 UPDATE customers
     SET email = 'veronica@veridiandynamics.com'
     WHERE company_name = 'Veridian Dynamics';
+
+UPDATE projects
+    SET due_date = '2020-06-01'
+    WHERE name = 'Ongoing Maintenance';
