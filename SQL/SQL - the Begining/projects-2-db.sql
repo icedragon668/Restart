@@ -86,3 +86,11 @@ UPDATE projects
 UPDATE invoices
     SET paid = true
     WHERE invoice_number = 503142;
+
+--Update Multiple columns in a row --
+UPDATE projects
+    SET
+     start_date = '2018-11-13',
+     due_date = '2018-11-25'
+    WHERE name = 'Reconfigure Security Protocols';
+
