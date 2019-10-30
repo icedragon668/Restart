@@ -82,3 +82,7 @@ UPDATE customers
 UPDATE projects
     SET due_date = '2020-06-01'
     WHERE name = 'Ongoing Maintenance';
+
+UPDATE invoices
+    SET paid = true
+    WHERE invoice_number = 503142;
