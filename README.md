@@ -412,4 +412,8 @@ document.addEventListener('click', eventDelegation)
     i think i should keep track, as this is where i remember 
     getting confused the first time through
 
+    the HAVING keyword warrants a little better understanding
+#### ToDo: SQL - HAVING
+
+
 ### Next: unit06
