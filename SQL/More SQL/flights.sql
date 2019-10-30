@@ -5,7 +5,7 @@ SELECT flight_no, source_airport, dest_airport
     FROM flights
     -- LEFT JOIN
     -- ON
-    WHERE
+    WHERE airline = 2;
 
 -- 2. A query which searches for a specific flight and returns all data for it.
 
