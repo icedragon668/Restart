@@ -47,10 +47,10 @@ INSERT INTO customers (company_name, email)
 VALUES ('Dunder Mifflin', 'dschrute@dunder-mifflin.com');
 
 INSERT INTO projects (name, company_name, start_date, due_date)
-VALUES ('Ongoing Maintenance', 'Umbrella Coporation', '2019-11-01', '2020-01-01')
+VALUES ('Ongoing Maintenance', 'Umbrella Coporation', '2019-11-01', '2020-01-01');
 
 INSERT INTO projects (name, company_name, due_date) --attempts autofill of start --
-VALUES ('Extended Maintenance', 'Umbrella Coporation', '2021-01-01')
+VALUES ('Extended Maintenance', 'Umbrella Coporation', '2021-01-01');
 
 INSERT INTO projects (name, company_name, start_date, due_date)
 VALUES ('Network Infrastructure Upgrade', 'Veridian Dynamics', '2015-06-05' ,'2015-08-05');
@@ -59,10 +59,10 @@ INSERT INTO projects (name, company_name)
 VALUES ('Reconfigure Security Protocols', 'Veridian Dynamics');
 
 INSERT INTO invoices (invoice_number, amount, paid)
-VALUES (437693, 1576.87, TRUE)
+VALUES (437693, 1576.87, TRUE);
 
 INSERT INTO invoices (invoice_number, amount) --default unpaid--
-VALUES (982241, 3752.91)
+VALUES (982241, 3752.91);
 
 INSERT INTO invoices (invoice_number, amount, paid)
 VALUES (503141, 1234.56, true);
