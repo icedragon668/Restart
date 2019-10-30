@@ -31,5 +31,8 @@ SELECT source_airport
     HAVING COUNT(*) > 1;
 
 -- 6. A query which returns all flights with a source_airport that begins with "C".
+SELECT flight_no
+    FROM flights
+    WHERE source_airport LIKE 'C%';
 
 -- 7. A query which returns the top 20 dest_airport ordered based on how many times they appear in the dataset.
