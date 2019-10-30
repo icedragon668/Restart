@@ -68,3 +68,7 @@ SELECT
      on code_projects.languageId = programming_languages.id
     WHERE
      code_projects.languageId = 2;
+
+--there seems to be an oddity in how vsc reads the sql,
+--lines 8 and 29 are correct, but are flagged. and trigger
+--other problems. they have been commented out, but are correct
