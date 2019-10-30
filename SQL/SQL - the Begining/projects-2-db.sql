@@ -40,11 +40,23 @@ INSERT INTO customers (company_name, email, primary_contact, phone_number)
 -- table (fields)
 VALUES ('Umbrella Coporation', 'ospencer@unbrella.corp', 'O.Spencer', '770-555-6080')
 
+INSERT INTO customers (company_name, email)
+VALUES ('Veridian Dynamics', 'ted@veridiandynamics.com');
+
+INSERT INTO customers (company_name, email)
+VALUES ('Dunder Mifflin', 'dschrute@dunder-mifflin.com');
+
 INSERT INTO projects (name, company_name, start_date, due_date)
 VALUES ('Ongoing Maintenance', 'Umbrella Coporation', '2019-11-01', '2020-01-01')
 
 INSERT INTO projects (name, company_name, due_date) --attempts autofill of start --
 VALUES ('Extended Maintenance', 'Umbrella Coporation', '2021-01-01')
+
+INSERT INTO projects (name, company_name, start_date, due_date)
+VALUES ('Network Infrastructure Upgrade', 'Veridian Dynamics', '2015-06-05' ,'2015-08-05');
+
+INSERT INTO projects (name, company_name)
+VALUES ('Reconfigure Security Protocols', 'Veridian Dynamics');
 
 INSERT INTO invoices (invoice_number, amount, paid)
 VALUES (437693, 1576.87, TRUE)
