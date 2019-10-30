@@ -406,4 +406,10 @@ document.addEventListener('click', eventDelegation)
     instead of current_date, but thats about it
 
 
+## 30 10 2019: More SQL
+    yesterday was all SQL. I didn't even feel the need to 
+    update here. today, getting into foreign keys and joins
+    i think i should keep track, as this is where i remember 
+    getting confused the first time through
+
 ### Next: unit06
