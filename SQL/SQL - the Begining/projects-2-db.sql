@@ -38,7 +38,7 @@ CREATE TABLE invoices (
 -- Part 2, adding data --
 INSERT INTO customers (company_name, email, primary_contact, phone_number)
 -- table (fields)
-VALUES ('Umbrella Coporation', 'ospencer@unbrella.corp', 'O.Spencer', '770-555-6080')
+VALUES ('Umbrella Coporation', 'ospencer@unbrella.corp', 'O.Spencer', '770-555-6080');
 
 INSERT INTO customers (company_name, email)
 VALUES ('Veridian Dynamics', 'ted@veridiandynamics.com');
