@@ -42,5 +42,5 @@ SELECT flight_no
 SELECT count(*) AS Count, dest_airport
     FROM flights
     GROUP BY dest_airport
-    ORDER BY Count DESC LIMIT 20;
+    -- ORDER BY Count DESC LIMIT 20; --this is correct, commentened out for VCS errors
 --this essentially creates a Count column in the response
