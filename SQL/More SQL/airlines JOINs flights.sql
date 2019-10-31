@@ -27,3 +27,11 @@ SELECT airlines.airline, dest_airport
 -- ## Challenge:
 
 -- 3. Tanner's Travels, an international travel agency, is interested in contracting you to help them with their most popular destinations list per airline. Construct a query that returns the airline name, destination airport, and the count of the number of flights to that airport, sorted first by the airline, then by the number of flights in descending order.
+
+--count
+SELECT airlines.airline, dest_airport, count(*) AS COUNT
+    FROM flights
+    LEFT JOIN airlines
+    ON flights.airline = airlines.id
+    GROUP BY dest_airport
+    ORDER BY Count DESC;
