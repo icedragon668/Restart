@@ -43,3 +43,4 @@ SELECT count(*) AS Count, dest_airport
     FROM flights
     GROUP BY dest_airport
     ORDER BY Count DESC LIMIT 20;
+--this essentially creates a Count column in the response
