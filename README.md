@@ -417,6 +417,9 @@ document.addEventListener('click', eventDelegation)
 
     I think I've got most of this down. But tying to get a better
     understanding of HOW count works
+    I THINK count(*) is based on Group By
+    No groups counts everything
+    Group By defines different "rows", then counts them
 #### ToDo: SQL - HAVING, AS, DESC, count(*) AS Count
 
 
