@@ -414,7 +414,10 @@ document.addEventListener('click', eventDelegation)
 
     the HAVING keyword warrants a little better understanding
     as does the grouping and naming
-#### ToDo: SQL - HAVING, AS, DESC
+
+    I think I've got most of this down. But tying to get a better
+    understanding of HOW count works
+#### ToDo: SQL - HAVING, AS, DESC, count(*) AS Count
 
 
 ### Next: unit06
