@@ -3,15 +3,18 @@ use flightsdb;
 -- **Scenarios**
 
 -- 1. A client is requesting that you create a query that will return the flight number, source airport, and destination airport for a specific named airline, e.g. `JetBlue Airways`. Create the query to test that it actually works as intended.
-SELECT
-    FROM
-    LEFT JOIN
-    ON
-    WHERE
+SELECT flight_no, source_airport, dest_airport
+    FROM flights
+    LEFT JOIN airlines
+    ON flights.airline = airlines.id
+    WHERE airlines.airline = 'JetBlue Airways'
+    --solution sugests airlines.id...
+    --because the fields need to match >.<
     --or HAVING
-    GROUP BY
-    ORDER BY
+    -- GROUP BY
+    -- ORDER BY
     ;
+
 -- 2. You are creating an application where users can search for a specific source airport in the `flights` table that returns the airline name and the destination airport. Write the query that will be able to accomplish this.
 
 -- ## Challenge:
