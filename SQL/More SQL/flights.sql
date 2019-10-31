@@ -36,3 +36,10 @@ SELECT flight_no
     WHERE source_airport LIKE 'C%';
 
 -- 7. A query which returns the top 20 dest_airport ordered based on how many times they appear in the dataset.
+--ORDER BY Count is an alias (or something)
+--DESC LIMIT: describe limit, i think
+--Count must be aliased in SELECT
+SELECT count(*) AS Count, dest_airport
+    FROM flights
+    GROUP BY dest_airport
+    ORDER BY Count DESC LIMIT 20;

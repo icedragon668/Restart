@@ -413,7 +413,8 @@ document.addEventListener('click', eventDelegation)
     getting confused the first time through
 
     the HAVING keyword warrants a little better understanding
-#### ToDo: SQL - HAVING
+    as does the grouping and naming
+#### ToDo: SQL - HAVING, AS, DESC
 
 
 ### Next: unit06
