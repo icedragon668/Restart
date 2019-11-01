@@ -65,11 +65,11 @@ SELECT flight_no, airlines.airline, a1.name AS source, a2.name AS dest
     LEFT JOIN airlines
       ON flights.airline = airlines.airline
     LEFT JOIN airports
-      AS source
-      ON flights.source_airport = airports.code
+      AS a1
+      ON flights.source_airport = a1.code
     LEFT JOIN airports
-      AS dest
-      ON flights.dest_airport = airports.code
+      AS a2
+      ON flights.dest_airport = a2.code
     --there's a couple difference here.. let's see what's what
     --ha! skipped a step in the aliasing
     --lines 68 and 71 should be the "a"s not source/dest
