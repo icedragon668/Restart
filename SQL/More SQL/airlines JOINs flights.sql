@@ -49,9 +49,7 @@ SELECT flight_no, airlines.airline, name
     --there's a third table now lol >.<
     --why is it name and not airports.name? because it's unique. airline appears twice
 
--- 2. Create a query to retrieve the flight number, airline,
--- and destination airport city for all flights with the source airport code,
--- `AKK`.
+-- 2. Create a query to retrieve the flight number, airline, and destination airport city for all flights with the source airport code, `AKK`.
 SELECT flight_no, airlines.airline, city
     FROM flights
     LEFT JOIN airlines
@@ -60,4 +58,16 @@ SELECT flight_no, airlines.airline, city
       ON flights.dest_airport = airports.code
     WHERE source_airport = 'AKK';
 
--- 3. Create a query to retrieve the flight number, airline, source airport name, and destination airport name for all flights in our database.
+-- 3. Create a query to retrieve the flight number, airline, source
+--  airport name, and destination airport name for all flights in our database.
+SELECT flight_no, airlines.airline, a1.name AS source, a2.name AS dest
+    FROM flights
+    LEFT JOIN airlines
+      ON flights.airline = airlines.airline
+    LEFT JOIN airports
+      AS source
+      ON flights.source_airport = airports.code
+    LEFT JOIN airports
+      AS dest
+      ON flights.dest_airport = airports.code
+    
