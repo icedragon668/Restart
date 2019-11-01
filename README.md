@@ -420,7 +420,6 @@ document.addEventListener('click', eventDelegation)
     I THINK count(*) is based on Group By
     No groups counts everything
     Group By defines different "rows", then counts them
-#### ToDo: SQL - HAVING, AS, DESC, count(*) AS Count
 
 
 ## 31 10 2019: More SQL
@@ -441,5 +440,8 @@ document.addEventListener('click', eventDelegation)
 
     WHERE and HAVING are very similar. it seems that the primary difference
     is the aggregation, or grouping that HAVING has.
+
+    some other SQL keywords/commands are LIMIT and MINUS or EXCEPT. MINUS is 
+    interesting because it looks for what's not in 2 queries.
 
 ### Next: unit06
