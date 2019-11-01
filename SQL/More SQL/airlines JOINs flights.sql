@@ -42,7 +42,8 @@ SELECT flight_no, airlines.airline, name
     FROM flights
     LEFT JOIN airlines
       ON flights.airline = airlines.id
-    
+    LEFT JOIN airports
+      ON flights.source_airport = airports.code
     WHERE airlines.airline = 'Delta Airlines';
     --source_airport needs to be the name not the code
     --there's a third table now lol >.<
