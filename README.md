@@ -444,4 +444,7 @@ document.addEventListener('click', eventDelegation)
     some other SQL keywords/commands are LIMIT and MINUS or EXCEPT. MINUS is 
     interesting because it looks for what's not in 2 queries.
 
+    the Inline View is very interesting. it essentially creates a temporay
+    table to be referenced, thus cutting down the need for extra tables
+
 ### Next: unit06
