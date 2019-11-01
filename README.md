@@ -423,4 +423,15 @@ document.addEventListener('click', eventDelegation)
 #### ToDo: SQL - HAVING, AS, DESC, count(*) AS Count
 
 
+## 31 10 2019: More SQL
+    the lesson itself was fairly easy. the "hard" part being that i missed
+    a third table being added in and getting ahead of myself while aliasing
+
+
+## 31 10 2019: SQL additional study
+    foriegn keys are not really necessary, just helpful. used to ensure 
+    refrential integrity. ie, can't refrence something that isn't there.
+
+    
+
 ### Next: unit06
