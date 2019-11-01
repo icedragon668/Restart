@@ -447,4 +447,7 @@ document.addEventListener('click', eventDelegation)
     the Inline View is very interesting. it essentially creates a temporay
     table to be referenced, thus cutting down the need for extra tables
 
+    CASE is a logical if > then operator. SELECT CASE WHEN THEN ELSE END FROM
+    is the syntax. eg SELECT city, CASE city WHEN 'atlanta' THEN Sales*0.08 END to account for different tax rates in different cities
+
 ### Next: unit06
