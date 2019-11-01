@@ -52,6 +52,12 @@ SELECT flight_no, airlines.airline, name
 -- 2. Create a query to retrieve the flight number, airline,
 -- and destination airport city for all flights with the source airport code,
 -- `AKK`.
-SELECT flight_no, airlines.airline
+SELECT flight_no, airlines.airline, city
+    FROM flights
+    LEFT JOIN airlines
+      ON flights.airline = airlines.id
+    LEFT JOIN airports
+      ON flights.dest_airport = airports.code
+    WHERE source_airport = 'AKK';
 
 -- 3. Create a query to retrieve the flight number, airline, source airport name, and destination airport name for all flights in our database.
