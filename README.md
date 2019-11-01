@@ -439,4 +439,7 @@ document.addEventListener('click', eventDelegation)
     "dest" both have "names", by ASing them with a1.name and a2.name, they
     can both be joined.
 
+    WHERE and HAVING are very similar. it seems that the primary difference
+    is the aggregation, or grouping that HAVING has.
+
 ### Next: unit06
