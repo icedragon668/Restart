@@ -63,7 +63,7 @@ SELECT flight_no, airlines.airline, city
 SELECT flight_no, airlines.airline, a1.name AS source, a2.name AS dest
     FROM flights
     LEFT JOIN airlines
-      ON flights.airline = airlines.airline
+      ON flights.airline = airlines.id
     LEFT JOIN airports
       AS a1
       ON flights.source_airport = a1.code
