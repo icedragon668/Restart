@@ -43,6 +43,7 @@ SELECT flight_no, airlines.airline, source_airport
     LEFT JOIN airlines
     ON flights.airline = airlines.id
     WHERE airlines.airline = 'Delta Airlines';
+    --source_airport needs to be the name not the code
 
 -- 2. Create a query to retrieve the flight number, airline, and destination airport city for all flights with the source airport code, `AKK`.
 
