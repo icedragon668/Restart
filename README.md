@@ -432,6 +432,11 @@ document.addEventListener('click', eventDelegation)
     foriegn keys are not really necessary, just helpful. used to ensure 
     refrential integrity. ie, can't refrence something that isn't there.
 
-    
+    section 2 , query 3 of More SQL/airline JOINs flights is a good example
+    of as/aliasing. it turns out that AS can be replaced (left out actually),
+    but until i'm more comfortable, it's staying in. AS can be used to pull the
+    same information to different parts of the same query. eg "source" and 
+    "dest" both have "names", by ASing them with a1.name and a2.name, they
+    can both be joined.
 
 ### Next: unit06
