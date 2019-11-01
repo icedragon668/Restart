@@ -70,4 +70,7 @@ SELECT flight_no, airlines.airline, a1.name AS source, a2.name AS dest
     LEFT JOIN airports
       AS dest
       ON flights.dest_airport = airports.code
+    --there's a couple difference here.. let's see what's what
+    --ha! skipped a step in the aliasing
+    --lines 68 and 71 should be the "a"s not source/dest
     
