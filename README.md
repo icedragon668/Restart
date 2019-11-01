@@ -450,4 +450,9 @@ document.addEventListener('click', eventDelegation)
     CASE is a logical if > then operator. SELECT CASE WHEN THEN ELSE END FROM
     is the syntax. eg SELECT city, CASE city WHEN 'atlanta' THEN Sales*0.08 END to account for different tax rates in different cities
 
+    SQL also has String functions! CONVERT to change data types and CONCAT()
+    SELECT name, CONVERT(score, INTEGER) AS Int_Score
+    SELECT CONCAT(Region, ,City)
+    the extra white space is literal. eg East Atlanta, if region is east etc.
+
 ### Next: unit06
