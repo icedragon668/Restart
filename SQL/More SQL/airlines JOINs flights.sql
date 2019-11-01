@@ -47,7 +47,11 @@ SELECT flight_no, airlines.airline, name
     WHERE airlines.airline = 'Delta Airlines';
     --source_airport needs to be the name not the code
     --there's a third table now lol >.<
+    --why is it name and not airports.name? because it's unique. airline appears twice
 
--- 2. Create a query to retrieve the flight number, airline, and destination airport city for all flights with the source airport code, `AKK`.
+-- 2. Create a query to retrieve the flight number, airline,
+-- and destination airport city for all flights with the source airport code,
+-- `AKK`.
+SELECT flight_no, airlines.airline
 
 -- 3. Create a query to retrieve the flight number, airline, source airport name, and destination airport name for all flights in our database.
