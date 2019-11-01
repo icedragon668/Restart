@@ -38,12 +38,14 @@ SELECT airlines.airline, dest_airport, count(*) AS Count
 --Section 2
 
 -- 1. Create a query to retrieve the flight number, airline, and source airport name for all flights for the airline, `Delta Airlines`.
-SELECT flight_no, airlines.airline, source_airport
+SELECT flight_no, airlines.airline, name
     FROM flights
     LEFT JOIN airlines
-    ON flights.airline = airlines.id
+      ON flights.airline = airlines.id
+    
     WHERE airlines.airline = 'Delta Airlines';
     --source_airport needs to be the name not the code
+    --there's a third table now lol >.<
 
 -- 2. Create a query to retrieve the flight number, airline, and destination airport city for all flights with the source airport code, `AKK`.
 
