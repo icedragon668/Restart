@@ -8,6 +8,12 @@ $(function () {
             customerEmail: $('#reserve-email').val().trim(),
             customerID: $('#reserve-unique-id').val().trim()
         }
+
+        $('#reserve-name').val('')
+        $('#reserve-phone').val('')
+        $('#reserve-email').val('')
+        $('#reserve-unique-id').val('')
+
     }
 
     $('.submit').on('click', addReservation)
