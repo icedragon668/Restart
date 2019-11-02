@@ -459,7 +459,9 @@ document.addEventListener('click', eventDelegation)
 ## 1 11 2019: Full Stacking
     there are a few things i've gotten fuzzy on. i'm going to keep track of
     them here.
-    first: config.json. how did i create this again? >.<
+    
+    config.json. how did i create this again? >.<
+    
 
 
 ### Next: unit06
