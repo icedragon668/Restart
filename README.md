@@ -455,4 +455,11 @@ document.addEventListener('click', eventDelegation)
     SELECT CONCAT(Region, ,City)
     the extra white space is literal. eg East Atlanta, if region is east etc.
 
+
+## 1 11 2019: Full Stacking
+    there are a few things i've gotten fuzzy on. i'm going to keep track of
+    them here.
+    first: config.json. how did i create this again? >.<
+
+
 ### Next: unit06
