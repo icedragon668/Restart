@@ -14,6 +14,12 @@ $(function () {
         $('#reserve-email').val('')
         $('#reserve-unique-id').val('')
 
+        $.ajax({
+            method: 'POST',
+            url: 'api/tables',
+            data: newReservation
+        })
+
     }
 
     $('.submit').on('click', addReservation)
