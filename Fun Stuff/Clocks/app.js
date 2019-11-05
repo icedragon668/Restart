@@ -15,12 +15,12 @@ setDate = function () {
 
     switch (secs){
         case 0: { 
-            secHand.style.transform = `rotate(90deg)`;
+            secHand.style.transform = `rotate(450deg)`;
             secHand.style.transition = `none`
         }
         case 1: {
             secHand.style.transition = `all 0.3s cubic-bezier(0.18, 2.55, 0, 0.9)`;
-            secHand.style.transform = `rotate(${secsDegs}deg)`;
+            secHand.style.transform = `rotate(456deg)`;
         }
         default: {
             secHand.style.transform = `rotate(${secsDegs}deg)`;
