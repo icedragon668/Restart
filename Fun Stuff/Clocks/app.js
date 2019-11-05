@@ -16,9 +16,9 @@ setDate = function () {
 
  if (secs == 0) {
         (secHand.style.transform = `rotate(450deg)`)
-        setTimeout(noneFun, 400)
-        setTimeout(moveUnseen, 600)
-        setTimeout(bezierFun, 800)
+        setTimeout(()=>{secHand.style.transition ='none'}, 400)
+        setTimeout(()=>{secHand.style.transform = `rotate(90deg)`}, 600)
+        setTimeout(()=>{secHand.style.transition ='all 0.3s cubic-bezier(0.18, 2.55, 0, 0.9)'}, 800)
     }
     else {
         secHand.style.transform = `rotate(${secsDegs}deg)`;
@@ -27,10 +27,6 @@ setDate = function () {
     minHand.style.transform = `rotate(${minsDegs}deg)`;
     hrHand.style.transform = `rotate(${hrsDegs}deg)`;
 }
-
-noneFun = () => {(secHand.style.transition ='none')}
-moveUnseen = () => {(secHand.style.transform = `rotate(90deg)`)}
-bezierFun = () => {(secHand.style.transition ='all 0.3s cubic-bezier(0.18, 2.55, 0, 0.9)')}
 
 setInterval(setDate, 1000);
 
