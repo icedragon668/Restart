@@ -3,15 +3,15 @@ const minHand = document.querySelector('.min');
 const hrHand = document.querySelector('.hour');
 
 setDate = function () {
-    const now;
+    const now = new Date();
 
-    const secs;
-    const mins;
-    const hrs;
+    const secs = now.getSeconds();
+    const mins = now.getMinutes();
+    const hrs = now.getHours();
 
-    const secsDeg;
-    const minsDegs;
-    const hrsDegs;
+    const secsDeg = (secs *6) + 90;
+    const minsDegs = (mins * 6) + (secs/10) + 90;
+    const hrsDegs = (hours *15) + (mins/2) + 90;
 
 }
 
