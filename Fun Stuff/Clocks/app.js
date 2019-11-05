@@ -2,6 +2,11 @@ const secHand = document.querySelector('.second');
 const minHand = document.querySelector('.min');
 const hrHand = document.querySelector('.hour');
 
+const secHand2 = document.querySelector('.second2');
+const minHand2 = document.querySelector('.min2');
+const hrHand2 = document.querySelector('.hour2');
+
+
 setDate = function () {
     const now = new Date();
 
