@@ -24,8 +24,25 @@ setDate = function () {
         secHand.style.transform = `rotate(${secsDegs}deg)`;
     }
 
-    minHand.style.transform = `rotate(${minsDegs}deg)`;
-    hrHand.style.transform = `rotate(${hrsDegs}deg)`;
+    if (mins == 0) {
+        (minHand.style.transform = `rotate(450deg)`)
+        setTimeout(()=>{minHand.style.transition ='none'}, 400)
+        setTimeout(()=>{minHand.style.transform = `rotate(90deg)`}, 600)
+        setTimeout(()=>{minHand.style.transition ='all 0.3s cubic-bezier(0.18, 2.55, 0, 0.9)'}, 800)
+    }
+    else {
+        minHand.style.transform = `rotate(${minsDegs}deg)`;
+    }
+
+     if (hrs == 0) {
+        (hrHand.style.transform = `rotate(450deg)`)
+        setTimeout(()=>{hrHand.style.transition ='none'}, 400)
+        setTimeout(()=>{hrHand.style.transform = `rotate(90deg)`}, 600)
+        setTimeout(()=>{hrHand.style.transition ='all 0.3s cubic-bezier(0.18, 2.55, 0, 0.9)'}, 800)
+    }
+    else {
+        hrHand.style.transform = `rotate(${hrsDegs}deg)`;
+    }
 }
 
 setInterval(setDate, 1000);
