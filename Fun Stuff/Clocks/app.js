@@ -2,10 +2,6 @@ const secHand = document.querySelector('.second');
 const minHand = document.querySelector('.min');
 const hrHand = document.querySelector('.hour');
 
-const secHand2 = document.querySelector('.second2');
-const minHand2 = document.querySelector('.min2');
-const hrHand2 = document.querySelector('.hour2');
-
 
 setDate = function () {
     const now = new Date();
@@ -19,12 +15,13 @@ setDate = function () {
     const hrsDegs = (hrs *15) + (mins/2) + 90;
 
     switch (secs){
+        case 59: {
+            secHand.style.transform = `rotate(444deg)`
+        }
         case 0: { 
             secHand.style.transform = `rotate(450deg)`;
-            secHand.style.transition = `none`
         }
         case 1: {
-            secHand.style.transition = `all 0.3s cubic-bezier(0.18, 2.55, 0, 0.9)`;
             secHand.style.transform = `rotate(456deg)`;
         }
         default: {
