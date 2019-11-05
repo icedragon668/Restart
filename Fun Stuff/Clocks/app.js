@@ -6,6 +6,7 @@ const hrHand = document.querySelector('.hour');
 setDate = function () {
     const now = new Date();
 
+    const mili = now.getMilliseconds()
     const secs = now.getSeconds();
     const mins = now.getMinutes();
     const hrs = now.getHours();
@@ -15,18 +16,22 @@ setDate = function () {
     const hrsDegs = (hrs *15) + (mins/2) + 90;
 
     switch (secs){
-        case 59: {
-            secHand.style.transform = `rotate(444deg)`
-        }
-        case 0: { 
-            secHand.style.transform = `rotate(450deg)`;
-        }
-        case 1: {
-            secHand.style.transform = `rotate(456deg)`;
-        }
-        default: {
+        case 59: 
+            secHand.style.background = `green`
+            secHand.style.transform = `rotate(${secsDegs}deg)`
+            break
+        case 0: 
+            secHand.style.transform = `rotate(450deg)`
+            secHand.style.transition = 'none'
+            secHand.style.transform = `rotate(${secsDegs}deg)`
+            secHand.style.transition = 'all 0.3s cubic-bezier(0.18, 2.55, 0, 0.9)'
+            break
+        case 1:
+            secHand.style.background = `red`
+            secHand.style.transform = `rotate(${secsDegs}deg)`
+            break
+        default:
             secHand.style.transform = `rotate(${secsDegs}deg)`;
-        }
 }
 
     minHand.style.transform = `rotate(${minsDegs}deg)`;
