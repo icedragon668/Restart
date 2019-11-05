@@ -11,7 +11,7 @@ setDate = function () {
 
     const secsDegs = (secs *6) + 90;
     const minsDegs = (mins * 6) + (secs/10) + 90;
-    const hrsDegs = (hours *15) + (mins/2) + 90;
+    const hrsDegs = (hrs *15) + (mins/2) + 90;
 
     secHand.style.transform = `rotate(${secsDegs}deg)`;
     minHand.style.transform = `rotate(${minsDegs}deg)`;
