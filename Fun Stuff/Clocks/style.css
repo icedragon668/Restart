@@ -58,3 +58,26 @@ body {
     border-right-width: 0px;
     border-radius: 50px, 0px, 0px, 50px;
 }
+
+.hand2 {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    transition: all 0.3s cubic-bezier(0.18, 2.55, 0, 0.9);
+}
+
+.second2 {
+    height: 4px;
+    background: red;
+}
+
+.hour2 {
+    border: 1px solid black;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-radius: 50px, 0px, 0px, 50px;
+}
