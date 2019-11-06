@@ -21,7 +21,6 @@ $(function(){
     const getWaitList = function(){
         fetch('api/waitinglist', {method:'GET'}).then(data=>data.json())
         .then(function(data){
-            console.log(data)
             render(data, $('.waitlist'));
         })
     }
