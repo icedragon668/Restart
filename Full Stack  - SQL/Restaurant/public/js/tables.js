@@ -29,6 +29,11 @@ $(function(){
         })
     }
 
+    const clearAll = function() {
+        $('.tables').html('')
+        $('.waitList').html('')
+    }
+
     getTables()
     getWaitList()
 
