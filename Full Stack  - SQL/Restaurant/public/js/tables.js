@@ -12,7 +12,7 @@ $(function(){
     }
 
     const getTables = function(){
-        fetch('api/tables').then(data=>data.json())
+        fetch('api/tables', {method:'GET'}).then(data=>data.json())
         .then(function(data){
             render(data, $('.tables'))
         })
