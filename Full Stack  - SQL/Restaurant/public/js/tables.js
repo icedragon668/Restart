@@ -25,13 +25,13 @@ $(function(){
             method: 'GET',
             url: 'api/waitinglist'
         }).then(function(data){
-            render(data, $('.waitList'));
+            render(data, $('.waitlist'));
         })
     }
 
     const clearAll = function() {
         $('.tables').html('')
-        $('.waitList').html('')
+        $('.waitlist').html('')
     }
 
     getTables()
