@@ -28,5 +28,9 @@ $(function(){
             render(data, $('.waitList'));
         })
     }
-    
+
+    getTables()
+    getWaitList()
+
+    $('#clear').on('click', clearAll)
 })
