@@ -1,22 +1,3 @@
-const F = function (s) {
-    const nL = document.querySelectorAll(s)
-
-    addClass = (c) => {
-        nL.forEach(e=>{
-            e.classList = c
-        })}
-    append = (c) => {
-        nL.forEach(e=>{
-            e.innerHTML += c
-    })}
-    html = (c) => {
-        nL.forEach(e=>{
-            e.innerHTML = c
-    })}
-}
-
-$(function(){
-
     const render = function (dataList, parent) {
         for (i=0; i<dataList.length; i++){
             const reservation = `<div class="box">
@@ -42,12 +23,11 @@ $(function(){
     }
 
     const clearAll = function() {
-        $('.tables').html('')
-        $('.waitlist').html('')
+        document.querySelector('.tables').innerHTML = ''
+        document.querySelector('.waitlist').innerHTML = ''
     }
 
     getTables()
     getWaitList()
 
     $('#clear').on('click', clearAll)
-})
