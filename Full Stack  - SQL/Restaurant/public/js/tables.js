@@ -12,10 +12,8 @@ $(function(){
     }
 
     const getTables = function(){
-        $.ajax({
-            method: 'GET',
-            url: 'api/tables'
-        }).then(function(data){
+        fetch('api/tables').then(data=>data.json())
+        .then(function(data){
             render(data, $('.tables'))
         })
     }
