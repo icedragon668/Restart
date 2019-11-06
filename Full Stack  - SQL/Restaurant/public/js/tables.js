@@ -1,3 +1,16 @@
+const F = function (s) {
+    const nL = document.querySelectorAll(s)
+
+    addClass = (c) => {
+        nL.forEach(e=>{
+            e.classList = c
+        })}
+    append = (c) => {
+        nL.forEach(e=>{
+            e.innerHTML += c
+    })}
+}
+
 $(function(){
 
     const render = function (dataList, parent) {
