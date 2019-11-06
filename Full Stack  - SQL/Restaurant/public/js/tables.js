@@ -19,5 +19,14 @@ $(function(){
             render(data, $('.tables'))
         })
     }
+
+    const getWaitList = function(){
+        $.ajax({
+            method: 'GET',
+            url: 'api/waitinglist'
+        }).then(function(data){
+            render(data, $('.waitList'));
+        })
+    }
     
 })
