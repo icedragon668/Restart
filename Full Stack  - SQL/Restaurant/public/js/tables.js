@@ -23,8 +23,7 @@ $(function(){
             <h3>${dataList[i].customerName}</h3>
             <p>${dataList[i].customerEmail}</p>
             <p>${dataList[i].phoneNumber}</p></div>`
-            console.log(reservation)      
-            document.querySelector(parent).innerHTML+=('<div>Poop</div>')
+            document.querySelector(parent).innerHTML+=(reservation)
         }
     }
 
