@@ -10,4 +10,14 @@ $(function(){
             parent.append(reservation)
         }
     }
+
+    const getTables = function(){
+        $.ajax({
+            method: 'GET',
+            url: 'api/tables'
+        }).then(function(data){
+            render(data, $('.tables'))
+        })
+    }
+    
 })
