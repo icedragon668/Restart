@@ -30,4 +30,4 @@
     getTables()
     getWaitList()
 
-    $('#clear').on('click', clearAll)
+    document.querySelector('.danger').addEventListener('click', clearAll)
