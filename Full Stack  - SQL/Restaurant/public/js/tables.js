@@ -19,10 +19,9 @@ $(function(){
     }
 
     const getWaitList = function(){
-        $.ajax({
-            method: 'GET',
-            url: 'api/waitinglist'
-        }).then(function(data){
+        fetch('api/waitinglist', {method:'GET'}).then(data=>data.json())
+        .then(function(data){
+            console.log(data)
             render(data, $('.waitlist'));
         })
     }
