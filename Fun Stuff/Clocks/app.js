@@ -12,7 +12,7 @@ setDate = function () {
 
     const secsDegs = (secs * 6) + 90;
     const minsDegs = (mins * 6) + (secs / 10) + 90;
-    const hrsDegs = (hrs * 15) + (mins / 2) + 90;
+    const hrsDegs = (hrs * 30) + (mins / 2) + 90;
 
  if (secs == 0) {
         (secHand.style.transform = `rotate(450deg)`)
@@ -24,7 +24,7 @@ setDate = function () {
         secHand.style.transform = `rotate(${secsDegs}deg)`;
     }
 
-    if (mins == 0) {
+    if (mins == 0 && secs == 0) {
         (minHand.style.transform = `rotate(450deg)`)
         setTimeout(()=>{minHand.style.transition ='none'}, 400)
         setTimeout(()=>{minHand.style.transform = `rotate(90deg)`}, 600)
@@ -34,7 +34,7 @@ setDate = function () {
         minHand.style.transform = `rotate(${minsDegs}deg)`;
     }
 
-     if (hrs == 0) {
+     if (hrs == 0 && secs == 0 && mins == 0) {
         (hrHand.style.transform = `rotate(450deg)`)
         setTimeout(()=>{hrHand.style.transition ='none'}, 400)
         setTimeout(()=>{hrHand.style.transform = `rotate(90deg)`}, 600)

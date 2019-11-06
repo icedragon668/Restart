@@ -461,7 +461,15 @@ document.addEventListener('click', eventDelegation)
     them here.
     
     config.json. how did i create this again? >.<
-    
+
+
+## 5 11 2019: Clocks
+    It seems that the subject I've chosen is far more complicated than
+    anticipated. Re: sun/moon calculations. I had hp[ed to find a simple
+    API to use, but that seems unlikely. Maybe a few APIs...
+
+    In either case, the majority of this work is research, not coding.
+    I need to be coding right now. I 'll have to balance than out
 
 
 ### Next: unit06
