@@ -9,32 +9,36 @@ const F = function (s) {
         nL.forEach(e=>{
             e.innerHTML += c
     })}
+    html = (c) => {
+        nL.forEach(e=>{
+            e.innerHTML = c
+    })}
 }
 
 $(function(){
 
     const render = function (dataList, parent) {
         for (i=0; i<dataList.length; i++){
-            const reservation = $('<div>').addClass('box');
-            reservation.append(`<h3>${dataList[i].customerName}</h3>`);
-            reservation.append(`<p>${dataList[i].customerEmail}</p>`);
-            reservation.append(`<p>${dataList[i].phoneNumber}</p>`);
-            
-            parent.append(reservation)
+            const reservation = `<div class="box">
+            <h3>${dataList[i].customerName}</h3>
+            <p>${dataList[i].customerEmail}</p>
+            <p>${dataList[i].phoneNumber}</p></div>`
+            console.log(reservation)      
+            document.querySelector(parent).innerHTML+=('<div>Poop</div>')
         }
     }
 
     const getTables = function(){
         fetch('api/tables', {method:'GET'}).then(data=>data.json())
         .then(function(data){
-            render(data, $('.tables'))
+            render(data, '.tables')
         })
     }
 
     const getWaitList = function(){
         fetch('api/waitinglist', {method:'GET'}).then(data=>data.json())
         .then(function(data){
-            render(data, $('.waitlist'));
+            render(data, '.waitlist');
         })
     }
 
