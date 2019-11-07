@@ -6,6 +6,7 @@ CREATE DATABASE restaurant_db
 USE restaurant_db
 
 DROP TABLE IF EXISTS Reservations
+-- is there maybe a USE IF EXISTS, ELSE CREATE syntax i can use?
 
 INSERT INTO Reservations ("name", "phoneNumber", "email", "createdAt", "updatedAt") VALUES ('Roger', '444-666-3333', 'test@test.com', NOW(), NOW());
 
