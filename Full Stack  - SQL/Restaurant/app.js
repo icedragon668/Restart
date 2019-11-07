@@ -1,4 +1,3 @@
-const Sequelize = require("sequelize");
-const config = require('./config.json')
+const db = require('./data/models')
 
-new Sequelize(config.database, config.username, config.password, config.configurations);
+db.sequelize.sync()
