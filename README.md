@@ -462,6 +462,8 @@ document.addEventListener('click', eventDelegation)
     
     config.json. how did i create this again? >.<
     models/index.js loads up the models
+    seeding database...
+    a few difference between SQL and Sequelize
 
 
 ## 5 11 2019: Clocks
@@ -474,4 +476,8 @@ document.addEventListener('click', eventDelegation)
 
 ## 6 11 2019: Restaurant - models
     adding a models folder. uses an index.js to setup FileName.js models
-    
+    ran across a few questions to look up, but since this is ongoing, 
+    I'm not going to list them out just yet
+
+    this project is currently untested. that feels wrong lol
+
