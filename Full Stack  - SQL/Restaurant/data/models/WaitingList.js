@@ -1,10 +1,20 @@
 module.exports = function(connection, Sequelize) {
     const WaitingList = connection.define('WaitingList', {
-      name: Sequelize.STRING,
-      phoneNumber: Sequelize.STRING,
-      email: Sequelize.STRING
+      name: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
+      phoneNumber: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        defaultValue: 'N/A'
+      },
+      email: {
+        type: Sequelize.STRING,
+        defaultValue: 'N/A'
+      }
     });
   
-    return WaitingList;
+      return WaitingList;
   }
   
