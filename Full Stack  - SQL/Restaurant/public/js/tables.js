@@ -29,5 +29,5 @@
 
     getTables()
     getWaitList()
-
+//not quite
     document.querySelector('.danger').addEventListener('click', clearAll)
