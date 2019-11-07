@@ -23,7 +23,6 @@ const getWaitList = function () {
 }
 
 const clearAll = function (e) {
-    e.preventDefault()
     if (e.target.matches('.btn')) {
         document.querySelector('.tables').innerHTML = ''
         document.querySelector('.waitlist').innerHTML = ''
