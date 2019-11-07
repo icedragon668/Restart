@@ -481,3 +481,4 @@ document.addEventListener('click', eventDelegation)
 
     this project is currently untested. that feels wrong lol
 
+### Next 06/03/10 - CRUD
