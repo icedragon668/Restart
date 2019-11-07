@@ -30,3 +30,8 @@ Object.keys(db).forEach(function(modelName) {  //get the keys of the db {} right
         db[modelName].associate(db); //what?
     }
 });
+
+db.sequelize = sequelize; //what's the difference again?
+db.Sequelize = Sequelize;
+
+module.exports = db;
