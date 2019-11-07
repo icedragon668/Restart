@@ -461,6 +461,7 @@ document.addEventListener('click', eventDelegation)
     them here.
     
     config.json. how did i create this again? >.<
+    models/index.js loads up the models
 
 
 ## 5 11 2019: Clocks
@@ -471,4 +472,6 @@ document.addEventListener('click', eventDelegation)
     In either case, the majority of this work is research, not coding.
     I need to be coding right now. I 'll have to balance than out
 
-## 6 11 2019:
+## 6 11 2019: Restaurant - models
+    adding a models folder. uses an index.js to setup FileName.js models
+    
