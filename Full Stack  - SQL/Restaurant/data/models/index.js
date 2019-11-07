@@ -24,3 +24,9 @@ fs
         var model = sequelize["import"](path.join(__dirname, file));
         db[model.name] = model;
     });
+
+Object.keys(db).forEach(function(modelName) {  //get the keys of the db {} right?
+    if (db[modelName].associate) { //if db key has an association?
+        db[modelName].associate(db); //what?
+    }
+});
