@@ -28,4 +28,5 @@ db.sequelize.sync().then(function() {
         where: { email: 'chuck@gmail.com' }
     }).then((res)=>{
         console.log(`Updated ${res[0]} rows`)
-    
+    }).catch((err)=>{ console.log(`Error: ${err}`) })
+})
