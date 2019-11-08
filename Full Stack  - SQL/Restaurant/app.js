@@ -21,4 +21,6 @@ db.sequelize.sync().then(function() {
         console.log(JSON.stringify(data, null, 2)); //why this format?
     })
 
+    //U: update
+    db.Reservation.update({
 })
