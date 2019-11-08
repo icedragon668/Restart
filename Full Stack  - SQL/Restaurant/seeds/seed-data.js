@@ -23,3 +23,7 @@ db.sequelize.sync().then(()=>{
         email: 'hannah@compuserve.net'
     }]).then(function(res){
         db.sequelize.close();
+    }).catch((err)=>{
+        console.log(`Error: ${err}`)
+    })
+})
