@@ -21,3 +21,5 @@ db.sequelize.sync().then(()=>{
         name: 'Hannah',
         phoneNumber: '1-800-COLLECT',
         email: 'hannah@compuserve.net'
+    }]).then(function(res){
+        db.sequelize.close();
