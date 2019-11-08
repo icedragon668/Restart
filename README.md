@@ -481,4 +481,9 @@ document.addEventListener('click', eventDelegation)
 
     this project is currently untested. that feels wrong lol
 
-### Next 06/03/10 - CRUD
+
+## 7 11 2019: CRUD
+    nothing much here, just some basic CRUD operations
+
+    
+### Next 06/04 - GET POST PUT DELETE
