@@ -31,5 +31,6 @@ db.sequelize.sync().then(function() {
     }).catch((err)=>{ console.log(`Error: ${err}`) })
 
     //D: delete
+    db.Reservation.destroy({
     
 })
