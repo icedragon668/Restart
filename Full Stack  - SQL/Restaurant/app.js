@@ -10,5 +10,13 @@ db.sequelize.sync().then(function() {
     }).then(function(data) {
         console.log(JSON.stringify(data, null, 2)); //why this format?
     })
+    //C: create
+    db.Reservation.create({
+        name: 'Chuck',
+        phoneNumber: '912-770-0404',
+        email: 'chuck@gmail.com'
+    }).then((res)=>{
+        console.log('Added!')
+    }).catch((err)=>{ console.log(`Error: ${err}`)})
 
 })
