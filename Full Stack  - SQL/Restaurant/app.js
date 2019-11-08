@@ -24,4 +24,5 @@ db.sequelize.sync().then(function() {
     //U: update
     db.Reservation.update({
         name: 'Chuck Rodriguez'
-})
+    },{
+        where: { email: 'chuck@gmail.com' }
