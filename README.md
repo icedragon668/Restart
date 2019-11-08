@@ -1,9 +1,10 @@
 # Restart
 I  go really sick. This is my restart
 
-# +================+
+<!-- i really need a redesign here -->
+# += = = = = = = = = = = = = = =+
 # ||In Which I Begin Again||
-# +================+
+# += = = = = = = = = = = = = = =+
 
 On the 18th of April, 2019, I got sick. Not just a little sick either.
 
