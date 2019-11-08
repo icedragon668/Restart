@@ -29,4 +29,7 @@ db.sequelize.sync().then(function() {
     }).then((res)=>{
         console.log(`Updated ${res[0]} rows`)
     }).catch((err)=>{ console.log(`Error: ${err}`) })
+
+    //D: delete
+    
 })
