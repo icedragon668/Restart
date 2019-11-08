@@ -33,5 +33,6 @@ db.sequelize.sync().then(function() {
     //D: delete
     db.Reservation.destroy({
         where: { name: 'Chuck' }
-    
+    }).then((res)=>{ console.log(`Destroy ${res[0]} line(s)`)})
+
 })
