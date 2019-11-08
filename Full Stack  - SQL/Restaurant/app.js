@@ -26,3 +26,6 @@ db.sequelize.sync().then(function() {
         name: 'Chuck Rodriguez'
     },{
         where: { email: 'chuck@gmail.com' }
+    }).then((res)=>{
+        console.log(`Updated ${res[0]} rows`)
+    
