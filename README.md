@@ -485,4 +485,4 @@ document.addEventListener('click', eventDelegation)
     nothing much here, just some basic CRUD operations
 
     
-### Next 06/04 - GET POST PUT DELETE
+### Next 06/04 - WaitingList API Routes - POST and beyond
