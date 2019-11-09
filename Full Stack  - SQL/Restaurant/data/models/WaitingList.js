@@ -11,7 +11,8 @@ module.exports = function(connection, Sequelize) {
       },
       email: {
         type: Sequelize.STRING,
-        defaultValue: 'N/A'
+        defaultValue: 'N/A',
+        validate: { isEmail: true } //really though, I seem to recall an issue here...
       }
     });
   
