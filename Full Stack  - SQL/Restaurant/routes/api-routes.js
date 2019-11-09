@@ -29,7 +29,7 @@ const db = require('../data/models')
 
 module.exports = (app) => {
 
-    //API Requests
+    //API Requests: Reservations
 
     //GET reservations
     //findAll
@@ -67,6 +67,15 @@ module.exports = (app) => {
         db.Reservation.destroy({ where: { id: req.params.id } })
             .then((data) => res.json(data))
             .catch((err) => res.json({ error: err }))
+    })
+
+    //API Requests: WaitingList
+
+    //GET
+    app.get('/api/waitinglist', (req, res) => {
+        db.Reservation.findAll({})
+            .then((data) => { res.json(data) })
+            .catch((err) => { res.json({ error: err }) })
     })
 
 }
