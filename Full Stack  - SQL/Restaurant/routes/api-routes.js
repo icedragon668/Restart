@@ -55,7 +55,9 @@ module.exports = (app) => {
 
     //PUT Reservations
     app.put('', (req,res)=>{
-
+        db.Reservation.update(
+            
+        )
     })
     .then(()=> res.json({ success: true}))
     .catch((err)=> res.json({ error: err }))
