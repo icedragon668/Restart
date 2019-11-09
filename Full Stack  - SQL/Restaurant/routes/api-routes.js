@@ -27,3 +27,7 @@ End Code for data.json */
 //import models
 const db = require('../data/models')
 
+module.exports = (app) => {
+
+    //API Requests
+}
