@@ -33,33 +33,32 @@ module.exports = (app) => {
 
     //GET reservations
     //findAll
-    app.get('/api/reservations', (req,res)=>{
+    app.get('/api/reservations', (req, res) => {
         db.Reservation.findAll({})
-        .then((data)=>{ res.json(data)})
-        .catch((err)=>{ res.json({error: err})})
+            .then((data) => { res.json(data) })
+            .catch((err) => { res.json({ error: err }) })
     })
 
     //find by id
-    app.get('/api/reservations/:id', (req,res)=>{
+    app.get('/api/reservations/:id', (req, res) => {
         db.Reservation.find({ where: { id: req.params.id } })
-        .then((data)=> res.json(data))
-        .catch((err)=> res.json({error: err}))
+            .then((data) => res.json(data))
+            .catch((err) => res.json({ error: err }))
     })
 
     //POST Reservations
-    app.post('/api/reservations', (req,res)=>{
+    app.post('/api/reservations', (req, res) => {
         db.Reservation.create(req.body)
-        .then(()=> res.json({ success: true}))
-        .catch((err)=> res.json({ error: err }))
+            .then(() => res.json({ success: true }))
+            .catch((err) => res.json({ error: err }))
     })
 
     //PUT Reservations
-    app.put('/api/reservations/:id', (req,res)=>{
+    app.put('/api/reservations/:id', (req, res) => {
         db.Reservation.update(
             req.body,
-            { where: { id: req.params.id } }
-        )
+            { where: { id: req.params.id } })
+            .then(() => res.json({ success: true }))
+            .catch((err) => res.json({ error: err }))
     })
-    .then(()=> res.json({ success: true}))
-    .catch((err)=> res.json({ error: err }))
 }
