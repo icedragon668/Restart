@@ -33,6 +33,7 @@ module.exports = (app) => {
 
     //GET reservations
     app.get('/api/reservations', (req,res)=>{
-
+        db.Reservation.findAll({})
+        .then((data)=>{ res.json(data)})
     })
 }
