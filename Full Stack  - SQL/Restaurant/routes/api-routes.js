@@ -35,5 +35,6 @@ module.exports = (app) => {
     app.get('/api/reservations', (req,res)=>{
         db.Reservation.findAll({})
         .then((data)=>{ res.json(data)})
+        .catch((err)=>{ res.json({error: err})})
     })
 }
