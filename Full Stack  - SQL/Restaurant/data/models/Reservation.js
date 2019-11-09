@@ -9,7 +9,8 @@ module.exports = function(connection, Sequelize) {
         },
         phoneNumber: {
             type: Sequelize.STRING,
-            allowNull: false
+            allowNull: false,
+            defaultValue: 'N/A'
         },
         email: {
             type: Sequelize.STRING,
