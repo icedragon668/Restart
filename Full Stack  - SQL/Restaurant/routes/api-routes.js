@@ -63,8 +63,8 @@ module.exports = (app) => {
     })
 
     //DELETE Reservations
-    app.get('/api/reservations/:id', (req, res) => {
-        db.Reservation.find({ where: { id: req.params.id } })
+    app.delete('/api/reservations/:id', (req, res) => {
+        db.Reservation.destroy({ where: { id: req.params.id } })
             .then((data) => res.json(data))
             .catch((err) => res.json({ error: err }))
     })
