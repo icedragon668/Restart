@@ -40,7 +40,7 @@ module.exports = (app) => {
     })
 
     //find by id
-    app.get('', (req,res)=>{
+    app.get('/api/reservations/:id', (req,res)=>{
         db.Reservation.findAll({})
         .then((data)=> res.json(data))
         .catch((err)=> res.json({error: err}))
