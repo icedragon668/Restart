@@ -54,7 +54,7 @@ module.exports = (app) => {
     })
 
     //PUT Reservations
-    app.put('', (req,res)=>{
+    app.put('/api/reservations/:id', (req,res)=>{
         db.Reservation.update(
             
         )
