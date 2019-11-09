@@ -13,7 +13,8 @@ module.exports = function(connection, Sequelize) {
         },
         email: {
             type: Sequelize.STRING,
-            defaultValue: 'N/A'
+            defaultValue: 'N/A',
+            validate: { isEmail: true } //does this work correctly?
         }
     });
 
