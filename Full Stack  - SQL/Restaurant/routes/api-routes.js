@@ -73,7 +73,7 @@ module.exports = (app) => {
 
     //GET
     app.get('/api/waitinglist', (req, res) => {
-        db.Reservation.findAll({})
+        db.WaitingList.findAll({})
             .then((data) => { res.json(data) })
             .catch((err) => { res.json({ error: err }) })
     })
