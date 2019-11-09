@@ -32,10 +32,18 @@ module.exports = (app) => {
     //API Requests
 
     //GET reservations
+    //findAll
     app.get('/api/reservations', (req,res)=>{
         db.Reservation.findAll({})
         .then((data)=>{ res.json(data)})
         .catch((err)=>{ res.json({error: err})})
+    })
+
+    //find by id
+    app.get('', (req,res)=>{
+        db.Reservation.findAll({})
+        .then((data)=> res.json(data))
+        .catch((err)=> res.json({error: err}))
     })
 
     //POST Reservations
