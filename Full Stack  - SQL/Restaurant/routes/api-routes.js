@@ -49,12 +49,14 @@ module.exports = (app) => {
     //POST Reservations
     app.post('/api/reservations', (req,res)=>{
         db.Reservation.create(req.body)
-        .then((data)=> res.json({ success: true}))
+        .then(()=> res.json({ success: true}))
         .catch((err)=> res.json({ error: err }))
     })
 
     //PUT Reservations
     app.put('', (req,res)=>{
-        
+
     })
+    .then(()=> res.json({ success: true}))
+    .catch((err)=> res.json({ error: err }))
 }
