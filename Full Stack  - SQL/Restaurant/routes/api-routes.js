@@ -37,4 +37,9 @@ module.exports = (app) => {
         .then((data)=>{ res.json(data)})
         .catch((err)=>{ res.json({error: err})})
     })
+
+    //POST Reservations
+    app.post('/api/reservations', (req,res)=>{
+        
+    })
 }
