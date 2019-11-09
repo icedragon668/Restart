@@ -40,6 +40,6 @@ module.exports = (app) => {
 
     //POST Reservations
     app.post('/api/reservations', (req,res)=>{
-        
+        db.Reservation.create(req.body)
     })
 }
