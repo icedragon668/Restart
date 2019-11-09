@@ -41,7 +41,7 @@ module.exports = (app) => {
 
     //find by id
     app.get('/api/reservations/:id', (req,res)=>{
-        db.Reservation.findAll({ where: { id: req.params.id } })
+        db.Reservation.find({ where: { id: req.params.id } })
         .then((data)=> res.json(data))
         .catch((err)=> res.json({error: err}))
     })
