@@ -24,3 +24,6 @@ End Code for data.json */
 
 // Code for SQL database
 
+//import models
+const db = require('../data/models')
+
