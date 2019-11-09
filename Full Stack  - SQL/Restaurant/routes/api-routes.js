@@ -30,4 +30,9 @@ const db = require('../data/models')
 module.exports = (app) => {
 
     //API Requests
+
+    //GET reservations
+    app.get('/api/reservations', (req,res)=>{
+
+    })
 }
