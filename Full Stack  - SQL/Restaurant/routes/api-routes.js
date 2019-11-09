@@ -56,7 +56,8 @@ module.exports = (app) => {
     //PUT Reservations
     app.put('/api/reservations/:id', (req,res)=>{
         db.Reservation.update(
-            
+            req.body,
+            { where: { id: req.params.id } }
         )
     })
     .then(()=> res.json({ success: true}))
