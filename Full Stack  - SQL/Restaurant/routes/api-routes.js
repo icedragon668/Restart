@@ -107,7 +107,7 @@ module.exports = (app) => {
                 }
                 const firstID = data[0].id
                 db.Reservation.create(firstTable).then(()=>{
-                    
+                    db.WaitingList.destroy({ where: { id: { firstID } })
                 })
             })
         })
