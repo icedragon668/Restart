@@ -78,4 +78,9 @@ module.exports = (app) => {
             .catch((err) => { res.json({ error: err }) })
     })
 
+    //PUT
+    app.put('api/waitinglist', (req,res) => {
+        
+    })
+
 }
