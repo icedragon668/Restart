@@ -112,5 +112,6 @@ module.exports = (app) => {
                 })
             })
         })
+        .catch((err)=>{ res.json({ error: err }) })
     })
 }
