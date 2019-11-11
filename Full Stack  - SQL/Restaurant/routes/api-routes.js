@@ -81,7 +81,8 @@ module.exports = (app) => {
     //PUT
     app.put('api/waitinglist', (req,res) => {
         db.WaitingList.update(
-            
+            req.body,
+            { where: { id: req.params.id } }
         )
     })
 
