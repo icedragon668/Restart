@@ -84,6 +84,7 @@ module.exports = (app) => {
             req.body,
             { where: { id: req.params.id } })
             .then(() => { res.json({ success: true }) })
+            .catch((err) => { res.json({ erro: err }) })
     })
 
 }
