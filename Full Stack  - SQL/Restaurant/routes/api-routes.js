@@ -97,5 +97,6 @@ module.exports = (app) => {
     //MODIFIED RESERVATIONS DELETE
     //deletes a reservation, then moves a waitinglist to reservation
     app.delete('api/reservations/:id', (req, res) => {
+        db.Reservation.destroy({ where: { id: req.params.id } })
     })
 }
