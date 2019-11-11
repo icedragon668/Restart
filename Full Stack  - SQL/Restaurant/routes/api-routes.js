@@ -47,11 +47,12 @@ module.exports = (app) => {
     })
 
     //POST Reservations
+    /* Old Method, See Below for Current
     app.post('/api/reservations', (req, res) => {
         db.Reservation.create(req.body)
             .then(() => res.json({ success: true }))
             .catch((err) => res.json({ error: err }))
-    })
+    }) */
 
     //PUT Reservations
     app.put('/api/reservations/:id', (req, res) => {

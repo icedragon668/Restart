@@ -484,5 +484,10 @@ document.addEventListener('click', eventDelegation)
 ## 7 11 2019: CRUD
     nothing much here, just some basic CRUD operations
 
+
+## 11 11 2019: More CRUD
+    the "replace" for a reervation that adds a waitinglist is 
+    interesting. worth remembering
+
     
-### Next 06/04 - WaitingList API Routes - POST and beyond
+### Next 06/04 - Validations
