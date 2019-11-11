@@ -84,7 +84,12 @@ module.exports = (app) => {
             req.body,
             { where: { id: req.params.id } })
             .then(() => { res.json({ success: true }) })
-            .catch((err) => { res.json({ erro: err }) })
+            .catch((err) => { res.json({ error: err }) })
+    })
+
+    //DELETE
+    app.delete('api/waitinglist:id', (req, res) => {
+        
     })
 
 }
