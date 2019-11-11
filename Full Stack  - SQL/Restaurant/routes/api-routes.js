@@ -79,7 +79,7 @@ module.exports = (app) => {
     })
 
     //PUT
-    app.put('api/waitinglist:id', (req,res) => {
+    app.put('api/waitinglist/:id', (req, res) => {
         db.WaitingList.update(
             req.body,
             { where: { id: req.params.id } })
@@ -88,10 +88,14 @@ module.exports = (app) => {
     })
 
     //DELETE
-    app.delete('api/waitinglist:id', (req, res) => {
+    app.delete('api/waitinglist/:id', (req, res) => {
         db.WaitingList.destroy({ where: { id: req.params.id } })
-        .then(() => res.json({ success: true }))
-        .catch((err) => res.json({ error: err}))
+            .then(() => res.json({ success: true }))
+            .catch((err) => res.json({ error: err }))
     })
 
+    //MODIFIED RESERVATIONS DELETE
+    //deletes a reservation, then moves a waitinglist to reservation
+    app.delete('api/reservations/:id', (req, res) => {
+    })
 }
