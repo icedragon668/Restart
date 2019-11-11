@@ -100,6 +100,12 @@ module.exports = (app) => {
         db.Reservation.destroy({ where: { id: req.params.id } })
         .then(()=>{
             db.WaitingList.findAll({}).then((data)=>{
+                const firstTable = {
+                    name: data[0].name,
+                    phoneNumber: data[0].phoneNumber,
+                    email: data[0].email
+                }
+                const firstID = data[0].id
             })
         })
     })
