@@ -80,7 +80,9 @@ module.exports = (app) => {
 
     //PUT
     app.put('api/waitinglist', (req,res) => {
-        
+        db.WaitingList.update(
+            
+        )
     })
 
 }
