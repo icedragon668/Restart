@@ -63,11 +63,12 @@ module.exports = (app) => {
     })
 
     //DELETE Reservations
+    /* Old Method, See Below for Current
     app.delete('/api/reservations/:id', (req, res) => {
         db.Reservation.destroy({ where: { id: req.params.id } })
             .then((data) => res.json(data))
             .catch((err) => res.json({ error: err }))
-    })
+    }) */
 
     //API Requests: WaitingList
 
@@ -107,11 +108,29 @@ module.exports = (app) => {
                 }
                 const firstID = data[0].id
                 db.Reservation.create(firstTable).then(()=>{
-                    db.WaitingList.destroy({ where: { id: { firstID } })
+                    db.WaitingList.destroy({ where: { id: firstID } })
                     .then(()=>{ res.json({ success: true }) })
                 })
             })
         })
         .catch((err)=>{ res.json({ error: err }) })
     })
+
+    //MODIFIED RESERVATIONS POST
+    //checks for a list of 5, if < 5 then reservation, else waitinglist
+    /*
+    when a table gets POSTed, check to see if there are < 5
+    yes: req goes to tables
+    no: req goes to waiting
+    /
+    app.post('/api/tables', (req, res) => {
+        if (tableList.length < 5) {
+            tableList.push(req.body)
+        } else {
+            waitingList.push(req.body)
+        }
+        res.end()
+    })
+}
+End Code for data.json */
 }
