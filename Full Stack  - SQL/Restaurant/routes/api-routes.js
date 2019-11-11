@@ -82,8 +82,8 @@ module.exports = (app) => {
     app.put('api/waitinglist:id', (req,res) => {
         db.WaitingList.update(
             req.body,
-            { where: { id: req.params.id } }
-        )
+            { where: { id: req.params.id } })
+            .then(() => { res.json({ success: true }) })
     })
 
 }
