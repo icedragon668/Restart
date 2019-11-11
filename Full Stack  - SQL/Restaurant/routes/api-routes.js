@@ -106,6 +106,9 @@ module.exports = (app) => {
                     email: data[0].email
                 }
                 const firstID = data[0].id
+                db.Reservation.create(firstTable).then(()=>{
+                    
+                })
             })
         })
     })
