@@ -99,38 +99,32 @@ module.exports = (app) => {
     //deletes a reservation, then moves a waitinglist to reservation
     app.delete('api/reservations/:id', (req, res) => {
         db.Reservation.destroy({ where: { id: req.params.id } })
-        .then(()=>{
-            db.WaitingList.findAll({}).then((data)=>{
-                const firstTable = {
-                    name: data[0].name,
-                    phoneNumber: data[0].phoneNumber,
-                    email: data[0].email
-                }
-                const firstID = data[0].id
-                db.Reservation.create(firstTable).then(()=>{
-                    db.WaitingList.destroy({ where: { id: firstID } })
-                    .then(()=>{ res.json({ success: true }) })
+            .then(() => {
+                db.WaitingList.findAll({}).then((data) => {
+                    const firstTable = {
+                        name: data[0].name,
+                        phoneNumber: data[0].phoneNumber,
+                        email: data[0].email
+                    }
+                    const firstID = data[0].id
+                    db.Reservation.create(firstTable).then(() => {
+                        db.WaitingList.destroy({ where: { id: firstID } })
+                            .then(() => { res.json({ success: true }) })
+                    })
                 })
             })
-        })
-        .catch((err)=>{ res.json({ error: err }) })
+            .catch((err) => { res.json({ error: err }) })
     })
 
     //MODIFIED RESERVATIONS POST
     //checks for a list of 5, if < 5 then reservation, else waitinglist
-    /*
-    when a table gets POSTed, check to see if there are < 5
-    yes: req goes to tables
-    no: req goes to waiting
-    /
-    app.post('/api/tables', (req, res) => {
-        if (tableList.length < 5) {
-            tableList.push(req.body)
-        } else {
-            waitingList.push(req.body)
-        }
-        res.end()
+    app.post('/api/reservations', (req, res) => {
+        db.Reservation.findAll({}).then((data) => {
+            if (data.length < 5) {
+                db.Reservation.create(req.body)
+            } else {
+                db.WaitingList.create(req.body)
+            }
+        }).catch((err)=>{ res.json({ error: err }) })
     })
-}
-End Code for data.json */
 }
