@@ -89,9 +89,7 @@ module.exports = (app) => {
 
     //DELETE
     app.delete('api/waitinglist:id', (req, res) => {
-        db.WaitingList.destroy(
-            
-        )
+        db.WaitingList.destroy({ where: { id: req.params.id } })
     })
 
 }
