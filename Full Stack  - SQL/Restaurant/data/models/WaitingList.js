@@ -7,7 +7,7 @@ module.exports = function(connection, Sequelize) {
       phoneNumber: {
         type: Sequelize.STRING,
         allowNull: false,
-        defaultValue: 'N/A'
+        defaultValue: 'N/A',
       },
       email: {
         type: Sequelize.STRING,

@@ -10,12 +10,13 @@ module.exports = function(connection, Sequelize) {
         phoneNumber: {
             type: Sequelize.STRING,
             allowNull: false,
-            defaultValue: 'N/A'
+            defaultValue: 'N/A',
+            validate: { len: [10] }
         },
         email: {
             type: Sequelize.STRING,
             defaultValue: 'N/A',
-            validate: { isEmail: true } //does this work correctly?
+            validate: { isEmail: true } //does this work correctly? //I think so, but only on the db side. 
         }
     });
 
