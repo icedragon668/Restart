@@ -8,6 +8,7 @@ module.exports = function(connection, Sequelize) {
         type: Sequelize.STRING,
         allowNull: false,
         defaultValue: 'N/A',
+        validate: { len: [10] } //does this need to be 10, 10?
       },
       email: {
         type: Sequelize.STRING,
