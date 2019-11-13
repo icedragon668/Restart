@@ -24,7 +24,8 @@ const Fostholm = new Word(
      [{ location: 'Town', saturation: 20 }, {location: 'Bed', saturation: 10 }], //this should probably move a little
     [
         { keywords: ['city', 'south'], text: this.truth.text },
-        { keywords: ['temple', "north"], text: this.truth.text }
+        { keywords: ['temple', "north"], text: this.truth.text },
+        { keywords: [this.truth.keywords[0], this.truth.keywords[1]], text: `alternate blurb!`}
     ]
 )
 
