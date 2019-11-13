@@ -27,3 +27,13 @@ db.sequelize.sync().then(() => {
         console.log(`Listening on Port ${PORT}`)
     })
 })
+
+/* Alternate Listener with {force:true}
+db.sequelize.sync({ force: true }).then(() => {
+
+    //starts server if sync success
+    app.listen(PORT, function () {
+        console.log(`Listening on Port ${PORT}`)
+    })
+})
+End Alternate */
