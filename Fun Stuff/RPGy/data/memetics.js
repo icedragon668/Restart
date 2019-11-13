@@ -19,8 +19,8 @@ const Fostholm = new Word(
     'FrostHolm',
     'Frostholm',
     //type: location //maybe needs a type? //maybe a sub or super class?
-    { keywords: ['city', 'north'], //okay, maybe an object?
-     text: `this is a blurb of varying length. it references itself. eg, ${this.name} is a ${this.truth.keywords[0]} in the ${this.truth.keywords[1]}`}
+    { keywords: ['city', 'north'], //okay, maybe an object? //again sub/super
+     text: `this is a blurb of varying length. it references itself. eg, ${this.name} is a ${this.truth.keywords[0]} in the ${this.truth.keywords[1]}`} //this is why... keywords.type and keywords.direction make more sense
 )
 
 class Character {
