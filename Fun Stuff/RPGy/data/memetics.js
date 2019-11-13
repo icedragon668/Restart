@@ -19,7 +19,8 @@ const Fostholm = new Word(
     'FrostHolm',
     'Frostholm',
     //type: location //maybe needs a type? //maybe a sub or super class?
-    { keywords: ['city', 'north'], }
+    { keywords: ['city', 'north'], //okay, maybe an object?
+     text: `this is a blurb of varying length. it references itself. eg, ${this.name} is a ${this.truth.keywords[0]}`}
 )
 
 class Character {
