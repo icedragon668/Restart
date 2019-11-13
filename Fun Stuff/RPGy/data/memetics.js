@@ -17,8 +17,9 @@ class Word {
 //the variations object needs work...
 const Fostholm = new Word(
     'FrostHolm',
-    'Frostholm'
-    //type: location //maybe needs a type?
+    'Frostholm',
+    //type: location //maybe needs a type? //maybe a sub or super class?
+    { keywords: ['city', 'north'], }
 )
 
 class Character {
