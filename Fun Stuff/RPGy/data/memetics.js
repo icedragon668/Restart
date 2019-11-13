@@ -11,17 +11,53 @@ const Word = {
     variations: [{params: "params based on the word(?)", variations: "the alternate truth"}]
 }
 
-const Character = {
-    name: 'name',
-    location: 'general, not specfic',
-    routine: {
+class Character {
+    constructor(name, location, routine, memetics) {
+    this.name= 'name',
+    this.location= 'general, not specfic',
+    this.routine= [{
         location: "specfic",
         time: "at this time"
-    },
-    memetics: {
+    }],
+    this.memetics= {
         learnAccuracy: "how accurately do they learn something",
         learnRate: "how likley are they to pick up something new?",
         recountRate: "how likely are they to bring up a new idea?",
         recountAccuracy: "how accurately do they recount the new idea?"
     }
-}
+}}
+
+/* Example Set 1 - memetics
+the char Foli is only good at learning accuracy, they do not offer new info, they don't observe new things, and they mis-remember (create new variants)
+the char Teki is observant, they are always learning new ideas. and they remember them well. But, they might not have learned them correctly...
+*/
+
+const Foli = new Character(
+    'Foli',
+    'Town',
+    [
+        {location: 'Town', time: 'day'},
+        {location: 'Bed', time: 'night'}
+    ],
+    {
+        learnAccuracy: 100,
+        learnRate: 10,
+        recountRate: 10,
+        recountAccuracy: 10
+    }
+)
+
+const Teki = new Character(
+    'Teki',
+    'Town',
+    [
+        {location: 'Town', time: 'night'},
+        {location: 'Bed', time: 'day'}
+    ],
+    {
+        learnAccuracy: 10,
+        learnRate: 100,
+        recountRate: 100,
+        recountAccuracy: 100
+    }
+)
