@@ -10,6 +10,7 @@ const Word = {
     saturation: ['how common is this word?','linked to location'],
     variations: [{params: "params based on the word(?)", variations: "the alternate truth"}]
 }
+//the variations object needs work...
 
 class Character {
     constructor(name, location, routine, memetics) {
