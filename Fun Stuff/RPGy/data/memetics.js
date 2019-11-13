@@ -5,9 +5,10 @@
 const Word = {
     word: 'what is this word?',
     origin: 'where did this word start?',
+    truth: "what is really going on here?",
     locations: ['places this word has been heard'],
     saturation: ['how common is this word?','linked to location'],
-    accuracy: 'how accurate is the word to the truth?'
+    variations: [{params: "params based on the word(?)", variations: "the alternate truth"}]
 }
 
 const Character = {
