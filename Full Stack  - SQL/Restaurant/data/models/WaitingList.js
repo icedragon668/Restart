@@ -2,7 +2,8 @@ module.exports = function(connection, Sequelize) {
     const WaitingList = connection.define('WaitingList', {
       name: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
+        validate: { isAlpha: true }
       },
       phoneNumber: {
         type: Sequelize.STRING,
