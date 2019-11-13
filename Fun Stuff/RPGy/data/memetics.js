@@ -15,7 +15,11 @@ class Word {
     }
 }
 //the variations object needs work...
-
+const Fostholm = new Word(
+    'FrostHolm',
+    'Frostholm'
+    //type: location //maybe needs a type?
+)
 
 class Character {
     constructor(name, location, routine, memetics) {
