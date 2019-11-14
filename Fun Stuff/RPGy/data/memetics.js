@@ -107,3 +107,4 @@ const Teki = new Character(
 )
 
 console.log(Fostholm)
+//i think the issue is the the data needs to be loaded first, be it can be referenced. This makes new Words a two step (or more) process...
