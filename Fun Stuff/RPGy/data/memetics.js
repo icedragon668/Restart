@@ -12,7 +12,7 @@ class Word {
             saturation: "this much"
             }]*/
         this.truth = truth, // "what is really going on here?"
-        this.variations = variations //[{ keywords: "params based on the word(?)", text: "the alternate truth" }] //each object is like a mini truth
+        this.variations = variations //[{ keywords: "params based on the word", text: "the alternate truth" }] //each object is like a mini truth
     }
 }
 
@@ -20,9 +20,9 @@ class Word {
 class Location extends Word {
     constructor(word, origin, truth, nodes, variations, direction, region, type) {
         super(word, origin, truth, nodes, variations); {
-            direction = 'north, south, etc' //this structure makes it easier to replace bits
-            region = 'The Badlands, Gallia, eg'  //is this.region required?
-            type = 'city, town, mountain, forest, eg' //too broad?
+            this.direction = 'north, south, etc' //this structure makes it easier to replace bits
+            this.region = 'The Badlands, Gallia, eg'  //is this.region required?
+            this.type = 'city, town, mountain, forest, eg' //too broad?
             //can a super truth reference these items?
         }
     }
