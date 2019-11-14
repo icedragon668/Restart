@@ -30,11 +30,11 @@ class Locale extends Word {
 
 
 //the variations object needs work...
-const Fostholm = new Locale(
+const Frostholm = new Locale(
     'Frostholm',  //word
     'Frostholm',  //origin
     [{ location: 'Town', saturation: 20 }, { location: 'Bed', saturation: 10 }], //nodes
-    ``, //truth
+    `ini`, //truth
     [``], //variations //end word constructors
     'north', //Location.direction
     'Everfrost', //Location.region
@@ -46,7 +46,7 @@ const update = (word, keyword, update) => {
     word[keyword] = update
 }
 
-update(Frostholm, truth, `this is a blurb of varying length. it references itself. eg, ${Frostholm.word} is a ${this.type} in the ${this.region}`)
+// update(Frostholm, truth, `this is a blurb of varying length. it references itself. eg, ${Frostholm.word} is a ${this.type} in the ${this.region}`)
 /* ref info added in next step
 text: `this is a blurb of varying length. it references itself. eg, ${this.word} is a ${this.type} in the ${this.region}`
     [  //variations
@@ -110,5 +110,5 @@ const Teki = new Character(
     }
 )
 
-console.log(Fostholm.truth)
+console.log(Frostholm.truth)
 //i think the issue is the the data needs to be loaded first, be it can be referenced. This makes new Words a two step (or more) process...
