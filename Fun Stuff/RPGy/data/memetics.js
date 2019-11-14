@@ -40,21 +40,19 @@ const Fostholm = new Locale(
             region: 'Everfrost',
             type: 'city'
         },
-        text: `this is a blurb of varying length. it references itself. eg, ${this.name} is a ${this.truth.keywords.type} in the ${this.truth.keywords.region}`
+        text: `this is a blurb of varying length. it references itself. eg, ${this.name} is a ${this.type} in the ${this.region}`
     },
     [  //variations
         { keywords: ['city', 'south'], text: this.truth.text },
         { keywords: ['temple', "north"], text: this.truth.text },
-        { keywords: [this.truth.keywords[0], this.truth.keywords[1]], text: `alternate blurb!` }
+        { keywords: [this.type, this.region], text: `alternate blurb!` }
     ], //end word constructors
     'north', //Location.direction
     'Everfrost', //Location.region
     'city' //Location.type
 )
 
-const Garland = new Locale(
-
-)
+const Garland = new Locale('word','origin','nodes','truth','variations','direction','region','type') //this should break
 
 class Character {
     constructor(name, location, routine, memetics) {
@@ -107,3 +105,5 @@ const Teki = new Character(
         recountAccuracy: 100
     }
 )
+
+console.log(Fostholm.name)
