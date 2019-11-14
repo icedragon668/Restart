@@ -3,7 +3,7 @@
 //now would be a good time to review classes lol
 
 class Word {
-    constructor(word, origin, nodes, truth, variations) {
+    constructor(word, origin, nodes, truth, variations, theTruth) {
         this.word = word, //'what is this word?'
         this.origin = origin, //'where did this word start?'
         this.nodes = nodes
@@ -13,20 +13,17 @@ class Word {
             }]*/
         this.truth = truth, // "what is really going on here?"
         this.variations = variations //[{ keywords: "params based on the word", text: "the alternate truth" }] //each object is like a mini truth
+        this._theTruth = theTruth
     }
-    update(s) {
-        this.truth = s
-        //get truths module, Locales, with key this.word.
-        //set keywords = "this." + "[i]"
-        //maybe use RegEx instead?
-        //set this.truth = truths.Locales[this.word]
+    theTruth() {
+        
     }
 }
 
 //so maybe the Word needs to extend to some different types?
 class Locale extends Word {
-    constructor(word, origin, nodes, truth, variations, direction, region, type) {
-        super(word, origin, nodes, truth, variations); {
+    constructor(word, origin, nodes, truth, variations, direction, region, type, theTruth) {
+        super(word, origin, nodes, truth, variations), theTruth; {
             this.direction = direction, //'north, south, etc' //this structure makes it easier to replace bits
             this.region = region, //'The Badlands, Gallia, eg'  //is this.region required?
             this.type = type //'city, town, mountain, forest, eg' //too broad?
@@ -45,7 +42,11 @@ const Frostholm = new Locale(
     [``], //variations //end word constructors
     'north', //Location.direction
     'Everfrost', //Location.region
-    'city' //Location.type
+    'city', //Location.type
+    { //theTruth is accessed later to set the truth and variants
+        text: `this is a blurb of varying length. it references itself. eg, ${this.word} is a ${this.type} in the ${this.region}`,
+        keywords: [word, type, region] //should these be var or string?
+    }
 )
 
 /*
