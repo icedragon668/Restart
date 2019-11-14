@@ -40,13 +40,13 @@ const Fostholm = new Location(
             region: 'Everfrost',
             type: 'city'
         },
-        text: `this is a blurb of varying length. it references itself. eg, ${this.name} is a ${this.truth.keywords[0]} in the ${this.truth.keywords[1]}` //this is why... keywords.type and keywords.direction make more sense
+        text: `this is a blurb of varying length. it references itself. eg, ${this.name} is a ${this.truth.keywords.type} in the ${this.truth.keywords.region}`
     },
     [  //variations
         { keywords: ['city', 'south'], text: this.truth.text },
         { keywords: ['temple', "north"], text: this.truth.text },
         { keywords: [this.truth.keywords[0], this.truth.keywords[1]], text: `alternate blurb!` }
-    ]
+    ], //end word constructors
 )
 
 class Character {
