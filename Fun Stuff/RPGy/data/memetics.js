@@ -48,6 +48,11 @@ const Frostholm = new Locale(
     'city' //Location.type
 )
 
+/*
+variations needs a function
+it takes in the keywords and the text, alters some (||all ||none) of them and stores the result in variants array
+*/
+
 // Frostholm.region = `Badlands`
 // Frostholm.truth = `this is a blurb of varying length. it references itself. eg, ${Frostholm.word} is a ${Frostholm.type} in the ${Frostholm.region}`
 // update(Frostholm, truth, `this is a blurb of varying length. it references itself. eg, ${Frostholm.word} is a ${this.type} in the ${this.region}`)
