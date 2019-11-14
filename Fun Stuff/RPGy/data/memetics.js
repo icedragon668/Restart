@@ -33,6 +33,7 @@ class Location extends Word {
 const Fostholm = new Location(
     'Frostholm',  //word
     'Frostholm',  //origin
+    [{ location: 'Town', saturation: 20 }, { location: 'Bed', saturation: 10 }], //nodes
     { //truth
         keywords: {
             direction: 'north',
@@ -41,7 +42,6 @@ const Fostholm = new Location(
         },
         text: `this is a blurb of varying length. it references itself. eg, ${this.name} is a ${this.truth.keywords[0]} in the ${this.truth.keywords[1]}` //this is why... keywords.type and keywords.direction make more sense
     },
-    [{ location: 'Town', saturation: 20 }, { location: 'Bed', saturation: 10 }], //nodes
     [  //variations
         { keywords: ['city', 'south'], text: this.truth.text },
         { keywords: ['temple', "north"], text: this.truth.text },
