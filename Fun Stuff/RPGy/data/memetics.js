@@ -17,7 +17,7 @@ class Word {
 }
 
 //so maybe the Word needs to extend to some different types?
-class Location extends Word {
+class Locale extends Word {
     constructor(word, origin, nodes, truth, variations, direction, region, type) {
         super(word, origin, nodes, truth, variations); {
             this.direction = direction, //'north, south, etc' //this structure makes it easier to replace bits
@@ -30,7 +30,7 @@ class Location extends Word {
 
 
 //the variations object needs work...
-const Fostholm = new Location(
+const Fostholm = new Locale(
     'Frostholm',  //word
     'Frostholm',  //origin
     [{ location: 'Town', saturation: 20 }, { location: 'Bed', saturation: 10 }], //nodes
@@ -50,6 +50,10 @@ const Fostholm = new Location(
     'north', //Location.direction
     'Everfrost', //Location.region
     'city' //Location.type
+)
+
+const Garland = new Locale(
+
 )
 
 class Character {
