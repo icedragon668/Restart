@@ -51,6 +51,7 @@ const Frostholm = new Locale(
 /*
 variations needs a function
 it takes in the keywords and the text, alters some (||all ||none) of them and stores the result in variants array
+truth can work in a similar manner: the string with vars is stored on the object, then later accessed to create the .truth value
 */
 
 // Frostholm.region = `Badlands`
