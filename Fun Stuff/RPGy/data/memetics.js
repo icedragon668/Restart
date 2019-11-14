@@ -40,11 +40,11 @@ const Fostholm = new Locale(
             region: 'Everfrost',
             type: 'city'
         },
-        text: `this is a blurb of varying length. it references itself. eg, ${this.name} is a ${this.type} in the ${this.region}`
+        text: `this is a blurb of varying length. it references itself. eg, ${this.word} is a ${this.type} in the ${this.region}`
     },
     [  //variations
-        { keywords: ['city', 'south'], text: this.truth.text },
-        { keywords: ['temple', "north"], text: this.truth.text },
+        { keywords: ['city', 'south'], text: `this is a blurb of varying length. it references itself. eg, ${this.word} is a ${this.type} in the ${this.region}` },
+        { keywords: ['temple', "north"], text: `this is a blurb of varying length. it references itself. eg, ${this.word} is a ${this.type} in the ${this.region}` },
         { keywords: [this.type, this.region], text: `alternate blurb!` }
     ], //end word constructors
     'north', //Location.direction
@@ -106,4 +106,4 @@ const Teki = new Character(
     }
 )
 
-console.log(Fostholm.name)
+console.log(Fostholm)
