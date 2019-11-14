@@ -6,3 +6,4 @@ const Locales = [
 //will likely need a different method, eg RegEx
 //maybe instead of vars, use WORD and TYPE etc.
 //then id them via keywords and replace them with RegEx finders
+//find a specfic place with Locales[i][placeName]
