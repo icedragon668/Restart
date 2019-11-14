@@ -47,6 +47,9 @@ const Fostholm = new Location(
         { keywords: ['temple', "north"], text: this.truth.text },
         { keywords: [this.truth.keywords[0], this.truth.keywords[1]], text: `alternate blurb!` }
     ], //end word constructors
+    'north', //Location.direction
+    'Everfrost', //Location.region
+    'city' //Location.type
 )
 
 class Character {
