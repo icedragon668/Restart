@@ -20,9 +20,9 @@ class Word {
 class Location extends Word {
     constructor(word, origin, truth, nodes, variations, direction, region, type) {
         super(word, origin, truth, nodes, variations); {
-            this.direction = 'north, south, etc' //this structure makes it easier to replace bits
-            this.region = 'The Badlands, Gallia, eg'  //is this.region required?
-            this.type = 'city, town, mountain, forest, eg' //too broad?
+            this.direction = direction, //'north, south, etc' //this structure makes it easier to replace bits
+            this.region = region, //'The Badlands, Gallia, eg'  //is this.region required?
+            this.type = type //'city, town, mountain, forest, eg' //too broad?
             //can a super truth reference these items?
         }
     }
