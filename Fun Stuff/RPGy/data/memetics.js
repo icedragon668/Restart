@@ -18,8 +18,8 @@ class Word {
 
 //so maybe the Word needs to extend to some different types?
 class Location extends Word {
-    constructor(word, origin, truth, nodes, variations, direction, region, type) {
-        super(word, origin, truth, nodes, variations); {
+    constructor(word, origin, nodes, truth, variations, direction, region, type) {
+        super(word, origin, nodes, truth, variations); {
             this.direction = direction, //'north, south, etc' //this structure makes it easier to replace bits
             this.region = region, //'The Badlands, Gallia, eg'  //is this.region required?
             this.type = type //'city, town, mountain, forest, eg' //too broad?
