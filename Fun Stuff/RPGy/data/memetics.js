@@ -11,12 +11,24 @@ class Word {
                 location: "heard here",
                 saturation: "this much"
             }]
-            this.variations = [{ params: "params based on the word(?)", variations: "the alternate truth" }]
+            this.variations = [{ keywords: "params based on the word(?)", text: "the alternate truth" }] //each object is like a mini truth
     }
 }
+
+//so maybe the Word needs to extend to some different types?
+class Location extends Word {
+    constructor(region){
+        direction = 'north, south, etc' //this structure makes it easier to replace bits
+        region = 'The Badlands, Gallia, eg'  //is this.region required?
+        type = 'city, town, mountain, forest, eg' //too broad?
+        //can a super truth reference these items?
+    }
+}
+
+
 //the variations object needs work...
 const Fostholm = new Word(
-    'FrostHolm',
+    'Frostholm',
     'Frostholm',
     //type: location //maybe needs a type? //maybe a sub or super class?
     { keywords: ['city', 'north'], //okay, maybe an object? //again sub/super
