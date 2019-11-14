@@ -14,6 +14,9 @@ class Word {
         this.truth = truth, // "what is really going on here?"
         this.variations = variations //[{ keywords: "params based on the word", text: "the alternate truth" }] //each object is like a mini truth
     }
+    update(s) {
+        this.truth = s
+    }
 }
 
 //so maybe the Word needs to extend to some different types?
@@ -29,23 +32,20 @@ class Locale extends Word {
 }
 
 
-//the variations object needs work...
+//i need a method for truth to create variants
 const Frostholm = new Locale(
     'Frostholm',  //word
     'Frostholm',  //origin
     [{ location: 'Town', saturation: 20 }, { location: 'Bed', saturation: 10 }], //nodes
-    `ini`, //truth
+    ``, //truth
     [``], //variations //end word constructors
     'north', //Location.direction
     'Everfrost', //Location.region
     'city' //Location.type
 )
 
-
-const update = (word, keyword, update) => {
-    word[keyword] = update
-}
-
+Frostholm.region = `Badlands`
+Frostholm.truth = `this is a blurb of varying length. it references itself. eg, ${Frostholm.word} is a ${Frostholm.type} in the ${Frostholm.region}`
 // update(Frostholm, truth, `this is a blurb of varying length. it references itself. eg, ${Frostholm.word} is a ${this.type} in the ${this.region}`)
 /* ref info added in next step
 text: `this is a blurb of varying length. it references itself. eg, ${this.word} is a ${this.type} in the ${this.region}`
