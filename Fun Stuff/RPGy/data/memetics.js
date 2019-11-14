@@ -34,23 +34,27 @@ const Fostholm = new Locale(
     'Frostholm',  //word
     'Frostholm',  //origin
     [{ location: 'Town', saturation: 20 }, { location: 'Bed', saturation: 10 }], //nodes
-    { //truth
-        keywords: {
-            direction: 'north',
-            region: 'Everfrost',
-            type: 'city'
-        },
-        text: `this is a blurb of varying length. it references itself. eg, ${this.word} is a ${this.type} in the ${this.region}`
-    },
-    [  //variations
-        { keywords: ['city', 'south'], text: `this is a blurb of varying length. it references itself. eg, ${this.word} is a ${this.type} in the ${this.region}` },
-        { keywords: ['temple', "north"], text: `this is a blurb of varying length. it references itself. eg, ${this.word} is a ${this.type} in the ${this.region}` },
-        { keywords: [this.type, this.region], text: `alternate blurb!` }
-    ], //end word constructors
+    ``, //truth
+    [``], //variations //end word constructors
     'north', //Location.direction
     'Everfrost', //Location.region
     'city' //Location.type
 )
+
+
+const update = (word, keyword, update) => {
+    word[keyword] = update
+}
+
+update(Frostholm, truth, `this is a blurb of varying length. it references itself. eg, ${Frostholm.word} is a ${this.type} in the ${this.region}`)
+/* ref info added in next step
+text: `this is a blurb of varying length. it references itself. eg, ${this.word} is a ${this.type} in the ${this.region}`
+    [  //variations
+        { keywords: ['city', 'south'], text: `` },
+        { keywords: ['temple', "north"], text: `` },
+        { keywords: [this.type, this.region], text: `alternate blurb!` }
+    ]
+*/
 
 const Garland = new Locale('word','origin','nodes','truth','variations','direction','region','type') //this should break
 
@@ -106,5 +110,5 @@ const Teki = new Character(
     }
 )
 
-console.log(Fostholm)
+console.log(Fostholm.truth)
 //i think the issue is the the data needs to be loaded first, be it can be referenced. This makes new Words a two step (or more) process...
