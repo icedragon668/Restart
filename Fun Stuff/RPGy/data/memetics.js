@@ -18,6 +18,7 @@ class Word {
         this.truth = s
         //get truths module, Locales, with key this.word.
         //set keywords = "this." + "[i]"
+        //maybe use RegEx instead?
         //set this.truth = truths.Locales[this.word]
     }
 }
