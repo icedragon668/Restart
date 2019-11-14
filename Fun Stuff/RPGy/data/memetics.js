@@ -3,41 +3,49 @@
 //now would be a good time to review classes lol
 
 class Word {
-    constructor(word, origin, truth, nodes, variations) {
-        this.word = 'what is this word?',
-            this.origin = 'where did this word start?',
-            this.truth = "what is really going on here?",
-            this.nodes = [{
-                location: "heard here",
-                saturation: "this much"
-            }]
-            this.variations = [{ keywords: "params based on the word(?)", text: "the alternate truth" }] //each object is like a mini truth
+    constructor(word, origin, nodes, truth, variations) {
+        this.word = word, //'what is this word?'
+        this.origin = origin, //'where did this word start?'
+        this.nodes = nodes
+            /*[{
+            location: "heard here",
+            saturation: "this much"
+            }]*/
+        this.truth = truth, // "what is really going on here?"
+        this.variations = variations //[{ keywords: "params based on the word(?)", text: "the alternate truth" }] //each object is like a mini truth
     }
 }
 
 //so maybe the Word needs to extend to some different types?
 class Location extends Word {
-    constructor(region){
-        direction = 'north, south, etc' //this structure makes it easier to replace bits
-        region = 'The Badlands, Gallia, eg'  //is this.region required?
-        type = 'city, town, mountain, forest, eg' //too broad?
-        //can a super truth reference these items?
+    constructor(word, origin, truth, nodes, variations, direction, region, type) {
+        super(word, origin, truth, nodes, variations); {
+            direction = 'north, south, etc' //this structure makes it easier to replace bits
+            region = 'The Badlands, Gallia, eg'  //is this.region required?
+            type = 'city, town, mountain, forest, eg' //too broad?
+            //can a super truth reference these items?
+        }
     }
 }
 
 
 //the variations object needs work...
-const Fostholm = new Word(
+const Fostholm = new Location(
     'Frostholm',  //word
     'Frostholm',  //origin
-    //type: location //maybe needs a type? //maybe a sub or super class?
-    { keywords: ['city', 'north'], //truth //okay, maybe an object? //again sub/super
-     text: `this is a blurb of varying length. it references itself. eg, ${this.name} is a ${this.truth.keywords[0]} in the ${this.truth.keywords[1]}`}, //this is why... keywords.type and keywords.direction make more sense
-     [{ location: 'Town', saturation: 20 }, {location: 'Bed', saturation: 10 }], //nodes //this should probably move a little
+    { //truth
+        keywords: {
+            direction: 'north',
+            region: 'Everfrost',
+            type: 'city'
+        },
+        text: `this is a blurb of varying length. it references itself. eg, ${this.name} is a ${this.truth.keywords[0]} in the ${this.truth.keywords[1]}` //this is why... keywords.type and keywords.direction make more sense
+    },
+    [{ location: 'Town', saturation: 20 }, { location: 'Bed', saturation: 10 }], //nodes
     [  //variations
         { keywords: ['city', 'south'], text: this.truth.text },
         { keywords: ['temple', "north"], text: this.truth.text },
-        { keywords: [this.truth.keywords[0], this.truth.keywords[1]], text: `alternate blurb!`}
+        { keywords: [this.truth.keywords[0], this.truth.keywords[1]], text: `alternate blurb!` }
     ]
 )
 
