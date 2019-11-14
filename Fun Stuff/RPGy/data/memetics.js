@@ -16,6 +16,9 @@ class Word {
     }
     update(s) {
         this.truth = s
+        //get truths module, Locales, with key this.word.
+        //set keywords = "this." + "[i]"
+        //set this.truth = truths.Locales[this.word]
     }
 }
 
@@ -44,8 +47,8 @@ const Frostholm = new Locale(
     'city' //Location.type
 )
 
-Frostholm.region = `Badlands`
-Frostholm.truth = `this is a blurb of varying length. it references itself. eg, ${Frostholm.word} is a ${Frostholm.type} in the ${Frostholm.region}`
+// Frostholm.region = `Badlands`
+// Frostholm.truth = `this is a blurb of varying length. it references itself. eg, ${Frostholm.word} is a ${Frostholm.type} in the ${Frostholm.region}`
 // update(Frostholm, truth, `this is a blurb of varying length. it references itself. eg, ${Frostholm.word} is a ${this.type} in the ${this.region}`)
 /* ref info added in next step
 text: `this is a blurb of varying length. it references itself. eg, ${this.word} is a ${this.type} in the ${this.region}`
