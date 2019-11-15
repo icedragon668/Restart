@@ -29,7 +29,7 @@ class Word {
         //save the true keywords, falsify them, store the variant, return keywords to truth
         //forEach keywords > this...keywords[i] = rand() || false()
         //this.variations.push(this._theTruth.text)
-        //forEach keywords > this...keywords[i] = true()
+        //forEach keywords > this...keywords[i] = true() 
     }
 }
 
