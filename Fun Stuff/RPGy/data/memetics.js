@@ -1,6 +1,7 @@
 //this is to be restructured as db info. probably sql. but i need to get the ides fleshed out first
 
-//now would be a good time to review classes lol
+//TODO NEXT: test the theTruth function. does it correctly set the truth?
+//THEN: run similar test on theLies. then try to change the values
 
 class Word {
     constructor(word, origin, nodes, truth, variations, theTruth) {
@@ -16,14 +17,21 @@ class Word {
         this._theTruth = theTruth
     }
     theTruth() {
-        
+        this.truth = this._theTruth.text
+    }
+    theLies() {
+        //replace some of the keywords in _theTruth and store the result in variations
+        //save the true keywords, falsify them, store the variant, return keywords to truth
+        //forEach keywords > this...keywords[i] = rand() || false()
+        //this.variations.push(this._theTruth.text)
+        //forEach keywords > this...keywords[i] = true()
     }
 }
 
 //so maybe the Word needs to extend to some different types?
 class Locale extends Word {
     constructor(word, origin, nodes, truth, variations, direction, region, type, theTruth) {
-        super(word, origin, nodes, truth, variations), theTruth; {
+        super(word, origin, nodes, truth, variations, theTruth); {
             this.direction = direction, //'north, south, etc' //this structure makes it easier to replace bits
             this.region = region, //'The Badlands, Gallia, eg'  //is this.region required?
             this.type = type //'city, town, mountain, forest, eg' //too broad?
@@ -44,8 +52,8 @@ const Frostholm = new Locale(
     'Everfrost', //Location.region
     'city', //Location.type
     { //theTruth is accessed later to set the truth and variants
-        text: `this is a blurb of varying length. it references itself. eg, ${this.word} is a ${this.type} in the ${this.region}`,
-        keywords: [word, type, region] //should these be var or string?
+        text: `this is a blurb of varying length. it references itself. eg, ${Frostholm.word} is a ${this.type} in the ${this.region}`,
+        keywords: ['word', 'type', 'region'] //should these be var or string?
     }
 )
 
@@ -121,5 +129,6 @@ const Teki = new Character(
     }
 )
 
-console.log(Frostholm.truth)
+Frostholm.theTruth()
+console.log(Frostholm)
 //i think the issue is the the data needs to be loaded first, be it can be referenced. This makes new Words a two step (or more) process...
