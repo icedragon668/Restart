@@ -30,6 +30,7 @@ class Word {
         //forEach keywords > this...keywords[i] = rand() || false()
         //this.variations.push(this._theTruth.text)
         //forEach keywords > this...keywords[i] = true() 
+        //the function needs to take in an array
     }
 }
 
