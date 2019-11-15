@@ -17,6 +17,9 @@ class Word {
         this._theTruth = theTruth
     }
     theTruth() {
+        this._theTruth.keywords.forEach(function(e){
+            this.truth.replace(e, this._theTruth.keywords[e])
+        });
         this.truth = this._theTruth.text
     }
     theLies() {
@@ -52,8 +55,8 @@ const Frostholm = new Locale(
     'Everfrost', //Location.region
     'city', //Location.type
     { //theTruth is accessed later to set the truth and variants
-        text: `this is a blurb of varying length. it references itself. eg, ${Frostholm.word} is a ${this.type} in the ${this.region}`,
-        keywords: ['word', 'type', 'region'] //should these be var or string?
+        text: `this is a blurb of varying length. it references itself. eg, WORD is a TYPE in the REGION`,
+        keywords: ['WORD', 'TYPE', 'REGION'] //should these be var or string?
     }
 )
 
