@@ -17,14 +17,13 @@ class Word {
         this._theTruth = theTruth
     }
     theTruth() {
+        this.truth = this._theTruth.text
         this._theTruth.keywords.forEach((e)=>{
             let e2 = e.toLowerCase()
-            console.log(e, this[e2])
-            let str = this._theTruth.text
-            str.replace(e, this[e2])
-            console.log(str)
+            let s = this.truth
+            let s2 = s.replace(e, this[e2])
+            console.log(s2)
         });
-        this.truth = this._theTruth.text
     }
     theLies() {
         //replace some of the keywords in _theTruth and store the result in variations
