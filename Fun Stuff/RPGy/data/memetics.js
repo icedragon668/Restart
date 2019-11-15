@@ -42,6 +42,7 @@ class Word {
         //hmm... i have am array to id changes, but not the changes themselves
         //two arrays, an object, or a seperate list to pull the changes?
         //two arrays is the easiest, an object will require a different method, a seperate list will require more data to be built
+        //the second arrary could be run through a different function to improve flexibility
     }
 }
 
