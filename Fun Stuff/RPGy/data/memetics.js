@@ -20,9 +20,8 @@ class Word {
         this.truth = this._theTruth.text
         this._theTruth.keywords.forEach((e)=>{
             let e2 = e.toLowerCase()
-            let s = this.truth
-            let s2 = s.replace(e, this[e2])
-            console.log(s2)
+            let s = this.truth.replace(e, this[e2])
+            this.truth = s
         });
     }
     theLies() {
