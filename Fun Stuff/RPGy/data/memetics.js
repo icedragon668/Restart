@@ -17,7 +17,8 @@ class Word {
         this._theTruth = theTruth
     }
     theTruth() {
-        this._theTruth.keywords.forEach(function(e){
+        this._theTruth.keywords.forEach((e)=>{
+            console.log(e)
             this._theTruth.text.replace(e, this._theTruth.keywords[e])
         });
         this.truth = this._theTruth.text
@@ -132,6 +133,6 @@ const Teki = new Character(
     }
 )
 
-// Frostholm.theTruth()
+Frostholm.theTruth()
 console.log(Frostholm.truth)
 //i think the issue is the the data needs to be loaded first, be it can be referenced. This makes new Words a two step (or more) process...
