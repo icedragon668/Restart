@@ -39,6 +39,7 @@ class Word {
         //the function needs to take in an array
         //the array must contain all keywords
         //blanks should equal no change
+        //hmm... i have am array to id changes, but not the changes themselves
     }
 }
 
