@@ -26,6 +26,9 @@ class Word {
     }
     theLies(changes) {
         let lie = this._theTruth.text
+        changes.forEach(e=>{
+            
+        })
         this.variations.push(lie)
         //replace some of the keywords in _theTruth and store the result in variations
         //save the true keywords, falsify them, store the variant, return keywords to truth
