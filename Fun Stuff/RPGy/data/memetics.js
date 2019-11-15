@@ -32,6 +32,7 @@ class Word {
         //forEach keywords > this...keywords[i] = true() 
         //the function needs to take in an array
         //the array must contain all keywords
+        //blanks should equal no change
     }
 }
 
