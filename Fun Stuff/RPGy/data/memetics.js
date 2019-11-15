@@ -40,6 +40,7 @@ class Word {
         //the array must contain all keywords
         //blanks should equal no change
         //hmm... i have am array to id changes, but not the changes themselves
+        //two arrays, an object, or a seperate list to pull the changes?
     }
 }
 
