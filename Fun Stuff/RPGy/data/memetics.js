@@ -18,9 +18,11 @@ class Word {
     }
     theTruth() {
         this._theTruth.keywords.forEach((e)=>{
-            e = e.toLowerCase()
-            console.log(this[e])
-            this._theTruth.text.replace(e, this[e])
+            let e2 = e.toLowerCase()
+            console.log(e, this[e2])
+            let str = this._theTruth.text
+            str.replace(e, this[e2])
+            console.log(str)
         });
         this.truth = this._theTruth.text
     }
