@@ -28,6 +28,7 @@ class Word {
         let lie = this._theTruth.text
         changes.forEach(e=>{
             let changes2 = e.toUpperCase()
+            lie = lie.replace(changes2, this[e])
         })
         this.variations.push(lie)
         //replace some of the keywords in _theTruth and store the result in variations
