@@ -18,8 +18,8 @@ class Word {
     }
     theTruth() {
         this._theTruth.keywords.forEach((e)=>{
-            console.log(e)
-            this._theTruth.text.replace(e, this._theTruth.keywords[e])
+            console.log(this[e])
+            this._theTruth.text.replace(e, this[e])
         });
         this.truth = this._theTruth.text
     }
