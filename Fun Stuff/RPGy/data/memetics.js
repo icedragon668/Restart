@@ -6,30 +6,29 @@
 class Word {
     constructor(word, origin, nodes, truth, variations, theTruth) {
         this.word = word, //'what is this word?'
-        this.origin = origin, //'where did this word start?'
-        this.nodes = nodes
-            /*[{
-            location: "heard here",
-            saturation: "this much"
-            }]*/
+            this.origin = origin, //'where did this word start?'
+            this.nodes = nodes
+        /*[{
+        location: "heard here",
+        saturation: "this much"
+        }]*/
         this.truth = truth, // "what is really going on here?"
-        this.variations = variations //[{ keywords: "params based on the word", text: "the alternate truth" }] //each object is like a mini truth
-        this._theTruth = theTruth
+            this.variations = variations //[{ keywords: "params based on the word", text: "the alternate truth" }] //each object is like a mini truth
+        this._theTruth = theTruth //this could be pulled from a module
     }
     theTruth() {
         this.truth = this._theTruth.text
-        this._theTruth.keywords.forEach((e)=>{
+        this._theTruth.keywords.forEach((e) => {
             let e2 = e.toLowerCase()
             let s = this.truth.replace(e, this[e2])
             this.truth = s
         });
     }
-    theLies(changes) {
+    theLies(keys, changes) { //this works, but not well
         let lie = this._theTruth.text
-        changes.forEach(e=>{
-            let changes2 = e.toUpperCase()
-            lie = lie.replace(changes2, this[e])
-        })
+        for (let i = 0; i < keys.length; i++) {
+            lie = lie.replace(keys[i], changes[i])
+        }
         this.variations.push(lie)
         //replace some of the keywords in _theTruth and store the result in variations
         //save the true keywords, falsify them, store the variant, return keywords to truth
@@ -39,10 +38,11 @@ class Word {
         //the function needs to take in an array
         //the array must contain all keywords
         //blanks should equal no change
-        //hmm... i have am array to id changes, but not the changes themselves
+        //hmm... i have an array to id changes, but not the changes themselves
         //two arrays, an object, or a seperate list to pull the changes?
         //two arrays is the easiest, an object will require a different method, a seperate list will require more data to be built
         //the second arrary could be run through a different function to improve flexibility
+        //this should have a specfic replace and a random replace
     }
 }
 
@@ -51,8 +51,8 @@ class Locale extends Word {
     constructor(word, origin, nodes, truth, variations, direction, region, type, theTruth) {
         super(word, origin, nodes, truth, variations, theTruth); {
             this.direction = direction, //'north, south, etc' //this structure makes it easier to replace bits
-            this.region = region, //'The Badlands, Gallia, eg'  //is this.region required?
-            this.type = type //'city, town, mountain, forest, eg' //too broad?
+                this.region = region, //'The Badlands, Gallia, eg'  //is this.region required?
+                this.type = type //'city, town, mountain, forest, eg' //too broad?
             //can a super truth reference these items?
         }
     }
@@ -65,7 +65,7 @@ const Frostholm = new Locale(
     'Frostholm',  //origin
     [{ location: 'Town', saturation: 20 }, { location: 'Bed', saturation: 10 }], //nodes
     ``, //truth
-    [``], //variations //end word constructors
+    [], //variations //end word constructors
     'north', //Location.direction
     'Everfrost', //Location.region
     'city', //Location.type
@@ -93,7 +93,7 @@ text: `this is a blurb of varying length. it references itself. eg, ${this.word}
     ]
 */
 
-const Garland = new Locale('word','origin','nodes','truth','variations','direction','region','type') //this should break
+const Garland = new Locale('word', 'origin', 'nodes', 'truth', 'variations', 'direction', 'region', 'type') //this should break
 
 class Character {
     constructor(name, location, routine, memetics) {
@@ -112,7 +112,7 @@ class Character {
     }
 }
 
-/* Example Set 1 - memetics
+/* Example Set - memetics
 the char Foli is only good at learning accuracy, they do not offer new info, they don't observe new things, and they mis-remember (create new variants)
 the char Teki is observant, they are always learning new ideas. and they remember them well. But, they might not have learned them correctly...
 */
@@ -148,5 +148,7 @@ const Teki = new Character(
 )
 
 Frostholm.theTruth()
-console.log(Frostholm.truth)
-//i think the issue is the the data needs to be loaded first, be it can be referenced. This makes new Words a two step (or more) process...
+Frostholm.theLies(['WORD','TYPE','REGION'], [Frostholm.word, 'temple', Frostholm.region])
+//this needs a function to default to the truth or something
+
+console.log(Frostholm.variations)
