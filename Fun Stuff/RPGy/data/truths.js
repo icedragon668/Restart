@@ -38,3 +38,41 @@ const Characters = [
 ]
 
 //hmmm... even still, a straight clone is probably easier. more direction, less creative prereqs.
+
+/* Pokemon Red/Blue Clone data */
+const Towns = [
+    'Pewter',
+    'Cerulan',
+    'Vermillion',
+    'Celadon',
+    'Saffron',  
+    'Fuschia',
+    'Cinnabar',
+    'Viridian',
+    'Lavendar',
+    'Indigo',
+    'Pallet',
+    'Porta Vista',
+    'Cremini',
+    'Commerce',
+    'Gringey',
+    'Dark',
+    'Stone',
+    'Gardenia',
+    'Hollywood',
+    'HopHopHop',
+    'Neon',
+    'Hutber',
+    'Laramie'
+]
+
+const Gyms = [
+    'Rock',
+    'Water',
+    'Lightening',
+    'Psychic',
+    'Grass',  
+    'Poison',
+    'Fire',
+    'Earth',
+]
