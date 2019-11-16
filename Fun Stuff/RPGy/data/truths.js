@@ -79,7 +79,9 @@ const Towns = [ //cities, towns, etc. //they will need to become objects with mo
     'Sunnyton',
     'Terracotta',
     'Wisteria',
-    'Acapulco'
+    'Acapulco',
+    `Crimnson`,
+    `Frodomar`
 ]
 
 const Gyms = [ //could expand to each!
@@ -98,7 +100,10 @@ const Islands = [
     'Camomile',
     'Chrysanthemum',
     `Metallica`,
-    `New`
+    `New`,
+    `Sayda`,
+    `Seafoam`,
+    `Cerise`
 ]
 
 const Features = [ //this needs renaming //maybe too broad too
@@ -127,8 +132,8 @@ const Features = [ //this needs renaming //maybe too broad too
         type: `Valley`
     },
     {
-        name: `Grandpa`,
-        type: `Canyon`
+        name: `Grandpa Canyon`, 
+        type: `Valley`
     },
     {
         name: `House of Imitay`,
@@ -198,4 +203,40 @@ const Features = [ //this needs renaming //maybe too broad too
         name: `Safari Zone`,
         type: `Park`
     },
+    {
+        name: `Sakuragi Institute`,
+        type: `School`
+    },
+    {
+        name: `Team Rocket Academy`,
+        type: `School`
+    },
+    {
+        name: `Tree of Begining`,
+        type: `Forest`
+    },
+    {
+        name: `Xanadu Nursery`,
+        type: `Forest`
+    },
+    {
+        name: `Yaz Gym`,
+        type: `School`
+    },
+    {
+        name: `Celadon University`,
+        type: `School`
+    },
+    {
+        name: `Spirit`,
+        type: `Mountain`
+    },
+    {
+        name: `Moon`,
+        type: `Mountain`
+    },
+]
+
+const FeaturesTypesArray = [
+    //just how it sounds
 ]
