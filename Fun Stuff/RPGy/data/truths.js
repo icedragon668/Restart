@@ -190,4 +190,12 @@ const Features = [ //this needs renaming //maybe too broad too
         name: `Pokemopolis`,
         type: `Ruin`
     },
+    {
+        name: `Safari Land`, //Reserve
+        type: `Park`
+    },
+    {
+        name: `Safari Zone`,
+        type: `Park`
+    },
 ]
