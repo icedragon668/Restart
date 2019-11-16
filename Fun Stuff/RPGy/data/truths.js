@@ -97,5 +97,9 @@ const Islands = [
 ]
 
 const Features = [
+    {
+        name: 'Viridian Forest',
+        type: 'Forest'
+    },
 
 ]
