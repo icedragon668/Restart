@@ -116,4 +116,8 @@ const Features = [ //this needs renaming
         name: `Pokehurst`,
         type: `Camp` //a camp?
     }
+    {
+        name: `Evolution`, //Stone Town is near, how to track this?
+        type: `Mountain`
+    }
 ]
