@@ -73,7 +73,10 @@ const Towns = [
     'Rifure',
     'Rota',
     'Sable',
-
+    'Silver',
+    'Sunnyton',
+    'Terracotta',
+    'Wisteria'
 ]
 
 const Gyms = [
