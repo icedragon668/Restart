@@ -67,7 +67,12 @@ const Towns = [
     "Maidien's Peak",
     'Matcha',
     'Mossgreen',
-    'Mullberry'
+    'Mullberry',
+    "O'Hina",
+    "Old Shore Warf",
+    'Rifure',
+    'Rota',
+    'Sable',
 
 ]
 
