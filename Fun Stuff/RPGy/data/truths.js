@@ -111,5 +111,9 @@ const Features = [ //this needs renaming
     {  
         name: `Cameran`,
         type: 'Palace'
+    },
+    {
+        name: `Pokehurst`,
+        type: `Camp` //a camp?
     }
 ]
