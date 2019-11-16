@@ -97,7 +97,8 @@ const Gyms = [ //could expand to each!
 const Islands = [
     'of the Giant Pokemon',
     'Camomile',
-    'Chrysanthemum'
+    'Chrysanthemum',
+    `Metallica`
 ]
 
 const Features = [ //this needs renaming
@@ -132,5 +133,9 @@ const Features = [ //this needs renaming
     {
         name: `House of Imitay`,
         type: `Residence`
+    },
+    {
+        name: `Leaf`,
+        type: `Forest`
     },
 ]
