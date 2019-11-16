@@ -106,7 +106,7 @@ const Islands = [
     `Cerise`
 ]
 
-const Features = [ //this needs renaming //maybe too broad too
+const Features = [ //this needs renaming //maybe too broad too //landmarks and geography?
     {
         name: 'Viridian Forest',
         type: 'Forest'
@@ -234,6 +234,34 @@ const Features = [ //this needs renaming //maybe too broad too
     {
         name: `Moon`,
         type: `Mountain`
+    },
+    {
+        name: `Cerulan`,
+        type: `Cave`
+    },
+    {
+        name: `Diglett's`,
+        type: `Cave`
+    },
+    {
+        name: `Pokemon Mansion`,
+        type: `Ruin`
+    },
+    {
+        name: `Pokemon Tower`,
+        type: `Residence` //maybe?
+    },
+    {
+        name: `Power Plant`,
+        type: `Ruin`
+    },
+    {
+        name: `Rock Tunnel`,
+        type: `Cave`
+    },
+    {
+        name: `Victory Road`,
+        type: `Cave`
     },
 ]
 
