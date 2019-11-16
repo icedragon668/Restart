@@ -79,8 +79,7 @@ const Towns = [ //cities, towns, etc. //they will need to become objects with mo
     'Sunnyton',
     'Terracotta',
     'Wisteria',
-    'Acapulco',
-    'Hidden Village'
+    'Acapulco'
 ]
 
 const Gyms = [ //could expand to each!
@@ -153,6 +152,26 @@ const Features = [ //this needs renaming
     },
     {
         name: `Pokemon Land`,
-        type: `Amusment Park` //too specfic?
+        type: `Park`
+    },
+    {
+        name: `Pokemon Lover's Club`,
+        type: `Secret`
+    },
+    {
+        name: `Hidden Village`,
+        type: `Secret`
+    },
+    {
+        name: `Ninja School`,
+        type: `School`
+    },
+    {
+        name: `Pokemon Tech`,
+        type: `School`
+    },
+    {
+        name: `Pokemon Park`,
+        type: `Park`
     },
 ]
