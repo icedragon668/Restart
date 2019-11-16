@@ -78,7 +78,8 @@ const Towns = [ //cities, towns, etc. //they will need to become objects with mo
     'Silver',
     'Sunnyton',
     'Terracotta',
-    'Wisteria'
+    'Wisteria',
+    'Acapulco'
 ]
 
 const Gyms = [ //could expand to each!
@@ -93,7 +94,8 @@ const Gyms = [ //could expand to each!
 ]
 
 const Islands = [
-
+    'of the Giant Pokemon',
+    'Camomile',
 ]
 
 const Features = [ //this needs renaming
