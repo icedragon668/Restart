@@ -101,7 +101,7 @@ const Islands = [
     `New`
 ]
 
-const Features = [ //this needs renaming
+const Features = [ //this needs renaming //maybe too broad too
     {
         name: 'Viridian Forest',
         type: 'Forest'
@@ -177,5 +177,17 @@ const Features = [ //this needs renaming
     {
         name: `Fighting Spirit Gym`,
         type: `School`
+    },
+    {
+        name: `AJ's Gym`,
+        type: `School`
+    },
+    {
+        name: `Kaz Gym`,
+        type: `School`
+    },
+    {
+        name: `Pokemopolis`,
+        type: `Ruin`
     },
 ]
