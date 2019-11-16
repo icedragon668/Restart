@@ -24,3 +24,17 @@ const LocaleDirection = [ //these could be more generalized for flexibility
 //my preference of course would be final fantasy...
 //but it doesn't quite reach what I had in mind :/
 //what about fairy tales? those are plentiful and miss a lot of issues...
+
+const Tales = [
+    'Hansel and Gretel',
+    'Alice in Wonderland',
+    'Aesop',
+]
+
+const Characters = [
+    'Hansel',
+    'Gretel',
+    'Alice'
+]
+
+//hmmm... even still, a straight clone is probably easier. more direction, less creative prereqs.
