@@ -96,6 +96,7 @@ const Gyms = [ //could expand to each!
 const Islands = [
     'of the Giant Pokemon',
     'Camomile',
+    'Chrysanthemum'
 ]
 
 const Features = [ //this needs renaming
@@ -103,5 +104,12 @@ const Features = [ //this needs renaming
         name: 'Viridian Forest',
         type: 'Forest'
     },
-
+    {
+        name: `Bill's Lighthouse`,
+        type: 'Residence'
+    },
+    {  
+        name: `Cameran`,
+        type: 'Palace'
+    }
 ]
