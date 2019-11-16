@@ -98,7 +98,8 @@ const Islands = [
     'of the Giant Pokemon',
     'Camomile',
     'Chrysanthemum',
-    `Metallica`
+    `Metallica`,
+    `New`
 ]
 
 const Features = [ //this needs renaming
@@ -137,5 +138,21 @@ const Features = [ //this needs renaming
     {
         name: `Leaf`,
         type: `Forest`
+    },
+    {
+        name: `Mirage Mansion`,
+        type: `Residence`
+    },
+    {
+        name: `Hideaway`,
+        type: `Mountain`
+    },
+    {
+        name: `Pokelantis`,
+        type: `Ruin`
+    },
+    {
+        name: `Pokemon Land`,
+        type: `Amusment Park` //too specfic?
     },
 ]
