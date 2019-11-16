@@ -79,7 +79,8 @@ const Towns = [ //cities, towns, etc. //they will need to become objects with mo
     'Sunnyton',
     'Terracotta',
     'Wisteria',
-    'Acapulco'
+    'Acapulco',
+    'Hidden Village'
 ]
 
 const Gyms = [ //could expand to each!
@@ -115,9 +116,21 @@ const Features = [ //this needs renaming
     {
         name: `Pokehurst`,
         type: `Camp` //a camp?
-    }
+    },
     {
         name: `Evolution`, //Stone Town is near, how to track this?
         type: `Mountain`
-    }
+    },
+    {
+        name: `Fennel`,
+        type: `Valley`
+    },
+    {
+        name: `Grandpa`,
+        type: `Canyon`
+    },
+    {
+        name: `House of Imitay`,
+        type: `Residence`
+    },
 ]
