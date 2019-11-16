@@ -115,8 +115,8 @@ const Features = [ //this needs renaming
         type: 'Palace'
     },
     {
-        name: `Pokehurst`,
-        type: `Camp` //a camp?
+        name: `Camp Pokehurst`,
+        type: `School`
     },
     {
         name: `Evolution`, //Stone Town is near, how to track this?
@@ -173,5 +173,9 @@ const Features = [ //this needs renaming
     {
         name: `Pokemon Park`,
         type: `Park`
+    },
+    {
+        name: `Fighting Spirit Gym`,
+        type: `School`
     },
 ]
