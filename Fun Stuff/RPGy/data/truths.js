@@ -63,7 +63,12 @@ const Towns = [
     'HopHopHop',
     'Neon',
     'Hutber',
-    'Laramie'
+    'Laramie',
+    "Maidien's Peak",
+    'Matcha',
+    'Mossgreen',
+    'Mullberry'
+
 ]
 
 const Gyms = [
