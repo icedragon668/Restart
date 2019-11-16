@@ -42,7 +42,7 @@ const Characters = [
 //hmmm... even still, a straight clone is probably easier. more direction, less creative prereqs.
 
 /* Pokemon Red/Blue Clone data */
-const Towns = [
+const Towns = [ //cities, towns, etc. //they will need to become objects with more data
     'Pewter',
     'Cerulan',
     'Vermillion',
@@ -81,7 +81,7 @@ const Towns = [
     'Wisteria'
 ]
 
-const Gyms = [
+const Gyms = [ //could expand to each!
     'Rock',
     'Water',
     'Lightening',
@@ -96,7 +96,7 @@ const Islands = [
 
 ]
 
-const Features = [
+const Features = [ //this needs renaming
     {
         name: 'Viridian Forest',
         type: 'Forest'
