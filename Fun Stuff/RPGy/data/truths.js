@@ -296,4 +296,23 @@ const FeaturesTypesArray = [
         eg: snorlax is blocking the road! you can FLY over, DIG under*, CUT around, or WAKE it up.
         each achieved ability makes the next harder (without legacy mastery)
         *: DIGing runs a risk of cave-in (maybe the others should have drawbacks too?)
+    
+    the story is basic: Become a Master
+        this has X paths:
+            1: defeat the league
+                a: gather badges to permit entrance
+                b: pass the academy
+                c: break in
+            2: catch 'em all!
+            3: type/'mon mastery (the latter is super grindy)
+                a: win badges with type/'mon
+                b: pass the academy with type/'mon
+                c: clear all roadblocks/secrets/sidequests with type/'mon
+            4: help the world!
+                a: clear out the various problems in the world
+            5: get max power
+                a: 'mon stats
+                b: 'mon levels
+                c: player stats
+                d: player levels
 */
