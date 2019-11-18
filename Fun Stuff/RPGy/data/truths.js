@@ -292,6 +292,8 @@ const FeaturesTypesArray = [
     try to cut grinding per game. yes there is some, but spread across playthroughs
     advanced tools are not more powerful, just different. this allows a random 'speciality' at start without breaking play
     everything is *available* at start. but hitting everything on the first run is very grindy (the grinding is supposed to be spread out)
+    gyms and trainers are more difficult with more badges/exp
+
     roadblocks should have alternate solutions. so they can be cleared with different solutions
         eg: snorlax is blocking the road! you can FLY over, DIG under*, CUT around, or WAKE it up.
         each achieved ability makes the next harder (without legacy mastery)
@@ -315,4 +317,14 @@ const FeaturesTypesArray = [
                 b: 'mon levels
                 c: player stats
                 d: player levels
+
+    player creation
+        the player has their own preferences. favorite 'mon, fave type etc. they may not line up
+        hometown can change, temperment (aggressive is mostly attack, passive is defense, tactician for status, eg)
+        player has stats
+            command - orders obyed
+            loyalty - stick with the trainer (function needs fleshing)
+            compassion - care/love
+            strategy - technique pool
+
 */
