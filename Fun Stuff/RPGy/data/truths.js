@@ -273,4 +273,7 @@ const FeaturesTypesArray = [
     `Forest`,
     `Residence`,
     `Palace`,
+    `School`,
+    `Moantain`,
+    `Valley,`
 ]
