@@ -281,3 +281,19 @@ const FeaturesTypesArray = [
     `Secret`,
     `Cave`
 ]
+
+/*
+    Alter the tools for interacting with the world each playthrough
+    rewards keeping a smaller team (leveling them / legacy), but also catching different/many
+    different achievments unlock bonuses (a full team of a type or a particular order), they are not the same (psychic doesn't boost psychic) (maybe?)
+    interconnected map with different tools leading to different places (advanced or secret) (maybe randomize the needed tool?). but most of the map is open
+    the world doesn't level: randoms are roughly static. ie sometimes you have to run
+    advanced levels grant a capture option. allows powerful creatures to be viable for hunting without overpowering
+    try to cut grinding per game. yes there is some, but spread across playthroughs
+    advanced tools are not more powerful, just different. this allows a random 'speciality' at start without breaking play
+    everything is *available* at start. but hitting everything on the first run is very grindy (the grinding is supposed to be spread out)
+    roadblocks should have alternate solutions. so they can be cleared with different solutions
+        eg: snorlax is blocking the road! you can FLY over, DIG under*, CUT around, or WAKE it up.
+        each achieved ability makes the next harder (without legacy mastery)
+        *: DIGing runs a risk of cave-in (maybe the others should have drawbacks too?)
+*/
