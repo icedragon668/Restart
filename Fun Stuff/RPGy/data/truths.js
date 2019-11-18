@@ -267,4 +267,7 @@ const Features = [ //this needs renaming //maybe too broad too //landmarks and g
 
 const FeaturesTypesArray = [
     //just how it sounds
+    `Town`,
+    `Gym`,
+    `Island`,
 ]
