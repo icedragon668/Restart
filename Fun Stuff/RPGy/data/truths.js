@@ -292,7 +292,7 @@ const FeaturesTypesArray = [
     try to cut grinding per game. yes there is some, but spread across playthroughs
     advanced tools are not more powerful, just different. this allows a random 'speciality' at start without breaking play
     everything is *available* at start. but hitting everything on the first run is very grindy (the grinding is supposed to be spread out)
-    gyms and trainers are more difficult with more badges/exp
+    gyms and trainers are more difficult with more badges/exp. eg if you have no badges, the gym is easier than if you have four
     -both are replayable, but are not the 'attack on sight' tye by default
     
     "League Rules": 
@@ -328,7 +328,7 @@ const FeaturesTypesArray = [
         hometown can change, temperment (aggressive is mostly attack, passive is defense, tactician for status, eg)
         player has stats
             command - orders obyed
-            loyalty - stick with the trainer (function needs fleshing)
+            loyalty - stick with the trainer (function needs fleshing //pokemon that are disloyal may leave?)
             compassion - care/love
             strategy - technique pool
             passion/drive - it works even though it really shouldn't
@@ -348,7 +348,7 @@ const FeaturesTypesArray = [
             has a structure component. may cause a cave-in
             permanant vs tempory tunnels
         STOMP (rock?) - crush or flatten
-        PUSH (fight?) - move large things
+        PUSH (fight?) - move large things (STRENGTH?)
         SURF (water?) - skim across water
         DIVE (water?) - go underwater //water gets two? kinda makes sense, they are pretty different
         FLASH (fire?) - light up dark places (more places require)
@@ -358,7 +358,7 @@ const FeaturesTypesArray = [
         CHARGE(?) (electric?)
         (normal) //maybe nnrmal doesnt get one and water gets 2? //ATV, interact with the environment in a 'natural' way. higher risk, but versatile?
         (grass?) //pollenate? fertilize? (grow plants to create [stairs eg]) just call it 'grow'?
-        (steel?) weld? bend? a la magneto? magnet?
+        (steel?) weld? bend? a la magneto? magnet? smelt :p
         (ice?) freeze? maybe freeze allows skating across water?
         (poison move?) pollute?? corode? corode is neat, or dissolve. eats away materials
         (dark?) opposite of flash? maybe more flash to normal? ...eh
