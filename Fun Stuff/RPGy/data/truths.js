@@ -293,6 +293,11 @@ const FeaturesTypesArray = [
     advanced tools are not more powerful, just different. this allows a random 'speciality' at start without breaking play
     everything is *available* at start. but hitting everything on the first run is very grindy (the grinding is supposed to be spread out)
     gyms and trainers are more difficult with more badges/exp
+    -both are replayable, but are not the 'attack on sight' tye by default
+    
+    "League Rules": 
+        you both have the same number of 'mon, losing doesn't mean you're dead, just those 'mons
+        some trainers (including the trainer) can break the rules. penalties apply
 
     roadblocks should have alternate solutions. so they can be cleared with different solutions
         eg: snorlax is blocking the road! you can FLY over, DIG under*, CUT around, or WAKE it up.
@@ -326,5 +331,21 @@ const FeaturesTypesArray = [
             loyalty - stick with the trainer (function needs fleshing)
             compassion - care/love
             strategy - technique pool
+
+    Mobility:
+        FLY - fly up high
+            low chance, but accessible anywhere
+            indoors has severe penalties
+            difficult terrain (fog, forest, etc) applies penalties
+        DIG - burrow through ground/rock
+            low chance in dirt areas, higher chance in valleys and mountains
+            has a structure component. may cause a cave-in
+            permanant vs tempory tunnels
+        STOMP - crush or flatten
+        PUSH - move large things
+        SURF - skim across water
+        DIVE- go underwater
+        FLASH - light up dark places (more places require)
+        CUT - chop and slash
 
 */
