@@ -331,21 +331,43 @@ const FeaturesTypesArray = [
             loyalty - stick with the trainer (function needs fleshing)
             compassion - care/love
             strategy - technique pool
+            passion/drive - it works even though it really shouldn't
+        Story and Freeplay
+            the main difference is Legacy
+                story must be unlocked
+                    'mastering" story mode is like freeplay++
+                free is all available, but reduced value, doesn't unlock things
 
-    Mobility:
-        FLY - fly up high
+    Mobility: (maybe one per type?)
+        FLY (flying) - fly up high
             low chance, but accessible anywhere
             indoors has severe penalties
             difficult terrain (fog, forest, etc) applies penalties
-        DIG - burrow through ground/rock
+        DIG (ground) - burrow through ground/rock
             low chance in dirt areas, higher chance in valleys and mountains
             has a structure component. may cause a cave-in
             permanant vs tempory tunnels
-        STOMP - crush or flatten
-        PUSH - move large things
-        SURF - skim across water
-        DIVE- go underwater
-        FLASH - light up dark places (more places require)
-        CUT - chop and slash
+        STOMP (rock?) - crush or flatten
+        PUSH (fight?) - move large things
+        SURF (water?) - skim across water
+        DIVE (water?) - go underwater //water gets two? kinda makes sense, they are pretty different
+        FLASH (fire?) - light up dark places (more places require)
+        CUT (bug (?)) - chop and slash
+        TELEPORT (psychic)
+        PHASE (ghost)
+        CHARGE(?) (electric?)
+        (normal) //maybe nnrmal doesnt get one and water gets 2? //ATV, interact with the environment in a 'natural' way. higher risk, but versatile?
+        (grass?) //pollenate? fertilize? (grow plants to create [stairs eg]) just call it 'grow'?
+        (steel?) weld? bend? a la magneto? magnet?
+        (ice?) freeze? maybe freeze allows skating across water?
+        (poison move?) pollute?? corode? corode is neat, or dissolve. eats away materials
+        (dark?) opposite of flash? maybe more flash to normal? ...eh
+        (fairy?) ??? Fey Wilds, enter the wilds with strange results (world altering?)
+        (dragon?) ??? Storm, draconic power reshapes the world! ( i duno lol)
 
+
+    Construction:
+        by combining Mobility Techs, you can build!
+        DIG out an area then STOMP it flat for a foundation
+        CUT or CRUSH(?) building materials then PUSH(rename?) them into place
 */
