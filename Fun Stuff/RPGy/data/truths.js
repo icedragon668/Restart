@@ -281,7 +281,17 @@ const FeaturesTypesArray = [
         This is a major focus. It is a themed arena for trainers to battle, grow, and earn badges...
         `
     },
-    `Island`,
+    {
+        name: `Island`,
+        note: `
+        A Geographical feature. Surrounded by water
+        Geo-Features Boost abilities!
+        `,
+        subtype: `Geography`,
+        plus: `Water`,
+        minus: `Dark`,
+        special: `Because of all the beaches, Coin Toss(?) does more damage and finds more coins! (eg)`
+    },
     `Forest`,
     `Residence`,
     `Palace`,
