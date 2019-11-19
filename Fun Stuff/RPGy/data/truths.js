@@ -383,4 +383,8 @@ const FeaturesTypesArray = [
         by combining Mobility Techs, you can build!
         DIG out an area then STOMP it flat for a foundation
         CUT or CRUSH(?) building materials then PUSH(rename?) them into place
+
+    Join a Gym: you can join a Gym for boosts and other benefits
+        contribute to the gym for even better rewards
+        {{Multi-player option would be cool in regards to this feature. Like guilds, or joint player efforts}}
 */
