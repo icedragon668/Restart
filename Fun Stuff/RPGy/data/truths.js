@@ -273,13 +273,15 @@ const FeaturesTypesArray = [
         Has houses at very least. Pretty much everything else is optional.
         It may have shops, centers, gyms commonly.
         Uncommonly, well just about anything
-        `
+        `,
+        subtype: `Geography`
     },
     {
         name: `Gym`,
         note: `
         This is a major focus. It is a themed arena for trainers to battle, grow, and earn badges...
-        `
+        `,
+        subtype: `Structure` //maybe? this makes 'PARK' a geogpaphy?
     },
     {
         name: `Island`,
@@ -292,16 +294,86 @@ const FeaturesTypesArray = [
         minus: `Dark`,
         special: `Because of all the beaches, Coin Toss(?) does more damage and finds more coins! (eg)`
     },
-    `Forest`,
-    `Residence`,
-    `Palace`,
-    `School`,
-    `Moantain`,
-    `Valley,`,
-    `Ruin`,
-    `Park`,
-    `Secret`,
-    `Cave`
+    {
+        name: `Residence`,
+        note: ``,
+        subtype: {
+            type: ``
+
+        }
+    },
+    {
+        name: `Palace`,
+        note: ``,
+        subtype: {
+            type: ``
+            
+        }
+    },
+    {
+        name: `School`,
+        note: ``,
+        subtype: {
+            type: ``
+            
+        }
+    },
+    {
+        name: `Park`,
+        note: ``,
+        subtype: {
+            type: ``
+            
+        }
+    },
+    {
+        name: `Secret`,
+        note: ``,
+        subtype: {
+            type: ``
+            
+        }
+    },
+    {
+        name: `Forest`,
+        note: ``,
+        subtype: {
+            type: ``
+            
+        }
+    },
+    {
+        name: `Mountain`,
+        note: ``,
+        subtype: {
+            type: ``
+            
+        }
+    },
+    {
+        name: `Valley`,
+        note: ``,
+        subtype: {
+            type: ``
+            
+        }
+    },
+    {
+        name: `Ruin`,
+        note: ``,
+        subtype: {
+            type: ``
+            
+        }
+    },
+    {
+        name: `Cave`,
+        note: ``,
+        subtype: {
+            type: ``
+            
+        }
+    }
 ]
 
 /* DESIGN NOTES
@@ -397,4 +469,7 @@ const FeaturesTypesArray = [
     Join a Gym: you can join a Gym for boosts and other benefits
         contribute to the gym for even better rewards
         {{Multi-player option would be cool in regards to this feature. Like guilds, or joint player efforts}}
+
+    Every Locale has Geography!
+        the geography appplies bonuses to moves, type finding, and more!
 */
