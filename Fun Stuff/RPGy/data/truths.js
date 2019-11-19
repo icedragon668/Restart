@@ -267,8 +267,20 @@ const Features = [ //this needs renaming //maybe too broad too //landmarks and g
 
 const FeaturesTypesArray = [
     //just how it sounds
-    `Town`,
-    `Gym`,
+    {
+        name: `Town`,
+        note: `
+        Has houses at very least. Pretty much everything else is optional.
+        It may have shops, centers, gyms commonly.
+        Uncommonly, well just about anything
+        `
+    },
+    {
+        name: `Gym`,
+        note: `
+        This is a major focus. It is a themed arena for trainers to battle, grow, and earn badges...
+        `
+    },
     `Island`,
     `Forest`,
     `Residence`,
@@ -282,7 +294,8 @@ const FeaturesTypesArray = [
     `Cave`
 ]
 
-/*
+/* DESIGN NOTES
+
     Alter the tools for interacting with the world each playthrough
     rewards keeping a smaller team (leveling them / legacy), but also catching different/many
     different achievments unlock bonuses (a full team of a type or a particular order), they are not the same (psychic doesn't boost psychic) (maybe?)
