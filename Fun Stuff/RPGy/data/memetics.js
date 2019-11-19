@@ -150,5 +150,10 @@ const Teki = new Character(
 Frostholm.theTruth()
 Frostholm.theLies(['WORD','TYPE','REGION'], [Frostholm.word, 'temple', Frostholm.region])
 //this needs a function to default to the truth or something
+//maybe it takes in an object to replace specfic bits?
+//eg: { type: 'temple' }, only replaces the TYPE keyword? the others are unchanged?
+//{ all: random }, to randomize all keywords?
+//{ region: random } to randomize a particular keyword
+//{ all: random, region: true } randomizes !region
 
 console.log(Frostholm.variations)
