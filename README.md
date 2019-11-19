@@ -489,5 +489,10 @@ document.addEventListener('click', eventDelegation)
     the "replace" for a reervation that adds a waitinglist is 
     interesting. worth remembering
 
+
+## 18 11 2019: RPGy
+    I need to seperate design work from coding from now on.
+    I think today might have almost no code, and that
+    is not the point of this project
     
 ### Next 06/04 - Validations
