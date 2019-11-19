@@ -48,6 +48,15 @@ class Word {
         let keys = (Object.keys(obj))
         console.log(keys)
         return keys
+        /*
+            let user = {
+                name: "John",
+                age: 30
+                };
+            Object.keys(user) = ["name", "age"]
+            Object.values(user) = ["John", 30]
+            Object.entries(user) = [ ["name","John"], ["age",30] ]
+        */
     }
 }
 
@@ -153,7 +162,7 @@ const Teki = new Character(
 )
 
 Frostholm.theTruth()
-Frostholm.theLies(['WORD','TYPE','REGION'], [Frostholm.word, 'temple', Frostholm.region])
+Frostholm.theLies(['WORD', 'TYPE', 'REGION'], [Frostholm.word, 'temple', Frostholm.region])
 //this needs a function to default to the truth or something
 //maybe it takes in an object to replace specfic bits?
 //eg: { type: 'temple' }, only replaces the TYPE keyword? the others are unchanged?
@@ -161,4 +170,4 @@ Frostholm.theLies(['WORD','TYPE','REGION'], [Frostholm.word, 'temple', Frostholm
 //{ region: random } to randomize a particular keyword
 //{ all: random, region: true } randomizes !region
 
-console.log(Frostholm.objGrab({name:'bo', type:'staff'}))
+console.log(Frostholm.objGrab({ name: 'bo', type: 'staff' }))
