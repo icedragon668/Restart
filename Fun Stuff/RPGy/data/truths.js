@@ -115,7 +115,7 @@ const Features = [ //this needs renaming //maybe too broad too //landmarks and g
         name: `Bill's Lighthouse`,
         type: 'Residence'
     },
-    {  
+    {
         name: `Cameran`,
         type: 'Palace'
     },
@@ -132,7 +132,7 @@ const Features = [ //this needs renaming //maybe too broad too //landmarks and g
         type: `Valley`
     },
     {
-        name: `Grandpa Canyon`, 
+        name: `Grandpa Canyon`,
         type: `Valley`
     },
     {
@@ -263,10 +263,13 @@ const Features = [ //this needs renaming //maybe too broad too //landmarks and g
         name: `Victory Road`,
         type: `Cave`
     },
+    {
+        name: `Academy`, //working name
+        type: `School`
+    }
 ]
 
-const FeaturesTypesArray = [
-    //just how it sounds
+const FeaturesTypesArray = [//just how it sounds
     {
         name: `Town`,
         note: `
@@ -274,14 +277,19 @@ const FeaturesTypesArray = [
         It may have shops, centers, gyms commonly.
         Uncommonly, well just about anything
         `,
-        subtype: `Geography`
+        subtype: {
+            type: `Geography`,
+
+        }
     },
     {
         name: `Gym`,
         note: `
         This is a major focus. It is a themed arena for trainers to battle, grow, and earn badges...
         `,
-        subtype: `Structure` //maybe? this makes 'PARK' a geogpaphy?
+        subtype: {
+            type:  `Structure` //maybe? this makes 'PARK' a geogpaphy?
+        }
     },
     {
         name: `Island`,
@@ -289,14 +297,16 @@ const FeaturesTypesArray = [
         A Geographical feature. Surrounded by water
         Geo-Features Boost abilities!
         `,
-        subtype: `Geography`,
-        plus: `Water`,
-        minus: `Dark`,
-        special: `Because of all the beaches, Coin Toss(?) does more damage and finds more coins! (eg)`
+        subtype: {
+            type: `Geography`,
+            plus: `Water`,
+            minus: `Dark`,
+            special: `Because of all the beaches, Coin Toss(?) does more damage and finds more coins! (eg)`
+        }
     },
     {
         name: `Residence`,
-        note: ``,
+        note: `A particular place the people live`,
         subtype: {
             type: `Structure`
 
@@ -304,18 +314,18 @@ const FeaturesTypesArray = [
     },
     {
         name: `Palace`,
-        note: ``,
+        note: `Royal!`,
         subtype: {
             type: `Structure`
-            
+
         }
     },
     {
         name: `School`,
-        note: ``,
+        note: `Go here to learn!`, //yes, actually
         subtype: {
             type: `Structure`
-            
+
         }
     },
     {
@@ -323,7 +333,7 @@ const FeaturesTypesArray = [
         note: ``,
         subtype: {
             type: `Geography`
-            
+
         }
     },
     {
@@ -331,7 +341,7 @@ const FeaturesTypesArray = [
         note: ``,
         subtype: {
             type: `Secret`
-            
+
         }
     },
     {
@@ -339,7 +349,7 @@ const FeaturesTypesArray = [
         note: ``,
         subtype: {
             type: `Geography`
-            
+
         }
     },
     {
@@ -347,7 +357,7 @@ const FeaturesTypesArray = [
         note: ``,
         subtype: {
             type: `Geography`
-            
+
         }
     },
     {
@@ -355,7 +365,7 @@ const FeaturesTypesArray = [
         note: ``,
         subtype: {
             type: `Geography`
-            
+
         }
     },
     {
@@ -363,7 +373,7 @@ const FeaturesTypesArray = [
         note: ``,
         subtype: {
             type: `Geography`
-            
+
         }
     },
     {
@@ -371,7 +381,7 @@ const FeaturesTypesArray = [
         note: ``,
         subtype: {
             type: `Geography`
-            
+
         }
     }
 ]
@@ -389,8 +399,8 @@ const FeaturesTypesArray = [
     everything is *available* at start. but hitting everything on the first run is very grindy (the grinding is supposed to be spread out)
     gyms and trainers are more difficult with more badges/exp. eg if you have no badges, the gym is easier than if you have four
     -both are replayable, but are not the 'attack on sight' tye by default
-    
-    "League Rules": 
+
+    "League Rules":
         you both have the same number of 'mon, losing doesn't mean you're dead, just those 'mons
         some trainers (including the trainer) can break the rules. penalties apply
 
@@ -398,7 +408,7 @@ const FeaturesTypesArray = [
         eg: snorlax is blocking the road! you can FLY over, DIG under*, CUT around, or WAKE it up.
         each achieved ability makes the next harder (without legacy mastery)
         *: DIGing runs a risk of cave-in (maybe the others should have drawbacks too?)
-    
+
     the story is basic: Become a Master
         this has X paths:
             1: defeat the league
