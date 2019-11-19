@@ -44,6 +44,11 @@ class Word {
         //the second arrary could be run through a different function to improve flexibility
         //this should have a specfic replace and a random replace
     }
+    objGrab(obj) {
+        let keys = (Object.keys(obj))
+        console.log(keys)
+        return keys
+    }
 }
 
 //so maybe the Word needs to extend to some different types?
@@ -156,4 +161,4 @@ Frostholm.theLies(['WORD','TYPE','REGION'], [Frostholm.word, 'temple', Frostholm
 //{ region: random } to randomize a particular keyword
 //{ all: random, region: true } randomizes !region
 
-console.log(Frostholm.variations)
+console.log(Frostholm.objGrab({name:'bo', type:'staff'}))
