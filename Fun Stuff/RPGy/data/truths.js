@@ -298,7 +298,7 @@ const FeaturesTypesArray = [
         name: `Residence`,
         note: ``,
         subtype: {
-            type: ``
+            type: `Structure`
 
         }
     },
@@ -306,7 +306,7 @@ const FeaturesTypesArray = [
         name: `Palace`,
         note: ``,
         subtype: {
-            type: ``
+            type: `Structure`
             
         }
     },
@@ -314,7 +314,7 @@ const FeaturesTypesArray = [
         name: `School`,
         note: ``,
         subtype: {
-            type: ``
+            type: `Structure`
             
         }
     },
@@ -322,7 +322,7 @@ const FeaturesTypesArray = [
         name: `Park`,
         note: ``,
         subtype: {
-            type: ``
+            type: `Geography`
             
         }
     },
@@ -330,7 +330,7 @@ const FeaturesTypesArray = [
         name: `Secret`,
         note: ``,
         subtype: {
-            type: ``
+            type: `Secret`
             
         }
     },
@@ -338,7 +338,7 @@ const FeaturesTypesArray = [
         name: `Forest`,
         note: ``,
         subtype: {
-            type: ``
+            type: `Geography`
             
         }
     },
@@ -346,7 +346,7 @@ const FeaturesTypesArray = [
         name: `Mountain`,
         note: ``,
         subtype: {
-            type: ``
+            type: `Geography`
             
         }
     },
@@ -354,7 +354,7 @@ const FeaturesTypesArray = [
         name: `Valley`,
         note: ``,
         subtype: {
-            type: ``
+            type: `Geography`
             
         }
     },
@@ -362,7 +362,7 @@ const FeaturesTypesArray = [
         name: `Ruin`,
         note: ``,
         subtype: {
-            type: ``
+            type: `Geography`
             
         }
     },
@@ -370,7 +370,7 @@ const FeaturesTypesArray = [
         name: `Cave`,
         note: ``,
         subtype: {
-            type: ``
+            type: `Geography`
             
         }
     }
