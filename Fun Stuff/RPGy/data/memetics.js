@@ -28,8 +28,18 @@ class Word {
         let lie = this._theTruth.text
         let keys = Object.keys(obj)
         let changes = Object.values(obj)
+        //this could be done with .entries too...
+        
+        //what if i make a new object here to basically just run theTruth, but over a different object?
+        //obj => create object.foreach( if e is blank, then truth, else obj.value)
+
+        //for keywords = keys then ->
+        //else truth
+        
         for (let i = 0; i < keys.length; i++) {
-            lie = lie.replace(keys[i], changes[i])
+            if (keys[i] === keywords[i]) //not at the right place though... //then replace?
+            {lie = lie.replace(keys[i], changes[i])}
+            else {lie = lie.replace(keys[i], truth[i])} //missing stuff here too //maybe run theTruth? no...
         }
         this.variations.push(lie)
         //replace some of the keywords in _theTruth and store the result in variations
