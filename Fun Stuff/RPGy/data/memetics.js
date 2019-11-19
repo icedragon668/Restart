@@ -24,8 +24,10 @@ class Word {
             this.truth = s
         });
     }
-    theLies(keys, changes) { //this works, but not well
+    theLies(obj) { //this works, but not well
         let lie = this._theTruth.text
+        let keys = Object.keys(obj)
+        let changes = Object.values(obj)
         for (let i = 0; i < keys.length; i++) {
             lie = lie.replace(keys[i], changes[i])
         }
@@ -45,8 +47,7 @@ class Word {
         //this should have a specfic replace and a random replace
     }
     objGrab(obj) {
-        let keys = (Object.keys(obj))
-        console.log(keys)
+        let keys = (Object.values(obj))
         return keys
         /*
             let user = {
@@ -162,7 +163,8 @@ const Teki = new Character(
 )
 
 Frostholm.theTruth()
-Frostholm.theLies(['WORD', 'TYPE', 'REGION'], [Frostholm.word, 'temple', Frostholm.region])
+// Frostholm.theLies(['WORD', 'TYPE', 'REGION'], [Frostholm.word, 'temple', Frostholm.region])
+Frostholm.theLies({TYPE: 'temple'})
 //this needs a function to default to the truth or something
 //maybe it takes in an object to replace specfic bits?
 //eg: { type: 'temple' }, only replaces the TYPE keyword? the others are unchanged?
@@ -170,4 +172,4 @@ Frostholm.theLies(['WORD', 'TYPE', 'REGION'], [Frostholm.word, 'temple', Frostho
 //{ region: random } to randomize a particular keyword
 //{ all: random, region: true } randomizes !region
 
-console.log(Frostholm.objGrab({ name: 'bo', type: 'staff' }))
+console.log(Frostholm.variations)
