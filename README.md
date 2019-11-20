@@ -495,4 +495,9 @@ document.addEventListener('click', eventDelegation)
     I think today might have almost no code, and that
     is not the point of this project
     
+
+## 19 11 2019: Sick Again
+    A cold I think. But screens are painful.
+
+
 ### Next 06/04 - Validations

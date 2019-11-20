@@ -24,10 +24,18 @@ class Word {
             this.truth = s
         });
     }
+
     theLies(obj) { //this works, but not well
         let lie = this._theTruth.text
-        let keys = Object.keys(obj)
-        let changes = Object.values(obj)
+        let changes = Object.entries(obj)
+        let keys = Object.entries(this._theTruth.keywords)
+        if (changes[i][1] === keys[i]) { //nope >.< //i need to stop i think
+            let e2 = keys.toLowerCase()
+            lie = lie.replace(changes[i][1], this[e2])
+        } else {
+            let e2 = keys.toLowerCase()
+            lie = lie.replace(changes[i][1], this[e2])
+        }
         //this could be done with .entries too...
         
         //what if i make a new object here to basically just run theTruth, but over a different object?
