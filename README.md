@@ -500,4 +500,14 @@ document.addEventListener('click', eventDelegation)
     A cold I think. But screens are painful.
 
 
+## Return: Unintended and Intended Hiatus
+    So bein sick bled into a family based hiatus that left me
+    without internet after I (finally) healed up.
+
+    Without further ado, I continue!
+
+    My wife has expressed concern over my unployment.
+    Time to work harder! (again)
+
+
 ### Next 06/04 - Validations
