@@ -23,3 +23,9 @@ fs
         let model = sequalize["import"](path.join(__dirname, file));
         db[model.name] = model;
     }) //for each file, grab the model and db(???)
+
+    Object.keys(db).forEach(modelName=>{ //for each key in the db object
+        if (db[modelName].associate) { //if there is a model
+            db[modelName].associate(db); //associate it with the db
+        }
+    });
