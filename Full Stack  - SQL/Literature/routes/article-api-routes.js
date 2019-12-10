@@ -11,4 +11,12 @@ module.exports = (app) => {
     })
 
     //GET just one article, by id
+    app.get('.api/articles', (req, res) => {
+        db.Article.findAll({}).then(dbArticle => {
+            res.json(dbArticle);
+        }).catch(err => {
+            res.json({ error: err })
+        })
+    })
+
 }
