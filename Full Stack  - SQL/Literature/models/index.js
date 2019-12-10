@@ -19,4 +19,7 @@ fs
     .filter((file)=>{ //and filter for...
         return (file.indexOf(".") !== 0 && (file !== basename) && (file.slice(-3) === ".js"); //files NOT at index 0 AND file is NOT basename AND file ends in ".js"
     }) //ie: finds all ".js" files except his one (index 0)
-    
+    .forEach((file)=>{
+        let model = sequalize["import"](path.join(__dirname, file));
+        db[model.name] = model;
+    }) //for each file, grab the model and db(???)
