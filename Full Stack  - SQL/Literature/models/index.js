@@ -9,9 +9,9 @@ let config = require(__dirname + '../config/config.json')[env]; //which config t
 let db = {}; //const?
 
 if ( config.use_env_variable) {
-    let sequalize = new Sequelize(process.env[config.use_env_variable]); //if not dev, use production
+    var sequalize = new Sequelize(process.env[config.use_env_variable]); //if not dev, use production
 } else {
-    let sequalize = new Sequelize(config.database, config.username, config.password, config) //is dev, use dev info
+    var sequalize = new Sequelize(config.database, config.username, config.password, config) //is dev, use dev info
 }
 
 fs
@@ -29,3 +29,9 @@ fs
             db[modelName].associate(db); //associate it with the db
         }
     });
+
+    //sets db to contains the S/s-quelize information
+    db.sequalize = sequalize;
+    db.Sequelize = Sequelize;
+
+    module.exports = db; //exports the db {}
