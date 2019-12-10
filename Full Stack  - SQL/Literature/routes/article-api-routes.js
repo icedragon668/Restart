@@ -9,5 +9,6 @@ module.exports = (app) => {
             res.json({ error: err })
         })
     })
-    
+
+    //GET just one article, by id
 }
