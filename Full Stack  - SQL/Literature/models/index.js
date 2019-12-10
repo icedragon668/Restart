@@ -13,3 +13,10 @@ if ( config.use_env_variable) {
 } else {
     let sequalize = new Sequelize(config.database, config.username, config.password, config) //is dev, use dev info
 }
+
+fs
+    .readdirSync(__dirname) //read dir
+    .filter((file)=>{ //and filter for...
+        return (file.indexOf(".") !== 0 && (file !== basename) && (file.slice(-3) === ".js"); //files NOT at index 0 AND file is NOT basename AND file ends in ".js"
+    }) //ie: finds all ".js" files except his one (index 0)
+    
