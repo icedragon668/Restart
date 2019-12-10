@@ -515,5 +515,10 @@ document.addEventListener('click', eventDelegation)
 
     Ouch!
 
+    The idea being to get a job, and re-hone everything
+    before the end of the year :(
+
+    Double Ouch!
+
 
 ### Next 06/04 - Validations
