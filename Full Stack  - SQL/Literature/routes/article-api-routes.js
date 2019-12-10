@@ -14,7 +14,7 @@ module.exports = (app) => {
     app.get('.api/articles/:id', (req, res) => {
         db.Article.findOne({
             where: {
-                
+                id: req.params.id
             }
         }).then(dbArticle => {
             res.json(dbArticle);
