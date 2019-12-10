@@ -509,5 +509,11 @@ document.addEventListener('click', eventDelegation)
     My wife has expressed concern over my unployment.
     Time to work harder! (again)
 
+    Specifically, I am thinking:
+    1: no more fun side tips, unless they get counted apart
+    2: weekend work AND weekly job postings!
+
+    Ouch!
+
 
 ### Next 06/04 - Validations
