@@ -34,7 +34,9 @@ module.exports = (app) => {
     app.put(".api/articles/:id", (req,res)=>{
         db.Article.update(
             req.body,
-            
+            { where: {
+                id: req.params.id
+            }}
         )
     })
 }
