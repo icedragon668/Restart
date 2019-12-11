@@ -29,4 +29,6 @@ module.exports = (app) => {
         .then((dbArticle)=>{ res.json(dbArticle)})
         .catch((err)=>{ res.json( {error: err }) })
     })
+
+    //PUT to update an article
 }
