@@ -38,5 +38,6 @@ module.exports = (app) => {
                 id: req.params.id
             }}
         )
+        .then((dbArticle)=> { res.json(dbArticle) })
     })
 }
