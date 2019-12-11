@@ -41,4 +41,6 @@ module.exports = (app) => {
         .then((dbArticle)=> { res.json(dbArticle) })
         .catch((err)=>{ res.json({ error: err }) })
     })
+
+    //DELETE to remove an article
 }
