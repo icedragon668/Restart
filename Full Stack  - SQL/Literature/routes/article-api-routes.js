@@ -45,7 +45,9 @@ module.exports = (app) => {
     //DELETE to remove an article
     app.delete(".api/articles/:id", (req, res)=>{
         db.Article.destroy({
-            
+            where: {
+                id: req.params.id
+            }
         })
     })
 }
