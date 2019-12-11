@@ -26,5 +26,6 @@ module.exports = (app) => {
     //POST a new article
     app.post(".api/articles", (req, res)=>{
         db.Article.create(req.body)
+        .then((dbArticle)=>{ res.json(dbArticle)})
     })
 }
