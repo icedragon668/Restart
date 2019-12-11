@@ -31,4 +31,7 @@ module.exports = (app) => {
     })
 
     //PUT to update an article
+    app.put(".api/articles/:id", (req,res)=>{
+        
+    })
 }
