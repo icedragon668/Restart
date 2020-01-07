@@ -520,5 +520,14 @@ document.addEventListener('click', eventDelegation)
 
     Double Ouch!
 
+## End Hiatus!
+    about time... the holidays have been rough on me
+    I am looking forward to getting started again.
+    
+### ToDo
+[] Get a spellchecker for VSC >.<
+[] Finish Bootcamp Projects (estimate: end of month)
+[] JS 30 (estimate: concurrent with preceeding, 3 weeks approxmatily)
+[] 100 Days of Code (this will include some of the ideas i've sketching out)
 
 ### Next 06/04 - Validations
